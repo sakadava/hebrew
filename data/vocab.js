@@ -14,8 +14,8 @@ window.VOCAB = {
      "category": "letters",
      "pos": "noun",
      "english": "Father, Dad",
-     "gender": "f",
-     "genderSource": "plural-ending",
+     "gender": "m",
+     "genderSource": "override",
      "binyan": null,
      "root": null,
      "forms": [
@@ -72,8 +72,8 @@ window.VOCAB = {
      "category": "letters",
      "pos": "noun",
      "english": "Water",
-     "gender": null,
-     "genderSource": null,
+     "gender": "m",
+     "genderSource": "override",
      "binyan": null,
      "root": null,
      "forms": [
@@ -94,8 +94,8 @@ window.VOCAB = {
      "category": "letters",
      "pos": "noun",
      "english": "Wine",
-     "gender": "f",
-     "genderSource": "plural-ending",
+     "gender": "m",
+     "genderSource": "override",
      "binyan": null,
      "root": null,
      "forms": [
@@ -453,90 +453,30 @@ window.VOCAB = {
        "hebrew": "לבוא",
        "nikkud": "לָבוֹא",
        "nikkudAuto": true
-      }
-     ],
-     "source": "duolingo-vocab"
-    },
-    {
-     "id": "u01-019",
-     "unit": 1,
-     "unitName": "Letters 1",
-     "category": "letters",
-     "pos": "noun",
-     "english": "Come(s) (m.s - pres.)",
-     "gender": "m",
-     "genderSource": "marker",
-     "binyan": null,
-     "root": null,
-     "forms": [
+      },
       {
-       "slot": "singular",
+       "slot": "ms",
        "translit": "ba",
        "hebrew": "בא",
        "nikkud": "בָּא",
        "nikkudAuto": true
-      }
-     ],
-     "source": "duolingo-vocab"
-    },
-    {
-     "id": "u01-020",
-     "unit": 1,
-     "unitName": "Letters 1",
-     "category": "letters",
-     "pos": "noun",
-     "english": "Come(s) (f.s - pres.)",
-     "gender": "f",
-     "genderSource": "marker",
-     "binyan": null,
-     "root": null,
-     "forms": [
+      },
       {
-       "slot": "singular",
+       "slot": "fs",
        "translit": "ba'ah",
        "hebrew": "באה",
        "nikkud": "בָּאָה",
        "nikkudAuto": true
-      }
-     ],
-     "source": "duolingo-vocab"
-    },
-    {
-     "id": "u01-021",
-     "unit": 1,
-     "unitName": "Letters 1",
-     "category": "letters",
-     "pos": "noun",
-     "english": "Come(s) (m.p - pres.)",
-     "gender": "m",
-     "genderSource": "marker",
-     "binyan": null,
-     "root": null,
-     "forms": [
+      },
       {
-       "slot": "singular",
+       "slot": "mp",
        "translit": "ba'im",
        "hebrew": "באים",
        "nikkud": "בָּאִים",
        "nikkudAuto": true
-      }
-     ],
-     "source": "duolingo-vocab"
-    },
-    {
-     "id": "u01-022",
-     "unit": 1,
-     "unitName": "Letters 1",
-     "category": "letters",
-     "pos": "noun",
-     "english": "Come(s) (f.p - pres.)",
-     "gender": "f",
-     "genderSource": "marker",
-     "binyan": null,
-     "root": null,
-     "forms": [
+      },
       {
-       "slot": "singular",
+       "slot": "fp",
        "translit": "ba'ot",
        "hebrew": "באות",
        "nikkud": "בָּאוֹת",
@@ -546,7 +486,7 @@ window.VOCAB = {
      "source": "duolingo-vocab"
     },
     {
-     "id": "u01-023",
+     "id": "u01-019",
      "unit": 1,
      "unitName": "Letters 1",
      "category": "letters",
@@ -563,90 +503,30 @@ window.VOCAB = {
        "hebrew": "לאהוב",
        "nikkud": "לֶאֱהֹב",
        "nikkudAuto": true
-      }
-     ],
-     "source": "duolingo-vocab"
-    },
-    {
-     "id": "u01-024",
-     "unit": 1,
-     "unitName": "Letters 1",
-     "category": "letters",
-     "pos": "noun",
-     "english": "Love(s) (m.s - pres.)",
-     "gender": "m",
-     "genderSource": "marker",
-     "binyan": null,
-     "root": null,
-     "forms": [
+      },
       {
-       "slot": "singular",
+       "slot": "ms",
        "translit": "ohev",
        "hebrew": "אוהב",
        "nikkud": "אוֹהֵב",
        "nikkudAuto": true
-      }
-     ],
-     "source": "duolingo-vocab"
-    },
-    {
-     "id": "u01-025",
-     "unit": 1,
-     "unitName": "Letters 1",
-     "category": "letters",
-     "pos": "noun",
-     "english": "Love(s) (f.s - pres.)",
-     "gender": "f",
-     "genderSource": "marker",
-     "binyan": null,
-     "root": null,
-     "forms": [
+      },
       {
-       "slot": "singular",
+       "slot": "fs",
        "translit": "ohevet",
        "hebrew": "אוהבת",
        "nikkud": "אוֹהֶבֶת",
        "nikkudAuto": true
-      }
-     ],
-     "source": "duolingo-vocab"
-    },
-    {
-     "id": "u01-026",
-     "unit": 1,
-     "unitName": "Letters 1",
-     "category": "letters",
-     "pos": "noun",
-     "english": "Love(s) (m.p - pres.)",
-     "gender": "m",
-     "genderSource": "marker",
-     "binyan": null,
-     "root": null,
-     "forms": [
+      },
       {
-       "slot": "singular",
+       "slot": "mp",
        "translit": "ohavim",
        "hebrew": "אוהבים",
        "nikkud": "אוֹהֲבִים",
        "nikkudAuto": true
-      }
-     ],
-     "source": "duolingo-vocab"
-    },
-    {
-     "id": "u01-027",
-     "unit": 1,
-     "unitName": "Letters 1",
-     "category": "letters",
-     "pos": "noun",
-     "english": "Love(s) (f.p - pres.)",
-     "gender": "f",
-     "genderSource": "marker",
-     "binyan": null,
-     "root": null,
-     "forms": [
+      },
       {
-       "slot": "singular",
+       "slot": "fp",
        "translit": "ohavot",
        "hebrew": "אוהבות",
        "nikkud": "אוֹהֲבוֹת",
@@ -670,7 +550,7 @@ window.VOCAB = {
      "pos": "noun",
      "english": "Dog",
      "gender": "m",
-     "genderSource": "plural-ending",
+     "genderSource": "override",
      "binyan": null,
      "root": null,
      "forms": [
@@ -836,8 +716,8 @@ window.VOCAB = {
      "category": "letters",
      "pos": "noun",
      "english": "Road, Way, Path",
-     "gender": "m",
-     "genderSource": "plural-ending",
+     "gender": "f",
+     "genderSource": "override",
      "binyan": null,
      "root": null,
      "forms": [
@@ -894,8 +774,8 @@ window.VOCAB = {
      "category": "letters",
      "pos": "noun",
      "english": "Woman; Wife",
-     "gender": "m",
-     "genderSource": "plural-ending",
+     "gender": "f",
+     "genderSource": "override",
      "binyan": null,
      "root": null,
      "forms": [
@@ -1056,90 +936,30 @@ window.VOCAB = {
        "hebrew": "ללכת",
        "nikkud": "לָלֶכֶת",
        "nikkudAuto": true
-      }
-     ],
-     "source": "duolingo-vocab"
-    },
-    {
-     "id": "u02-016",
-     "unit": 2,
-     "unitName": "Letters 2",
-     "category": "letters",
-     "pos": "noun",
-     "english": "Walk, Go (m.s - pres.)",
-     "gender": "m",
-     "genderSource": "marker",
-     "binyan": null,
-     "root": null,
-     "forms": [
+      },
       {
-       "slot": "singular",
+       "slot": "ms",
        "translit": "holekh",
        "hebrew": "הולך",
        "nikkud": "הוֹלֵךְ",
        "nikkudAuto": true
-      }
-     ],
-     "source": "duolingo-vocab"
-    },
-    {
-     "id": "u02-017",
-     "unit": 2,
-     "unitName": "Letters 2",
-     "category": "letters",
-     "pos": "noun",
-     "english": "Walk, Go (f.s - pres.)",
-     "gender": "f",
-     "genderSource": "marker",
-     "binyan": null,
-     "root": null,
-     "forms": [
+      },
       {
-       "slot": "singular",
+       "slot": "fs",
        "translit": "holekhet",
        "hebrew": "הולכת",
        "nikkud": "הוֹלֶכֶת",
        "nikkudAuto": true
-      }
-     ],
-     "source": "duolingo-vocab"
-    },
-    {
-     "id": "u02-018",
-     "unit": 2,
-     "unitName": "Letters 2",
-     "category": "letters",
-     "pos": "noun",
-     "english": "Walk, Go (m.p - pres.)",
-     "gender": "m",
-     "genderSource": "marker",
-     "binyan": null,
-     "root": null,
-     "forms": [
+      },
       {
-       "slot": "singular",
+       "slot": "mp",
        "translit": "hol'khim",
        "hebrew": "הולכים",
        "nikkud": "הוֹלְכִים",
        "nikkudAuto": true
-      }
-     ],
-     "source": "duolingo-vocab"
-    },
-    {
-     "id": "u02-019",
-     "unit": 2,
-     "unitName": "Letters 2",
-     "category": "letters",
-     "pos": "noun",
-     "english": "Walk, Go (f.p - pres.)",
-     "gender": "f",
-     "genderSource": "marker",
-     "binyan": null,
-     "root": null,
-     "forms": [
+      },
       {
-       "slot": "singular",
+       "slot": "fp",
        "translit": "hol'khot",
        "hebrew": "הולכוֹת",
        "nikkud": "הוֹלְכוֹת",
@@ -1149,7 +969,7 @@ window.VOCAB = {
      "source": "duolingo-vocab"
     },
     {
-     "id": "u02-020",
+     "id": "u02-016",
      "unit": 2,
      "unitName": "Letters 2",
      "category": "letters",
@@ -1166,90 +986,30 @@ window.VOCAB = {
        "hebrew": "לאכול",
        "nikkud": "לֶאֱכֹל",
        "nikkudAuto": true
-      }
-     ],
-     "source": "duolingo-vocab"
-    },
-    {
-     "id": "u02-021",
-     "unit": 2,
-     "unitName": "Letters 2",
-     "category": "letters",
-     "pos": "noun",
-     "english": "Eat (m.s - pres.)",
-     "gender": "m",
-     "genderSource": "marker",
-     "binyan": null,
-     "root": null,
-     "forms": [
+      },
       {
-       "slot": "singular",
+       "slot": "ms",
        "translit": "okhel",
        "hebrew": "אוכל",
        "nikkud": "אֹכֶל",
        "nikkudAuto": true
-      }
-     ],
-     "source": "duolingo-vocab"
-    },
-    {
-     "id": "u02-022",
-     "unit": 2,
-     "unitName": "Letters 2",
-     "category": "letters",
-     "pos": "noun",
-     "english": "Eat (f.s - pres.)",
-     "gender": "f",
-     "genderSource": "marker",
-     "binyan": null,
-     "root": null,
-     "forms": [
+      },
       {
-       "slot": "singular",
+       "slot": "fs",
        "translit": "okhelet",
        "hebrew": "אוכלת",
        "nikkud": "אוֹכֶלֶת",
        "nikkudAuto": true
-      }
-     ],
-     "source": "duolingo-vocab"
-    },
-    {
-     "id": "u02-023",
-     "unit": 2,
-     "unitName": "Letters 2",
-     "category": "letters",
-     "pos": "noun",
-     "english": "Eat (m.p - pres.)",
-     "gender": "m",
-     "genderSource": "marker",
-     "binyan": null,
-     "root": null,
-     "forms": [
+      },
       {
-       "slot": "singular",
+       "slot": "mp",
        "translit": "okhel",
        "hebrew": "אוכלים",
        "nikkud": "אוֹכְלִים",
        "nikkudAuto": true
-      }
-     ],
-     "source": "duolingo-vocab"
-    },
-    {
-     "id": "u02-024",
-     "unit": 2,
-     "unitName": "Letters 2",
-     "category": "letters",
-     "pos": "noun",
-     "english": "Eat (f.p - pres.)",
-     "gender": "f",
-     "genderSource": "marker",
-     "binyan": null,
-     "root": null,
-     "forms": [
+      },
       {
-       "slot": "singular",
+       "slot": "fp",
        "translit": "okhelet",
        "hebrew": "אוכלות",
        "nikkud": "אוֹכְלוֹת",
@@ -1259,7 +1019,7 @@ window.VOCAB = {
      "source": "duolingo-vocab"
     },
     {
-     "id": "u02-025",
+     "id": "u02-017",
      "unit": 2,
      "unitName": "Letters 2",
      "category": "letters",
@@ -1276,90 +1036,30 @@ window.VOCAB = {
        "hebrew": "לראות",
        "nikkud": "לִרְאוֹת",
        "nikkudAuto": true
-      }
-     ],
-     "source": "duolingo-vocab"
-    },
-    {
-     "id": "u02-026",
-     "unit": 2,
-     "unitName": "Letters 2",
-     "category": "letters",
-     "pos": "noun",
-     "english": "See (m.s - pres.)",
-     "gender": "m",
-     "genderSource": "marker",
-     "binyan": null,
-     "root": null,
-     "forms": [
+      },
       {
-       "slot": "singular",
+       "slot": "ms",
        "translit": "ro'eh",
        "hebrew": "רואה",
        "nikkud": "רוֹאֶה",
        "nikkudAuto": true
-      }
-     ],
-     "source": "duolingo-vocab"
-    },
-    {
-     "id": "u02-027",
-     "unit": 2,
-     "unitName": "Letters 2",
-     "category": "letters",
-     "pos": "noun",
-     "english": "See (f.s - pres.)",
-     "gender": "f",
-     "genderSource": "marker",
-     "binyan": null,
-     "root": null,
-     "forms": [
+      },
       {
-       "slot": "singular",
+       "slot": "fs",
        "translit": "ro'ah",
        "hebrew": "רואה",
        "nikkud": "רוֹאֶה",
        "nikkudAuto": true
-      }
-     ],
-     "source": "duolingo-vocab"
-    },
-    {
-     "id": "u02-028",
-     "unit": 2,
-     "unitName": "Letters 2",
-     "category": "letters",
-     "pos": "noun",
-     "english": "See (m.p - pres.)",
-     "gender": "m",
-     "genderSource": "marker",
-     "binyan": null,
-     "root": null,
-     "forms": [
+      },
       {
-       "slot": "singular",
+       "slot": "mp",
        "translit": "ro'im",
        "hebrew": "רואים",
        "nikkud": "רוֹאִים",
        "nikkudAuto": true
-      }
-     ],
-     "source": "duolingo-vocab"
-    },
-    {
-     "id": "u02-029",
-     "unit": 2,
-     "unitName": "Letters 2",
-     "category": "letters",
-     "pos": "noun",
-     "english": "See (f.p - pres.)",
-     "gender": "f",
-     "genderSource": "marker",
-     "binyan": null,
-     "root": null,
-     "forms": [
+      },
       {
-       "slot": "singular",
+       "slot": "fp",
        "translit": "ro'ot",
        "hebrew": "רואות",
        "nikkud": "רוֹאוֹת",
@@ -1369,7 +1069,7 @@ window.VOCAB = {
      "source": "duolingo-vocab"
     },
     {
-     "id": "u02-030",
+     "id": "u02-018",
      "unit": 2,
      "unitName": "Letters 2",
      "category": "letters",
@@ -1386,90 +1086,30 @@ window.VOCAB = {
        "hebrew": "לשתות",
        "nikkud": "לִשְׁתּוֹת",
        "nikkudAuto": true
-      }
-     ],
-     "source": "duolingo-vocab"
-    },
-    {
-     "id": "u02-031",
-     "unit": 2,
-     "unitName": "Letters 2",
-     "category": "letters",
-     "pos": "noun",
-     "english": "Drink (m.s - pres.)",
-     "gender": "m",
-     "genderSource": "marker",
-     "binyan": null,
-     "root": null,
-     "forms": [
+      },
       {
-       "slot": "singular",
+       "slot": "ms",
        "translit": "shoteh",
        "hebrew": "שותה",
        "nikkud": "שׁוֹתֶה",
        "nikkudAuto": true
-      }
-     ],
-     "source": "duolingo-vocab"
-    },
-    {
-     "id": "u02-032",
-     "unit": 2,
-     "unitName": "Letters 2",
-     "category": "letters",
-     "pos": "noun",
-     "english": "Drink (f.s - pres.)",
-     "gender": "f",
-     "genderSource": "marker",
-     "binyan": null,
-     "root": null,
-     "forms": [
+      },
       {
-       "slot": "singular",
+       "slot": "fs",
        "translit": "shotah",
        "hebrew": "שותה",
        "nikkud": "שׁוֹתֶה",
        "nikkudAuto": true
-      }
-     ],
-     "source": "duolingo-vocab"
-    },
-    {
-     "id": "u02-033",
-     "unit": 2,
-     "unitName": "Letters 2",
-     "category": "letters",
-     "pos": "noun",
-     "english": "Drink (m.p - pres.)",
-     "gender": "m",
-     "genderSource": "marker",
-     "binyan": null,
-     "root": null,
-     "forms": [
+      },
       {
-       "slot": "singular",
+       "slot": "mp",
        "translit": "shotim",
        "hebrew": "שותים",
        "nikkud": "שׁוֹתִים",
        "nikkudAuto": true
-      }
-     ],
-     "source": "duolingo-vocab"
-    },
-    {
-     "id": "u02-034",
-     "unit": 2,
-     "unitName": "Letters 2",
-     "category": "letters",
-     "pos": "noun",
-     "english": "Drink (f.p - pres.)",
-     "gender": "f",
-     "genderSource": "marker",
-     "binyan": null,
-     "root": null,
-     "forms": [
+      },
       {
-       "slot": "singular",
+       "slot": "fp",
        "translit": "shotot",
        "hebrew": "שׁוֹתוֹת",
        "nikkud": "שׁוֹתוֹת",
@@ -1631,7 +1271,7 @@ window.VOCAB = {
      "pos": "noun",
      "english": "Newspaper",
      "gender": "m",
-     "genderSource": "plural-ending",
+     "genderSource": "override",
      "binyan": null,
      "root": null,
      "forms": [
@@ -1659,8 +1299,8 @@ window.VOCAB = {
      "category": "letters",
      "pos": "noun",
      "english": "Chicken, Fowl, Poultry (Food)",
-     "gender": "f",
-     "genderSource": "plural-ending",
+     "gender": "m",
+     "genderSource": "override",
      "binyan": null,
      "root": null,
      "forms": [
@@ -1946,90 +1586,30 @@ window.VOCAB = {
        "hebrew": "(- את; ל,-לקרוא )ב",
        "nikkud": "(- אַתְּ; ל,-לִקְרֹא )ב",
        "nikkudAuto": true
-      }
-     ],
-     "source": "duolingo-vocab"
-    },
-    {
-     "id": "u03-018",
-     "unit": 3,
-     "unitName": "Letters 3",
-     "category": "letters",
-     "pos": "noun",
-     "english": "Read (m.s - pres.)",
-     "gender": "m",
-     "genderSource": "marker",
-     "binyan": null,
-     "root": null,
-     "forms": [
+      },
       {
-       "slot": "singular",
+       "slot": "ms",
        "translit": "kore",
        "hebrew": "קורא",
        "nikkud": "קוֹרֵא",
        "nikkudAuto": true
-      }
-     ],
-     "source": "duolingo-vocab"
-    },
-    {
-     "id": "u03-019",
-     "unit": 3,
-     "unitName": "Letters 3",
-     "category": "letters",
-     "pos": "noun",
-     "english": "Read (f.s - pres.)",
-     "gender": "f",
-     "genderSource": "marker",
-     "binyan": null,
-     "root": null,
-     "forms": [
+      },
       {
-       "slot": "singular",
+       "slot": "fs",
        "translit": "koret",
        "hebrew": "קוראת",
        "nikkud": "קוֹרֵאת",
        "nikkudAuto": true
-      }
-     ],
-     "source": "duolingo-vocab"
-    },
-    {
-     "id": "u03-020",
-     "unit": 3,
-     "unitName": "Letters 3",
-     "category": "letters",
-     "pos": "noun",
-     "english": "Read (m.p - pres.)",
-     "gender": "m",
-     "genderSource": "marker",
-     "binyan": null,
-     "root": null,
-     "forms": [
+      },
       {
-       "slot": "singular",
+       "slot": "mp",
        "translit": "kor'im",
        "hebrew": "קוראים",
        "nikkud": "קוֹרְאִים",
        "nikkudAuto": true
-      }
-     ],
-     "source": "duolingo-vocab"
-    },
-    {
-     "id": "u03-021",
-     "unit": 3,
-     "unitName": "Letters 3",
-     "category": "letters",
-     "pos": "noun",
-     "english": "Read (f.p - pres.)",
-     "gender": "f",
-     "genderSource": "marker",
-     "binyan": null,
-     "root": null,
-     "forms": [
+      },
       {
-       "slot": "singular",
+       "slot": "fp",
        "translit": "kor'ot",
        "hebrew": "קוראות",
        "nikkud": "קוֹרְאוֹת",
@@ -2039,7 +1619,7 @@ window.VOCAB = {
      "source": "duolingo-vocab"
     },
     {
-     "id": "u03-022",
+     "id": "u03-018",
      "unit": 3,
      "unitName": "Letters 3",
      "category": "letters",
@@ -2056,90 +1636,30 @@ window.VOCAB = {
        "hebrew": "לרצות",
        "nikkud": "לִרְצוֹת",
        "nikkudAuto": true
-      }
-     ],
-     "source": "duolingo-vocab"
-    },
-    {
-     "id": "u03-023",
-     "unit": 3,
-     "unitName": "Letters 3",
-     "category": "letters",
-     "pos": "noun",
-     "english": "Want (m.s - pres.)",
-     "gender": "m",
-     "genderSource": "marker",
-     "binyan": null,
-     "root": null,
-     "forms": [
+      },
       {
-       "slot": "singular",
+       "slot": "ms",
        "translit": "rotzeh",
        "hebrew": "רוצה",
        "nikkud": "רוֹצֶה",
        "nikkudAuto": true
-      }
-     ],
-     "source": "duolingo-vocab"
-    },
-    {
-     "id": "u03-024",
-     "unit": 3,
-     "unitName": "Letters 3",
-     "category": "letters",
-     "pos": "noun",
-     "english": "Want (f.s - pres.)",
-     "gender": "f",
-     "genderSource": "marker",
-     "binyan": null,
-     "root": null,
-     "forms": [
+      },
       {
-       "slot": "singular",
+       "slot": "fs",
        "translit": "rotzah",
        "hebrew": "רוצה",
        "nikkud": "רוֹצֶה",
        "nikkudAuto": true
-      }
-     ],
-     "source": "duolingo-vocab"
-    },
-    {
-     "id": "u03-025",
-     "unit": 3,
-     "unitName": "Letters 3",
-     "category": "letters",
-     "pos": "noun",
-     "english": "Want (m.p - pres.)",
-     "gender": "m",
-     "genderSource": "marker",
-     "binyan": null,
-     "root": null,
-     "forms": [
+      },
       {
-       "slot": "singular",
+       "slot": "mp",
        "translit": "rotzim",
        "hebrew": "רוצים",
        "nikkud": "רוֹצִים",
        "nikkudAuto": true
-      }
-     ],
-     "source": "duolingo-vocab"
-    },
-    {
-     "id": "u03-026",
-     "unit": 3,
-     "unitName": "Letters 3",
-     "category": "letters",
-     "pos": "noun",
-     "english": "Want (f.p - pres.)",
-     "gender": "f",
-     "genderSource": "marker",
-     "binyan": null,
-     "root": null,
-     "forms": [
+      },
       {
-       "slot": "singular",
+       "slot": "fp",
        "translit": "rotzot",
        "hebrew": "רוצות",
        "nikkud": "רוֹצוֹת",
@@ -2184,8 +1704,8 @@ window.VOCAB = {
      "category": "other",
      "pos": "noun",
      "english": "Night",
-     "gender": "f",
-     "genderSource": "plural-ending",
+     "gender": "m",
+     "genderSource": "override",
      "binyan": null,
      "root": null,
      "forms": [
@@ -3899,8 +3419,8 @@ window.VOCAB = {
      "category": "food",
      "pos": "noun",
      "english": "Coffee",
-     "gender": "f",
-     "genderSource": "singular-ending",
+     "gender": "m",
+     "genderSource": "override",
      "binyan": null,
      "root": null,
      "forms": [
@@ -4378,8 +3898,8 @@ window.VOCAB = {
      "category": "food",
      "pos": "noun",
      "english": "Egg",
-     "gender": "m",
-     "genderSource": "plural-ending",
+     "gender": "f",
+     "genderSource": "override",
      "binyan": null,
      "root": null,
      "forms": [
@@ -4762,7 +4282,7 @@ window.VOCAB = {
      "pos": "noun",
      "english": "Dog",
      "gender": "m",
-     "genderSource": "plural-ending",
+     "genderSource": "override",
      "binyan": null,
      "root": null,
      "forms": [
@@ -5421,8 +4941,8 @@ window.VOCAB = {
      "category": "animals",
      "pos": "noun",
      "english": "Bird",
-     "gender": "m",
-     "genderSource": "plural-ending",
+     "gender": "f",
+     "genderSource": "override",
      "binyan": null,
      "root": null,
      "forms": [
@@ -5867,100 +5387,26 @@ window.VOCAB = {
        "hebrew": "לנבוח",
        "nikkud": "לִנְבֹּחַ",
        "nikkudAuto": true
-      }
-     ],
-     "source": "duolingo-vocab"
-    },
-    {
-     "id": "u09-041",
-     "unit": 9,
-     "unitName": "Animals",
-     "category": "animals",
-     "pos": "noun",
-     "english": "Bark (m.s - pres.)",
-     "gender": "m",
-     "genderSource": "marker",
-     "binyan": null,
-     "root": null,
-     "forms": [
+      },
       {
-       "slot": "singular",
+       "slot": "ms",
        "translit": "noveakh",
        "hebrew": "נובח",
        "nikkud": "נוֹבֵחַ",
        "nikkudAuto": true
-      }
-     ],
-     "source": "duolingo-vocab"
-    },
-    {
-     "id": "u09-042",
-     "unit": 9,
-     "unitName": "Animals",
-     "category": "animals",
-     "pos": "noun",
-     "english": "Bark (f.s - pres.)",
-     "gender": "f",
-     "genderSource": "marker",
-     "binyan": null,
-     "root": null,
-     "forms": [
+      },
       {
-       "slot": "singular",
+       "slot": "fs",
        "translit": "novakhat",
        "hebrew": "נובחת",
        "nikkud": "נוֹבַחַת",
        "nikkudAuto": true
-      }
-     ],
-     "source": "duolingo-vocab"
-    },
-    {
-     "id": "u09-043",
-     "unit": 9,
-     "unitName": "Animals",
-     "category": "animals",
-     "pos": "noun",
-     "english": "Bark (f.p - pres.)",
-     "gender": "f",
-     "genderSource": "marker",
-     "binyan": null,
-     "root": null,
-     "forms": [
-      {
-       "slot": "singular",
-       "translit": "nov'khim",
-       "hebrew": "נוֹבְ חִ ים",
-       "nikkud": "נֹבְ חִ יָם",
-       "nikkudAuto": true
-      }
-     ],
-     "source": "duolingo-vocab"
-    },
-    {
-     "id": "u09-044",
-     "unit": 9,
-     "unitName": "Animals",
-     "category": "animals",
-     "pos": "noun",
-     "english": "Bark (f.p - pres.)",
-     "gender": "f",
-     "genderSource": "marker",
-     "binyan": null,
-     "root": null,
-     "forms": [
-      {
-       "slot": "singular",
-       "translit": "nov'khot",
-       "hebrew": "נוֹבְ",
-       "nikkud": "נֹבְ",
-       "nikkudAuto": true
       },
       {
-       "slot": "plural",
-       "translit": "",
-       "hebrew": "חוֹת",
-       "nikkud": "חֹת",
+       "slot": "fp",
+       "translit": "nov'khot",
+       "hebrew": "נוֹבְ חוֹת",
+       "nikkud": "נוֹבְ חֹת",
        "nikkudAuto": true
       }
      ],
@@ -7674,8 +7120,8 @@ window.VOCAB = {
      "category": "food",
      "pos": "noun",
      "english": "Tea",
-     "gender": "f",
-     "genderSource": "singular-ending",
+     "gender": "m",
+     "genderSource": "override",
      "binyan": null,
      "root": null,
      "forms": [
@@ -7726,7 +7172,7 @@ window.VOCAB = {
      "pos": "noun",
      "english": "Knife",
      "gender": "f",
-     "genderSource": "plural-ending",
+     "genderSource": "override",
      "binyan": null,
      "root": null,
      "forms": [
@@ -8517,7 +7963,7 @@ window.VOCAB = {
      "pos": "noun",
      "english": "Cup, Glass",
      "gender": "f",
-     "genderSource": "plural-ending",
+     "genderSource": "override",
      "binyan": null,
      "root": null,
      "forms": [
@@ -8575,7 +8021,7 @@ window.VOCAB = {
      "pos": "noun",
      "english": "Spoon",
      "gender": "f",
-     "genderSource": "plural-ending",
+     "genderSource": "override",
      "binyan": null,
      "root": null,
      "forms": [
@@ -8923,90 +8369,30 @@ window.VOCAB = {
        "hebrew": "לבשל",
        "nikkud": "לְבַשֵּׁל",
        "nikkudAuto": true
-      }
-     ],
-     "source": "duolingo-vocab"
-    },
-    {
-     "id": "u14-046",
-     "unit": 14,
-     "unitName": "Food 2",
-     "category": "food",
-     "pos": "noun",
-     "english": "Cook (m.s - pres.)",
-     "gender": "m",
-     "genderSource": "marker",
-     "binyan": null,
-     "root": null,
-     "forms": [
+      },
       {
-       "slot": "singular",
+       "slot": "ms",
        "translit": "m'vashel",
        "hebrew": "מבשל",
        "nikkud": "מְבַשֵּׁל",
        "nikkudAuto": true
-      }
-     ],
-     "source": "duolingo-vocab"
-    },
-    {
-     "id": "u14-047",
-     "unit": 14,
-     "unitName": "Food 2",
-     "category": "food",
-     "pos": "noun",
-     "english": "Cook (f.s - pres.)",
-     "gender": "f",
-     "genderSource": "marker",
-     "binyan": null,
-     "root": null,
-     "forms": [
+      },
       {
-       "slot": "singular",
+       "slot": "fs",
        "translit": "m'vashelet",
        "hebrew": "מבשלת",
        "nikkud": "מְבַשֶּׁלֶת",
        "nikkudAuto": true
-      }
-     ],
-     "source": "duolingo-vocab"
-    },
-    {
-     "id": "u14-048",
-     "unit": 14,
-     "unitName": "Food 2",
-     "category": "food",
-     "pos": "noun",
-     "english": "Cook (m.p - pres.)",
-     "gender": "m",
-     "genderSource": "marker",
-     "binyan": null,
-     "root": null,
-     "forms": [
+      },
       {
-       "slot": "singular",
+       "slot": "mp",
        "translit": "m'vash'lim",
        "hebrew": "מבשלים",
        "nikkud": "מְבַשְּׁלִים",
        "nikkudAuto": true
-      }
-     ],
-     "source": "duolingo-vocab"
-    },
-    {
-     "id": "u14-049",
-     "unit": 14,
-     "unitName": "Food 2",
-     "category": "food",
-     "pos": "noun",
-     "english": "Cook (f.p - pres.)",
-     "gender": "f",
-     "genderSource": "marker",
-     "binyan": null,
-     "root": null,
-     "forms": [
+      },
       {
-       "slot": "singular",
+       "slot": "fp",
        "translit": "m'vashlot",
        "hebrew": "מבשלות",
        "nikkud": "מְבַשְּׁלוֹת",
@@ -9016,7 +8402,7 @@ window.VOCAB = {
      "source": "duolingo-vocab"
     },
     {
-     "id": "u14-050",
+     "id": "u14-046",
      "unit": 14,
      "unitName": "Food 2",
      "category": "food",
@@ -9033,90 +8419,30 @@ window.VOCAB = {
        "hebrew": "לאפות",
        "nikkud": "לֶאֱפוֹת",
        "nikkudAuto": true
-      }
-     ],
-     "source": "duolingo-vocab"
-    },
-    {
-     "id": "u14-051",
-     "unit": 14,
-     "unitName": "Food 2",
-     "category": "food",
-     "pos": "noun",
-     "english": "Bakes (m.s - pres.)",
-     "gender": "m",
-     "genderSource": "marker",
-     "binyan": null,
-     "root": null,
-     "forms": [
+      },
       {
-       "slot": "singular",
+       "slot": "ms",
        "translit": "ofeh",
        "hebrew": "אופה",
        "nikkud": "אוֹפָה",
        "nikkudAuto": true
-      }
-     ],
-     "source": "duolingo-vocab"
-    },
-    {
-     "id": "u14-052",
-     "unit": 14,
-     "unitName": "Food 2",
-     "category": "food",
-     "pos": "noun",
-     "english": "Bakes (f.s - pres.)",
-     "gender": "f",
-     "genderSource": "marker",
-     "binyan": null,
-     "root": null,
-     "forms": [
+      },
       {
-       "slot": "singular",
+       "slot": "fs",
        "translit": "ofah",
        "hebrew": "אופה",
        "nikkud": "אוֹפָה",
        "nikkudAuto": true
-      }
-     ],
-     "source": "duolingo-vocab"
-    },
-    {
-     "id": "u14-053",
-     "unit": 14,
-     "unitName": "Food 2",
-     "category": "food",
-     "pos": "noun",
-     "english": "Bakes (m.p - pres.)",
-     "gender": "m",
-     "genderSource": "marker",
-     "binyan": null,
-     "root": null,
-     "forms": [
+      },
       {
-       "slot": "singular",
+       "slot": "mp",
        "translit": "ofim",
        "hebrew": "אופים",
        "nikkud": "אוֹפִים",
        "nikkudAuto": true
-      }
-     ],
-     "source": "duolingo-vocab"
-    },
-    {
-     "id": "u14-054",
-     "unit": 14,
-     "unitName": "Food 2",
-     "category": "food",
-     "pos": "noun",
-     "english": "Bakes (f.p - pres.)",
-     "gender": "f",
-     "genderSource": "marker",
-     "binyan": null,
-     "root": null,
-     "forms": [
+      },
       {
-       "slot": "singular",
+       "slot": "fp",
        "translit": "ofot",
        "hebrew": "אופות",
        "nikkud": "אוֹפוֹת",
@@ -9847,90 +9173,30 @@ window.VOCAB = {
        "hebrew": "ללבוש",
        "nikkud": "לִלְבֹּשׁ",
        "nikkudAuto": true
-      }
-     ],
-     "source": "duolingo-vocab"
-    },
-    {
-     "id": "u15-027",
-     "unit": 15,
-     "unitName": "Clothing",
-     "category": "clothing",
-     "pos": "noun",
-     "english": "Wear (m.s - pres.)",
-     "gender": "m",
-     "genderSource": "marker",
-     "binyan": null,
-     "root": null,
-     "forms": [
+      },
       {
-       "slot": "singular",
+       "slot": "ms",
        "translit": "lovesh",
        "hebrew": "לובש",
        "nikkud": "לוֹבֵשׁ",
        "nikkudAuto": true
-      }
-     ],
-     "source": "duolingo-vocab"
-    },
-    {
-     "id": "u15-028",
-     "unit": 15,
-     "unitName": "Clothing",
-     "category": "clothing",
-     "pos": "noun",
-     "english": "Wear (f.s - pres.)",
-     "gender": "f",
-     "genderSource": "marker",
-     "binyan": null,
-     "root": null,
-     "forms": [
+      },
       {
-       "slot": "singular",
+       "slot": "fs",
        "translit": "loveshet",
        "hebrew": "לובשת",
        "nikkud": "לוֹבֶשֶׁת",
        "nikkudAuto": true
-      }
-     ],
-     "source": "duolingo-vocab"
-    },
-    {
-     "id": "u15-029",
-     "unit": 15,
-     "unitName": "Clothing",
-     "category": "clothing",
-     "pos": "noun",
-     "english": "Wear (m.p - pres.)",
-     "gender": "m",
-     "genderSource": "marker",
-     "binyan": null,
-     "root": null,
-     "forms": [
+      },
       {
-       "slot": "singular",
+       "slot": "mp",
        "translit": "lov'shim",
        "hebrew": "לובשים",
        "nikkud": "לוֹבְשִׁים",
        "nikkudAuto": true
-      }
-     ],
-     "source": "duolingo-vocab"
-    },
-    {
-     "id": "u15-030",
-     "unit": 15,
-     "unitName": "Clothing",
-     "category": "clothing",
-     "pos": "noun",
-     "english": "Wear (f.p - pres.)",
-     "gender": "f",
-     "genderSource": "marker",
-     "binyan": null,
-     "root": null,
-     "forms": [
+      },
       {
-       "slot": "singular",
+       "slot": "fp",
        "translit": "lov'shot",
        "hebrew": "לובשות",
        "nikkud": "לוֹבְשׁוֹת",
@@ -9940,7 +9206,7 @@ window.VOCAB = {
      "source": "duolingo-vocab"
     },
     {
-     "id": "u15-031",
+     "id": "u15-027",
      "unit": 15,
      "unitName": "Clothing",
      "category": "clothing",
@@ -9957,90 +9223,30 @@ window.VOCAB = {
        "hebrew": "לנעול",
        "nikkud": "לִנְעֹל",
        "nikkudAuto": true
-      }
-     ],
-     "source": "duolingo-vocab"
-    },
-    {
-     "id": "u15-032",
-     "unit": 15,
-     "unitName": "Clothing",
-     "category": "clothing",
-     "pos": "noun",
-     "english": "Wear (m.s - pres.)",
-     "gender": "m",
-     "genderSource": "marker",
-     "binyan": null,
-     "root": null,
-     "forms": [
+      },
       {
-       "slot": "singular",
+       "slot": "ms",
        "translit": "no'el",
        "hebrew": "נועל",
        "nikkud": "נוֹעֵל",
        "nikkudAuto": true
-      }
-     ],
-     "source": "duolingo-vocab"
-    },
-    {
-     "id": "u15-033",
-     "unit": 15,
-     "unitName": "Clothing",
-     "category": "clothing",
-     "pos": "noun",
-     "english": "Wear (f.s - pres.)",
-     "gender": "f",
-     "genderSource": "marker",
-     "binyan": null,
-     "root": null,
-     "forms": [
+      },
       {
-       "slot": "singular",
+       "slot": "fs",
        "translit": "no'elet",
        "hebrew": "נועלת",
        "nikkud": "נוֹעֶלֶת",
        "nikkudAuto": true
-      }
-     ],
-     "source": "duolingo-vocab"
-    },
-    {
-     "id": "u15-034",
-     "unit": 15,
-     "unitName": "Clothing",
-     "category": "clothing",
-     "pos": "noun",
-     "english": "Wear (m.p - pres.)",
-     "gender": "m",
-     "genderSource": "marker",
-     "binyan": null,
-     "root": null,
-     "forms": [
+      },
       {
-       "slot": "singular",
+       "slot": "mp",
        "translit": "no'alim",
        "hebrew": "נועלים",
        "nikkud": "נוֹעֲלִים",
        "nikkudAuto": true
-      }
-     ],
-     "source": "duolingo-vocab"
-    },
-    {
-     "id": "u15-035",
-     "unit": 15,
-     "unitName": "Clothing",
-     "category": "clothing",
-     "pos": "noun",
-     "english": "Wear (f.p - pres.)",
-     "gender": "f",
-     "genderSource": "marker",
-     "binyan": null,
-     "root": null,
-     "forms": [
+      },
       {
-       "slot": "singular",
+       "slot": "fp",
        "translit": "no'alot",
        "hebrew": "נועלות",
        "nikkud": "נוֹעֲלוֹת",
@@ -10050,7 +9256,7 @@ window.VOCAB = {
      "source": "duolingo-vocab"
     },
     {
-     "id": "u15-036",
+     "id": "u15-028",
      "unit": 15,
      "unitName": "Clothing",
      "category": "clothing",
@@ -10067,90 +9273,30 @@ window.VOCAB = {
        "hebrew": "לחבוש",
        "nikkud": "לַחֲבֹשׁ",
        "nikkudAuto": true
-      }
-     ],
-     "source": "duolingo-vocab"
-    },
-    {
-     "id": "u15-037",
-     "unit": 15,
-     "unitName": "Clothing",
-     "category": "clothing",
-     "pos": "noun",
-     "english": "Wear (m.s - pres.)",
-     "gender": "m",
-     "genderSource": "marker",
-     "binyan": null,
-     "root": null,
-     "forms": [
+      },
       {
-       "slot": "singular",
+       "slot": "ms",
        "translit": "khovesh",
        "hebrew": "חובש",
        "nikkud": "חוֹבֵשׁ",
        "nikkudAuto": true
-      }
-     ],
-     "source": "duolingo-vocab"
-    },
-    {
-     "id": "u15-038",
-     "unit": 15,
-     "unitName": "Clothing",
-     "category": "clothing",
-     "pos": "noun",
-     "english": "Wear (f.s - pres.)",
-     "gender": "f",
-     "genderSource": "marker",
-     "binyan": null,
-     "root": null,
-     "forms": [
+      },
       {
-       "slot": "singular",
+       "slot": "fs",
        "translit": "khoveshet",
        "hebrew": "חובשת",
        "nikkud": "חוֹבֶשֶׁת",
        "nikkudAuto": true
-      }
-     ],
-     "source": "duolingo-vocab"
-    },
-    {
-     "id": "u15-039",
-     "unit": 15,
-     "unitName": "Clothing",
-     "category": "clothing",
-     "pos": "noun",
-     "english": "Wear (m.p - pres.)",
-     "gender": "m",
-     "genderSource": "marker",
-     "binyan": null,
-     "root": null,
-     "forms": [
+      },
       {
-       "slot": "singular",
+       "slot": "mp",
        "translit": "khov'shim",
        "hebrew": "חובשים",
        "nikkud": "חוֹבְשִׁים",
        "nikkudAuto": true
-      }
-     ],
-     "source": "duolingo-vocab"
-    },
-    {
-     "id": "u15-040",
-     "unit": 15,
-     "unitName": "Clothing",
-     "category": "clothing",
-     "pos": "noun",
-     "english": "Wear (f.p - pres.)",
-     "gender": "f",
-     "genderSource": "marker",
-     "binyan": null,
-     "root": null,
-     "forms": [
+      },
       {
-       "slot": "singular",
+       "slot": "fp",
        "translit": "khov'shot",
        "hebrew": "חובשות",
        "nikkud": "חוֹבְשׁוֹת",
@@ -10160,7 +9306,7 @@ window.VOCAB = {
      "source": "duolingo-vocab"
     },
     {
-     "id": "u15-041",
+     "id": "u15-029",
      "unit": 15,
      "unitName": "Clothing",
      "category": "clothing",
@@ -10177,90 +9323,30 @@ window.VOCAB = {
        "hebrew": "לענוד",
        "nikkud": "לַעֲנֹד",
        "nikkudAuto": true
-      }
-     ],
-     "source": "duolingo-vocab"
-    },
-    {
-     "id": "u15-042",
-     "unit": 15,
-     "unitName": "Clothing",
-     "category": "clothing",
-     "pos": "noun",
-     "english": "Wear (m.s - pres.)",
-     "gender": "m",
-     "genderSource": "marker",
-     "binyan": null,
-     "root": null,
-     "forms": [
+      },
       {
-       "slot": "singular",
+       "slot": "ms",
        "translit": "oned",
        "hebrew": "עונד",
        "nikkud": "עוֹנֵד",
        "nikkudAuto": true
-      }
-     ],
-     "source": "duolingo-vocab"
-    },
-    {
-     "id": "u15-043",
-     "unit": 15,
-     "unitName": "Clothing",
-     "category": "clothing",
-     "pos": "noun",
-     "english": "Wear (f.s - pres.)",
-     "gender": "f",
-     "genderSource": "marker",
-     "binyan": null,
-     "root": null,
-     "forms": [
+      },
       {
-       "slot": "singular",
+       "slot": "fs",
        "translit": "onedet",
        "hebrew": "עונדת",
        "nikkud": "עוֹנֶדֶת",
        "nikkudAuto": true
-      }
-     ],
-     "source": "duolingo-vocab"
-    },
-    {
-     "id": "u15-044",
-     "unit": 15,
-     "unitName": "Clothing",
-     "category": "clothing",
-     "pos": "noun",
-     "english": "Wear (m.p - pres.)",
-     "gender": "m",
-     "genderSource": "marker",
-     "binyan": null,
-     "root": null,
-     "forms": [
+      },
       {
-       "slot": "singular",
+       "slot": "mp",
        "translit": "on'dim",
        "hebrew": "עונדים",
        "nikkud": "עוֹנְדִים",
        "nikkudAuto": true
-      }
-     ],
-     "source": "duolingo-vocab"
-    },
-    {
-     "id": "u15-045",
-     "unit": 15,
-     "unitName": "Clothing",
-     "category": "clothing",
-     "pos": "noun",
-     "english": "Wear (f.p - pres.)",
-     "gender": "f",
-     "genderSource": "marker",
-     "binyan": null,
-     "root": null,
-     "forms": [
+      },
       {
-       "slot": "singular",
+       "slot": "fp",
        "translit": "on'dot",
        "hebrew": "עונדות",
        "nikkud": "עוֹנְדוֹת",
@@ -10270,7 +9356,7 @@ window.VOCAB = {
      "source": "duolingo-vocab"
     },
     {
-     "id": "u15-046",
+     "id": "u15-030",
      "unit": 15,
      "unitName": "Clothing",
      "category": "clothing",
@@ -10287,90 +9373,30 @@ window.VOCAB = {
        "hebrew": "לשים",
        "nikkud": "לָשִׂים",
        "nikkudAuto": true
-      }
-     ],
-     "source": "duolingo-vocab"
-    },
-    {
-     "id": "u15-047",
-     "unit": 15,
-     "unitName": "Clothing",
-     "category": "clothing",
-     "pos": "noun",
-     "english": "Put (m.s - pres.)",
-     "gender": "m",
-     "genderSource": "marker",
-     "binyan": null,
-     "root": null,
-     "forms": [
+      },
       {
-       "slot": "singular",
+       "slot": "ms",
        "translit": "sam",
        "hebrew": "שם",
        "nikkud": "שֵׁם",
        "nikkudAuto": true
-      }
-     ],
-     "source": "duolingo-vocab"
-    },
-    {
-     "id": "u15-048",
-     "unit": 15,
-     "unitName": "Clothing",
-     "category": "clothing",
-     "pos": "noun",
-     "english": "Put (f.s - pres.)",
-     "gender": "f",
-     "genderSource": "marker",
-     "binyan": null,
-     "root": null,
-     "forms": [
+      },
       {
-       "slot": "singular",
+       "slot": "fs",
        "translit": "samah",
        "hebrew": "שמה",
        "nikkud": "שֶׁ|מָּה",
        "nikkudAuto": true
-      }
-     ],
-     "source": "duolingo-vocab"
-    },
-    {
-     "id": "u15-049",
-     "unit": 15,
-     "unitName": "Clothing",
-     "category": "clothing",
-     "pos": "noun",
-     "english": "Put (m.p - pres.)",
-     "gender": "m",
-     "genderSource": "marker",
-     "binyan": null,
-     "root": null,
-     "forms": [
+      },
       {
-       "slot": "singular",
+       "slot": "mp",
        "translit": "samim",
        "hebrew": "שמים",
        "nikkud": "שָׂמִים",
        "nikkudAuto": true
-      }
-     ],
-     "source": "duolingo-vocab"
-    },
-    {
-     "id": "u15-050",
-     "unit": 15,
-     "unitName": "Clothing",
-     "category": "clothing",
-     "pos": "noun",
-     "english": "Put (f.p - pres.)",
-     "gender": "f",
-     "genderSource": "marker",
-     "binyan": null,
-     "root": null,
-     "forms": [
+      },
       {
-       "slot": "singular",
+       "slot": "fp",
        "translit": "samot",
        "hebrew": "שמות",
        "nikkud": "שֵׁמוֹת",
@@ -10380,7 +9406,7 @@ window.VOCAB = {
      "source": "duolingo-vocab"
     },
     {
-     "id": "u15-051",
+     "id": "u15-031",
      "unit": 15,
      "unitName": "Clothing",
      "category": "clothing",
@@ -10397,90 +9423,30 @@ window.VOCAB = {
        "hebrew": "להרכיב",
        "nikkud": "לְהַרְכִּיב",
        "nikkudAuto": true
-      }
-     ],
-     "source": "duolingo-vocab"
-    },
-    {
-     "id": "u15-052",
-     "unit": 15,
-     "unitName": "Clothing",
-     "category": "clothing",
-     "pos": "noun",
-     "english": "Wear (m.s - pres.)",
-     "gender": "m",
-     "genderSource": "marker",
-     "binyan": null,
-     "root": null,
-     "forms": [
+      },
       {
-       "slot": "singular",
+       "slot": "ms",
        "translit": "mar'kiv",
        "hebrew": "מרכיב",
        "nikkud": "מַרְכִּיב",
        "nikkudAuto": true
-      }
-     ],
-     "source": "duolingo-vocab"
-    },
-    {
-     "id": "u15-053",
-     "unit": 15,
-     "unitName": "Clothing",
-     "category": "clothing",
-     "pos": "noun",
-     "english": "Wear (f.s - pres.)",
-     "gender": "f",
-     "genderSource": "marker",
-     "binyan": null,
-     "root": null,
-     "forms": [
+      },
       {
-       "slot": "singular",
+       "slot": "fs",
        "translit": "mar'kivah",
        "hebrew": "מרכיבה",
        "nikkud": "מַרְכִּיבָה",
        "nikkudAuto": true
-      }
-     ],
-     "source": "duolingo-vocab"
-    },
-    {
-     "id": "u15-054",
-     "unit": 15,
-     "unitName": "Clothing",
-     "category": "clothing",
-     "pos": "noun",
-     "english": "Wear (m.p - pres.)",
-     "gender": "m",
-     "genderSource": "marker",
-     "binyan": null,
-     "root": null,
-     "forms": [
+      },
       {
-       "slot": "singular",
+       "slot": "mp",
        "translit": "mar'kivim",
        "hebrew": "מרכיבים",
        "nikkud": "מַרְכִּיבִים",
        "nikkudAuto": true
-      }
-     ],
-     "source": "duolingo-vocab"
-    },
-    {
-     "id": "u15-055",
-     "unit": 15,
-     "unitName": "Clothing",
-     "category": "clothing",
-     "pos": "noun",
-     "english": "Wear (f.p - pres.)",
-     "gender": "f",
-     "genderSource": "marker",
-     "binyan": null,
-     "root": null,
-     "forms": [
+      },
       {
-       "slot": "singular",
+       "slot": "fp",
        "translit": "mar'kivot",
        "hebrew": "מרכיבות",
        "nikkud": "מֵ|רְכִיבוֹת",
@@ -10490,7 +9456,7 @@ window.VOCAB = {
      "source": "duolingo-vocab"
     },
     {
-     "id": "u15-056",
+     "id": "u15-032",
      "unit": 15,
      "unitName": "Clothing",
      "category": "clothing",
@@ -10507,90 +9473,30 @@ window.VOCAB = {
        "hebrew": "לגרוב",
        "nikkud": "לִ|גְרוּב",
        "nikkudAuto": true
-      }
-     ],
-     "source": "duolingo-vocab"
-    },
-    {
-     "id": "u15-057",
-     "unit": 15,
-     "unitName": "Clothing",
-     "category": "clothing",
-     "pos": "noun",
-     "english": "Wear (m.s - pres.)",
-     "gender": "m",
-     "genderSource": "marker",
-     "binyan": null,
-     "root": null,
-     "forms": [
+      },
       {
-       "slot": "singular",
+       "slot": "ms",
        "translit": "gorev",
        "hebrew": "גורב",
        "nikkud": "גּוֹרֵב",
        "nikkudAuto": true
-      }
-     ],
-     "source": "duolingo-vocab"
-    },
-    {
-     "id": "u15-058",
-     "unit": 15,
-     "unitName": "Clothing",
-     "category": "clothing",
-     "pos": "noun",
-     "english": "Wear (f.s - pres.)",
-     "gender": "f",
-     "genderSource": "marker",
-     "binyan": null,
-     "root": null,
-     "forms": [
+      },
       {
-       "slot": "singular",
+       "slot": "fs",
        "translit": "gorevet",
        "hebrew": "גורבת",
        "nikkud": "גּוֹרֶבֶת",
        "nikkudAuto": true
-      }
-     ],
-     "source": "duolingo-vocab"
-    },
-    {
-     "id": "u15-059",
-     "unit": 15,
-     "unitName": "Clothing",
-     "category": "clothing",
-     "pos": "noun",
-     "english": "Wear (m.p - pres.)",
-     "gender": "m",
-     "genderSource": "marker",
-     "binyan": null,
-     "root": null,
-     "forms": [
+      },
       {
-       "slot": "singular",
+       "slot": "mp",
        "translit": "gor'vim",
        "hebrew": "גורבים",
        "nikkud": "גּוֹרְבִים",
        "nikkudAuto": true
-      }
-     ],
-     "source": "duolingo-vocab"
-    },
-    {
-     "id": "u15-060",
-     "unit": 15,
-     "unitName": "Clothing",
-     "category": "clothing",
-     "pos": "noun",
-     "english": "Wear (f.p - pres.)",
-     "gender": "f",
-     "genderSource": "marker",
-     "binyan": null,
-     "root": null,
-     "forms": [
+      },
       {
-       "slot": "singular",
+       "slot": "fp",
        "translit": "gor'vot",
        "hebrew": "גורבות",
        "nikkud": "גּוֹרְבוֹת",
@@ -13974,90 +12880,30 @@ window.VOCAB = {
        "hebrew": "לצבוע",
        "nikkud": "לִצְבֹּעַ",
        "nikkudAuto": true
-      }
-     ],
-     "source": "duolingo-vocab"
-    },
-    {
-     "id": "u17-015",
-     "unit": 17,
-     "unitName": "Colours",
-     "category": "colours",
-     "pos": "noun",
-     "english": "Paint (m.s - pres.)",
-     "gender": "m",
-     "genderSource": "marker",
-     "binyan": null,
-     "root": null,
-     "forms": [
+      },
       {
-       "slot": "singular",
+       "slot": "ms",
        "translit": "tzovea",
        "hebrew": "צובע",
        "nikkud": "צוֹבֵעַ",
        "nikkudAuto": true
-      }
-     ],
-     "source": "duolingo-vocab"
-    },
-    {
-     "id": "u17-016",
-     "unit": 17,
-     "unitName": "Colours",
-     "category": "colours",
-     "pos": "noun",
-     "english": "Paint (f.s - pres.)",
-     "gender": "f",
-     "genderSource": "marker",
-     "binyan": null,
-     "root": null,
-     "forms": [
+      },
       {
-       "slot": "singular",
+       "slot": "fs",
        "translit": "tzova'at",
        "hebrew": "צובעת",
        "nikkud": "צוֹבַעַת",
        "nikkudAuto": true
-      }
-     ],
-     "source": "duolingo-vocab"
-    },
-    {
-     "id": "u17-017",
-     "unit": 17,
-     "unitName": "Colours",
-     "category": "colours",
-     "pos": "noun",
-     "english": "Paint (m.p - pres.)",
-     "gender": "m",
-     "genderSource": "marker",
-     "binyan": null,
-     "root": null,
-     "forms": [
+      },
       {
-       "slot": "singular",
+       "slot": "mp",
        "translit": "tzov'im",
        "hebrew": "צובעים",
        "nikkud": "צוֹבְעִים",
        "nikkudAuto": true
-      }
-     ],
-     "source": "duolingo-vocab"
-    },
-    {
-     "id": "u17-018",
-     "unit": 17,
-     "unitName": "Colours",
-     "category": "colours",
-     "pos": "noun",
-     "english": "Paint (f.p- pres.)",
-     "gender": "f",
-     "genderSource": "marker",
-     "binyan": null,
-     "root": null,
-     "forms": [
+      },
       {
-       "slot": "singular",
+       "slot": "fp",
        "translit": "tzov'ot",
        "hebrew": "צובעות",
        "nikkud": "צוֹבְעוֹת",
@@ -15149,90 +13995,30 @@ window.VOCAB = {
        "hebrew": "לספור",
        "nikkud": "לִסְפֹּר",
        "nikkudAuto": true
-      }
-     ],
-     "source": "duolingo-vocab"
-    },
-    {
-     "id": "u19-036",
-     "unit": 19,
-     "unitName": "Numbers 1",
-     "category": "numbers",
-     "pos": "noun",
-     "english": "Count (m.s - pres.)",
-     "gender": "m",
-     "genderSource": "marker",
-     "binyan": null,
-     "root": null,
-     "forms": [
+      },
       {
-       "slot": "singular",
+       "slot": "ms",
        "translit": "sofer",
        "hebrew": "סופר",
        "nikkud": "סוֹפֵר",
        "nikkudAuto": true
-      }
-     ],
-     "source": "duolingo-vocab"
-    },
-    {
-     "id": "u19-037",
-     "unit": 19,
-     "unitName": "Numbers 1",
-     "category": "numbers",
-     "pos": "noun",
-     "english": "Count (f.s - pres.)",
-     "gender": "f",
-     "genderSource": "marker",
-     "binyan": null,
-     "root": null,
-     "forms": [
+      },
       {
-       "slot": "singular",
+       "slot": "fs",
        "translit": "soferet",
        "hebrew": "סופרת",
        "nikkud": "סוֹפֶרֶת",
        "nikkudAuto": true
-      }
-     ],
-     "source": "duolingo-vocab"
-    },
-    {
-     "id": "u19-038",
-     "unit": 19,
-     "unitName": "Numbers 1",
-     "category": "numbers",
-     "pos": "noun",
-     "english": "Count (m.p - pres.)",
-     "gender": "m",
-     "genderSource": "marker",
-     "binyan": null,
-     "root": null,
-     "forms": [
+      },
       {
-       "slot": "singular",
+       "slot": "mp",
        "translit": "sof'rim",
        "hebrew": "סופרים",
        "nikkud": "סוֹפְרִים",
        "nikkudAuto": true
-      }
-     ],
-     "source": "duolingo-vocab"
-    },
-    {
-     "id": "u19-039",
-     "unit": 19,
-     "unitName": "Numbers 1",
-     "category": "numbers",
-     "pos": "noun",
-     "english": "Count (f.p- pres.)",
-     "gender": "f",
-     "genderSource": "marker",
-     "binyan": null,
-     "root": null,
-     "forms": [
+      },
       {
-       "slot": "singular",
+       "slot": "fp",
        "translit": "sof'rot",
        "hebrew": "סופרות",
        "nikkud": "סוֹפְרוֹת",
@@ -15879,6 +14665,38 @@ window.VOCAB = {
        "translit": "la'anot",
        "hebrew": "לענות",
        "nikkud": "לַעֲנוֹת",
+       "nikkudAuto": true
+      },
+      {
+       "slot": "ms",
+       "translit": "oneh",
+       "hebrew": "עונה",
+       "nikkud": "עוֹנָה",
+       "completed": true,
+       "nikkudAuto": true
+      },
+      {
+       "slot": "fs",
+       "translit": "onah",
+       "hebrew": "עונה",
+       "nikkud": "עוֹנָה",
+       "completed": true,
+       "nikkudAuto": true
+      },
+      {
+       "slot": "mp",
+       "translit": "onim",
+       "hebrew": "עונים",
+       "nikkud": "עוֹנִים",
+       "completed": true,
+       "nikkudAuto": true
+      },
+      {
+       "slot": "fp",
+       "translit": "onot",
+       "hebrew": "עוֹנוֹת",
+       "nikkud": "עוֹנוֹת",
+       "completed": true,
        "nikkudAuto": true
       }
      ],
@@ -18526,90 +17344,30 @@ window.VOCAB = {
        "hebrew": "לבקש",
        "nikkud": "לְבַקֵּשׁ",
        "nikkudAuto": true
-      }
-     ],
-     "source": "duolingo-vocab"
-    },
-    {
-     "id": "u26-002",
-     "unit": 26,
-     "unitName": "Present 2 (M.S)",
-     "category": "grammar",
-     "pos": "noun",
-     "english": "I, You, He, It (m.s - pres.)",
-     "gender": "m",
-     "genderSource": "marker",
-     "binyan": null,
-     "root": null,
-     "forms": [
+      },
       {
-       "slot": "singular",
+       "slot": "ms",
        "translit": "m'vakesh",
        "hebrew": "מבקש",
        "nikkud": "מְבַקֵּשׁ",
        "nikkudAuto": true
-      }
-     ],
-     "source": "duolingo-vocab"
-    },
-    {
-     "id": "u26-003",
-     "unit": 26,
-     "unitName": "Present 2 (M.S)",
-     "category": "grammar",
-     "pos": "noun",
-     "english": "I, You, She, It (f.s - pres.)",
-     "gender": "f",
-     "genderSource": "marker",
-     "binyan": null,
-     "root": null,
-     "forms": [
+      },
       {
-       "slot": "singular",
+       "slot": "fs",
        "translit": "m'vakeshet",
        "hebrew": "מבקשת",
        "nikkud": "מְבַקֶּשֶׁת",
        "nikkudAuto": true
-      }
-     ],
-     "source": "duolingo-vocab"
-    },
-    {
-     "id": "u26-004",
-     "unit": 26,
-     "unitName": "Present 2 (M.S)",
-     "category": "grammar",
-     "pos": "noun",
-     "english": "We, You, They (m.p - pres.)",
-     "gender": "m",
-     "genderSource": "marker",
-     "binyan": null,
-     "root": null,
-     "forms": [
+      },
       {
-       "slot": "singular",
+       "slot": "mp",
        "translit": "m'vak'shim",
        "hebrew": "מבקשים",
        "nikkud": "מְבַקְּשִׁים",
        "nikkudAuto": true
-      }
-     ],
-     "source": "duolingo-vocab"
-    },
-    {
-     "id": "u26-005",
-     "unit": 26,
-     "unitName": "Present 2 (M.S)",
-     "category": "grammar",
-     "pos": "noun",
-     "english": "We, You, They (f.p- pres.)",
-     "gender": "f",
-     "genderSource": "marker",
-     "binyan": null,
-     "root": null,
-     "forms": [
+      },
       {
-       "slot": "singular",
+       "slot": "fp",
        "translit": "m'vak'shot",
        "hebrew": "מבקשות",
        "nikkud": "מְבַקְּשׁוֹת",
@@ -18619,7 +17377,7 @@ window.VOCAB = {
      "source": "duolingo-vocab"
     },
     {
-     "id": "u26-006",
+     "id": "u26-002",
      "unit": 26,
      "unitName": "Present 2 (M.S)",
      "category": "grammar",
@@ -18636,90 +17394,30 @@ window.VOCAB = {
        "hebrew": "לשלם",
        "nikkud": "לְשַׁלֵּם",
        "nikkudAuto": true
-      }
-     ],
-     "source": "duolingo-vocab"
-    },
-    {
-     "id": "u26-007",
-     "unit": 26,
-     "unitName": "Present 2 (M.S)",
-     "category": "grammar",
-     "pos": "noun",
-     "english": "I, You, He, It (m.s - pres.)",
-     "gender": "m",
-     "genderSource": "marker",
-     "binyan": null,
-     "root": null,
-     "forms": [
+      },
       {
-       "slot": "singular",
+       "slot": "ms",
        "translit": "m'shalem",
        "hebrew": "משלם",
        "nikkud": "מְשַׁלֵּם",
        "nikkudAuto": true
-      }
-     ],
-     "source": "duolingo-vocab"
-    },
-    {
-     "id": "u26-008",
-     "unit": 26,
-     "unitName": "Present 2 (M.S)",
-     "category": "grammar",
-     "pos": "noun",
-     "english": "I, You, She, It (f.s - pres.)",
-     "gender": "f",
-     "genderSource": "marker",
-     "binyan": null,
-     "root": null,
-     "forms": [
+      },
       {
-       "slot": "singular",
+       "slot": "fs",
        "translit": "m'shalemet",
        "hebrew": "משלמת",
        "nikkud": "מְשַׁלֶּמֶת",
        "nikkudAuto": true
-      }
-     ],
-     "source": "duolingo-vocab"
-    },
-    {
-     "id": "u26-009",
-     "unit": 26,
-     "unitName": "Present 2 (M.S)",
-     "category": "grammar",
-     "pos": "noun",
-     "english": "We, You, They (m.p - pres.)",
-     "gender": "m",
-     "genderSource": "marker",
-     "binyan": null,
-     "root": null,
-     "forms": [
+      },
       {
-       "slot": "singular",
+       "slot": "mp",
        "translit": "m'shal'mim",
        "hebrew": "משלמים",
        "nikkud": "מְשַׁלְּמִים",
        "nikkudAuto": true
-      }
-     ],
-     "source": "duolingo-vocab"
-    },
-    {
-     "id": "u26-010",
-     "unit": 26,
-     "unitName": "Present 2 (M.S)",
-     "category": "grammar",
-     "pos": "noun",
-     "english": "We, You, They (f.p- pres.)",
-     "gender": "f",
-     "genderSource": "marker",
-     "binyan": null,
-     "root": null,
-     "forms": [
+      },
       {
-       "slot": "singular",
+       "slot": "fp",
        "translit": "m'shal'mot",
        "hebrew": "משלמות",
        "nikkud": "מְשַׁלְּמוֹת",
@@ -18729,7 +17427,7 @@ window.VOCAB = {
      "source": "duolingo-vocab"
     },
     {
-     "id": "u26-011",
+     "id": "u26-003",
      "unit": 26,
      "unitName": "Present 2 (M.S)",
      "category": "grammar",
@@ -18746,90 +17444,30 @@ window.VOCAB = {
        "hebrew": "לפספס",
        "nikkud": "לְפַסְפֵס",
        "nikkudAuto": true
-      }
-     ],
-     "source": "duolingo-vocab"
-    },
-    {
-     "id": "u26-012",
-     "unit": 26,
-     "unitName": "Present 2 (M.S)",
-     "category": "grammar",
-     "pos": "noun",
-     "english": "I, You, He, It (m.s - pres.)",
-     "gender": "m",
-     "genderSource": "marker",
-     "binyan": null,
-     "root": null,
-     "forms": [
+      },
       {
-       "slot": "singular",
+       "slot": "ms",
        "translit": "m'pas'fes",
        "hebrew": "מפספס",
        "nikkud": "מְפַסְפֵס",
        "nikkudAuto": true
-      }
-     ],
-     "source": "duolingo-vocab"
-    },
-    {
-     "id": "u26-013",
-     "unit": 26,
-     "unitName": "Present 2 (M.S)",
-     "category": "grammar",
-     "pos": "noun",
-     "english": "I, You, She, It (f.s - pres.)",
-     "gender": "f",
-     "genderSource": "marker",
-     "binyan": null,
-     "root": null,
-     "forms": [
+      },
       {
-       "slot": "singular",
+       "slot": "fs",
        "translit": "m'fas'feset",
        "hebrew": "מפספסת",
        "nikkud": "מְפַסְפֶסֶת",
        "nikkudAuto": true
-      }
-     ],
-     "source": "duolingo-vocab"
-    },
-    {
-     "id": "u26-014",
-     "unit": 26,
-     "unitName": "Present 2 (M.S)",
-     "category": "grammar",
-     "pos": "noun",
-     "english": "We, You, They (m.p - pres.)",
-     "gender": "m",
-     "genderSource": "marker",
-     "binyan": null,
-     "root": null,
-     "forms": [
+      },
       {
-       "slot": "singular",
+       "slot": "mp",
        "translit": "m'fas'f'sim",
        "hebrew": "מפספסים",
        "nikkud": "מְפַסְפְסִים",
        "nikkudAuto": true
-      }
-     ],
-     "source": "duolingo-vocab"
-    },
-    {
-     "id": "u26-015",
-     "unit": 26,
-     "unitName": "Present 2 (M.S)",
-     "category": "grammar",
-     "pos": "noun",
-     "english": "We, You, They (f.p- pres.)",
-     "gender": "f",
-     "genderSource": "marker",
-     "binyan": null,
-     "root": null,
-     "forms": [
+      },
       {
-       "slot": "singular",
+       "slot": "fp",
        "translit": "m'fas'f'sot",
        "hebrew": "מפספסות",
        "nikkud": "מְפַסְפְסוֹת",
@@ -18839,7 +17477,7 @@ window.VOCAB = {
      "source": "duolingo-vocab"
     },
     {
-     "id": "u26-016",
+     "id": "u26-004",
      "unit": 26,
      "unitName": "Present 2 (M.S)",
      "category": "grammar",
@@ -18856,90 +17494,30 @@ window.VOCAB = {
        "hebrew": "לשחק",
        "nikkud": "לְשַׂחֵק",
        "nikkudAuto": true
-      }
-     ],
-     "source": "duolingo-vocab"
-    },
-    {
-     "id": "u26-017",
-     "unit": 26,
-     "unitName": "Present 2 (M.S)",
-     "category": "grammar",
-     "pos": "noun",
-     "english": "I, You, He, It (m.s - pres.)",
-     "gender": "m",
-     "genderSource": "marker",
-     "binyan": null,
-     "root": null,
-     "forms": [
+      },
       {
-       "slot": "singular",
+       "slot": "ms",
        "translit": "m'sakhek",
        "hebrew": "משחק",
        "nikkud": "מִשְׂחָק",
        "nikkudAuto": true
-      }
-     ],
-     "source": "duolingo-vocab"
-    },
-    {
-     "id": "u26-018",
-     "unit": 26,
-     "unitName": "Present 2 (M.S)",
-     "category": "grammar",
-     "pos": "noun",
-     "english": "I, You, She, It (f.s - pres.)",
-     "gender": "f",
-     "genderSource": "marker",
-     "binyan": null,
-     "root": null,
-     "forms": [
+      },
       {
-       "slot": "singular",
+       "slot": "fs",
        "translit": "m'sakheket",
        "hebrew": "משחקת",
        "nikkud": "מְשַׂחֶקֶת",
        "nikkudAuto": true
-      }
-     ],
-     "source": "duolingo-vocab"
-    },
-    {
-     "id": "u26-019",
-     "unit": 26,
-     "unitName": "Present 2 (M.S)",
-     "category": "grammar",
-     "pos": "noun",
-     "english": "We, You, They (m.p - pres.)",
-     "gender": "m",
-     "genderSource": "marker",
-     "binyan": null,
-     "root": null,
-     "forms": [
+      },
       {
-       "slot": "singular",
+       "slot": "mp",
        "translit": "m'sakhakim",
        "hebrew": "משחקים",
        "nikkud": "מִשְׂחָקִים",
        "nikkudAuto": true
-      }
-     ],
-     "source": "duolingo-vocab"
-    },
-    {
-     "id": "u26-020",
-     "unit": 26,
-     "unitName": "Present 2 (M.S)",
-     "category": "grammar",
-     "pos": "noun",
-     "english": "We, You, They (f.p- pres.)",
-     "gender": "f",
-     "genderSource": "marker",
-     "binyan": null,
-     "root": null,
-     "forms": [
+      },
       {
-       "slot": "singular",
+       "slot": "fp",
        "translit": "m'sakhakot",
        "hebrew": "משחקות",
        "nikkud": "מְשַׂחֲקוֹת",
@@ -18949,7 +17527,7 @@ window.VOCAB = {
      "source": "duolingo-vocab"
     },
     {
-     "id": "u26-021",
+     "id": "u26-005",
      "unit": 26,
      "unitName": "Present 2 (M.S)",
      "category": "grammar",
@@ -18966,90 +17544,30 @@ window.VOCAB = {
        "hebrew": "לספר",
        "nikkud": "לְסַפֵּר",
        "nikkudAuto": true
-      }
-     ],
-     "source": "duolingo-vocab"
-    },
-    {
-     "id": "u26-022",
-     "unit": 26,
-     "unitName": "Present 2 (M.S)",
-     "category": "grammar",
-     "pos": "noun",
-     "english": "I, You, He, It (m.s - pres.)",
-     "gender": "m",
-     "genderSource": "marker",
-     "binyan": null,
-     "root": null,
-     "forms": [
+      },
       {
-       "slot": "singular",
+       "slot": "ms",
        "translit": "m'saper",
        "hebrew": "מספר",
        "nikkud": "מִסְפָּר",
        "nikkudAuto": true
-      }
-     ],
-     "source": "duolingo-vocab"
-    },
-    {
-     "id": "u26-023",
-     "unit": 26,
-     "unitName": "Present 2 (M.S)",
-     "category": "grammar",
-     "pos": "noun",
-     "english": "I, You, She, It (f.s - pres.)",
-     "gender": "f",
-     "genderSource": "marker",
-     "binyan": null,
-     "root": null,
-     "forms": [
+      },
       {
-       "slot": "singular",
+       "slot": "fs",
        "translit": "m'saperet",
        "hebrew": "מספרת",
        "nikkud": "מְסַפֶּרֶת",
        "nikkudAuto": true
-      }
-     ],
-     "source": "duolingo-vocab"
-    },
-    {
-     "id": "u26-024",
-     "unit": 26,
-     "unitName": "Present 2 (M.S)",
-     "category": "grammar",
-     "pos": "noun",
-     "english": "We, You, They (m.p - pres.)",
-     "gender": "m",
-     "genderSource": "marker",
-     "binyan": null,
-     "root": null,
-     "forms": [
+      },
       {
-       "slot": "singular",
+       "slot": "mp",
        "translit": "m'sap'rim",
        "hebrew": "מספרים",
        "nikkud": "מִסְפָּרִים",
        "nikkudAuto": true
-      }
-     ],
-     "source": "duolingo-vocab"
-    },
-    {
-     "id": "u26-025",
-     "unit": 26,
-     "unitName": "Present 2 (M.S)",
-     "category": "grammar",
-     "pos": "noun",
-     "english": "We, You, They (f.p- pres.)",
-     "gender": "f",
-     "genderSource": "marker",
-     "binyan": null,
-     "root": null,
-     "forms": [
+      },
       {
-       "slot": "singular",
+       "slot": "fp",
        "translit": "m'sap'rot",
        "hebrew": "מספרות",
        "nikkud": "מְסַפְּרוֹת",
@@ -19059,7 +17577,7 @@ window.VOCAB = {
      "source": "duolingo-vocab"
     },
     {
-     "id": "u26-026",
+     "id": "u26-006",
      "unit": 26,
      "unitName": "Present 2 (M.S)",
      "category": "grammar",
@@ -19076,90 +17594,30 @@ window.VOCAB = {
        "hebrew": "לעצב",
        "nikkud": "לְעַצֵּב",
        "nikkudAuto": true
-      }
-     ],
-     "source": "duolingo-vocab"
-    },
-    {
-     "id": "u26-027",
-     "unit": 26,
-     "unitName": "Present 2 (M.S)",
-     "category": "grammar",
-     "pos": "noun",
-     "english": "I, You, He, It (m.s - pres.)",
-     "gender": "m",
-     "genderSource": "marker",
-     "binyan": null,
-     "root": null,
-     "forms": [
+      },
       {
-       "slot": "singular",
+       "slot": "ms",
        "translit": "m'atzev",
        "hebrew": "מעצב",
        "nikkud": "מְעַצֵּב",
        "nikkudAuto": true
-      }
-     ],
-     "source": "duolingo-vocab"
-    },
-    {
-     "id": "u26-028",
-     "unit": 26,
-     "unitName": "Present 2 (M.S)",
-     "category": "grammar",
-     "pos": "noun",
-     "english": "I, You, She, It (f.s - pres.)",
-     "gender": "f",
-     "genderSource": "marker",
-     "binyan": null,
-     "root": null,
-     "forms": [
+      },
       {
-       "slot": "singular",
+       "slot": "fs",
        "translit": "m'atzevet",
        "hebrew": "מעצבת",
        "nikkud": "מְעַצֶּבֶת",
        "nikkudAuto": true
-      }
-     ],
-     "source": "duolingo-vocab"
-    },
-    {
-     "id": "u26-029",
-     "unit": 26,
-     "unitName": "Present 2 (M.S)",
-     "category": "grammar",
-     "pos": "noun",
-     "english": "We, You, They (m.p - pres.)",
-     "gender": "m",
-     "genderSource": "marker",
-     "binyan": null,
-     "root": null,
-     "forms": [
+      },
       {
-       "slot": "singular",
+       "slot": "mp",
        "translit": "m'atz'vim",
        "hebrew": "מעצבים",
        "nikkud": "מְעַצְּבִים",
        "nikkudAuto": true
-      }
-     ],
-     "source": "duolingo-vocab"
-    },
-    {
-     "id": "u26-030",
-     "unit": 26,
-     "unitName": "Present 2 (M.S)",
-     "category": "grammar",
-     "pos": "noun",
-     "english": "We, You, They (f.p- pres.)",
-     "gender": "f",
-     "genderSource": "marker",
-     "binyan": null,
-     "root": null,
-     "forms": [
+      },
       {
-       "slot": "singular",
+       "slot": "fp",
        "translit": "m'atz'vot",
        "hebrew": "מעצבות",
        "nikkud": "מְעַצְּבוֹת",
@@ -19169,7 +17627,7 @@ window.VOCAB = {
      "source": "duolingo-vocab"
     },
     {
-     "id": "u26-031",
+     "id": "u26-007",
      "unit": 26,
      "unitName": "Present 2 (M.S)",
      "category": "grammar",
@@ -19186,90 +17644,30 @@ window.VOCAB = {
        "hebrew": "לשנות",
        "nikkud": "לְשַׁנּוֹת",
        "nikkudAuto": true
-      }
-     ],
-     "source": "duolingo-vocab"
-    },
-    {
-     "id": "u26-032",
-     "unit": 26,
-     "unitName": "Present 2 (M.S)",
-     "category": "grammar",
-     "pos": "noun",
-     "english": "I, You, He, It (m.s - pres.)",
-     "gender": "m",
-     "genderSource": "marker",
-     "binyan": null,
-     "root": null,
-     "forms": [
+      },
       {
-       "slot": "singular",
+       "slot": "ms",
        "translit": "m'shaneh",
        "hebrew": "משנה",
        "nikkud": "מִשְׁנָה",
        "nikkudAuto": true
-      }
-     ],
-     "source": "duolingo-vocab"
-    },
-    {
-     "id": "u26-033",
-     "unit": 26,
-     "unitName": "Present 2 (M.S)",
-     "category": "grammar",
-     "pos": "noun",
-     "english": "I, You, She, It (f.s - pres.)",
-     "gender": "f",
-     "genderSource": "marker",
-     "binyan": null,
-     "root": null,
-     "forms": [
+      },
       {
-       "slot": "singular",
+       "slot": "fs",
        "translit": "m'shanah",
        "hebrew": "משנה",
        "nikkud": "מִשְׁנָה",
        "nikkudAuto": true
-      }
-     ],
-     "source": "duolingo-vocab"
-    },
-    {
-     "id": "u26-034",
-     "unit": 26,
-     "unitName": "Present 2 (M.S)",
-     "category": "grammar",
-     "pos": "noun",
-     "english": "We, You, They (m.p - pres.)",
-     "gender": "m",
-     "genderSource": "marker",
-     "binyan": null,
-     "root": null,
-     "forms": [
+      },
       {
-       "slot": "singular",
+       "slot": "mp",
        "translit": "m'shanim",
        "hebrew": "משנים",
        "nikkud": "מְשַׁנִּים",
        "nikkudAuto": true
-      }
-     ],
-     "source": "duolingo-vocab"
-    },
-    {
-     "id": "u26-035",
-     "unit": 26,
-     "unitName": "Present 2 (M.S)",
-     "category": "grammar",
-     "pos": "noun",
-     "english": "We, You, They (f.p- pres.)",
-     "gender": "f",
-     "genderSource": "marker",
-     "binyan": null,
-     "root": null,
-     "forms": [
+      },
       {
-       "slot": "singular",
+       "slot": "fp",
        "translit": "m'shanot",
        "hebrew": "משנות",
        "nikkud": "מִ|שְּׁנוֹת",
@@ -19279,7 +17677,7 @@ window.VOCAB = {
      "source": "duolingo-vocab"
     },
     {
-     "id": "u26-036",
+     "id": "u26-008",
      "unit": 26,
      "unitName": "Present 2 (M.S)",
      "category": "grammar",
@@ -19296,90 +17694,30 @@ window.VOCAB = {
        "hebrew": "לנסות",
        "nikkud": "לְנַסּוֹת",
        "nikkudAuto": true
-      }
-     ],
-     "source": "duolingo-vocab"
-    },
-    {
-     "id": "u26-037",
-     "unit": 26,
-     "unitName": "Present 2 (M.S)",
-     "category": "grammar",
-     "pos": "noun",
-     "english": "I, You, He, It (m.s - pres.)",
-     "gender": "m",
-     "genderSource": "marker",
-     "binyan": null,
-     "root": null,
-     "forms": [
+      },
       {
-       "slot": "singular",
+       "slot": "ms",
        "translit": "m'naseh",
        "hebrew": "מנסה",
        "nikkud": "מְנַסֶּה",
        "nikkudAuto": true
-      }
-     ],
-     "source": "duolingo-vocab"
-    },
-    {
-     "id": "u26-038",
-     "unit": 26,
-     "unitName": "Present 2 (M.S)",
-     "category": "grammar",
-     "pos": "noun",
-     "english": "I, You, She, It (f.s - pres.)",
-     "gender": "f",
-     "genderSource": "marker",
-     "binyan": null,
-     "root": null,
-     "forms": [
+      },
       {
-       "slot": "singular",
+       "slot": "fs",
        "translit": "m'nasah",
        "hebrew": "מנסה",
        "nikkud": "מְנַסֶּה",
        "nikkudAuto": true
-      }
-     ],
-     "source": "duolingo-vocab"
-    },
-    {
-     "id": "u26-039",
-     "unit": 26,
-     "unitName": "Present 2 (M.S)",
-     "category": "grammar",
-     "pos": "noun",
-     "english": "We, You, They (m.p - pres.)",
-     "gender": "m",
-     "genderSource": "marker",
-     "binyan": null,
-     "root": null,
-     "forms": [
+      },
       {
-       "slot": "singular",
+       "slot": "mp",
        "translit": "m'nasim",
        "hebrew": "מנסים",
        "nikkud": "מְנַסִּים",
        "nikkudAuto": true
-      }
-     ],
-     "source": "duolingo-vocab"
-    },
-    {
-     "id": "u26-040",
-     "unit": 26,
-     "unitName": "Present 2 (M.S)",
-     "category": "grammar",
-     "pos": "noun",
-     "english": "We, You, They (f.p- pres.)",
-     "gender": "f",
-     "genderSource": "marker",
-     "binyan": null,
-     "root": null,
-     "forms": [
+      },
       {
-       "slot": "singular",
+       "slot": "fp",
        "translit": "m'nasot",
        "hebrew": "מנסות",
        "nikkud": "מְנַסּוֹת",
@@ -19389,7 +17727,7 @@ window.VOCAB = {
      "source": "duolingo-vocab"
     },
     {
-     "id": "u26-041",
+     "id": "u26-009",
      "unit": 26,
      "unitName": "Present 2 (M.S)",
      "category": "grammar",
@@ -19406,90 +17744,30 @@ window.VOCAB = {
        "hebrew": "לקוות",
        "nikkud": "לְקַוּוֹת",
        "nikkudAuto": true
-      }
-     ],
-     "source": "duolingo-vocab"
-    },
-    {
-     "id": "u26-042",
-     "unit": 26,
-     "unitName": "Present 2 (M.S)",
-     "category": "grammar",
-     "pos": "noun",
-     "english": "I, You, He, It (m.s - pres.)",
-     "gender": "m",
-     "genderSource": "marker",
-     "binyan": null,
-     "root": null,
-     "forms": [
+      },
       {
-       "slot": "singular",
+       "slot": "ms",
        "translit": "m'kaveh",
        "hebrew": "מקווה",
        "nikkud": "מְקַוֶּה",
        "nikkudAuto": true
-      }
-     ],
-     "source": "duolingo-vocab"
-    },
-    {
-     "id": "u26-043",
-     "unit": 26,
-     "unitName": "Present 2 (M.S)",
-     "category": "grammar",
-     "pos": "noun",
-     "english": "I, You, She, It (f.s - pres.)",
-     "gender": "f",
-     "genderSource": "marker",
-     "binyan": null,
-     "root": null,
-     "forms": [
+      },
       {
-       "slot": "singular",
+       "slot": "fs",
        "translit": "m'kavah",
        "hebrew": "מקווה",
        "nikkud": "מְקַוֶּה",
        "nikkudAuto": true
-      }
-     ],
-     "source": "duolingo-vocab"
-    },
-    {
-     "id": "u26-044",
-     "unit": 26,
-     "unitName": "Present 2 (M.S)",
-     "category": "grammar",
-     "pos": "noun",
-     "english": "We, You, They (m.p - pres.)",
-     "gender": "m",
-     "genderSource": "marker",
-     "binyan": null,
-     "root": null,
-     "forms": [
+      },
       {
-       "slot": "singular",
+       "slot": "mp",
        "translit": "m'kavim",
        "hebrew": "מקווים",
        "nikkud": "מְקַוִּים",
        "nikkudAuto": true
-      }
-     ],
-     "source": "duolingo-vocab"
-    },
-    {
-     "id": "u26-045",
-     "unit": 26,
-     "unitName": "Present 2 (M.S)",
-     "category": "grammar",
-     "pos": "noun",
-     "english": "We, You, They (f.p- pres.)",
-     "gender": "f",
-     "genderSource": "marker",
-     "binyan": null,
-     "root": null,
-     "forms": [
+      },
       {
-       "slot": "singular",
+       "slot": "fp",
        "translit": "m'kavot",
        "hebrew": "מקוות",
        "nikkud": "מְקַוּוֹת",
@@ -19499,7 +17777,7 @@ window.VOCAB = {
      "source": "duolingo-vocab"
     },
     {
-     "id": "u26-046",
+     "id": "u26-010",
      "unit": 26,
      "unitName": "Present 2 (M.S)",
      "category": "grammar",
@@ -19516,90 +17794,30 @@ window.VOCAB = {
        "hebrew": "לחפש",
        "nikkud": "לְחַפֵּשׂ",
        "nikkudAuto": true
-      }
-     ],
-     "source": "duolingo-vocab"
-    },
-    {
-     "id": "u26-047",
-     "unit": 26,
-     "unitName": "Present 2 (M.S)",
-     "category": "grammar",
-     "pos": "noun",
-     "english": "I, You, He, It (m.s - pres.)",
-     "gender": "m",
-     "genderSource": "marker",
-     "binyan": null,
-     "root": null,
-     "forms": [
+      },
       {
-       "slot": "singular",
+       "slot": "ms",
        "translit": "m'khapes",
        "hebrew": "מחפש",
        "nikkud": "מְחַפֵּשׂ",
        "nikkudAuto": true
-      }
-     ],
-     "source": "duolingo-vocab"
-    },
-    {
-     "id": "u26-048",
-     "unit": 26,
-     "unitName": "Present 2 (M.S)",
-     "category": "grammar",
-     "pos": "noun",
-     "english": "I, You, She, It (f.s - pres.)",
-     "gender": "f",
-     "genderSource": "marker",
-     "binyan": null,
-     "root": null,
-     "forms": [
+      },
       {
-       "slot": "singular",
+       "slot": "fs",
        "translit": "m'khapeset",
        "hebrew": "מחפשת",
        "nikkud": "מְחַפֶּשֶׂת",
        "nikkudAuto": true
-      }
-     ],
-     "source": "duolingo-vocab"
-    },
-    {
-     "id": "u26-049",
-     "unit": 26,
-     "unitName": "Present 2 (M.S)",
-     "category": "grammar",
-     "pos": "noun",
-     "english": "We, You, They (m.p - pres.)",
-     "gender": "m",
-     "genderSource": "marker",
-     "binyan": null,
-     "root": null,
-     "forms": [
+      },
       {
-       "slot": "singular",
+       "slot": "mp",
        "translit": "m'khap'sim",
        "hebrew": "מחפשים",
        "nikkud": "מְחַפְּשִׂים",
        "nikkudAuto": true
-      }
-     ],
-     "source": "duolingo-vocab"
-    },
-    {
-     "id": "u26-050",
-     "unit": 26,
-     "unitName": "Present 2 (M.S)",
-     "category": "grammar",
-     "pos": "noun",
-     "english": "We, You, They (f.p- pres.)",
-     "gender": "f",
-     "genderSource": "marker",
-     "binyan": null,
-     "root": null,
-     "forms": [
+      },
       {
-       "slot": "singular",
+       "slot": "fp",
        "translit": "m'khap'sot",
        "hebrew": "מחפשות",
        "nikkud": "מְחַפְּשׂוֹת",
@@ -19609,7 +17827,7 @@ window.VOCAB = {
      "source": "duolingo-vocab"
     },
     {
-     "id": "u26-051",
+     "id": "u26-011",
      "unit": 26,
      "unitName": "Present 2 (M.S)",
      "category": "grammar",
@@ -19626,90 +17844,30 @@ window.VOCAB = {
        "hebrew": "לגדל",
        "nikkud": "לְגַדֵּל",
        "nikkudAuto": true
-      }
-     ],
-     "source": "duolingo-vocab"
-    },
-    {
-     "id": "u26-052",
-     "unit": 26,
-     "unitName": "Present 2 (M.S)",
-     "category": "grammar",
-     "pos": "noun",
-     "english": "I, You, He, It (m.s - pres.)",
-     "gender": "m",
-     "genderSource": "marker",
-     "binyan": null,
-     "root": null,
-     "forms": [
+      },
       {
-       "slot": "singular",
+       "slot": "ms",
        "translit": "m'gadel",
        "hebrew": "מגדל",
        "nikkud": "מִגְדָּל",
        "nikkudAuto": true
-      }
-     ],
-     "source": "duolingo-vocab"
-    },
-    {
-     "id": "u26-053",
-     "unit": 26,
-     "unitName": "Present 2 (M.S)",
-     "category": "grammar",
-     "pos": "noun",
-     "english": "I, You, She, It (f.s - pres.)",
-     "gender": "f",
-     "genderSource": "marker",
-     "binyan": null,
-     "root": null,
-     "forms": [
+      },
       {
-       "slot": "singular",
+       "slot": "fs",
        "translit": "m'gadelet",
        "hebrew": "מגדלת",
        "nikkud": "מְגַדֶּלֶת",
        "nikkudAuto": true
-      }
-     ],
-     "source": "duolingo-vocab"
-    },
-    {
-     "id": "u26-054",
-     "unit": 26,
-     "unitName": "Present 2 (M.S)",
-     "category": "grammar",
-     "pos": "noun",
-     "english": "We, You, They (m.p - pres.)",
-     "gender": "m",
-     "genderSource": "marker",
-     "binyan": null,
-     "root": null,
-     "forms": [
+      },
       {
-       "slot": "singular",
+       "slot": "mp",
        "translit": "m'gad'lim",
        "hebrew": "מגדלים",
        "nikkud": "מִגְדָּלִים",
        "nikkudAuto": true
-      }
-     ],
-     "source": "duolingo-vocab"
-    },
-    {
-     "id": "u26-055",
-     "unit": 26,
-     "unitName": "Present 2 (M.S)",
-     "category": "grammar",
-     "pos": "noun",
-     "english": "We, You, They (f.p- pres.)",
-     "gender": "f",
-     "genderSource": "marker",
-     "binyan": null,
-     "root": null,
-     "forms": [
+      },
       {
-       "slot": "singular",
+       "slot": "fp",
        "translit": "m'gad'lot",
        "hebrew": "מגדלות",
        "nikkud": "מְגַדְּלוֹת",
@@ -19719,7 +17877,7 @@ window.VOCAB = {
      "source": "duolingo-vocab"
     },
     {
-     "id": "u26-056",
+     "id": "u26-012",
      "unit": 26,
      "unitName": "Present 2 (M.S)",
      "category": "grammar",
@@ -19736,90 +17894,30 @@ window.VOCAB = {
        "hebrew": "לסמן",
        "nikkud": "לְסַמֵּן",
        "nikkudAuto": true
-      }
-     ],
-     "source": "duolingo-vocab"
-    },
-    {
-     "id": "u26-057",
-     "unit": 26,
-     "unitName": "Present 2 (M.S)",
-     "category": "grammar",
-     "pos": "noun",
-     "english": "I, You, He, It (m.s - pres.)",
-     "gender": "m",
-     "genderSource": "marker",
-     "binyan": null,
-     "root": null,
-     "forms": [
+      },
       {
-       "slot": "singular",
+       "slot": "ms",
        "translit": "m'samen",
        "hebrew": "מסמן",
        "nikkud": "מְסַמֵּן",
        "nikkudAuto": true
-      }
-     ],
-     "source": "duolingo-vocab"
-    },
-    {
-     "id": "u26-058",
-     "unit": 26,
-     "unitName": "Present 2 (M.S)",
-     "category": "grammar",
-     "pos": "noun",
-     "english": "I, You, She, It (f.s - pres.)",
-     "gender": "f",
-     "genderSource": "marker",
-     "binyan": null,
-     "root": null,
-     "forms": [
+      },
       {
-       "slot": "singular",
+       "slot": "fs",
        "translit": "m'samenet",
        "hebrew": "מסמנת",
        "nikkud": "מְסַמֶּנֶת",
        "nikkudAuto": true
-      }
-     ],
-     "source": "duolingo-vocab"
-    },
-    {
-     "id": "u26-059",
-     "unit": 26,
-     "unitName": "Present 2 (M.S)",
-     "category": "grammar",
-     "pos": "noun",
-     "english": "We, You, They (m.p - pres.)",
-     "gender": "m",
-     "genderSource": "marker",
-     "binyan": null,
-     "root": null,
-     "forms": [
+      },
       {
-       "slot": "singular",
+       "slot": "mp",
        "translit": "m'sam'nim",
        "hebrew": "מסמנים",
        "nikkud": "מְסַמְּנִים",
        "nikkudAuto": true
-      }
-     ],
-     "source": "duolingo-vocab"
-    },
-    {
-     "id": "u26-060",
-     "unit": 26,
-     "unitName": "Present 2 (M.S)",
-     "category": "grammar",
-     "pos": "noun",
-     "english": "We, You, They (f.p- pres.)",
-     "gender": "f",
-     "genderSource": "marker",
-     "binyan": null,
-     "root": null,
-     "forms": [
+      },
       {
-       "slot": "singular",
+       "slot": "fp",
        "translit": "m'sam'not",
        "hebrew": "מסמנות",
        "nikkud": "מְסַמְּנוֹת",
@@ -19829,7 +17927,7 @@ window.VOCAB = {
      "source": "duolingo-vocab"
     },
     {
-     "id": "u26-061",
+     "id": "u26-013",
      "unit": 26,
      "unitName": "Present 2 (M.S)",
      "category": "grammar",
@@ -19846,90 +17944,30 @@ window.VOCAB = {
        "hebrew": "לאחל",
        "nikkud": "לְאַחֵל",
        "nikkudAuto": true
-      }
-     ],
-     "source": "duolingo-vocab"
-    },
-    {
-     "id": "u26-062",
-     "unit": 26,
-     "unitName": "Present 2 (M.S)",
-     "category": "grammar",
-     "pos": "noun",
-     "english": "I, You, He, It (m.s - pres.)",
-     "gender": "m",
-     "genderSource": "marker",
-     "binyan": null,
-     "root": null,
-     "forms": [
+      },
       {
-       "slot": "singular",
+       "slot": "ms",
        "translit": "m'akhel",
        "hebrew": "מאחל",
        "nikkud": "מְאַחֵל",
        "nikkudAuto": true
-      }
-     ],
-     "source": "duolingo-vocab"
-    },
-    {
-     "id": "u26-063",
-     "unit": 26,
-     "unitName": "Present 2 (M.S)",
-     "category": "grammar",
-     "pos": "noun",
-     "english": "I, You, She, It (f.s - pres.)",
-     "gender": "f",
-     "genderSource": "marker",
-     "binyan": null,
-     "root": null,
-     "forms": [
+      },
       {
-       "slot": "singular",
+       "slot": "fs",
        "translit": "m'akhelet",
        "hebrew": "מאחלת",
        "nikkud": "מְאַחֶלֶת",
        "nikkudAuto": true
-      }
-     ],
-     "source": "duolingo-vocab"
-    },
-    {
-     "id": "u26-064",
-     "unit": 26,
-     "unitName": "Present 2 (M.S)",
-     "category": "grammar",
-     "pos": "noun",
-     "english": "We, You, They (m.p - pres.)",
-     "gender": "m",
-     "genderSource": "marker",
-     "binyan": null,
-     "root": null,
-     "forms": [
+      },
       {
-       "slot": "singular",
+       "slot": "mp",
        "translit": "m'akhalim",
        "hebrew": "מאחלים",
        "nikkud": "מְאַחֲלִים",
        "nikkudAuto": true
-      }
-     ],
-     "source": "duolingo-vocab"
-    },
-    {
-     "id": "u26-065",
-     "unit": 26,
-     "unitName": "Present 2 (M.S)",
-     "category": "grammar",
-     "pos": "noun",
-     "english": "We, You, They (f.p- pres.)",
-     "gender": "f",
-     "genderSource": "marker",
-     "binyan": null,
-     "root": null,
-     "forms": [
+      },
       {
-       "slot": "singular",
+       "slot": "fp",
        "translit": "m'akhalot",
        "hebrew": "מאחלות",
        "nikkud": "מְאַחֲלוֹת",
@@ -19939,7 +17977,7 @@ window.VOCAB = {
      "source": "duolingo-vocab"
     },
     {
-     "id": "u26-066",
+     "id": "u26-014",
      "unit": 26,
      "unitName": "Present 2 (M.S)",
      "category": "grammar",
@@ -19956,90 +17994,30 @@ window.VOCAB = {
        "hebrew": "לערבב",
        "nikkud": "לְעַרְבֵּב",
        "nikkudAuto": true
-      }
-     ],
-     "source": "duolingo-vocab"
-    },
-    {
-     "id": "u26-067",
-     "unit": 26,
-     "unitName": "Present 2 (M.S)",
-     "category": "grammar",
-     "pos": "noun",
-     "english": "I, You, He, It (m.s - pres.)",
-     "gender": "m",
-     "genderSource": "marker",
-     "binyan": null,
-     "root": null,
-     "forms": [
+      },
       {
-       "slot": "singular",
+       "slot": "ms",
        "translit": "m'ar'bev",
        "hebrew": "מערבב",
        "nikkud": "מְעַרְבֵּב",
        "nikkudAuto": true
-      }
-     ],
-     "source": "duolingo-vocab"
-    },
-    {
-     "id": "u26-068",
-     "unit": 26,
-     "unitName": "Present 2 (M.S)",
-     "category": "grammar",
-     "pos": "noun",
-     "english": "I, You, She, It (f.s - pres.)",
-     "gender": "f",
-     "genderSource": "marker",
-     "binyan": null,
-     "root": null,
-     "forms": [
+      },
       {
-       "slot": "singular",
+       "slot": "fs",
        "translit": "m'ar'bevet",
        "hebrew": "מערבבת",
        "nikkud": "מְעַרְבֶּבֶת",
        "nikkudAuto": true
-      }
-     ],
-     "source": "duolingo-vocab"
-    },
-    {
-     "id": "u26-069",
-     "unit": 26,
-     "unitName": "Present 2 (M.S)",
-     "category": "grammar",
-     "pos": "noun",
-     "english": "We, You, They (m.p - pres.)",
-     "gender": "m",
-     "genderSource": "marker",
-     "binyan": null,
-     "root": null,
-     "forms": [
+      },
       {
-       "slot": "singular",
+       "slot": "mp",
        "translit": "m'ar'b'vim",
        "hebrew": "מערבבים",
        "nikkud": "מְעַרְבְּבִים",
        "nikkudAuto": true
-      }
-     ],
-     "source": "duolingo-vocab"
-    },
-    {
-     "id": "u26-070",
-     "unit": 26,
-     "unitName": "Present 2 (M.S)",
-     "category": "grammar",
-     "pos": "noun",
-     "english": "We, You, They (f.p- pres.)",
-     "gender": "f",
-     "genderSource": "marker",
-     "binyan": null,
-     "root": null,
-     "forms": [
+      },
       {
-       "slot": "singular",
+       "slot": "fp",
        "translit": "m'ar'b'vot",
        "hebrew": "מערבבות",
        "nikkud": "מְעַרְבְּבוֹת",
@@ -20049,7 +18027,7 @@ window.VOCAB = {
      "source": "duolingo-vocab"
     },
     {
-     "id": "u26-071",
+     "id": "u26-015",
      "unit": 26,
      "unitName": "Present 2 (M.S)",
      "category": "grammar",
@@ -20066,90 +18044,30 @@ window.VOCAB = {
        "hebrew": "לכבד",
        "nikkud": "לְכַבֵּד",
        "nikkudAuto": true
-      }
-     ],
-     "source": "duolingo-vocab"
-    },
-    {
-     "id": "u26-072",
-     "unit": 26,
-     "unitName": "Present 2 (M.S)",
-     "category": "grammar",
-     "pos": "noun",
-     "english": "I, You, He, It (m.s - pres.)",
-     "gender": "m",
-     "genderSource": "marker",
-     "binyan": null,
-     "root": null,
-     "forms": [
+      },
       {
-       "slot": "singular",
+       "slot": "ms",
        "translit": "m'khabed",
        "hebrew": "מכבד",
        "nikkud": "מְכַבֵּד",
        "nikkudAuto": true
-      }
-     ],
-     "source": "duolingo-vocab"
-    },
-    {
-     "id": "u26-073",
-     "unit": 26,
-     "unitName": "Present 2 (M.S)",
-     "category": "grammar",
-     "pos": "noun",
-     "english": "I, You, She, It (f.s - pres.)",
-     "gender": "f",
-     "genderSource": "marker",
-     "binyan": null,
-     "root": null,
-     "forms": [
+      },
       {
-       "slot": "singular",
+       "slot": "fs",
        "translit": "m'khabedet",
        "hebrew": "מכבדת",
        "nikkud": "מְכַבֶּדֶת",
        "nikkudAuto": true
-      }
-     ],
-     "source": "duolingo-vocab"
-    },
-    {
-     "id": "u26-074",
-     "unit": 26,
-     "unitName": "Present 2 (M.S)",
-     "category": "grammar",
-     "pos": "noun",
-     "english": "We, You, They (m.p - pres.)",
-     "gender": "m",
-     "genderSource": "marker",
-     "binyan": null,
-     "root": null,
-     "forms": [
+      },
       {
-       "slot": "singular",
+       "slot": "mp",
        "translit": "m'khab'dim",
        "hebrew": "מכבדים",
        "nikkud": "מְכַבְּדִים",
        "nikkudAuto": true
-      }
-     ],
-     "source": "duolingo-vocab"
-    },
-    {
-     "id": "u26-075",
-     "unit": 26,
-     "unitName": "Present 2 (M.S)",
-     "category": "grammar",
-     "pos": "noun",
-     "english": "We, You, They (f.p- pres.)",
-     "gender": "f",
-     "genderSource": "marker",
-     "binyan": null,
-     "root": null,
-     "forms": [
+      },
       {
-       "slot": "singular",
+       "slot": "fp",
        "translit": "m'khab'dot",
        "hebrew": "מכבדות",
        "nikkud": "מְכַבְּדוֹת",
@@ -20159,7 +18077,7 @@ window.VOCAB = {
      "source": "duolingo-vocab"
     },
     {
-     "id": "u26-076",
+     "id": "u26-016",
      "unit": 26,
      "unitName": "Present 2 (M.S)",
      "category": "grammar",
@@ -20176,90 +18094,30 @@ window.VOCAB = {
        "hebrew": "לסדר",
        "nikkud": "לְסַדֵּר",
        "nikkudAuto": true
-      }
-     ],
-     "source": "duolingo-vocab"
-    },
-    {
-     "id": "u26-077",
-     "unit": 26,
-     "unitName": "Present 2 (M.S)",
-     "category": "grammar",
-     "pos": "noun",
-     "english": "I, You, He, It (m.s - pres.)",
-     "gender": "m",
-     "genderSource": "marker",
-     "binyan": null,
-     "root": null,
-     "forms": [
+      },
       {
-       "slot": "singular",
+       "slot": "ms",
        "translit": "m'sader",
        "hebrew": "מסדר",
        "nikkud": "מִסְדָּר",
        "nikkudAuto": true
-      }
-     ],
-     "source": "duolingo-vocab"
-    },
-    {
-     "id": "u26-078",
-     "unit": 26,
-     "unitName": "Present 2 (M.S)",
-     "category": "grammar",
-     "pos": "noun",
-     "english": "I, You, She, It (f.s - pres.)",
-     "gender": "f",
-     "genderSource": "marker",
-     "binyan": null,
-     "root": null,
-     "forms": [
+      },
       {
-       "slot": "singular",
+       "slot": "fs",
        "translit": "m'saderet",
        "hebrew": "מסדרת",
        "nikkud": "מִ|סִּדְרַת",
        "nikkudAuto": true
-      }
-     ],
-     "source": "duolingo-vocab"
-    },
-    {
-     "id": "u26-079",
-     "unit": 26,
-     "unitName": "Present 2 (M.S)",
-     "category": "grammar",
-     "pos": "noun",
-     "english": "We, You, They (m.p - pres.)",
-     "gender": "m",
-     "genderSource": "marker",
-     "binyan": null,
-     "root": null,
-     "forms": [
+      },
       {
-       "slot": "singular",
+       "slot": "mp",
        "translit": "m'sad'rim",
        "hebrew": "מסדרים",
        "nikkud": "מְסַדְּרִים",
        "nikkudAuto": true
-      }
-     ],
-     "source": "duolingo-vocab"
-    },
-    {
-     "id": "u26-080",
-     "unit": 26,
-     "unitName": "Present 2 (M.S)",
-     "category": "grammar",
-     "pos": "noun",
-     "english": "We, You, They (f.p- pres.)",
-     "gender": "f",
-     "genderSource": "marker",
-     "binyan": null,
-     "root": null,
-     "forms": [
+      },
       {
-       "slot": "singular",
+       "slot": "fp",
        "translit": "m'sad'rot",
        "hebrew": "מסדרות",
        "nikkud": "מִ|סִּדְרוֹת",
@@ -20269,7 +18127,7 @@ window.VOCAB = {
      "source": "duolingo-vocab"
     },
     {
-     "id": "u26-081",
+     "id": "u26-017",
      "unit": 26,
      "unitName": "Present 2 (M.S)",
      "category": "grammar",
@@ -20286,90 +18144,30 @@ window.VOCAB = {
        "hebrew": "לייבש",
        "nikkud": "לְיַבֵּשׁ",
        "nikkudAuto": true
-      }
-     ],
-     "source": "duolingo-vocab"
-    },
-    {
-     "id": "u26-082",
-     "unit": 26,
-     "unitName": "Present 2 (M.S)",
-     "category": "grammar",
-     "pos": "noun",
-     "english": "I, You, He, It (m.s - pres.)",
-     "gender": "m",
-     "genderSource": "marker",
-     "binyan": null,
-     "root": null,
-     "forms": [
+      },
       {
-       "slot": "singular",
+       "slot": "ms",
        "translit": "m'yabesh",
        "hebrew": "מייבש",
        "nikkud": "מְיַבֵּשׁ",
        "nikkudAuto": true
-      }
-     ],
-     "source": "duolingo-vocab"
-    },
-    {
-     "id": "u26-083",
-     "unit": 26,
-     "unitName": "Present 2 (M.S)",
-     "category": "grammar",
-     "pos": "noun",
-     "english": "I, You, She, It (f.s - pres.)",
-     "gender": "f",
-     "genderSource": "marker",
-     "binyan": null,
-     "root": null,
-     "forms": [
+      },
       {
-       "slot": "singular",
+       "slot": "fs",
        "translit": "m'yabeshet",
        "hebrew": "מייבשת",
        "nikkud": "מְיַבֶּשֶׁת",
        "nikkudAuto": true
-      }
-     ],
-     "source": "duolingo-vocab"
-    },
-    {
-     "id": "u26-084",
-     "unit": 26,
-     "unitName": "Present 2 (M.S)",
-     "category": "grammar",
-     "pos": "noun",
-     "english": "We, You, They (m.p - pres.)",
-     "gender": "m",
-     "genderSource": "marker",
-     "binyan": null,
-     "root": null,
-     "forms": [
+      },
       {
-       "slot": "singular",
+       "slot": "mp",
        "translit": "m'yab'shim",
        "hebrew": "מייבשים",
        "nikkud": "מְיַבְּשִׁים",
        "nikkudAuto": true
-      }
-     ],
-     "source": "duolingo-vocab"
-    },
-    {
-     "id": "u26-085",
-     "unit": 26,
-     "unitName": "Present 2 (M.S)",
-     "category": "grammar",
-     "pos": "noun",
-     "english": "We, You, They (f.p- pres.)",
-     "gender": "f",
-     "genderSource": "marker",
-     "binyan": null,
-     "root": null,
-     "forms": [
+      },
       {
-       "slot": "singular",
+       "slot": "fp",
        "translit": "m'yab'shot",
        "hebrew": "מייבשות",
        "nikkud": "מְיַבְּשׁוֹת",
@@ -20379,7 +18177,7 @@ window.VOCAB = {
      "source": "duolingo-vocab"
     },
     {
-     "id": "u26-086",
+     "id": "u26-018",
      "unit": 26,
      "unitName": "Present 2 (M.S)",
      "category": "grammar",
@@ -20396,90 +18194,30 @@ window.VOCAB = {
        "hebrew": "לחמם",
        "nikkud": "לַחְמָם",
        "nikkudAuto": true
-      }
-     ],
-     "source": "duolingo-vocab"
-    },
-    {
-     "id": "u26-087",
-     "unit": 26,
-     "unitName": "Present 2 (M.S)",
-     "category": "grammar",
-     "pos": "noun",
-     "english": "I, You, He, It (m.s - pres.)",
-     "gender": "m",
-     "genderSource": "marker",
-     "binyan": null,
-     "root": null,
-     "forms": [
+      },
       {
-       "slot": "singular",
+       "slot": "ms",
        "translit": "m'khamem",
        "hebrew": "מחמם",
        "nikkud": "מְחַמֵּם",
        "nikkudAuto": true
-      }
-     ],
-     "source": "duolingo-vocab"
-    },
-    {
-     "id": "u26-088",
-     "unit": 26,
-     "unitName": "Present 2 (M.S)",
-     "category": "grammar",
-     "pos": "noun",
-     "english": "I, You, She, It (f.s - pres.)",
-     "gender": "f",
-     "genderSource": "marker",
-     "binyan": null,
-     "root": null,
-     "forms": [
+      },
       {
-       "slot": "singular",
+       "slot": "fs",
        "translit": "m'khamemet",
        "hebrew": "מחממת",
        "nikkud": "מְחַמֶּמֶת",
        "nikkudAuto": true
-      }
-     ],
-     "source": "duolingo-vocab"
-    },
-    {
-     "id": "u26-089",
-     "unit": 26,
-     "unitName": "Present 2 (M.S)",
-     "category": "grammar",
-     "pos": "noun",
-     "english": "We, You, They (m.p - pres.)",
-     "gender": "m",
-     "genderSource": "marker",
-     "binyan": null,
-     "root": null,
-     "forms": [
+      },
       {
-       "slot": "singular",
+       "slot": "mp",
        "translit": "m'khamemim",
        "hebrew": "מחממים",
        "nikkud": "מְחַמְּמִים",
        "nikkudAuto": true
-      }
-     ],
-     "source": "duolingo-vocab"
-    },
-    {
-     "id": "u26-090",
-     "unit": 26,
-     "unitName": "Present 2 (M.S)",
-     "category": "grammar",
-     "pos": "noun",
-     "english": "We, You, They (f.p- pres.)",
-     "gender": "f",
-     "genderSource": "marker",
-     "binyan": null,
-     "root": null,
-     "forms": [
+      },
       {
-       "slot": "singular",
+       "slot": "fp",
        "translit": "m'khamemot",
        "hebrew": "מחממות",
        "nikkud": "מְחַמְּמוֹת",
@@ -20489,7 +18227,7 @@ window.VOCAB = {
      "source": "duolingo-vocab"
     },
     {
-     "id": "u26-091",
+     "id": "u26-019",
      "unit": 26,
      "unitName": "Present 2 (M.S)",
      "category": "grammar",
@@ -20506,90 +18244,30 @@ window.VOCAB = {
        "hebrew": "מייבא",
        "nikkud": "מְיַבֵּא",
        "nikkudAuto": true
-      }
-     ],
-     "source": "duolingo-vocab"
-    },
-    {
-     "id": "u26-092",
-     "unit": 26,
-     "unitName": "Present 2 (M.S)",
-     "category": "grammar",
-     "pos": "noun",
-     "english": "I, You, He, It (m.s - pres.)",
-     "gender": "m",
-     "genderSource": "marker",
-     "binyan": null,
-     "root": null,
-     "forms": [
+      },
       {
-       "slot": "singular",
+       "slot": "ms",
        "translit": "m'yabe",
        "hebrew": "מייבא",
        "nikkud": "מְיַבֵּא",
        "nikkudAuto": true
-      }
-     ],
-     "source": "duolingo-vocab"
-    },
-    {
-     "id": "u26-093",
-     "unit": 26,
-     "unitName": "Present 2 (M.S)",
-     "category": "grammar",
-     "pos": "noun",
-     "english": "I, You, She, It (f.s - pres.)",
-     "gender": "f",
-     "genderSource": "marker",
-     "binyan": null,
-     "root": null,
-     "forms": [
+      },
       {
-       "slot": "singular",
+       "slot": "fs",
        "translit": "m'yabet",
        "hebrew": "מייבאת",
        "nikkud": "מְיַבֵּאת",
        "nikkudAuto": true
-      }
-     ],
-     "source": "duolingo-vocab"
-    },
-    {
-     "id": "u26-094",
-     "unit": 26,
-     "unitName": "Present 2 (M.S)",
-     "category": "grammar",
-     "pos": "noun",
-     "english": "We, You, They (m.p - pres.)",
-     "gender": "m",
-     "genderSource": "marker",
-     "binyan": null,
-     "root": null,
-     "forms": [
+      },
       {
-       "slot": "singular",
+       "slot": "mp",
        "translit": "m'yabim",
        "hebrew": "מייבאים",
        "nikkud": "מְיַבְּאִים",
        "nikkudAuto": true
-      }
-     ],
-     "source": "duolingo-vocab"
-    },
-    {
-     "id": "u26-095",
-     "unit": 26,
-     "unitName": "Present 2 (M.S)",
-     "category": "grammar",
-     "pos": "noun",
-     "english": "We, You, They (f.p- pres.)",
-     "gender": "f",
-     "genderSource": "marker",
-     "binyan": null,
-     "root": null,
-     "forms": [
+      },
       {
-       "slot": "singular",
+       "slot": "fp",
        "translit": "m'yabot",
        "hebrew": "מייבאות",
        "nikkud": "מְיַבְּאוֹת",
@@ -20599,7 +18277,7 @@ window.VOCAB = {
      "source": "duolingo-vocab"
     },
     {
-     "id": "u26-096",
+     "id": "u26-020",
      "unit": 26,
      "unitName": "Present 2 (M.S)",
      "category": "grammar",
@@ -20616,90 +18294,30 @@ window.VOCAB = {
        "hebrew": "למלא",
        "nikkud": "לְמַלֵּא",
        "nikkudAuto": true
-      }
-     ],
-     "source": "duolingo-vocab"
-    },
-    {
-     "id": "u26-097",
-     "unit": 26,
-     "unitName": "Present 2 (M.S)",
-     "category": "grammar",
-     "pos": "noun",
-     "english": "I, You, He, It (m.s - pres.)",
-     "gender": "m",
-     "genderSource": "marker",
-     "binyan": null,
-     "root": null,
-     "forms": [
+      },
       {
-       "slot": "singular",
+       "slot": "ms",
        "translit": "m'male",
        "hebrew": "ממלא",
        "nikkud": "מְמַלֵּא",
        "nikkudAuto": true
-      }
-     ],
-     "source": "duolingo-vocab"
-    },
-    {
-     "id": "u26-098",
-     "unit": 26,
-     "unitName": "Present 2 (M.S)",
-     "category": "grammar",
-     "pos": "noun",
-     "english": "I, You, She, It (f.s - pres.)",
-     "gender": "f",
-     "genderSource": "marker",
-     "binyan": null,
-     "root": null,
-     "forms": [
+      },
       {
-       "slot": "singular",
+       "slot": "fs",
        "translit": "m'mal'ah",
        "hebrew": "ממלאה",
        "nikkud": "מְמַלְּאָה",
        "nikkudAuto": true
-      }
-     ],
-     "source": "duolingo-vocab"
-    },
-    {
-     "id": "u26-099",
-     "unit": 26,
-     "unitName": "Present 2 (M.S)",
-     "category": "grammar",
-     "pos": "noun",
-     "english": "We, You, They (m.p - pres.)",
-     "gender": "m",
-     "genderSource": "marker",
-     "binyan": null,
-     "root": null,
-     "forms": [
+      },
       {
-       "slot": "singular",
+       "slot": "mp",
        "translit": "m'mal'im",
        "hebrew": "ממלאים",
        "nikkud": "מְמַלְּאִים",
        "nikkudAuto": true
-      }
-     ],
-     "source": "duolingo-vocab"
-    },
-    {
-     "id": "u26-100",
-     "unit": 26,
-     "unitName": "Present 2 (M.S)",
-     "category": "grammar",
-     "pos": "noun",
-     "english": "We, You, They (f.p- pres.)",
-     "gender": "f",
-     "genderSource": "marker",
-     "binyan": null,
-     "root": null,
-     "forms": [
+      },
       {
-       "slot": "singular",
+       "slot": "fp",
        "translit": "m'mal'ot",
        "hebrew": "ממלאות",
        "nikkud": "מְמַלְּאוֹת",
@@ -20709,7 +18327,7 @@ window.VOCAB = {
      "source": "duolingo-vocab"
     },
     {
-     "id": "u26-101",
+     "id": "u26-021",
      "unit": 26,
      "unitName": "Present 2 (M.S)",
      "category": "grammar",
@@ -20726,90 +18344,30 @@ window.VOCAB = {
        "hebrew": "לבזבז",
        "nikkud": "לְבַזְבֵּז",
        "nikkudAuto": true
-      }
-     ],
-     "source": "duolingo-vocab"
-    },
-    {
-     "id": "u26-102",
-     "unit": 26,
-     "unitName": "Present 2 (M.S)",
-     "category": "grammar",
-     "pos": "noun",
-     "english": "I, You, He, It (m.s - pres.)",
-     "gender": "m",
-     "genderSource": "marker",
-     "binyan": null,
-     "root": null,
-     "forms": [
+      },
       {
-       "slot": "singular",
+       "slot": "ms",
        "translit": "m'vaz'bez",
        "hebrew": "מבזבז",
        "nikkud": "מְבַזְבֵּז",
        "nikkudAuto": true
-      }
-     ],
-     "source": "duolingo-vocab"
-    },
-    {
-     "id": "u26-103",
-     "unit": 26,
-     "unitName": "Present 2 (M.S)",
-     "category": "grammar",
-     "pos": "noun",
-     "english": "I, You, She, It (f.s - pres.)",
-     "gender": "f",
-     "genderSource": "marker",
-     "binyan": null,
-     "root": null,
-     "forms": [
+      },
       {
-       "slot": "singular",
+       "slot": "fs",
        "translit": "m'vaz'bezet",
        "hebrew": "מבזבזת",
        "nikkud": "מְבַזְבֶּזֶת",
        "nikkudAuto": true
-      }
-     ],
-     "source": "duolingo-vocab"
-    },
-    {
-     "id": "u26-104",
-     "unit": 26,
-     "unitName": "Present 2 (M.S)",
-     "category": "grammar",
-     "pos": "noun",
-     "english": "We, You, They (m.p - pres.)",
-     "gender": "m",
-     "genderSource": "marker",
-     "binyan": null,
-     "root": null,
-     "forms": [
+      },
       {
-       "slot": "singular",
+       "slot": "mp",
        "translit": "m'vak'b'zim",
        "hebrew": "מבזבזים",
        "nikkud": "מְבַזְבְּזִים",
        "nikkudAuto": true
-      }
-     ],
-     "source": "duolingo-vocab"
-    },
-    {
-     "id": "u26-105",
-     "unit": 26,
-     "unitName": "Present 2 (M.S)",
-     "category": "grammar",
-     "pos": "noun",
-     "english": "We, You, They (f.p- pres.)",
-     "gender": "f",
-     "genderSource": "marker",
-     "binyan": null,
-     "root": null,
-     "forms": [
+      },
       {
-       "slot": "singular",
+       "slot": "fp",
        "translit": "m'vaz'b'zot",
        "hebrew": "מבזבזות",
        "nikkud": "מְבַזְבְּזוֹת",
@@ -20819,7 +18377,7 @@ window.VOCAB = {
      "source": "duolingo-vocab"
     },
     {
-     "id": "u26-106",
+     "id": "u26-022",
      "unit": 26,
      "unitName": "Present 2 (M.S)",
      "category": "grammar",
@@ -20836,90 +18394,30 @@ window.VOCAB = {
        "hebrew": "(ב( )את-) לבקר",
        "nikkud": "(ב( )אַתְּ-) לְבַקֵּר",
        "nikkudAuto": true
-      }
-     ],
-     "source": "duolingo-vocab"
-    },
-    {
-     "id": "u26-107",
-     "unit": 26,
-     "unitName": "Present 2 (M.S)",
-     "category": "grammar",
-     "pos": "noun",
-     "english": "I, You, He, It (m.s - pres.)",
-     "gender": "m",
-     "genderSource": "marker",
-     "binyan": null,
-     "root": null,
-     "forms": [
+      },
       {
-       "slot": "singular",
+       "slot": "ms",
        "translit": "m'vaker",
        "hebrew": "מבקר",
        "nikkud": "מְבַקֵּר",
        "nikkudAuto": true
-      }
-     ],
-     "source": "duolingo-vocab"
-    },
-    {
-     "id": "u26-108",
-     "unit": 26,
-     "unitName": "Present 2 (M.S)",
-     "category": "grammar",
-     "pos": "noun",
-     "english": "I, You, She, It (f.s - pres.)",
-     "gender": "f",
-     "genderSource": "marker",
-     "binyan": null,
-     "root": null,
-     "forms": [
+      },
       {
-       "slot": "singular",
+       "slot": "fs",
        "translit": "m'vakeret",
        "hebrew": "מבקרת",
        "nikkud": "מְבַקֶּרֶת",
        "nikkudAuto": true
-      }
-     ],
-     "source": "duolingo-vocab"
-    },
-    {
-     "id": "u26-109",
-     "unit": 26,
-     "unitName": "Present 2 (M.S)",
-     "category": "grammar",
-     "pos": "noun",
-     "english": "We, You, They (m.p - pres.)",
-     "gender": "m",
-     "genderSource": "marker",
-     "binyan": null,
-     "root": null,
-     "forms": [
+      },
       {
-       "slot": "singular",
+       "slot": "mp",
        "translit": "m'vak'rim",
        "hebrew": "מבקרים",
        "nikkud": "מְבַקְּרִים",
        "nikkudAuto": true
-      }
-     ],
-     "source": "duolingo-vocab"
-    },
-    {
-     "id": "u26-110",
-     "unit": 26,
-     "unitName": "Present 2 (M.S)",
-     "category": "grammar",
-     "pos": "noun",
-     "english": "We, You, They (f.p- pres.)",
-     "gender": "f",
-     "genderSource": "marker",
-     "binyan": null,
-     "root": null,
-     "forms": [
+      },
       {
-       "slot": "singular",
+       "slot": "fp",
        "translit": "m'vak'rot",
        "hebrew": "מבקרות",
        "nikkud": "מְבַקְּרוֹת",
@@ -20929,7 +18427,7 @@ window.VOCAB = {
      "source": "duolingo-vocab"
     },
     {
-     "id": "u26-111",
+     "id": "u26-023",
      "unit": 26,
      "unitName": "Present 2 (M.S)",
      "category": "grammar",
@@ -20946,90 +18444,30 @@ window.VOCAB = {
        "hebrew": "לקבל",
        "nikkud": "לְקַבֵּל",
        "nikkudAuto": true
-      }
-     ],
-     "source": "duolingo-vocab"
-    },
-    {
-     "id": "u26-112",
-     "unit": 26,
-     "unitName": "Present 2 (M.S)",
-     "category": "grammar",
-     "pos": "noun",
-     "english": "I, You, He, It (m.s - pres.)",
-     "gender": "m",
-     "genderSource": "marker",
-     "binyan": null,
-     "root": null,
-     "forms": [
+      },
       {
-       "slot": "singular",
+       "slot": "ms",
        "translit": "m'kabel",
        "hebrew": "מקבל",
        "nikkud": "מְקַבֵּל",
        "nikkudAuto": true
-      }
-     ],
-     "source": "duolingo-vocab"
-    },
-    {
-     "id": "u26-113",
-     "unit": 26,
-     "unitName": "Present 2 (M.S)",
-     "category": "grammar",
-     "pos": "noun",
-     "english": "I, You, She, It (f.s - pres.)",
-     "gender": "f",
-     "genderSource": "marker",
-     "binyan": null,
-     "root": null,
-     "forms": [
+      },
       {
-       "slot": "singular",
+       "slot": "fs",
        "translit": "m'kabelet",
        "hebrew": "מקבלת",
        "nikkud": "מְקַבֶּלֶת",
        "nikkudAuto": true
-      }
-     ],
-     "source": "duolingo-vocab"
-    },
-    {
-     "id": "u26-114",
-     "unit": 26,
-     "unitName": "Present 2 (M.S)",
-     "category": "grammar",
-     "pos": "noun",
-     "english": "We, You, They (m.p - pres.)",
-     "gender": "m",
-     "genderSource": "marker",
-     "binyan": null,
-     "root": null,
-     "forms": [
+      },
       {
-       "slot": "singular",
+       "slot": "mp",
        "translit": "m'kab'lim",
        "hebrew": "מקבלים",
        "nikkud": "מְקַבְּלִים",
        "nikkudAuto": true
-      }
-     ],
-     "source": "duolingo-vocab"
-    },
-    {
-     "id": "u26-115",
-     "unit": 26,
-     "unitName": "Present 2 (M.S)",
-     "category": "grammar",
-     "pos": "noun",
-     "english": "We, You, They (f.p- pres.)",
-     "gender": "f",
-     "genderSource": "marker",
-     "binyan": null,
-     "root": null,
-     "forms": [
+      },
       {
-       "slot": "singular",
+       "slot": "fp",
        "translit": "m'kab'lot",
        "hebrew": "מקבלות",
        "nikkud": "מְקַבְּלוֹת",
@@ -21039,7 +18477,7 @@ window.VOCAB = {
      "source": "duolingo-vocab"
     },
     {
-     "id": "u26-116",
+     "id": "u26-024",
      "unit": 26,
      "unitName": "Present 2 (M.S)",
      "category": "grammar",
@@ -21056,90 +18494,30 @@ window.VOCAB = {
        "hebrew": "(לרחם )על",
        "nikkud": "(לְרַחֵם )עַל",
        "nikkudAuto": true
-      }
-     ],
-     "source": "duolingo-vocab"
-    },
-    {
-     "id": "u26-117",
-     "unit": 26,
-     "unitName": "Present 2 (M.S)",
-     "category": "grammar",
-     "pos": "noun",
-     "english": "I, You, He, It (m.s - pres.)",
-     "gender": "m",
-     "genderSource": "marker",
-     "binyan": null,
-     "root": null,
-     "forms": [
+      },
       {
-       "slot": "singular",
+       "slot": "ms",
        "translit": "m'rakhem",
        "hebrew": "מרחם",
        "nikkud": "מְרַחֵם",
        "nikkudAuto": true
-      }
-     ],
-     "source": "duolingo-vocab"
-    },
-    {
-     "id": "u26-118",
-     "unit": 26,
-     "unitName": "Present 2 (M.S)",
-     "category": "grammar",
-     "pos": "noun",
-     "english": "I, You, She, It (f.s - pres.)",
-     "gender": "f",
-     "genderSource": "marker",
-     "binyan": null,
-     "root": null,
-     "forms": [
+      },
       {
-       "slot": "singular",
+       "slot": "fs",
        "translit": "m'rakhemet",
        "hebrew": "מרחמת",
        "nikkud": "מְרַחֶמֶת",
        "nikkudAuto": true
-      }
-     ],
-     "source": "duolingo-vocab"
-    },
-    {
-     "id": "u26-119",
-     "unit": 26,
-     "unitName": "Present 2 (M.S)",
-     "category": "grammar",
-     "pos": "noun",
-     "english": "We, You, They (m.p - pres.)",
-     "gender": "m",
-     "genderSource": "marker",
-     "binyan": null,
-     "root": null,
-     "forms": [
+      },
       {
-       "slot": "singular",
+       "slot": "mp",
        "translit": "m'rakhamim",
        "hebrew": "מרחמים",
        "nikkud": "מְרַחֲמִים",
        "nikkudAuto": true
-      }
-     ],
-     "source": "duolingo-vocab"
-    },
-    {
-     "id": "u26-120",
-     "unit": 26,
-     "unitName": "Present 2 (M.S)",
-     "category": "grammar",
-     "pos": "noun",
-     "english": "We, You, They (f.p- pres.)",
-     "gender": "f",
-     "genderSource": "marker",
-     "binyan": null,
-     "root": null,
-     "forms": [
+      },
       {
-       "slot": "singular",
+       "slot": "fp",
        "translit": "m'rakhamot",
        "hebrew": "מרחמות",
        "nikkud": "מֵ|רְחָמוֹת",
@@ -21149,7 +18527,7 @@ window.VOCAB = {
      "source": "duolingo-vocab"
     },
     {
-     "id": "u26-121",
+     "id": "u26-025",
      "unit": 26,
      "unitName": "Present 2 (M.S)",
      "category": "grammar",
@@ -21166,90 +18544,30 @@ window.VOCAB = {
        "hebrew": "(-לקנא )ב",
        "nikkud": "(-לְקַנֵּא )ב",
        "nikkudAuto": true
-      }
-     ],
-     "source": "duolingo-vocab"
-    },
-    {
-     "id": "u26-122",
-     "unit": 26,
-     "unitName": "Present 2 (M.S)",
-     "category": "grammar",
-     "pos": "noun",
-     "english": "I, You, He, It (m.s - pres.)",
-     "gender": "m",
-     "genderSource": "marker",
-     "binyan": null,
-     "root": null,
-     "forms": [
+      },
       {
-       "slot": "singular",
+       "slot": "ms",
        "translit": "m'kane",
        "hebrew": "מקנא",
        "nikkud": "מְקַנֵּא",
        "nikkudAuto": true
-      }
-     ],
-     "source": "duolingo-vocab"
-    },
-    {
-     "id": "u26-123",
-     "unit": 26,
-     "unitName": "Present 2 (M.S)",
-     "category": "grammar",
-     "pos": "noun",
-     "english": "I, You, She, It (f.s - pres.)",
-     "gender": "f",
-     "genderSource": "marker",
-     "binyan": null,
-     "root": null,
-     "forms": [
+      },
       {
-       "slot": "singular",
+       "slot": "fs",
        "translit": "m'kan'ah",
        "hebrew": "מקנאה",
        "nikkud": "מִ|קִּנְאָה",
        "nikkudAuto": true
-      }
-     ],
-     "source": "duolingo-vocab"
-    },
-    {
-     "id": "u26-124",
-     "unit": 26,
-     "unitName": "Present 2 (M.S)",
-     "category": "grammar",
-     "pos": "noun",
-     "english": "We, You, They (m.p - pres.)",
-     "gender": "m",
-     "genderSource": "marker",
-     "binyan": null,
-     "root": null,
-     "forms": [
+      },
       {
-       "slot": "singular",
+       "slot": "mp",
        "translit": "m'kan'im",
        "hebrew": "מקנאים",
        "nikkud": "מְקַנְּאִים",
        "nikkudAuto": true
-      }
-     ],
-     "source": "duolingo-vocab"
-    },
-    {
-     "id": "u26-125",
-     "unit": 26,
-     "unitName": "Present 2 (M.S)",
-     "category": "grammar",
-     "pos": "noun",
-     "english": "We, You, They (f.p- pres.)",
-     "gender": "f",
-     "genderSource": "marker",
-     "binyan": null,
-     "root": null,
-     "forms": [
+      },
       {
-       "slot": "singular",
+       "slot": "fp",
        "translit": "m'kan'ot",
        "hebrew": "מקנאות",
        "nikkud": "מְקַנְּאוֹת",
@@ -21259,7 +18577,7 @@ window.VOCAB = {
      "source": "duolingo-vocab"
     },
     {
-     "id": "u26-126",
+     "id": "u26-026",
      "unit": 26,
      "unitName": "Present 2 (M.S)",
      "category": "grammar",
@@ -21276,90 +18594,30 @@ window.VOCAB = {
        "hebrew": "(לטפס )על",
        "nikkud": "(לְטַפֵּס )עַל",
        "nikkudAuto": true
-      }
-     ],
-     "source": "duolingo-vocab"
-    },
-    {
-     "id": "u26-127",
-     "unit": 26,
-     "unitName": "Present 2 (M.S)",
-     "category": "grammar",
-     "pos": "noun",
-     "english": "I, You, He, It (m.s - pres.)",
-     "gender": "m",
-     "genderSource": "marker",
-     "binyan": null,
-     "root": null,
-     "forms": [
+      },
       {
-       "slot": "singular",
+       "slot": "ms",
        "translit": "m'tapes",
        "hebrew": "מטפס",
        "nikkud": "מְטַפֵּס",
        "nikkudAuto": true
-      }
-     ],
-     "source": "duolingo-vocab"
-    },
-    {
-     "id": "u26-128",
-     "unit": 26,
-     "unitName": "Present 2 (M.S)",
-     "category": "grammar",
-     "pos": "noun",
-     "english": "I, You, She, It (f.s - pres.)",
-     "gender": "f",
-     "genderSource": "marker",
-     "binyan": null,
-     "root": null,
-     "forms": [
+      },
       {
-       "slot": "singular",
+       "slot": "fs",
        "translit": "m'tapeset",
        "hebrew": "מטפסת",
        "nikkud": "מְטַפֶּסֶת",
        "nikkudAuto": true
-      }
-     ],
-     "source": "duolingo-vocab"
-    },
-    {
-     "id": "u26-129",
-     "unit": 26,
-     "unitName": "Present 2 (M.S)",
-     "category": "grammar",
-     "pos": "noun",
-     "english": "We, You, They (m.p - pres.)",
-     "gender": "m",
-     "genderSource": "marker",
-     "binyan": null,
-     "root": null,
-     "forms": [
+      },
       {
-       "slot": "singular",
+       "slot": "mp",
        "translit": "m'tap'sim",
        "hebrew": "מטפסים",
        "nikkud": "מְטַפְּסִים",
        "nikkudAuto": true
-      }
-     ],
-     "source": "duolingo-vocab"
-    },
-    {
-     "id": "u26-130",
-     "unit": 26,
-     "unitName": "Present 2 (M.S)",
-     "category": "grammar",
-     "pos": "noun",
-     "english": "We, You, They (f.p- pres.)",
-     "gender": "f",
-     "genderSource": "marker",
-     "binyan": null,
-     "root": null,
-     "forms": [
+      },
       {
-       "slot": "singular",
+       "slot": "fp",
        "translit": "m'tap'sot",
        "hebrew": "מטפסות",
        "nikkud": "מְטַפְּסוֹת",
@@ -21369,7 +18627,7 @@ window.VOCAB = {
      "source": "duolingo-vocab"
     },
     {
-     "id": "u26-131",
+     "id": "u26-027",
      "unit": 26,
      "unitName": "Present 2 (M.S)",
      "category": "grammar",
@@ -21386,90 +18644,30 @@ window.VOCAB = {
        "hebrew": "לנצח",
        "nikkud": "לָנֶצַח",
        "nikkudAuto": true
-      }
-     ],
-     "source": "duolingo-vocab"
-    },
-    {
-     "id": "u26-132",
-     "unit": 26,
-     "unitName": "Present 2 (M.S)",
-     "category": "grammar",
-     "pos": "noun",
-     "english": "I, You, He, It (m.s - pres.)",
-     "gender": "m",
-     "genderSource": "marker",
-     "binyan": null,
-     "root": null,
-     "forms": [
+      },
       {
-       "slot": "singular",
+       "slot": "ms",
        "translit": "m'natzeakh",
        "hebrew": "מנצח",
        "nikkud": "מְנַצֵּחַ",
        "nikkudAuto": true
-      }
-     ],
-     "source": "duolingo-vocab"
-    },
-    {
-     "id": "u26-133",
-     "unit": 26,
-     "unitName": "Present 2 (M.S)",
-     "category": "grammar",
-     "pos": "noun",
-     "english": "I, You, She, It (f.s - pres.)",
-     "gender": "f",
-     "genderSource": "marker",
-     "binyan": null,
-     "root": null,
-     "forms": [
+      },
       {
-       "slot": "singular",
+       "slot": "fs",
        "translit": "m'natzakhat",
        "hebrew": "מנצחת",
        "nikkud": "מְנַצַּחַת",
        "nikkudAuto": true
-      }
-     ],
-     "source": "duolingo-vocab"
-    },
-    {
-     "id": "u26-134",
-     "unit": 26,
-     "unitName": "Present 2 (M.S)",
-     "category": "grammar",
-     "pos": "noun",
-     "english": "We, You, They (m.p - pres.)",
-     "gender": "m",
-     "genderSource": "marker",
-     "binyan": null,
-     "root": null,
-     "forms": [
+      },
       {
-       "slot": "singular",
+       "slot": "mp",
        "translit": "m'natz'khim",
        "hebrew": "מנצחים",
        "nikkud": "מְנַצְּחִים",
        "nikkudAuto": true
-      }
-     ],
-     "source": "duolingo-vocab"
-    },
-    {
-     "id": "u26-135",
-     "unit": 26,
-     "unitName": "Present 2 (M.S)",
-     "category": "grammar",
-     "pos": "noun",
-     "english": "We, You, They (f.p- pres.)",
-     "gender": "f",
-     "genderSource": "marker",
-     "binyan": null,
-     "root": null,
-     "forms": [
+      },
       {
-       "slot": "singular",
+       "slot": "fp",
        "translit": "m'natz'khot",
        "hebrew": "מנצחות",
        "nikkud": "מְנַצְּחוֹת",
@@ -21479,7 +18677,7 @@ window.VOCAB = {
      "source": "duolingo-vocab"
     },
     {
-     "id": "u26-136",
+     "id": "u26-028",
      "unit": 26,
      "unitName": "Present 2 (M.S)",
      "category": "grammar",
@@ -21496,90 +18694,30 @@ window.VOCAB = {
        "hebrew": "לאמן",
        "nikkud": "לָ|אָמָּן",
        "nikkudAuto": true
-      }
-     ],
-     "source": "duolingo-vocab"
-    },
-    {
-     "id": "u26-137",
-     "unit": 26,
-     "unitName": "Present 2 (M.S)",
-     "category": "grammar",
-     "pos": "noun",
-     "english": "I, You, He, It (m.s - pres.)",
-     "gender": "m",
-     "genderSource": "marker",
-     "binyan": null,
-     "root": null,
-     "forms": [
+      },
       {
-       "slot": "singular",
+       "slot": "ms",
        "translit": "m'amen",
        "hebrew": "מאמן",
        "nikkud": "מְאַמֵּן",
        "nikkudAuto": true
-      }
-     ],
-     "source": "duolingo-vocab"
-    },
-    {
-     "id": "u26-138",
-     "unit": 26,
-     "unitName": "Present 2 (M.S)",
-     "category": "grammar",
-     "pos": "noun",
-     "english": "I, You, She, It (f.s - pres.)",
-     "gender": "f",
-     "genderSource": "marker",
-     "binyan": null,
-     "root": null,
-     "forms": [
+      },
       {
-       "slot": "singular",
+       "slot": "fs",
        "translit": "m'amenet",
        "hebrew": "מאמנת",
        "nikkud": "מְאַמֶּנֶת",
        "nikkudAuto": true
-      }
-     ],
-     "source": "duolingo-vocab"
-    },
-    {
-     "id": "u26-139",
-     "unit": 26,
-     "unitName": "Present 2 (M.S)",
-     "category": "grammar",
-     "pos": "noun",
-     "english": "We, You, They (m.p - pres.)",
-     "gender": "m",
-     "genderSource": "marker",
-     "binyan": null,
-     "root": null,
-     "forms": [
+      },
       {
-       "slot": "singular",
+       "slot": "mp",
        "translit": "m'am'nim",
        "hebrew": "מאמנים",
        "nikkud": "מְאַמְּנִים",
        "nikkudAuto": true
-      }
-     ],
-     "source": "duolingo-vocab"
-    },
-    {
-     "id": "u26-140",
-     "unit": 26,
-     "unitName": "Present 2 (M.S)",
-     "category": "grammar",
-     "pos": "noun",
-     "english": "We, You, They (f.p- pres.)",
-     "gender": "f",
-     "genderSource": "marker",
-     "binyan": null,
-     "root": null,
-     "forms": [
+      },
       {
-       "slot": "singular",
+       "slot": "fp",
        "translit": "m'am'not",
        "hebrew": "מאמנות",
        "nikkud": "מֵ|אָמָּנוּת",
@@ -21589,7 +18727,7 @@ window.VOCAB = {
      "source": "duolingo-vocab"
     },
     {
-     "id": "u26-141",
+     "id": "u26-029",
      "unit": 26,
      "unitName": "Present 2 (M.S)",
      "category": "grammar",
@@ -21606,90 +18744,30 @@ window.VOCAB = {
        "hebrew": "לשקר",
        "nikkud": "לְשַׁקֵּר",
        "nikkudAuto": true
-      }
-     ],
-     "source": "duolingo-vocab"
-    },
-    {
-     "id": "u26-142",
-     "unit": 26,
-     "unitName": "Present 2 (M.S)",
-     "category": "grammar",
-     "pos": "noun",
-     "english": "I, You, He, It (m.s - pres.)",
-     "gender": "m",
-     "genderSource": "marker",
-     "binyan": null,
-     "root": null,
-     "forms": [
+      },
       {
-       "slot": "singular",
+       "slot": "ms",
        "translit": "m'shaker",
        "hebrew": "משקר",
        "nikkud": "מְשַׁקֵּר",
        "nikkudAuto": true
-      }
-     ],
-     "source": "duolingo-vocab"
-    },
-    {
-     "id": "u26-143",
-     "unit": 26,
-     "unitName": "Present 2 (M.S)",
-     "category": "grammar",
-     "pos": "noun",
-     "english": "I, You, She, It (f.s - pres.)",
-     "gender": "f",
-     "genderSource": "marker",
-     "binyan": null,
-     "root": null,
-     "forms": [
+      },
       {
-       "slot": "singular",
+       "slot": "fs",
        "translit": "m'shakeret",
        "hebrew": "משקרת",
        "nikkud": "מְשַׁקֶּרֶת",
        "nikkudAuto": true
-      }
-     ],
-     "source": "duolingo-vocab"
-    },
-    {
-     "id": "u26-144",
-     "unit": 26,
-     "unitName": "Present 2 (M.S)",
-     "category": "grammar",
-     "pos": "noun",
-     "english": "We, You, They (m.p - pres.)",
-     "gender": "m",
-     "genderSource": "marker",
-     "binyan": null,
-     "root": null,
-     "forms": [
+      },
       {
-       "slot": "singular",
+       "slot": "mp",
        "translit": "m'shak'rim",
        "hebrew": "משקרים",
        "nikkud": "מְשַׁקְּרִים",
        "nikkudAuto": true
-      }
-     ],
-     "source": "duolingo-vocab"
-    },
-    {
-     "id": "u26-145",
-     "unit": 26,
-     "unitName": "Present 2 (M.S)",
-     "category": "grammar",
-     "pos": "noun",
-     "english": "We, You, They (f.p- pres.)",
-     "gender": "f",
-     "genderSource": "marker",
-     "binyan": null,
-     "root": null,
-     "forms": [
+      },
       {
-       "slot": "singular",
+       "slot": "fp",
        "translit": "m'shak'rot",
        "hebrew": "משקרות",
        "nikkud": "מְשַׁקְּרוֹת",
@@ -21699,7 +18777,7 @@ window.VOCAB = {
      "source": "duolingo-vocab"
     },
     {
-     "id": "u26-146",
+     "id": "u26-030",
      "unit": 26,
      "unitName": "Present 2 (M.S)",
      "category": "grammar",
@@ -21716,90 +18794,30 @@ window.VOCAB = {
        "hebrew": "לאחר",
        "nikkud": "לְאַחַר",
        "nikkudAuto": true
-      }
-     ],
-     "source": "duolingo-vocab"
-    },
-    {
-     "id": "u26-147",
-     "unit": 26,
-     "unitName": "Present 2 (M.S)",
-     "category": "grammar",
-     "pos": "noun",
-     "english": "I, You, He, It (m.s - pres.)",
-     "gender": "m",
-     "genderSource": "marker",
-     "binyan": null,
-     "root": null,
-     "forms": [
+      },
       {
-       "slot": "singular",
+       "slot": "ms",
        "translit": "m'akher",
        "hebrew": "מאחר",
        "nikkud": "מֵאַחַר",
        "nikkudAuto": true
-      }
-     ],
-     "source": "duolingo-vocab"
-    },
-    {
-     "id": "u26-148",
-     "unit": 26,
-     "unitName": "Present 2 (M.S)",
-     "category": "grammar",
-     "pos": "noun",
-     "english": "I, You, She, It (f.s - pres.)",
-     "gender": "f",
-     "genderSource": "marker",
-     "binyan": null,
-     "root": null,
-     "forms": [
+      },
       {
-       "slot": "singular",
+       "slot": "fs",
        "translit": "m'akheret",
        "hebrew": "מאחרת",
        "nikkud": "מְאַחֶרֶת",
        "nikkudAuto": true
-      }
-     ],
-     "source": "duolingo-vocab"
-    },
-    {
-     "id": "u26-149",
-     "unit": 26,
-     "unitName": "Present 2 (M.S)",
-     "category": "grammar",
-     "pos": "noun",
-     "english": "We, You, They (m.p - pres.)",
-     "gender": "m",
-     "genderSource": "marker",
-     "binyan": null,
-     "root": null,
-     "forms": [
+      },
       {
-       "slot": "singular",
+       "slot": "mp",
        "translit": "m'akharim",
        "hebrew": "מאחרים",
        "nikkud": "מֵ|אֲחֵרִים",
        "nikkudAuto": true
-      }
-     ],
-     "source": "duolingo-vocab"
-    },
-    {
-     "id": "u26-150",
-     "unit": 26,
-     "unitName": "Present 2 (M.S)",
-     "category": "grammar",
-     "pos": "noun",
-     "english": "We, You, They (f.p- pres.)",
-     "gender": "f",
-     "genderSource": "marker",
-     "binyan": null,
-     "root": null,
-     "forms": [
+      },
       {
-       "slot": "singular",
+       "slot": "fp",
        "translit": "m'akharot",
        "hebrew": "מאחרות",
        "nikkud": "מֵ|אֲחֵרוֹת",
@@ -21809,7 +18827,7 @@ window.VOCAB = {
      "source": "duolingo-vocab"
     },
     {
-     "id": "u26-151",
+     "id": "u26-031",
      "unit": 26,
      "unitName": "Present 2 (M.S)",
      "category": "grammar",
@@ -21826,90 +18844,30 @@ window.VOCAB = {
        "hebrew": "(-לחכות )ל",
        "nikkud": "(-לְחַכּוֹת )ל",
        "nikkudAuto": true
-      }
-     ],
-     "source": "duolingo-vocab"
-    },
-    {
-     "id": "u26-152",
-     "unit": 26,
-     "unitName": "Present 2 (M.S)",
-     "category": "grammar",
-     "pos": "noun",
-     "english": "I, You, He, It (m.s - pres.)",
-     "gender": "m",
-     "genderSource": "marker",
-     "binyan": null,
-     "root": null,
-     "forms": [
+      },
       {
-       "slot": "singular",
+       "slot": "ms",
        "translit": "m'khakeh",
        "hebrew": "מחכה",
        "nikkud": "מְחַכֶּה",
        "nikkudAuto": true
-      }
-     ],
-     "source": "duolingo-vocab"
-    },
-    {
-     "id": "u26-153",
-     "unit": 26,
-     "unitName": "Present 2 (M.S)",
-     "category": "grammar",
-     "pos": "noun",
-     "english": "I, You, She, It (f.s - pres.)",
-     "gender": "f",
-     "genderSource": "marker",
-     "binyan": null,
-     "root": null,
-     "forms": [
+      },
       {
-       "slot": "singular",
+       "slot": "fs",
        "translit": "m'khakah",
        "hebrew": "מחכה",
        "nikkud": "מְחַכֶּה",
        "nikkudAuto": true
-      }
-     ],
-     "source": "duolingo-vocab"
-    },
-    {
-     "id": "u26-154",
-     "unit": 26,
-     "unitName": "Present 2 (M.S)",
-     "category": "grammar",
-     "pos": "noun",
-     "english": "We, You, They (m.p - pres.)",
-     "gender": "m",
-     "genderSource": "marker",
-     "binyan": null,
-     "root": null,
-     "forms": [
+      },
       {
-       "slot": "singular",
+       "slot": "mp",
        "translit": "m'khakim",
        "hebrew": "מחכים",
        "nikkud": "מְחַכִּים",
        "nikkudAuto": true
-      }
-     ],
-     "source": "duolingo-vocab"
-    },
-    {
-     "id": "u26-155",
-     "unit": 26,
-     "unitName": "Present 2 (M.S)",
-     "category": "grammar",
-     "pos": "noun",
-     "english": "We, You, They (f.p- pres.)",
-     "gender": "f",
-     "genderSource": "marker",
-     "binyan": null,
-     "root": null,
-     "forms": [
+      },
       {
-       "slot": "singular",
+       "slot": "fp",
        "translit": "m'khakot",
        "hebrew": "מחכות",
        "nikkud": "מְחַכּוֹת",
@@ -21919,7 +18877,7 @@ window.VOCAB = {
      "source": "duolingo-vocab"
     },
     {
-     "id": "u26-156",
+     "id": "u26-032",
      "unit": 26,
      "unitName": "Present 2 (M.S)",
      "category": "grammar",
@@ -21936,90 +18894,30 @@ window.VOCAB = {
        "hebrew": "לספק",
        "nikkud": "לְ|סָפֵק",
        "nikkudAuto": true
-      }
-     ],
-     "source": "duolingo-vocab"
-    },
-    {
-     "id": "u26-157",
-     "unit": 26,
-     "unitName": "Present 2 (M.S)",
-     "category": "grammar",
-     "pos": "noun",
-     "english": "I, You, He, It (m.s - pres.)",
-     "gender": "m",
-     "genderSource": "marker",
-     "binyan": null,
-     "root": null,
-     "forms": [
+      },
       {
-       "slot": "singular",
+       "slot": "ms",
        "translit": "m'sapek",
        "hebrew": "מספק",
        "nikkud": "מְסַפֵּק",
        "nikkudAuto": true
-      }
-     ],
-     "source": "duolingo-vocab"
-    },
-    {
-     "id": "u26-158",
-     "unit": 26,
-     "unitName": "Present 2 (M.S)",
-     "category": "grammar",
-     "pos": "noun",
-     "english": "I, You, She, It (f.s - pres.)",
-     "gender": "f",
-     "genderSource": "marker",
-     "binyan": null,
-     "root": null,
-     "forms": [
+      },
       {
-       "slot": "singular",
+       "slot": "fs",
        "translit": "m'sapeket",
        "hebrew": "מספקת",
        "nikkud": "מְסַפֶּקֶת",
        "nikkudAuto": true
-      }
-     ],
-     "source": "duolingo-vocab"
-    },
-    {
-     "id": "u26-159",
-     "unit": 26,
-     "unitName": "Present 2 (M.S)",
-     "category": "grammar",
-     "pos": "noun",
-     "english": "We, You, They (m.p - pres.)",
-     "gender": "m",
-     "genderSource": "marker",
-     "binyan": null,
-     "root": null,
-     "forms": [
+      },
       {
-       "slot": "singular",
+       "slot": "mp",
        "translit": "m'sap'kim",
        "hebrew": "מספקים",
        "nikkud": "מְסַפְּקִים",
        "nikkudAuto": true
-      }
-     ],
-     "source": "duolingo-vocab"
-    },
-    {
-     "id": "u26-160",
-     "unit": 26,
-     "unitName": "Present 2 (M.S)",
-     "category": "grammar",
-     "pos": "noun",
-     "english": "We, You, They (f.p- pres.)",
-     "gender": "f",
-     "genderSource": "marker",
-     "binyan": null,
-     "root": null,
-     "forms": [
+      },
       {
-       "slot": "singular",
+       "slot": "fp",
        "translit": "m'sap'kot",
        "hebrew": "מספקות",
        "nikkud": "מְסַפְּקוֹת",
@@ -22029,7 +18927,7 @@ window.VOCAB = {
      "source": "duolingo-vocab"
     },
     {
-     "id": "u26-161",
+     "id": "u26-033",
      "unit": 26,
      "unitName": "Present 2 (M.S)",
      "category": "grammar",
@@ -22046,90 +18944,30 @@ window.VOCAB = {
        "hebrew": "לסיים",
        "nikkud": "לְסַיֵּם",
        "nikkudAuto": true
-      }
-     ],
-     "source": "duolingo-vocab"
-    },
-    {
-     "id": "u26-162",
-     "unit": 26,
-     "unitName": "Present 2 (M.S)",
-     "category": "grammar",
-     "pos": "noun",
-     "english": "I, You, He, It (m.s - pres.)",
-     "gender": "m",
-     "genderSource": "marker",
-     "binyan": null,
-     "root": null,
-     "forms": [
+      },
       {
-       "slot": "singular",
+       "slot": "ms",
        "translit": "m'sayem",
        "hebrew": "מסיים",
        "nikkud": "מְסַיֵּם",
        "nikkudAuto": true
-      }
-     ],
-     "source": "duolingo-vocab"
-    },
-    {
-     "id": "u26-163",
-     "unit": 26,
-     "unitName": "Present 2 (M.S)",
-     "category": "grammar",
-     "pos": "noun",
-     "english": "I, You, She, It (f.s - pres.)",
-     "gender": "f",
-     "genderSource": "marker",
-     "binyan": null,
-     "root": null,
-     "forms": [
+      },
       {
-       "slot": "singular",
+       "slot": "fs",
        "translit": "m'sayemet",
        "hebrew": "מסיימת",
        "nikkud": "מְסַיֶּמֶת",
        "nikkudAuto": true
-      }
-     ],
-     "source": "duolingo-vocab"
-    },
-    {
-     "id": "u26-164",
-     "unit": 26,
-     "unitName": "Present 2 (M.S)",
-     "category": "grammar",
-     "pos": "noun",
-     "english": "We, You, They (m.p - pres.)",
-     "gender": "m",
-     "genderSource": "marker",
-     "binyan": null,
-     "root": null,
-     "forms": [
+      },
       {
-       "slot": "singular",
+       "slot": "mp",
        "translit": "m'say'mim",
        "hebrew": "מסיימים",
        "nikkud": "מְסַיְּמִים",
        "nikkudAuto": true
-      }
-     ],
-     "source": "duolingo-vocab"
-    },
-    {
-     "id": "u26-165",
-     "unit": 26,
-     "unitName": "Present 2 (M.S)",
-     "category": "grammar",
-     "pos": "noun",
-     "english": "We, You, They (f.p- pres.)",
-     "gender": "f",
-     "genderSource": "marker",
-     "binyan": null,
-     "root": null,
-     "forms": [
+      },
       {
-       "slot": "singular",
+       "slot": "fp",
        "translit": "m'say'mot",
        "hebrew": "מסיימות",
        "nikkud": "מְסַיְּמוֹת",
@@ -22139,7 +18977,7 @@ window.VOCAB = {
      "source": "duolingo-vocab"
     },
     {
-     "id": "u26-166",
+     "id": "u26-034",
      "unit": 26,
      "unitName": "Present 2 (M.S)",
      "category": "grammar",
@@ -22156,90 +18994,30 @@ window.VOCAB = {
        "hebrew": "לשכנע",
        "nikkud": "לְשַׁכְנֵעַ",
        "nikkudAuto": true
-      }
-     ],
-     "source": "duolingo-vocab"
-    },
-    {
-     "id": "u26-167",
-     "unit": 26,
-     "unitName": "Present 2 (M.S)",
-     "category": "grammar",
-     "pos": "noun",
-     "english": "I, You, He, It (m.s - pres.)",
-     "gender": "m",
-     "genderSource": "marker",
-     "binyan": null,
-     "root": null,
-     "forms": [
+      },
       {
-       "slot": "singular",
+       "slot": "ms",
        "translit": "m'shakh'nea",
        "hebrew": "משכנע",
        "nikkud": "מְשַׁכְנֵעַ",
        "nikkudAuto": true
-      }
-     ],
-     "source": "duolingo-vocab"
-    },
-    {
-     "id": "u26-168",
-     "unit": 26,
-     "unitName": "Present 2 (M.S)",
-     "category": "grammar",
-     "pos": "noun",
-     "english": "I, You, She, It (f.s - pres.)",
-     "gender": "f",
-     "genderSource": "marker",
-     "binyan": null,
-     "root": null,
-     "forms": [
+      },
       {
-       "slot": "singular",
+       "slot": "fs",
        "translit": "m'shakh'na'at",
        "hebrew": "משכנעת",
        "nikkud": "מְשַׁכְנַעַת",
        "nikkudAuto": true
-      }
-     ],
-     "source": "duolingo-vocab"
-    },
-    {
-     "id": "u26-169",
-     "unit": 26,
-     "unitName": "Present 2 (M.S)",
-     "category": "grammar",
-     "pos": "noun",
-     "english": "We, You, They (m.p - pres.)",
-     "gender": "m",
-     "genderSource": "marker",
-     "binyan": null,
-     "root": null,
-     "forms": [
+      },
       {
-       "slot": "singular",
+       "slot": "mp",
        "translit": "m'shakh'n'im",
        "hebrew": "משכנעים",
        "nikkud": "מְשַׁכְנְעִים",
        "nikkudAuto": true
-      }
-     ],
-     "source": "duolingo-vocab"
-    },
-    {
-     "id": "u26-170",
-     "unit": 26,
-     "unitName": "Present 2 (M.S)",
-     "category": "grammar",
-     "pos": "noun",
-     "english": "We, You, They (f.p- pres.)",
-     "gender": "f",
-     "genderSource": "marker",
-     "binyan": null,
-     "root": null,
-     "forms": [
+      },
       {
-       "slot": "singular",
+       "slot": "fp",
        "translit": "m'shakh'n'ot",
        "hebrew": "משכנעות",
        "nikkud": "מְשַׁכְנְעוֹת",
@@ -22249,7 +19027,7 @@ window.VOCAB = {
      "source": "duolingo-vocab"
     },
     {
-     "id": "u26-171",
+     "id": "u26-035",
      "unit": 26,
      "unitName": "Present 2 (M.S)",
      "category": "grammar",
@@ -22266,90 +19044,30 @@ window.VOCAB = {
        "hebrew": "לאבד",
        "nikkud": "לְאַבֵּד",
        "nikkudAuto": true
-      }
-     ],
-     "source": "duolingo-vocab"
-    },
-    {
-     "id": "u26-172",
-     "unit": 26,
-     "unitName": "Present 2 (M.S)",
-     "category": "grammar",
-     "pos": "noun",
-     "english": "I, You, He, It (m.s - pres.)",
-     "gender": "m",
-     "genderSource": "marker",
-     "binyan": null,
-     "root": null,
-     "forms": [
+      },
       {
-       "slot": "singular",
+       "slot": "ms",
        "translit": "m'abed",
        "hebrew": "מאבד",
        "nikkud": "מְאַבֵּד",
        "nikkudAuto": true
-      }
-     ],
-     "source": "duolingo-vocab"
-    },
-    {
-     "id": "u26-173",
-     "unit": 26,
-     "unitName": "Present 2 (M.S)",
-     "category": "grammar",
-     "pos": "noun",
-     "english": "I, You, She, It (f.s - pres.)",
-     "gender": "f",
-     "genderSource": "marker",
-     "binyan": null,
-     "root": null,
-     "forms": [
+      },
       {
-       "slot": "singular",
+       "slot": "fs",
        "translit": "m'abedet",
        "hebrew": "מאבדת",
        "nikkud": "מְאַבֶּדֶת",
        "nikkudAuto": true
-      }
-     ],
-     "source": "duolingo-vocab"
-    },
-    {
-     "id": "u26-174",
-     "unit": 26,
-     "unitName": "Present 2 (M.S)",
-     "category": "grammar",
-     "pos": "noun",
-     "english": "We, You, They (m.p - pres.)",
-     "gender": "m",
-     "genderSource": "marker",
-     "binyan": null,
-     "root": null,
-     "forms": [
+      },
       {
-       "slot": "singular",
+       "slot": "mp",
        "translit": "m'ab'dim",
        "hebrew": "מאבדים",
        "nikkud": "מְאַבְּדִים",
        "nikkudAuto": true
-      }
-     ],
-     "source": "duolingo-vocab"
-    },
-    {
-     "id": "u26-175",
-     "unit": 26,
-     "unitName": "Present 2 (M.S)",
-     "category": "grammar",
-     "pos": "noun",
-     "english": "We, You, They (f.p- pres.)",
-     "gender": "f",
-     "genderSource": "marker",
-     "binyan": null,
-     "root": null,
-     "forms": [
+      },
       {
-       "slot": "singular",
+       "slot": "fp",
        "translit": "m'ab'dot",
        "hebrew": "מאבדות",
        "nikkud": "מְאַבְּדוֹת",
@@ -22359,7 +19077,7 @@ window.VOCAB = {
      "source": "duolingo-vocab"
     },
     {
-     "id": "u26-176",
+     "id": "u26-036",
      "unit": 26,
      "unitName": "Present 2 (M.S)",
      "category": "grammar",
@@ -22376,90 +19094,30 @@ window.VOCAB = {
        "hebrew": "לצלם",
        "nikkud": "לְצַלֵּם",
        "nikkudAuto": true
-      }
-     ],
-     "source": "duolingo-vocab"
-    },
-    {
-     "id": "u26-177",
-     "unit": 26,
-     "unitName": "Present 2 (M.S)",
-     "category": "grammar",
-     "pos": "noun",
-     "english": "I, You, He, It (m.s - pres.)",
-     "gender": "m",
-     "genderSource": "marker",
-     "binyan": null,
-     "root": null,
-     "forms": [
+      },
       {
-       "slot": "singular",
+       "slot": "ms",
        "translit": "m'tzalem",
        "hebrew": "מצלם",
        "nikkud": "מְצַלֵּם",
        "nikkudAuto": true
-      }
-     ],
-     "source": "duolingo-vocab"
-    },
-    {
-     "id": "u26-178",
-     "unit": 26,
-     "unitName": "Present 2 (M.S)",
-     "category": "grammar",
-     "pos": "noun",
-     "english": "I, You, She, It (f.s - pres.)",
-     "gender": "f",
-     "genderSource": "marker",
-     "binyan": null,
-     "root": null,
-     "forms": [
+      },
       {
-       "slot": "singular",
+       "slot": "fs",
        "translit": "m'tzalemet",
        "hebrew": "מצלמת",
        "nikkud": "מַצְלֵמַת",
        "nikkudAuto": true
-      }
-     ],
-     "source": "duolingo-vocab"
-    },
-    {
-     "id": "u26-179",
-     "unit": 26,
-     "unitName": "Present 2 (M.S)",
-     "category": "grammar",
-     "pos": "noun",
-     "english": "We, You, They (m.p - pres.)",
-     "gender": "m",
-     "genderSource": "marker",
-     "binyan": null,
-     "root": null,
-     "forms": [
+      },
       {
-       "slot": "singular",
+       "slot": "mp",
        "translit": "m'tzal'mim",
        "hebrew": "מצלמים",
        "nikkud": "מְצַלְּמִים",
        "nikkudAuto": true
-      }
-     ],
-     "source": "duolingo-vocab"
-    },
-    {
-     "id": "u26-180",
-     "unit": 26,
-     "unitName": "Present 2 (M.S)",
-     "category": "grammar",
-     "pos": "noun",
-     "english": "We, You, They (f.p- pres.)",
-     "gender": "f",
-     "genderSource": "marker",
-     "binyan": null,
-     "root": null,
-     "forms": [
+      },
       {
-       "slot": "singular",
+       "slot": "fp",
        "translit": "m'tzal'mot",
        "hebrew": "מצלמות",
        "nikkud": "מַצְלֵמוֹת",
@@ -22469,7 +19127,7 @@ window.VOCAB = {
      "source": "duolingo-vocab"
     },
     {
-     "id": "u26-181",
+     "id": "u26-037",
      "unit": 26,
      "unitName": "Present 2 (M.S)",
      "category": "grammar",
@@ -22486,90 +19144,30 @@ window.VOCAB = {
        "hebrew": "לאמץ",
        "nikkud": "לְאַמֵּץ",
        "nikkudAuto": true
-      }
-     ],
-     "source": "duolingo-vocab"
-    },
-    {
-     "id": "u26-182",
-     "unit": 26,
-     "unitName": "Present 2 (M.S)",
-     "category": "grammar",
-     "pos": "noun",
-     "english": "I, You, He, It (m.s - pres.)",
-     "gender": "m",
-     "genderSource": "marker",
-     "binyan": null,
-     "root": null,
-     "forms": [
+      },
       {
-       "slot": "singular",
+       "slot": "ms",
        "translit": "m'ametz",
        "hebrew": "מאמץ",
        "nikkud": "מַאֲמָץ",
        "nikkudAuto": true
-      }
-     ],
-     "source": "duolingo-vocab"
-    },
-    {
-     "id": "u26-183",
-     "unit": 26,
-     "unitName": "Present 2 (M.S)",
-     "category": "grammar",
-     "pos": "noun",
-     "english": "I, You, She, It (f.s - pres.)",
-     "gender": "f",
-     "genderSource": "marker",
-     "binyan": null,
-     "root": null,
-     "forms": [
+      },
       {
-       "slot": "singular",
+       "slot": "fs",
        "translit": "m'ametzet",
        "hebrew": "מאמצת",
        "nikkud": "מְאַמֶּצֶת",
        "nikkudAuto": true
-      }
-     ],
-     "source": "duolingo-vocab"
-    },
-    {
-     "id": "u26-184",
-     "unit": 26,
-     "unitName": "Present 2 (M.S)",
-     "category": "grammar",
-     "pos": "noun",
-     "english": "We, You, They (m.p - pres.)",
-     "gender": "m",
-     "genderSource": "marker",
-     "binyan": null,
-     "root": null,
-     "forms": [
+      },
       {
-       "slot": "singular",
+       "slot": "mp",
        "translit": "m'am'tzim",
        "hebrew": "מאמצים",
        "nikkud": "מַאֲמַצִּים",
        "nikkudAuto": true
-      }
-     ],
-     "source": "duolingo-vocab"
-    },
-    {
-     "id": "u26-185",
-     "unit": 26,
-     "unitName": "Present 2 (M.S)",
-     "category": "grammar",
-     "pos": "noun",
-     "english": "We, You, They (f.p- pres.)",
-     "gender": "f",
-     "genderSource": "marker",
-     "binyan": null,
-     "root": null,
-     "forms": [
+      },
       {
-       "slot": "singular",
+       "slot": "fp",
        "translit": "m'am'tzot",
        "hebrew": "מאמצות",
        "nikkud": "מְאַמְּצוֹת",
@@ -22579,7 +19177,7 @@ window.VOCAB = {
      "source": "duolingo-vocab"
     },
     {
-     "id": "u26-186",
+     "id": "u26-038",
      "unit": 26,
      "unitName": "Present 2 (M.S)",
      "category": "grammar",
@@ -22596,90 +19194,30 @@ window.VOCAB = {
        "hebrew": "לפחד",
        "nikkud": "לְפַחֵד",
        "nikkudAuto": true
-      }
-     ],
-     "source": "duolingo-vocab"
-    },
-    {
-     "id": "u26-187",
-     "unit": 26,
-     "unitName": "Present 2 (M.S)",
-     "category": "grammar",
-     "pos": "noun",
-     "english": "I, You, He, It (m.s - pres.)",
-     "gender": "m",
-     "genderSource": "marker",
-     "binyan": null,
-     "root": null,
-     "forms": [
+      },
       {
-       "slot": "singular",
+       "slot": "ms",
        "translit": "m'fakhed",
        "hebrew": "מפחד",
        "nikkud": "מִ|פַּחַד",
        "nikkudAuto": true
-      }
-     ],
-     "source": "duolingo-vocab"
-    },
-    {
-     "id": "u26-188",
-     "unit": 26,
-     "unitName": "Present 2 (M.S)",
-     "category": "grammar",
-     "pos": "noun",
-     "english": "I, You, She, It (f.s - pres.)",
-     "gender": "f",
-     "genderSource": "marker",
-     "binyan": null,
-     "root": null,
-     "forms": [
+      },
       {
-       "slot": "singular",
+       "slot": "fs",
        "translit": "m'fakhedet",
        "hebrew": "מפחדת",
        "nikkud": "מְפַחֶדֶת",
        "nikkudAuto": true
-      }
-     ],
-     "source": "duolingo-vocab"
-    },
-    {
-     "id": "u26-189",
-     "unit": 26,
-     "unitName": "Present 2 (M.S)",
-     "category": "grammar",
-     "pos": "noun",
-     "english": "We, You, They (m.p - pres.)",
-     "gender": "m",
-     "genderSource": "marker",
-     "binyan": null,
-     "root": null,
-     "forms": [
+      },
       {
-       "slot": "singular",
+       "slot": "mp",
        "translit": "m'fakhadim",
        "hebrew": "מפחדים",
        "nikkud": "מְפַחֲדִים",
        "nikkudAuto": true
-      }
-     ],
-     "source": "duolingo-vocab"
-    },
-    {
-     "id": "u26-190",
-     "unit": 26,
-     "unitName": "Present 2 (M.S)",
-     "category": "grammar",
-     "pos": "noun",
-     "english": "We, You, They (f.p- pres.)",
-     "gender": "f",
-     "genderSource": "marker",
-     "binyan": null,
-     "root": null,
-     "forms": [
+      },
       {
-       "slot": "singular",
+       "slot": "fp",
        "translit": "m'fakhadot",
        "hebrew": "מפחדות",
        "nikkud": "מְפַחֲדוֹת",
@@ -22689,7 +19227,7 @@ window.VOCAB = {
      "source": "duolingo-vocab"
     },
     {
-     "id": "u26-191",
+     "id": "u26-039",
      "unit": 26,
      "unitName": "Present 2 (M.S)",
      "category": "grammar",
@@ -22706,90 +19244,30 @@ window.VOCAB = {
        "hebrew": "לאשר",
        "nikkud": "לְאַשֵּׁר",
        "nikkudAuto": true
-      }
-     ],
-     "source": "duolingo-vocab"
-    },
-    {
-     "id": "u26-192",
-     "unit": 26,
-     "unitName": "Present 2 (M.S)",
-     "category": "grammar",
-     "pos": "noun",
-     "english": "I, You, He, It (m.s - pres.)",
-     "gender": "m",
-     "genderSource": "marker",
-     "binyan": null,
-     "root": null,
-     "forms": [
+      },
       {
-       "slot": "singular",
+       "slot": "ms",
        "translit": "m'asher",
        "hebrew": "מאשר",
        "nikkud": "מְאַשֵּׁר",
        "nikkudAuto": true
-      }
-     ],
-     "source": "duolingo-vocab"
-    },
-    {
-     "id": "u26-193",
-     "unit": 26,
-     "unitName": "Present 2 (M.S)",
-     "category": "grammar",
-     "pos": "noun",
-     "english": "I, You, She, It (f.s - pres.)",
-     "gender": "f",
-     "genderSource": "marker",
-     "binyan": null,
-     "root": null,
-     "forms": [
+      },
       {
-       "slot": "singular",
+       "slot": "fs",
        "translit": "m'asheret",
        "hebrew": "מאשרת",
        "nikkud": "מְאַשֶּׁרֶת",
        "nikkudAuto": true
-      }
-     ],
-     "source": "duolingo-vocab"
-    },
-    {
-     "id": "u26-194",
-     "unit": 26,
-     "unitName": "Present 2 (M.S)",
-     "category": "grammar",
-     "pos": "noun",
-     "english": "We, You, They (m.p - pres.)",
-     "gender": "m",
-     "genderSource": "marker",
-     "binyan": null,
-     "root": null,
-     "forms": [
+      },
       {
-       "slot": "singular",
+       "slot": "mp",
        "translit": "m'ash'rim",
        "hebrew": "מאשרים",
        "nikkud": "מְאַשְּׁרִים",
        "nikkudAuto": true
-      }
-     ],
-     "source": "duolingo-vocab"
-    },
-    {
-     "id": "u26-195",
-     "unit": 26,
-     "unitName": "Present 2 (M.S)",
-     "category": "grammar",
-     "pos": "noun",
-     "english": "We, You, They (f.p- pres.)",
-     "gender": "f",
-     "genderSource": "marker",
-     "binyan": null,
-     "root": null,
-     "forms": [
+      },
       {
-       "slot": "singular",
+       "slot": "fp",
        "translit": "m'ash'rot",
        "hebrew": "מאשרות",
        "nikkud": "מְאַשְּׁרוֹת",
@@ -22799,7 +19277,7 @@ window.VOCAB = {
      "source": "duolingo-vocab"
     },
     {
-     "id": "u26-196",
+     "id": "u26-040",
      "unit": 26,
      "unitName": "Present 2 (M.S)",
      "category": "grammar",
@@ -22816,90 +19294,30 @@ window.VOCAB = {
        "hebrew": "לגלות",
        "nikkud": "לְגַלּוֹת",
        "nikkudAuto": true
-      }
-     ],
-     "source": "duolingo-vocab"
-    },
-    {
-     "id": "u26-197",
-     "unit": 26,
-     "unitName": "Present 2 (M.S)",
-     "category": "grammar",
-     "pos": "noun",
-     "english": "I, You, He, It (m.s - pres.)",
-     "gender": "m",
-     "genderSource": "marker",
-     "binyan": null,
-     "root": null,
-     "forms": [
+      },
       {
-       "slot": "singular",
+       "slot": "ms",
        "translit": "m'galeh",
        "hebrew": "מגלה",
        "nikkud": "מְגַלֶּה",
        "nikkudAuto": true
-      }
-     ],
-     "source": "duolingo-vocab"
-    },
-    {
-     "id": "u26-198",
-     "unit": 26,
-     "unitName": "Present 2 (M.S)",
-     "category": "grammar",
-     "pos": "noun",
-     "english": "I, You, She, It (f.s - pres.)",
-     "gender": "f",
-     "genderSource": "marker",
-     "binyan": null,
-     "root": null,
-     "forms": [
+      },
       {
-       "slot": "singular",
+       "slot": "fs",
        "translit": "m'galah",
        "hebrew": "מגלה",
        "nikkud": "מְגַלֶּה",
        "nikkudAuto": true
-      }
-     ],
-     "source": "duolingo-vocab"
-    },
-    {
-     "id": "u26-199",
-     "unit": 26,
-     "unitName": "Present 2 (M.S)",
-     "category": "grammar",
-     "pos": "noun",
-     "english": "We, You, They (m.p - pres.)",
-     "gender": "m",
-     "genderSource": "marker",
-     "binyan": null,
-     "root": null,
-     "forms": [
+      },
       {
-       "slot": "singular",
+       "slot": "mp",
        "translit": "m'galim",
        "hebrew": "מגלים",
        "nikkud": "מְגַלִּים",
        "nikkudAuto": true
-      }
-     ],
-     "source": "duolingo-vocab"
-    },
-    {
-     "id": "u26-200",
-     "unit": 26,
-     "unitName": "Present 2 (M.S)",
-     "category": "grammar",
-     "pos": "noun",
-     "english": "We, You, They (f.p- pres.)",
-     "gender": "f",
-     "genderSource": "marker",
-     "binyan": null,
-     "root": null,
-     "forms": [
+      },
       {
-       "slot": "singular",
+       "slot": "fp",
        "translit": "m'galot",
        "hebrew": "מגלות",
        "nikkud": "מִ|גָּלוּת",
@@ -22909,7 +19327,7 @@ window.VOCAB = {
      "source": "duolingo-vocab"
     },
     {
-     "id": "u26-201",
+     "id": "u26-041",
      "unit": 26,
      "unitName": "Present 2 (M.S)",
      "category": "grammar",
@@ -22926,90 +19344,30 @@ window.VOCAB = {
        "hebrew": "לגלח",
        "nikkud": "לְגַלֵּחַ",
        "nikkudAuto": true
-      }
-     ],
-     "source": "duolingo-vocab"
-    },
-    {
-     "id": "u26-202",
-     "unit": 26,
-     "unitName": "Present 2 (M.S)",
-     "category": "grammar",
-     "pos": "noun",
-     "english": "I, You, He, It (m.s - pres.)",
-     "gender": "m",
-     "genderSource": "marker",
-     "binyan": null,
-     "root": null,
-     "forms": [
+      },
       {
-       "slot": "singular",
+       "slot": "ms",
        "translit": "m'galeakh",
        "hebrew": "מגלח",
        "nikkud": "מְגַלֵּחַ",
        "nikkudAuto": true
-      }
-     ],
-     "source": "duolingo-vocab"
-    },
-    {
-     "id": "u26-203",
-     "unit": 26,
-     "unitName": "Present 2 (M.S)",
-     "category": "grammar",
-     "pos": "noun",
-     "english": "I, You, She, It (f.s - pres.)",
-     "gender": "f",
-     "genderSource": "marker",
-     "binyan": null,
-     "root": null,
-     "forms": [
+      },
       {
-       "slot": "singular",
+       "slot": "fs",
        "translit": "m'galakhat",
        "hebrew": "מגלחת",
        "nikkud": "מְגַלַּחַת",
        "nikkudAuto": true
-      }
-     ],
-     "source": "duolingo-vocab"
-    },
-    {
-     "id": "u26-204",
-     "unit": 26,
-     "unitName": "Present 2 (M.S)",
-     "category": "grammar",
-     "pos": "noun",
-     "english": "We, You, They (m.p - pres.)",
-     "gender": "m",
-     "genderSource": "marker",
-     "binyan": null,
-     "root": null,
-     "forms": [
+      },
       {
-       "slot": "singular",
+       "slot": "mp",
        "translit": "m'gal'khim",
        "hebrew": "מגלחים",
        "nikkud": "מְגַלְּחִים",
        "nikkudAuto": true
-      }
-     ],
-     "source": "duolingo-vocab"
-    },
-    {
-     "id": "u26-205",
-     "unit": 26,
-     "unitName": "Present 2 (M.S)",
-     "category": "grammar",
-     "pos": "noun",
-     "english": "We, You, They (f.p- pres.)",
-     "gender": "f",
-     "genderSource": "marker",
-     "binyan": null,
-     "root": null,
-     "forms": [
+      },
       {
-       "slot": "singular",
+       "slot": "fp",
        "translit": "m'gal'khot",
        "hebrew": "מגלחות",
        "nikkud": "מְגַלְּחוֹת",
@@ -23019,7 +19377,7 @@ window.VOCAB = {
      "source": "duolingo-vocab"
     },
     {
-     "id": "u26-206",
+     "id": "u26-042",
      "unit": 26,
      "unitName": "Present 2 (M.S)",
      "category": "grammar",
@@ -23036,90 +19394,30 @@ window.VOCAB = {
        "hebrew": "לחדש",
        "nikkud": "לְחַדֵּשׁ",
        "nikkudAuto": true
-      }
-     ],
-     "source": "duolingo-vocab"
-    },
-    {
-     "id": "u26-207",
-     "unit": 26,
-     "unitName": "Present 2 (M.S)",
-     "category": "grammar",
-     "pos": "noun",
-     "english": "I, You, He, It (m.s - pres.)",
-     "gender": "m",
-     "genderSource": "marker",
-     "binyan": null,
-     "root": null,
-     "forms": [
+      },
       {
-       "slot": "singular",
+       "slot": "ms",
        "translit": "m'khadesh",
        "hebrew": "מחדש",
        "nikkud": "מֵחָדָשׁ",
        "nikkudAuto": true
-      }
-     ],
-     "source": "duolingo-vocab"
-    },
-    {
-     "id": "u26-208",
-     "unit": 26,
-     "unitName": "Present 2 (M.S)",
-     "category": "grammar",
-     "pos": "noun",
-     "english": "I, You, She, It (f.s - pres.)",
-     "gender": "f",
-     "genderSource": "marker",
-     "binyan": null,
-     "root": null,
-     "forms": [
+      },
       {
-       "slot": "singular",
+       "slot": "fs",
        "translit": "m'khadeshet",
        "hebrew": "מחדשת",
        "nikkud": "מְחַדֶּשֶׁת",
        "nikkudAuto": true
-      }
-     ],
-     "source": "duolingo-vocab"
-    },
-    {
-     "id": "u26-209",
-     "unit": 26,
-     "unitName": "Present 2 (M.S)",
-     "category": "grammar",
-     "pos": "noun",
-     "english": "We, You, They (m.p - pres.)",
-     "gender": "m",
-     "genderSource": "marker",
-     "binyan": null,
-     "root": null,
-     "forms": [
+      },
       {
-       "slot": "singular",
+       "slot": "mp",
        "translit": "m'khad'shim",
        "hebrew": "מחדשים",
        "nikkud": "מְחַדְּשִׁים",
        "nikkudAuto": true
-      }
-     ],
-     "source": "duolingo-vocab"
-    },
-    {
-     "id": "u26-210",
-     "unit": 26,
-     "unitName": "Present 2 (M.S)",
-     "category": "grammar",
-     "pos": "noun",
-     "english": "We, You, They (f.p- pres.)",
-     "gender": "f",
-     "genderSource": "marker",
-     "binyan": null,
-     "root": null,
-     "forms": [
+      },
       {
-       "slot": "singular",
+       "slot": "fp",
        "translit": "m'khad'shot",
        "hebrew": "מחדשות",
        "nikkud": "מֵ|חֲדָשׁוֹת",
@@ -23129,7 +19427,7 @@ window.VOCAB = {
      "source": "duolingo-vocab"
     },
     {
-     "id": "u26-211",
+     "id": "u26-043",
      "unit": 26,
      "unitName": "Present 2 (M.S)",
      "category": "grammar",
@@ -23146,90 +19444,30 @@ window.VOCAB = {
        "hebrew": "לברך",
        "nikkud": "לְבָרֵךְ",
        "nikkudAuto": true
-      }
-     ],
-     "source": "duolingo-vocab"
-    },
-    {
-     "id": "u26-212",
-     "unit": 26,
-     "unitName": "Present 2 (M.S)",
-     "category": "grammar",
-     "pos": "noun",
-     "english": "I, You, He, It (m.s - pres.)",
-     "gender": "m",
-     "genderSource": "marker",
-     "binyan": null,
-     "root": null,
-     "forms": [
+      },
       {
-       "slot": "singular",
+       "slot": "ms",
        "translit": "m'varekh",
        "hebrew": "מברך",
        "nikkud": "מְבָרֵךְ",
        "nikkudAuto": true
-      }
-     ],
-     "source": "duolingo-vocab"
-    },
-    {
-     "id": "u26-213",
-     "unit": 26,
-     "unitName": "Present 2 (M.S)",
-     "category": "grammar",
-     "pos": "noun",
-     "english": "I, You, She, It (f.s - pres.)",
-     "gender": "f",
-     "genderSource": "marker",
-     "binyan": null,
-     "root": null,
-     "forms": [
+      },
       {
-       "slot": "singular",
+       "slot": "fs",
        "translit": "m'varekhet",
        "hebrew": "מברכת",
        "nikkud": "מְבָרֶכֶת",
        "nikkudAuto": true
-      }
-     ],
-     "source": "duolingo-vocab"
-    },
-    {
-     "id": "u26-214",
-     "unit": 26,
-     "unitName": "Present 2 (M.S)",
-     "category": "grammar",
-     "pos": "noun",
-     "english": "We, You, They (m.p - pres.)",
-     "gender": "m",
-     "genderSource": "marker",
-     "binyan": null,
-     "root": null,
-     "forms": [
+      },
       {
-       "slot": "singular",
+       "slot": "mp",
        "translit": "m'var'khim",
        "hebrew": "מברכים",
        "nikkud": "מְבָרְכִים",
        "nikkudAuto": true
-      }
-     ],
-     "source": "duolingo-vocab"
-    },
-    {
-     "id": "u26-215",
-     "unit": 26,
-     "unitName": "Present 2 (M.S)",
-     "category": "grammar",
-     "pos": "noun",
-     "english": "We, You, They (f.p- pres.)",
-     "gender": "f",
-     "genderSource": "marker",
-     "binyan": null,
-     "root": null,
-     "forms": [
+      },
       {
-       "slot": "singular",
+       "slot": "fp",
        "translit": "m'var'khot",
        "hebrew": "מברכות",
        "nikkud": "מְבָרְכוֹת",
@@ -23239,7 +19477,7 @@ window.VOCAB = {
      "source": "duolingo-vocab"
     },
     {
-     "id": "u26-216",
+     "id": "u26-044",
      "unit": 26,
      "unitName": "Present 2 (M.S)",
      "category": "grammar",
@@ -23256,90 +19494,30 @@ window.VOCAB = {
        "hebrew": "לתאר",
        "nikkud": "לְתָאֵר",
        "nikkudAuto": true
-      }
-     ],
-     "source": "duolingo-vocab"
-    },
-    {
-     "id": "u26-217",
-     "unit": 26,
-     "unitName": "Present 2 (M.S)",
-     "category": "grammar",
-     "pos": "noun",
-     "english": "I, You, He, It (m.s - pres.)",
-     "gender": "m",
-     "genderSource": "marker",
-     "binyan": null,
-     "root": null,
-     "forms": [
+      },
       {
-       "slot": "singular",
+       "slot": "ms",
        "translit": "m'ta'er",
        "hebrew": "מתאר",
        "nikkud": "מְתָאֵר",
        "nikkudAuto": true
-      }
-     ],
-     "source": "duolingo-vocab"
-    },
-    {
-     "id": "u26-218",
-     "unit": 26,
-     "unitName": "Present 2 (M.S)",
-     "category": "grammar",
-     "pos": "noun",
-     "english": "I, You, She, It (f.s - pres.)",
-     "gender": "f",
-     "genderSource": "marker",
-     "binyan": null,
-     "root": null,
-     "forms": [
+      },
       {
-       "slot": "singular",
+       "slot": "fs",
        "translit": "m'ta'eret",
        "hebrew": "מתארת",
        "nikkud": "מְתָאֶרֶת",
        "nikkudAuto": true
-      }
-     ],
-     "source": "duolingo-vocab"
-    },
-    {
-     "id": "u26-219",
-     "unit": 26,
-     "unitName": "Present 2 (M.S)",
-     "category": "grammar",
-     "pos": "noun",
-     "english": "We, You, They (m.p - pres.)",
-     "gender": "m",
-     "genderSource": "marker",
-     "binyan": null,
-     "root": null,
-     "forms": [
+      },
       {
-       "slot": "singular",
+       "slot": "mp",
        "translit": "m'ta'arim",
        "hebrew": "מתארים",
        "nikkud": "מְתָאֲרִים",
        "nikkudAuto": true
-      }
-     ],
-     "source": "duolingo-vocab"
-    },
-    {
-     "id": "u26-220",
-     "unit": 26,
-     "unitName": "Present 2 (M.S)",
-     "category": "grammar",
-     "pos": "noun",
-     "english": "We, You, They (f.p- pres.)",
-     "gender": "f",
-     "genderSource": "marker",
-     "binyan": null,
-     "root": null,
-     "forms": [
+      },
       {
-       "slot": "singular",
+       "slot": "fp",
        "translit": "m'ta'arot",
        "hebrew": "מתארות",
        "nikkud": "מְתָאֲרוֹת",
@@ -23349,7 +19527,7 @@ window.VOCAB = {
      "source": "duolingo-vocab"
     },
     {
-     "id": "u26-221",
+     "id": "u26-045",
      "unit": 26,
      "unitName": "Present 2 (M.S)",
      "category": "grammar",
@@ -23366,90 +19544,30 @@ window.VOCAB = {
        "hebrew": "לתקן",
        "nikkud": "לְתַקֵּן",
        "nikkudAuto": true
-      }
-     ],
-     "source": "duolingo-vocab"
-    },
-    {
-     "id": "u26-222",
-     "unit": 26,
-     "unitName": "Present 2 (M.S)",
-     "category": "grammar",
-     "pos": "noun",
-     "english": "I, You, He, It (m.s - pres.)",
-     "gender": "m",
-     "genderSource": "marker",
-     "binyan": null,
-     "root": null,
-     "forms": [
+      },
       {
-       "slot": "singular",
+       "slot": "ms",
        "translit": "m'taken",
        "hebrew": "מתקן",
        "nikkud": "מִתְקַן",
        "nikkudAuto": true
-      }
-     ],
-     "source": "duolingo-vocab"
-    },
-    {
-     "id": "u26-223",
-     "unit": 26,
-     "unitName": "Present 2 (M.S)",
-     "category": "grammar",
-     "pos": "noun",
-     "english": "I, You, She, It (f.s - pres.)",
-     "gender": "f",
-     "genderSource": "marker",
-     "binyan": null,
-     "root": null,
-     "forms": [
+      },
       {
-       "slot": "singular",
+       "slot": "fs",
        "translit": "m'takenet",
        "hebrew": "מתקנת",
        "nikkud": "מְתַקֶּנֶת",
        "nikkudAuto": true
-      }
-     ],
-     "source": "duolingo-vocab"
-    },
-    {
-     "id": "u26-224",
-     "unit": 26,
-     "unitName": "Present 2 (M.S)",
-     "category": "grammar",
-     "pos": "noun",
-     "english": "We, You, They (m.p - pres.)",
-     "gender": "m",
-     "genderSource": "marker",
-     "binyan": null,
-     "root": null,
-     "forms": [
+      },
       {
-       "slot": "singular",
+       "slot": "mp",
        "translit": "m'tak'nim",
        "hebrew": "מתקנים",
        "nikkud": "מִתְקָנִים",
        "nikkudAuto": true
-      }
-     ],
-     "source": "duolingo-vocab"
-    },
-    {
-     "id": "u26-225",
-     "unit": 26,
-     "unitName": "Present 2 (M.S)",
-     "category": "grammar",
-     "pos": "noun",
-     "english": "We, You, They (f.p- pres.)",
-     "gender": "f",
-     "genderSource": "marker",
-     "binyan": null,
-     "root": null,
-     "forms": [
+      },
       {
-       "slot": "singular",
+       "slot": "fp",
        "translit": "m'tak'not",
        "hebrew": "מתקנות",
        "nikkud": "מִ|תַּקָּנוֹת",
@@ -23967,7 +20085,7 @@ window.VOCAB = {
      "pos": "noun",
      "english": "Moment",
      "gender": "m",
-     "genderSource": "plural-ending",
+     "genderSource": "override",
      "binyan": null,
      "root": null,
      "forms": [
@@ -24075,8 +20193,8 @@ window.VOCAB = {
      "category": "time",
      "pos": "noun",
      "english": "Generation",
-     "gender": "f",
-     "genderSource": "plural-ending",
+     "gender": "m",
+     "genderSource": "override",
      "binyan": null,
      "root": null,
      "forms": [
@@ -24732,8 +20850,8 @@ window.VOCAB = {
      "category": "time",
      "pos": "noun",
      "english": "Year",
-     "gender": "m",
-     "genderSource": "plural-ending",
+     "gender": "f",
+     "genderSource": "override",
      "binyan": null,
      "root": null,
      "forms": [
@@ -26529,8 +22647,8 @@ window.VOCAB = {
      "category": "other",
      "pos": "noun",
      "english": "Once, One Time",
-     "gender": "m",
-     "genderSource": "plural-ending",
+     "gender": "f",
+     "genderSource": "override",
      "binyan": null,
      "root": null,
      "forms": [
@@ -26558,8 +22676,8 @@ window.VOCAB = {
      "category": "other",
      "pos": "noun",
      "english": "There (Location)",
-     "gender": null,
-     "genderSource": null,
+     "gender": "m",
+     "genderSource": "override",
      "binyan": null,
      "root": null,
      "forms": [
@@ -26580,8 +22698,8 @@ window.VOCAB = {
      "category": "other",
      "pos": "noun",
      "english": "Here (Location)",
-     "gender": "f",
-     "genderSource": "singular-ending",
+     "gender": "m",
+     "genderSource": "override",
      "binyan": null,
      "root": null,
      "forms": [
@@ -27901,8 +24019,8 @@ window.VOCAB = {
      "category": "family",
      "pos": "noun",
      "english": "First Name",
-     "gender": null,
-     "genderSource": null,
+     "gender": "m",
+     "genderSource": "override",
      "binyan": null,
      "root": null,
      "forms": [
@@ -27960,7 +24078,7 @@ window.VOCAB = {
      "pos": "noun",
      "english": "Grandfather",
      "gender": "m",
-     "genderSource": "plural-ending",
+     "genderSource": "override",
      "binyan": null,
      "root": null,
      "forms": [
@@ -28293,8 +24411,8 @@ window.VOCAB = {
      "category": "family",
      "pos": "noun",
      "english": "Wife; Woman",
-     "gender": "m",
-     "genderSource": "plural-ending",
+     "gender": "f",
+     "genderSource": "override",
      "binyan": null,
      "root": null,
      "forms": [
@@ -28548,7 +24666,7 @@ window.VOCAB = {
      "pos": "noun",
      "english": "House, Home",
      "gender": "m",
-     "genderSource": "plural-ending",
+     "genderSource": "override",
      "binyan": null,
      "root": null,
      "forms": [
@@ -28576,8 +24694,8 @@ window.VOCAB = {
      "category": "home",
      "pos": "noun",
      "english": "Key",
-     "gender": "f",
-     "genderSource": "plural-ending",
+     "gender": "m",
+     "genderSource": "override",
      "binyan": null,
      "root": null,
      "forms": [
@@ -28605,8 +24723,8 @@ window.VOCAB = {
      "category": "home",
      "pos": "noun",
      "english": "Chair",
-     "gender": "f",
-     "genderSource": "plural-ending",
+     "gender": "m",
+     "genderSource": "override",
      "binyan": null,
      "root": null,
      "forms": [
@@ -28634,8 +24752,8 @@ window.VOCAB = {
      "category": "home",
      "pos": "noun",
      "english": "Table",
-     "gender": "f",
-     "genderSource": "plural-ending",
+     "gender": "m",
+     "genderSource": "override",
      "binyan": null,
      "root": null,
      "forms": [
@@ -28685,8 +24803,8 @@ window.VOCAB = {
      "category": "home",
      "pos": "noun",
      "english": "Window",
-     "gender": "f",
-     "genderSource": "plural-ending",
+     "gender": "m",
+     "genderSource": "override",
      "binyan": null,
      "root": null,
      "forms": [
@@ -28917,8 +25035,8 @@ window.VOCAB = {
      "category": "home",
      "pos": "noun",
      "english": "Wall",
-     "gender": "f",
-     "genderSource": "plural-ending",
+     "gender": "m",
+     "genderSource": "override",
      "binyan": null,
      "root": null,
      "forms": [
@@ -29244,8 +25362,8 @@ window.VOCAB = {
      "category": "home",
      "pos": "noun",
      "english": "Closet, Cupboard",
-     "gender": "f",
-     "genderSource": "plural-ending",
+     "gender": "m",
+     "genderSource": "override",
      "binyan": null,
      "root": null,
      "forms": [
@@ -29644,7 +25762,7 @@ window.VOCAB = {
      "pos": "noun",
      "english": "Door",
      "gender": "f",
-     "genderSource": "plural-ending",
+     "genderSource": "override",
      "binyan": null,
      "root": null,
      "forms": [
@@ -30645,6 +26763,38 @@ window.VOCAB = {
        "hebrew": "לכתוב",
        "nikkud": "לִכְתֹּב",
        "nikkudAuto": true
+      },
+      {
+       "slot": "ms",
+       "translit": "kotev",
+       "hebrew": "כותב",
+       "nikkud": "כּוֹתֵב",
+       "completed": true,
+       "nikkudAuto": true
+      },
+      {
+       "slot": "fs",
+       "translit": "kotevet",
+       "hebrew": "כותבת",
+       "nikkud": "כּוֹתֶבֶת",
+       "completed": true,
+       "nikkudAuto": true
+      },
+      {
+       "slot": "mp",
+       "translit": "kot'vim",
+       "hebrew": "כותבים",
+       "nikkud": "כּוֹתְבִים",
+       "completed": true,
+       "nikkudAuto": true
+      },
+      {
+       "slot": "fp",
+       "translit": "kot'vot",
+       "hebrew": "כותבות",
+       "nikkud": "כּוֹתְבוֹת",
+       "completed": true,
+       "nikkudAuto": true
       }
      ],
      "source": "duolingo-vocab"
@@ -30667,6 +26817,38 @@ window.VOCAB = {
        "hebrew": "ללכת",
        "nikkud": "לָלֶכֶת",
        "nikkudAuto": true
+      },
+      {
+       "slot": "ms",
+       "translit": "holekh",
+       "hebrew": "הולך",
+       "nikkud": "הוֹלֵךְ",
+       "completed": true,
+       "nikkudAuto": true
+      },
+      {
+       "slot": "fs",
+       "translit": "holekhet",
+       "hebrew": "הולכת",
+       "nikkud": "הוֹלֶכֶת",
+       "completed": true,
+       "nikkudAuto": true
+      },
+      {
+       "slot": "mp",
+       "translit": "hol'khim",
+       "hebrew": "הולכים",
+       "nikkud": "הוֹלְכִים",
+       "completed": true,
+       "nikkudAuto": true
+      },
+      {
+       "slot": "fp",
+       "translit": "hol'khot",
+       "hebrew": "הולכוֹת",
+       "nikkud": "הוֹלְכוֹת",
+       "completed": true,
+       "nikkudAuto": true
       }
      ],
      "source": "duolingo-vocab"
@@ -30688,6 +26870,38 @@ window.VOCAB = {
        "translit": "lis'khot",
        "hebrew": "לשחות",
        "nikkud": "לִשְׂחוֹת",
+       "nikkudAuto": true
+      },
+      {
+       "slot": "ms",
+       "translit": "sokheh",
+       "hebrew": "שוחה",
+       "nikkud": "שׂוֹחָה",
+       "completed": true,
+       "nikkudAuto": true
+      },
+      {
+       "slot": "fs",
+       "translit": "sokhah",
+       "hebrew": "שוחה",
+       "nikkud": "שׂוֹחָה",
+       "completed": true,
+       "nikkudAuto": true
+      },
+      {
+       "slot": "mp",
+       "translit": "sokhim",
+       "hebrew": "שוחים",
+       "nikkud": "שׂוֹחִים",
+       "completed": true,
+       "nikkudAuto": true
+      },
+      {
+       "slot": "fp",
+       "translit": "sokhot",
+       "hebrew": "שׂוֹחוֹת",
+       "nikkud": "שׂוֹחוֹת",
+       "completed": true,
        "nikkudAuto": true
       }
      ],
@@ -30733,6 +26947,38 @@ window.VOCAB = {
        "hebrew": "לראות",
        "nikkud": "לִרְאוֹת",
        "nikkudAuto": true
+      },
+      {
+       "slot": "ms",
+       "translit": "ro'eh",
+       "hebrew": "רואה",
+       "nikkud": "רוֹאֶה",
+       "completed": true,
+       "nikkudAuto": true
+      },
+      {
+       "slot": "fs",
+       "translit": "ro'ah",
+       "hebrew": "רואה",
+       "nikkud": "רוֹאֶה",
+       "completed": true,
+       "nikkudAuto": true
+      },
+      {
+       "slot": "mp",
+       "translit": "ro'im",
+       "hebrew": "רואים",
+       "nikkud": "רוֹאִים",
+       "completed": true,
+       "nikkudAuto": true
+      },
+      {
+       "slot": "fp",
+       "translit": "ro'ot",
+       "hebrew": "רואות",
+       "nikkud": "רוֹאוֹת",
+       "completed": true,
+       "nikkudAuto": true
       }
      ],
      "source": "duolingo-vocab"
@@ -30754,6 +27000,38 @@ window.VOCAB = {
        "translit": "l'vashel",
        "hebrew": "לבשל",
        "nikkud": "לְבַשֵּׁל",
+       "nikkudAuto": true
+      },
+      {
+       "slot": "ms",
+       "translit": "m'vashel",
+       "hebrew": "מבשל",
+       "nikkud": "מְבַשֵּׁל",
+       "completed": true,
+       "nikkudAuto": true
+      },
+      {
+       "slot": "fs",
+       "translit": "m'vashelet",
+       "hebrew": "מבשלת",
+       "nikkud": "מְבַשֶּׁלֶת",
+       "completed": true,
+       "nikkudAuto": true
+      },
+      {
+       "slot": "mp",
+       "translit": "m'vash'lim",
+       "hebrew": "מבשלים",
+       "nikkud": "מְבַשְּׁלִים",
+       "completed": true,
+       "nikkudAuto": true
+      },
+      {
+       "slot": "fp",
+       "translit": "m'vashlot",
+       "hebrew": "מבשלות",
+       "nikkud": "מְבַשְּׁלוֹת",
+       "completed": true,
        "nikkudAuto": true
       }
      ],
@@ -30777,6 +27055,38 @@ window.VOCAB = {
        "hebrew": "לישון",
        "nikkud": "לִישֹׁן",
        "nikkudAuto": true
+      },
+      {
+       "slot": "ms",
+       "translit": "yashen",
+       "hebrew": "ישן",
+       "nikkud": "יָשָׁן",
+       "completed": true,
+       "nikkudAuto": true
+      },
+      {
+       "slot": "fs",
+       "translit": "y'shenah",
+       "hebrew": "ישנה",
+       "nikkud": "יֶשְׁנָהּ",
+       "completed": true,
+       "nikkudAuto": true
+      },
+      {
+       "slot": "mp",
+       "translit": "y'shenim",
+       "hebrew": "ישנים",
+       "nikkud": "יְשָׁנִים",
+       "completed": true,
+       "nikkudAuto": true
+      },
+      {
+       "slot": "fp",
+       "translit": "y'shenot",
+       "hebrew": "ישנות",
+       "nikkud": "יְשָׁנוֹת",
+       "completed": true,
+       "nikkudAuto": true
       }
      ],
      "source": "duolingo-vocab"
@@ -30798,6 +27108,38 @@ window.VOCAB = {
        "translit": "larutz",
        "hebrew": "לרוץ",
        "nikkud": "לָרוּץ",
+       "nikkudAuto": true
+      },
+      {
+       "slot": "ms",
+       "translit": "ratz",
+       "hebrew": "רץ",
+       "nikkud": "רָץ",
+       "completed": true,
+       "nikkudAuto": true
+      },
+      {
+       "slot": "fs",
+       "translit": "ratzah",
+       "hebrew": "רצה",
+       "nikkud": "רָצָה",
+       "completed": true,
+       "nikkudAuto": true
+      },
+      {
+       "slot": "mp",
+       "translit": "ratzim",
+       "hebrew": "רצים",
+       "nikkud": "רָצִים",
+       "completed": true,
+       "nikkudAuto": true
+      },
+      {
+       "slot": "fp",
+       "translit": "ratzot",
+       "hebrew": "רצות",
+       "nikkud": "רָצוֹת",
+       "completed": true,
        "nikkudAuto": true
       }
      ],
@@ -30821,6 +27163,38 @@ window.VOCAB = {
        "hebrew": "לשלם",
        "nikkud": "לְשַׁלֵּם",
        "nikkudAuto": true
+      },
+      {
+       "slot": "ms",
+       "translit": "m'shalem",
+       "hebrew": "משלם",
+       "nikkud": "מְשַׁלֵּם",
+       "completed": true,
+       "nikkudAuto": true
+      },
+      {
+       "slot": "fs",
+       "translit": "m'shalemet",
+       "hebrew": "משלמת",
+       "nikkud": "מְשַׁלֶּמֶת",
+       "completed": true,
+       "nikkudAuto": true
+      },
+      {
+       "slot": "mp",
+       "translit": "m'shal'mim",
+       "hebrew": "משלמים",
+       "nikkud": "מְשַׁלְּמִים",
+       "completed": true,
+       "nikkudAuto": true
+      },
+      {
+       "slot": "fp",
+       "translit": "m'shal'mot",
+       "hebrew": "משלמות",
+       "nikkud": "מְשַׁלְּמוֹת",
+       "completed": true,
+       "nikkudAuto": true
       }
      ],
      "source": "duolingo-vocab"
@@ -30843,6 +27217,38 @@ window.VOCAB = {
        "hebrew": "לתת",
        "nikkud": "לָתֵת",
        "nikkudAuto": true
+      },
+      {
+       "slot": "ms",
+       "translit": "noten",
+       "hebrew": "נותן",
+       "nikkud": "נוֹתֵן",
+       "completed": true,
+       "nikkudAuto": true
+      },
+      {
+       "slot": "fs",
+       "translit": "notenet",
+       "hebrew": "נותנת",
+       "nikkud": "נוֹתֶנֶת",
+       "completed": true,
+       "nikkudAuto": true
+      },
+      {
+       "slot": "mp",
+       "translit": "not'nim",
+       "hebrew": "נותנים",
+       "nikkud": "נוֹתְנִים",
+       "completed": true,
+       "nikkudAuto": true
+      },
+      {
+       "slot": "fp",
+       "translit": "not'not",
+       "hebrew": "נותנות",
+       "nikkud": "נוֹתְנוֹת",
+       "completed": true,
+       "nikkudAuto": true
       }
      ],
      "source": "duolingo-vocab"
@@ -30864,6 +27270,38 @@ window.VOCAB = {
        "translit": "la'asot",
        "hebrew": "לעשות",
        "nikkud": "לַעֲשׂוֹת",
+       "nikkudAuto": true
+      },
+      {
+       "slot": "ms",
+       "translit": "oseh",
+       "hebrew": "עושה",
+       "nikkud": "עוֹשֶׂה",
+       "completed": true,
+       "nikkudAuto": true
+      },
+      {
+       "slot": "fs",
+       "translit": "osah",
+       "hebrew": "עושה",
+       "nikkud": "עוֹשֶׂה",
+       "completed": true,
+       "nikkudAuto": true
+      },
+      {
+       "slot": "mp",
+       "translit": "osim",
+       "hebrew": "עושים",
+       "nikkud": "עוֹשִׂים",
+       "completed": true,
+       "nikkudAuto": true
+      },
+      {
+       "slot": "fp",
+       "translit": "osot",
+       "hebrew": "עושות",
+       "nikkud": "עוֹשׂוֹת",
+       "completed": true,
        "nikkudAuto": true
       }
      ],
@@ -30931,6 +27369,38 @@ window.VOCAB = {
        "hebrew": "לשחק",
        "nikkud": "לְשַׂחֵק",
        "nikkudAuto": true
+      },
+      {
+       "slot": "ms",
+       "translit": "m'sakhek",
+       "hebrew": "משחק",
+       "nikkud": "מִשְׂחָק",
+       "completed": true,
+       "nikkudAuto": true
+      },
+      {
+       "slot": "fs",
+       "translit": "m'sakheket",
+       "hebrew": "משחקת",
+       "nikkud": "מְשַׂחֶקֶת",
+       "completed": true,
+       "nikkudAuto": true
+      },
+      {
+       "slot": "mp",
+       "translit": "m'sakhakim",
+       "hebrew": "משחקים",
+       "nikkud": "מִשְׂחָקִים",
+       "completed": true,
+       "nikkudAuto": true
+      },
+      {
+       "slot": "fp",
+       "translit": "m'sakhakot",
+       "hebrew": "משחקות",
+       "nikkud": "מְשַׂחֲקוֹת",
+       "completed": true,
+       "nikkudAuto": true
       }
      ],
      "source": "duolingo-vocab"
@@ -30952,6 +27422,38 @@ window.VOCAB = {
        "translit": "lish'tot",
        "hebrew": "לשתות",
        "nikkud": "לִשְׁתּוֹת",
+       "nikkudAuto": true
+      },
+      {
+       "slot": "ms",
+       "translit": "shoteh",
+       "hebrew": "שותה",
+       "nikkud": "שׁוֹתֶה",
+       "completed": true,
+       "nikkudAuto": true
+      },
+      {
+       "slot": "fs",
+       "translit": "shotah",
+       "hebrew": "שותה",
+       "nikkud": "שׁוֹתֶה",
+       "completed": true,
+       "nikkudAuto": true
+      },
+      {
+       "slot": "mp",
+       "translit": "shotim",
+       "hebrew": "שותים",
+       "nikkud": "שׁוֹתִים",
+       "completed": true,
+       "nikkudAuto": true
+      },
+      {
+       "slot": "fp",
+       "translit": "shotot",
+       "hebrew": "שׁוֹתוֹת",
+       "nikkud": "שׁוֹתוֹת",
+       "completed": true,
        "nikkudAuto": true
       }
      ],
@@ -30975,6 +27477,38 @@ window.VOCAB = {
        "hebrew": "לסגור",
        "nikkud": "לִסְגֹּר",
        "nikkudAuto": true
+      },
+      {
+       "slot": "ms",
+       "translit": "soger",
+       "hebrew": "סוגר",
+       "nikkud": "סוֹגֵר",
+       "completed": true,
+       "nikkudAuto": true
+      },
+      {
+       "slot": "fs",
+       "translit": "sogeret",
+       "hebrew": "סוגרת",
+       "nikkud": "סוֹגֶרֶת",
+       "completed": true,
+       "nikkudAuto": true
+      },
+      {
+       "slot": "mp",
+       "translit": "sog'rim",
+       "hebrew": "סוגרים",
+       "nikkud": "סוֹגְרִים",
+       "completed": true,
+       "nikkudAuto": true
+      },
+      {
+       "slot": "fp",
+       "translit": "sog'rot",
+       "hebrew": "סוגרות",
+       "nikkud": "סוֹגְרוֹת",
+       "completed": true,
+       "nikkudAuto": true
       }
      ],
      "source": "duolingo-vocab"
@@ -30997,6 +27531,38 @@ window.VOCAB = {
        "hebrew": "לפתוח",
        "nikkud": "לִפְתֹּחַ",
        "nikkudAuto": true
+      },
+      {
+       "slot": "ms",
+       "translit": "poteakh",
+       "hebrew": "פותח",
+       "nikkud": "פּוֹתֵחַ",
+       "completed": true,
+       "nikkudAuto": true
+      },
+      {
+       "slot": "fs",
+       "translit": "potakhat",
+       "hebrew": "פותחת",
+       "nikkud": "פּוֹתַחַת",
+       "completed": true,
+       "nikkudAuto": true
+      },
+      {
+       "slot": "mp",
+       "translit": "pot'khim",
+       "hebrew": "פותחים",
+       "nikkud": "פּוֹתְחִים",
+       "completed": true,
+       "nikkudAuto": true
+      },
+      {
+       "slot": "fp",
+       "translit": "pot'khot",
+       "hebrew": "פותחות",
+       "nikkud": "פּוֹתְחוֹת",
+       "completed": true,
+       "nikkudAuto": true
       }
      ],
      "source": "duolingo-vocab"
@@ -31018,6 +27584,38 @@ window.VOCAB = {
        "translit": "lish'mo'a",
        "hebrew": "לשמוע",
        "nikkud": "לִשְׁמֹעַ",
+       "nikkudAuto": true
+      },
+      {
+       "slot": "ms",
+       "translit": "shome'a",
+       "hebrew": "שומע",
+       "nikkud": "שׁוֹמֵעַ",
+       "completed": true,
+       "nikkudAuto": true
+      },
+      {
+       "slot": "fs",
+       "translit": "shoma'at",
+       "hebrew": "שומעת",
+       "nikkud": "שׁוֹמַעַת",
+       "completed": true,
+       "nikkudAuto": true
+      },
+      {
+       "slot": "mp",
+       "translit": "shom'im",
+       "hebrew": "שומעים",
+       "nikkud": "שׁוֹמְעִים",
+       "completed": true,
+       "nikkudAuto": true
+      },
+      {
+       "slot": "fp",
+       "translit": "shom'ot",
+       "hebrew": "שומעות",
+       "nikkud": "שׁוֹמְעוֹת",
+       "completed": true,
        "nikkudAuto": true
       }
      ],
@@ -31085,6 +27683,38 @@ window.VOCAB = {
        "hebrew": "לשים",
        "nikkud": "לָשִׂים",
        "nikkudAuto": true
+      },
+      {
+       "slot": "ms",
+       "translit": "sam",
+       "hebrew": "שם",
+       "nikkud": "שֵׁם",
+       "completed": true,
+       "nikkudAuto": true
+      },
+      {
+       "slot": "fs",
+       "translit": "samah",
+       "hebrew": "שמה",
+       "nikkud": "שֶׁ|מָּה",
+       "completed": true,
+       "nikkudAuto": true
+      },
+      {
+       "slot": "mp",
+       "translit": "samim",
+       "hebrew": "שמים",
+       "nikkud": "שָׂמִים",
+       "completed": true,
+       "nikkudAuto": true
+      },
+      {
+       "slot": "fp",
+       "translit": "samot",
+       "hebrew": "שמות",
+       "nikkud": "שֵׁמוֹת",
+       "completed": true,
+       "nikkudAuto": true
       }
      ],
      "source": "duolingo-vocab"
@@ -31106,6 +27736,38 @@ window.VOCAB = {
        "translit": "l'kabel",
        "hebrew": "לקבל",
        "nikkud": "לְקַבֵּל",
+       "nikkudAuto": true
+      },
+      {
+       "slot": "ms",
+       "translit": "m'kabel",
+       "hebrew": "מקבל",
+       "nikkud": "מְקַבֵּל",
+       "completed": true,
+       "nikkudAuto": true
+      },
+      {
+       "slot": "fs",
+       "translit": "m'kabelet",
+       "hebrew": "מקבלת",
+       "nikkud": "מְקַבֶּלֶת",
+       "completed": true,
+       "nikkudAuto": true
+      },
+      {
+       "slot": "mp",
+       "translit": "m'kab'lim",
+       "hebrew": "מקבלים",
+       "nikkud": "מְקַבְּלִים",
+       "completed": true,
+       "nikkudAuto": true
+      },
+      {
+       "slot": "fp",
+       "translit": "m'kab'lot",
+       "hebrew": "מקבלות",
+       "nikkud": "מְקַבְּלוֹת",
+       "completed": true,
        "nikkudAuto": true
       }
      ],
@@ -31129,6 +27791,38 @@ window.VOCAB = {
        "hebrew": "למצוא",
        "nikkud": "לִמְצֹא",
        "nikkudAuto": true
+      },
+      {
+       "slot": "ms",
+       "translit": "motze",
+       "hebrew": "מוצא",
+       "nikkud": "מוֹצָא",
+       "completed": true,
+       "nikkudAuto": true
+      },
+      {
+       "slot": "fs",
+       "translit": "motzet",
+       "hebrew": "מוצאת",
+       "nikkud": "מוֹצֵאת",
+       "completed": true,
+       "nikkudAuto": true
+      },
+      {
+       "slot": "mp",
+       "translit": "motz'im",
+       "hebrew": "מוצאים",
+       "nikkud": "מוֹצְאִים",
+       "completed": true,
+       "nikkudAuto": true
+      },
+      {
+       "slot": "fp",
+       "translit": "motz'ot",
+       "hebrew": "מוצאות",
+       "nikkud": "מוֹצְאוֹת",
+       "completed": true,
+       "nikkudAuto": true
       }
      ],
      "source": "duolingo-vocab"
@@ -31150,6 +27844,38 @@ window.VOCAB = {
        "translit": "la'azor",
        "hebrew": "לעזור",
        "nikkud": "לַעֲזֹר",
+       "nikkudAuto": true
+      },
+      {
+       "slot": "ms",
+       "translit": "ozer",
+       "hebrew": "עוזר",
+       "nikkud": "עוֹזֵר",
+       "completed": true,
+       "nikkudAuto": true
+      },
+      {
+       "slot": "fs",
+       "translit": "ozeret",
+       "hebrew": "עוזרת",
+       "nikkud": "עוֹזֶרֶת",
+       "completed": true,
+       "nikkudAuto": true
+      },
+      {
+       "slot": "mp",
+       "translit": "oz'rim",
+       "hebrew": "עוזרים",
+       "nikkud": "עוֹזְרִים",
+       "completed": true,
+       "nikkudAuto": true
+      },
+      {
+       "slot": "fp",
+       "translit": "oz'rot",
+       "hebrew": "עוזרות",
+       "nikkud": "עוֹזְרוֹת",
+       "completed": true,
        "nikkudAuto": true
       }
      ],
@@ -31173,6 +27899,38 @@ window.VOCAB = {
        "hebrew": "לבוא",
        "nikkud": "לָבוֹא",
        "nikkudAuto": true
+      },
+      {
+       "slot": "ms",
+       "translit": "ba",
+       "hebrew": "בא",
+       "nikkud": "בָּא",
+       "completed": true,
+       "nikkudAuto": true
+      },
+      {
+       "slot": "fs",
+       "translit": "ba'ah",
+       "hebrew": "באה",
+       "nikkud": "בָּאָה",
+       "completed": true,
+       "nikkudAuto": true
+      },
+      {
+       "slot": "mp",
+       "translit": "ba'im",
+       "hebrew": "באים",
+       "nikkud": "בָּאִים",
+       "completed": true,
+       "nikkudAuto": true
+      },
+      {
+       "slot": "fp",
+       "translit": "ba'ot",
+       "hebrew": "באות",
+       "nikkud": "בָּאוֹת",
+       "completed": true,
+       "nikkudAuto": true
       }
      ],
      "source": "duolingo-vocab"
@@ -31194,6 +27952,38 @@ window.VOCAB = {
        "translit": "lik'not",
        "hebrew": "לקנות",
        "nikkud": "לִקְנוֹת",
+       "nikkudAuto": true
+      },
+      {
+       "slot": "ms",
+       "translit": "koneh",
+       "hebrew": "קונה",
+       "nikkud": "קוֹנֶה",
+       "completed": true,
+       "nikkudAuto": true
+      },
+      {
+       "slot": "fs",
+       "translit": "konah",
+       "hebrew": "קונה",
+       "nikkud": "קוֹנֶה",
+       "completed": true,
+       "nikkudAuto": true
+      },
+      {
+       "slot": "mp",
+       "translit": "konim",
+       "hebrew": "קונים",
+       "nikkud": "קוֹנִים",
+       "completed": true,
+       "nikkudAuto": true
+      },
+      {
+       "slot": "fp",
+       "translit": "konot",
+       "hebrew": "קונות",
+       "nikkud": "קוֹנוֹת",
+       "completed": true,
        "nikkudAuto": true
       }
      ],
@@ -31239,6 +28029,38 @@ window.VOCAB = {
        "hebrew": "לעבוד",
        "nikkud": "לַעֲבֹד",
        "nikkudAuto": true
+      },
+      {
+       "slot": "ms",
+       "translit": "oved",
+       "hebrew": "עובד",
+       "nikkud": "עוֹבֵד",
+       "completed": true,
+       "nikkudAuto": true
+      },
+      {
+       "slot": "fs",
+       "translit": "ovedet",
+       "hebrew": "עובדת",
+       "nikkud": "עוֹבֶדֶת",
+       "completed": true,
+       "nikkudAuto": true
+      },
+      {
+       "slot": "mp",
+       "translit": "ov'dim",
+       "hebrew": "עובדים",
+       "nikkud": "עוֹבְדִים",
+       "completed": true,
+       "nikkudAuto": true
+      },
+      {
+       "slot": "fp",
+       "translit": "ov'dot",
+       "hebrew": "עובדות",
+       "nikkud": "עֻבְדּוֹת",
+       "completed": true,
+       "nikkudAuto": true
       }
      ],
      "source": "duolingo-vocab"
@@ -31261,6 +28083,38 @@ window.VOCAB = {
        "hebrew": "לקחת",
        "nikkud": "לָקַחַת",
        "nikkudAuto": true
+      },
+      {
+       "slot": "ms",
+       "translit": "lokeakh",
+       "hebrew": "לוקח",
+       "nikkud": "לוֹקֵחַ",
+       "completed": true,
+       "nikkudAuto": true
+      },
+      {
+       "slot": "fs",
+       "translit": "lokakhat",
+       "hebrew": "לוקחת",
+       "nikkud": "לוֹקַחַת",
+       "completed": true,
+       "nikkudAuto": true
+      },
+      {
+       "slot": "mp",
+       "translit": "lok'khim",
+       "hebrew": "לוקחים",
+       "nikkud": "לוֹקְחִים",
+       "completed": true,
+       "nikkudAuto": true
+      },
+      {
+       "slot": "fp",
+       "translit": "lok'khot",
+       "hebrew": "לוקחות",
+       "nikkud": "לוֹקְחוֹת",
+       "completed": true,
+       "nikkudAuto": true
       }
      ],
      "source": "duolingo-vocab"
@@ -31282,6 +28136,38 @@ window.VOCAB = {
        "translit": "lada'at",
        "hebrew": "לדעת",
        "nikkud": "לָדַעַת",
+       "nikkudAuto": true
+      },
+      {
+       "slot": "ms",
+       "translit": "yode'a",
+       "hebrew": "יודע",
+       "nikkud": "יוֹדֵעַ",
+       "completed": true,
+       "nikkudAuto": true
+      },
+      {
+       "slot": "fs",
+       "translit": "yoda'at",
+       "hebrew": "יודעת",
+       "nikkud": "יוֹדַעַת",
+       "completed": true,
+       "nikkudAuto": true
+      },
+      {
+       "slot": "mp",
+       "translit": "yod'im",
+       "hebrew": "יודעים",
+       "nikkud": "יוֹדְעִים",
+       "completed": true,
+       "nikkudAuto": true
+      },
+      {
+       "slot": "fp",
+       "translit": "yod'ot",
+       "hebrew": "יודעות",
+       "nikkud": "יוֹדְעוֹת",
+       "completed": true,
        "nikkudAuto": true
       }
      ],
@@ -31349,6 +28235,38 @@ window.VOCAB = {
        "hebrew": "לחתוך",
        "nikkud": "לַחְתֹּךְ",
        "nikkudAuto": true
+      },
+      {
+       "slot": "ms",
+       "translit": "khotekh",
+       "hebrew": "חותך",
+       "nikkud": "חוֹתֵךְ",
+       "completed": true,
+       "nikkudAuto": true
+      },
+      {
+       "slot": "fs",
+       "translit": "khotekhet",
+       "hebrew": "חותכת",
+       "nikkud": "חוֹתֶכֶת",
+       "completed": true,
+       "nikkudAuto": true
+      },
+      {
+       "slot": "mp",
+       "translit": "khot'khim",
+       "hebrew": "חותכים",
+       "nikkud": "חוֹתְכִים",
+       "completed": true,
+       "nikkudAuto": true
+      },
+      {
+       "slot": "fp",
+       "translit": "khot'khot",
+       "hebrew": "חותכות",
+       "nikkud": "חוֹתְכוֹת",
+       "completed": true,
+       "nikkudAuto": true
       }
      ],
      "source": "duolingo-vocab"
@@ -31392,6 +28310,38 @@ window.VOCAB = {
        "translit": "lis'por",
        "hebrew": "לספור",
        "nikkud": "לִסְפֹּר",
+       "nikkudAuto": true
+      },
+      {
+       "slot": "ms",
+       "translit": "sofer",
+       "hebrew": "סופר",
+       "nikkud": "סוֹפֵר",
+       "completed": true,
+       "nikkudAuto": true
+      },
+      {
+       "slot": "fs",
+       "translit": "soferet",
+       "hebrew": "סופרת",
+       "nikkud": "סוֹפֶרֶת",
+       "completed": true,
+       "nikkudAuto": true
+      },
+      {
+       "slot": "mp",
+       "translit": "sof'rim",
+       "hebrew": "סופרים",
+       "nikkud": "סוֹפְרִים",
+       "completed": true,
+       "nikkudAuto": true
+      },
+      {
+       "slot": "fp",
+       "translit": "sof'rot",
+       "hebrew": "סופרות",
+       "nikkud": "סוֹפְרוֹת",
+       "completed": true,
        "nikkudAuto": true
       }
      ],
@@ -31480,6 +28430,38 @@ window.VOCAB = {
        "translit": "liv'roakh",
        "hebrew": "לברוח",
        "nikkud": "לִבְרֹחַ",
+       "nikkudAuto": true
+      },
+      {
+       "slot": "ms",
+       "translit": "boreakh",
+       "hebrew": "בורח",
+       "nikkud": "בּוֹרֵחַ",
+       "completed": true,
+       "nikkudAuto": true
+      },
+      {
+       "slot": "fs",
+       "translit": "borakhat",
+       "hebrew": "בורחת",
+       "nikkud": "בּוֹרַחַת",
+       "completed": true,
+       "nikkudAuto": true
+      },
+      {
+       "slot": "mp",
+       "translit": "bor'khim",
+       "hebrew": "בורחים",
+       "nikkud": "בּוֹרְחִים",
+       "completed": true,
+       "nikkudAuto": true
+      },
+      {
+       "slot": "fp",
+       "translit": "bor'khot",
+       "hebrew": "בורחות",
+       "nikkud": "בּוֹרְחוֹת",
+       "completed": true,
        "nikkudAuto": true
       }
      ],
@@ -31878,7 +28860,7 @@ window.VOCAB = {
      "pos": "noun",
      "english": "Sun",
      "gender": "f",
-     "genderSource": "plural-ending",
+     "genderSource": "override",
      "binyan": null,
      "root": null,
      "forms": [
@@ -31965,7 +28947,7 @@ window.VOCAB = {
      "pos": "noun",
      "english": "Wind; Spirit",
      "gender": "f",
-     "genderSource": "plural-ending",
+     "genderSource": "override",
      "binyan": null,
      "root": null,
      "forms": [
@@ -32170,7 +29152,7 @@ window.VOCAB = {
      "pos": "noun",
      "english": "Beach",
      "gender": "m",
-     "genderSource": "plural-ending",
+     "genderSource": "override",
      "binyan": null,
      "root": null,
      "forms": [
@@ -32286,8 +29268,8 @@ window.VOCAB = {
      "category": "places",
      "pos": "noun",
      "english": "Street, Road",
-     "gender": "f",
-     "genderSource": "plural-ending",
+     "gender": "m",
+     "genderSource": "override",
      "binyan": null,
      "root": null,
      "forms": [
@@ -32366,8 +29348,8 @@ window.VOCAB = {
      "category": "places",
      "pos": "noun",
      "english": "Place, Space",
-     "gender": "f",
-     "genderSource": "plural-ending",
+     "gender": "m",
+     "genderSource": "override",
      "binyan": null,
      "root": null,
      "forms": [
@@ -32997,8 +29979,8 @@ window.VOCAB = {
      "category": "places",
      "pos": "noun",
      "english": "Palace",
-     "gender": "f",
-     "genderSource": "plural-ending",
+     "gender": "m",
+     "genderSource": "override",
      "binyan": null,
      "root": null,
      "forms": [
@@ -33049,7 +30031,7 @@ window.VOCAB = {
      "pos": "noun",
      "english": "Port, Harbour",
      "gender": "m",
-     "genderSource": "plural-ending",
+     "genderSource": "override",
      "binyan": null,
      "root": null,
      "forms": [
@@ -33267,8 +30249,8 @@ window.VOCAB = {
      "category": "places",
      "pos": "noun",
      "english": "City, Town",
-     "gender": "m",
-     "genderSource": "plural-ending",
+     "gender": "f",
+     "genderSource": "override",
      "binyan": null,
      "root": null,
      "forms": [
@@ -36579,6 +33561,38 @@ window.VOCAB = {
        "hebrew": "לשנות",
        "nikkud": "לְשַׁנּוֹת",
        "nikkudAuto": true
+      },
+      {
+       "slot": "ms",
+       "translit": "m'shaneh",
+       "hebrew": "משנה",
+       "nikkud": "מִשְׁנָה",
+       "completed": true,
+       "nikkudAuto": true
+      },
+      {
+       "slot": "fs",
+       "translit": "m'shanah",
+       "hebrew": "משנה",
+       "nikkud": "מִשְׁנָה",
+       "completed": true,
+       "nikkudAuto": true
+      },
+      {
+       "slot": "mp",
+       "translit": "m'shanim",
+       "hebrew": "משנים",
+       "nikkud": "מְשַׁנִּים",
+       "completed": true,
+       "nikkudAuto": true
+      },
+      {
+       "slot": "fp",
+       "translit": "m'shanot",
+       "hebrew": "משנות",
+       "nikkud": "מִ|שְּׁנוֹת",
+       "completed": true,
+       "nikkudAuto": true
       }
      ],
      "source": "duolingo-vocab"
@@ -37126,8 +34140,8 @@ window.VOCAB = {
      "category": "other",
      "pos": "noun",
      "english": "Idea, Concept",
-     "gender": "f",
-     "genderSource": "plural-ending",
+     "gender": "m",
+     "genderSource": "override",
      "binyan": null,
      "root": null,
      "forms": [
@@ -37590,8 +34604,8 @@ window.VOCAB = {
      "category": "other",
      "pos": "noun",
      "english": "Word",
-     "gender": "m",
-     "genderSource": "plural-ending",
+     "gender": "f",
+     "genderSource": "override",
      "binyan": null,
      "root": null,
      "forms": [
@@ -38317,7 +35331,7 @@ window.VOCAB = {
      "pos": "noun",
      "english": "World",
      "gender": "m",
-     "genderSource": "plural-ending",
+     "genderSource": "override",
      "binyan": null,
      "root": null,
      "forms": [
@@ -38840,7 +35854,7 @@ window.VOCAB = {
      "pos": "noun",
      "english": "Land; Country",
      "gender": "f",
-     "genderSource": "plural-ending",
+     "genderSource": "override",
      "binyan": null,
      "root": null,
      "forms": [
@@ -44330,7 +41344,7 @@ window.VOCAB = {
      "pos": "noun",
      "english": "Occurence, Incident",
      "gender": "m",
-     "genderSource": "plural-ending",
+     "genderSource": "override",
      "binyan": null,
      "root": null,
      "forms": [
@@ -44844,8 +41858,8 @@ window.VOCAB = {
      "category": "other",
      "pos": "noun",
      "english": "Voice",
-     "gender": "f",
-     "genderSource": "plural-ending",
+     "gender": "m",
+     "genderSource": "override",
      "binyan": null,
      "root": null,
      "forms": [
@@ -61008,7 +58022,7 @@ window.VOCAB = {
      "pos": "noun",
      "english": "Tree",
      "gender": "m",
-     "genderSource": "plural-ending",
+     "genderSource": "override",
      "binyan": null,
      "root": null,
      "forms": [
@@ -61181,8 +58195,8 @@ window.VOCAB = {
      "category": "weather",
      "pos": "noun",
      "english": "Field",
-     "gender": "f",
-     "genderSource": "plural-ending",
+     "gender": "m",
+     "genderSource": "override",
      "binyan": null,
      "root": null,
      "forms": [
@@ -61914,8 +58928,8 @@ window.VOCAB = {
      "category": "weather",
      "pos": "noun",
      "english": "Fire",
-     "gender": "m",
-     "genderSource": "plural-ending",
+     "gender": "f",
+     "genderSource": "override",
      "binyan": null,
      "root": null,
      "forms": [
@@ -61943,8 +58957,8 @@ window.VOCAB = {
      "category": "weather",
      "pos": "noun",
      "english": "Stone",
-     "gender": "m",
-     "genderSource": "plural-ending",
+     "gender": "f",
+     "genderSource": "override",
      "binyan": null,
      "root": null,
      "forms": [
@@ -63253,27 +60267,28 @@ window.VOCAB = {
      "unit": 60,
      "unitName": "Feelings",
      "category": "other",
-     "pos": "adjective",
-     "english": "Depressed (m.s)",
-     "gender": "m",
-     "genderSource": "marker",
+     "pos": "verb",
+     "english": "Depressed",
+     "gender": null,
+     "genderSource": null,
      "binyan": null,
      "root": null,
      "forms": [
       {
-       "slot": "singular",
+       "slot": "infinitive",
+       "translit": "",
+       "hebrew": "",
+       "nikkud": null
+      },
+      {
+       "slot": "ms",
        "translit": "m'duka",
        "hebrew": "מדוכא",
-       "nikkud": "מְדּוּכָא"
+       "nikkud": "מְדֻכָּא",
+       "nikkudAuto": true
       }
      ],
-     "source": "duolingo-vocab",
-     "declension": {
-      "ms": "מְדּוּכָא",
-      "mp": "מְדּוּכָאִים",
-      "fs": "מְדּוּכֶאת",
-      "fp": "מְדּוּכָאֹות"
-     }
+     "source": "duolingo-vocab"
     },
     {
      "id": "u60-008",
@@ -63857,6 +60872,38 @@ window.VOCAB = {
        "translit": "l'tzapot",
        "hebrew": "לצפות",
        "nikkud": "לִצְפּוֹת",
+       "nikkudAuto": true
+      },
+      {
+       "slot": "ms",
+       "translit": "tzofeh",
+       "hebrew": "צופה",
+       "nikkud": "צוֹפֶה",
+       "completed": true,
+       "nikkudAuto": true
+      },
+      {
+       "slot": "fs",
+       "translit": "tzofah",
+       "hebrew": "צוֹפה",
+       "nikkud": "צוֹפֶה",
+       "completed": true,
+       "nikkudAuto": true
+      },
+      {
+       "slot": "mp",
+       "translit": "tzofim",
+       "hebrew": "צופים",
+       "nikkud": "צוֹפִים",
+       "completed": true,
+       "nikkudAuto": true
+      },
+      {
+       "slot": "fp",
+       "translit": "tzofot",
+       "hebrew": "צופות",
+       "nikkud": "צוֹפוֹת",
+       "completed": true,
        "nikkudAuto": true
       }
      ],
@@ -65075,8 +62122,8 @@ window.VOCAB = {
      "category": "other",
      "pos": "noun",
      "english": "Power, Strength",
-     "gender": "f",
-     "genderSource": "plural-ending",
+     "gender": "m",
+     "genderSource": "override",
      "binyan": null,
      "root": null,
      "forms": [
@@ -66314,6 +63361,38 @@ window.VOCAB = {
        "hebrew": "לענות",
        "nikkud": "לַעֲנוֹת",
        "nikkudAuto": true
+      },
+      {
+       "slot": "ms",
+       "translit": "oneh",
+       "hebrew": "עונה",
+       "nikkud": "עוֹנָה",
+       "completed": true,
+       "nikkudAuto": true
+      },
+      {
+       "slot": "fs",
+       "translit": "onah",
+       "hebrew": "עונה",
+       "nikkud": "עוֹנָה",
+       "completed": true,
+       "nikkudAuto": true
+      },
+      {
+       "slot": "mp",
+       "translit": "onim",
+       "hebrew": "עונים",
+       "nikkud": "עוֹנִים",
+       "completed": true,
+       "nikkudAuto": true
+      },
+      {
+       "slot": "fp",
+       "translit": "onot",
+       "hebrew": "עוֹנוֹת",
+       "nikkud": "עוֹנוֹת",
+       "completed": true,
+       "nikkudAuto": true
       }
      ],
      "source": "duolingo-vocab"
@@ -66380,6 +63459,38 @@ window.VOCAB = {
        "hebrew": "לנצח",
        "nikkud": "לָנֶצַח",
        "nikkudAuto": true
+      },
+      {
+       "slot": "ms",
+       "translit": "m'natzeakh",
+       "hebrew": "מנצח",
+       "nikkud": "מְנַצֵּחַ",
+       "completed": true,
+       "nikkudAuto": true
+      },
+      {
+       "slot": "fs",
+       "translit": "m'natzakhat",
+       "hebrew": "מנצחת",
+       "nikkud": "מְנַצַּחַת",
+       "completed": true,
+       "nikkudAuto": true
+      },
+      {
+       "slot": "mp",
+       "translit": "m'natz'khim",
+       "hebrew": "מנצחים",
+       "nikkud": "מְנַצְּחִים",
+       "completed": true,
+       "nikkudAuto": true
+      },
+      {
+       "slot": "fp",
+       "translit": "m'natz'khot",
+       "hebrew": "מנצחות",
+       "nikkud": "מְנַצְּחוֹת",
+       "completed": true,
+       "nikkudAuto": true
       }
      ],
      "source": "duolingo-vocab"
@@ -66423,6 +63534,38 @@ window.VOCAB = {
        "translit": "l'sayem",
        "hebrew": "לסיים",
        "nikkud": "לְסַיֵּם",
+       "nikkudAuto": true
+      },
+      {
+       "slot": "ms",
+       "translit": "m'sayem",
+       "hebrew": "מסיים",
+       "nikkud": "מְסַיֵּם",
+       "completed": true,
+       "nikkudAuto": true
+      },
+      {
+       "slot": "fs",
+       "translit": "m'sayemet",
+       "hebrew": "מסיימת",
+       "nikkud": "מְסַיֶּמֶת",
+       "completed": true,
+       "nikkudAuto": true
+      },
+      {
+       "slot": "mp",
+       "translit": "m'say'mim",
+       "hebrew": "מסיימים",
+       "nikkud": "מְסַיְּמִים",
+       "completed": true,
+       "nikkudAuto": true
+      },
+      {
+       "slot": "fp",
+       "translit": "m'say'mot",
+       "hebrew": "מסיימות",
+       "nikkud": "מְסַיְּמוֹת",
+       "completed": true,
        "nikkudAuto": true
       }
      ],
@@ -66533,6 +63676,38 @@ window.VOCAB = {
        "translit": "l'khakot (l-)",
        "hebrew": "(-לחכות )ל",
        "nikkud": "(-לְחַכּוֹת )ל",
+       "nikkudAuto": true
+      },
+      {
+       "slot": "ms",
+       "translit": "m'khakeh",
+       "hebrew": "מחכה",
+       "nikkud": "מְחַכֶּה",
+       "completed": true,
+       "nikkudAuto": true
+      },
+      {
+       "slot": "fs",
+       "translit": "m'khakah",
+       "hebrew": "מחכה",
+       "nikkud": "מְחַכֶּה",
+       "completed": true,
+       "nikkudAuto": true
+      },
+      {
+       "slot": "mp",
+       "translit": "m'khakim",
+       "hebrew": "מחכים",
+       "nikkud": "מְחַכִּים",
+       "completed": true,
+       "nikkudAuto": true
+      },
+      {
+       "slot": "fp",
+       "translit": "m'khakot",
+       "hebrew": "מחכות",
+       "nikkud": "מְחַכּוֹת",
+       "completed": true,
        "nikkudAuto": true
       }
      ],
@@ -66710,6 +63885,38 @@ window.VOCAB = {
        "hebrew": "לזכור",
        "nikkud": "לִזְכֹּר",
        "nikkudAuto": true
+      },
+      {
+       "slot": "ms",
+       "translit": "zokher",
+       "hebrew": "זוכר",
+       "nikkud": "זוֹכֵר",
+       "completed": true,
+       "nikkudAuto": true
+      },
+      {
+       "slot": "fs",
+       "translit": "zokheret",
+       "hebrew": "זוֹכרת",
+       "nikkud": "זוֹכֶרֶת",
+       "completed": true,
+       "nikkudAuto": true
+      },
+      {
+       "slot": "mp",
+       "translit": "zokh'rim",
+       "hebrew": "זוכרים",
+       "nikkud": "זוֹכְרִים",
+       "completed": true,
+       "nikkudAuto": true
+      },
+      {
+       "slot": "fp",
+       "translit": "zokh'rot",
+       "hebrew": "זוכרות",
+       "nikkud": "זוֹכְרוֹת",
+       "completed": true,
+       "nikkudAuto": true
       }
      ],
      "source": "duolingo-vocab"
@@ -66798,6 +64005,38 @@ window.VOCAB = {
        "hebrew": "לעזוב",
        "nikkud": "לַעֲזֹב",
        "nikkudAuto": true
+      },
+      {
+       "slot": "ms",
+       "translit": "ozev",
+       "hebrew": "עוזב",
+       "nikkud": "עוֹזֵב",
+       "completed": true,
+       "nikkudAuto": true
+      },
+      {
+       "slot": "fs",
+       "translit": "ozevet",
+       "hebrew": "עוזבת",
+       "nikkud": "עוֹזֶבֶת",
+       "completed": true,
+       "nikkudAuto": true
+      },
+      {
+       "slot": "mp",
+       "translit": "oz'vim",
+       "hebrew": "עוזבים",
+       "nikkud": "עוֹזְבִים",
+       "completed": true,
+       "nikkudAuto": true
+      },
+      {
+       "slot": "fp",
+       "translit": "oz'vot",
+       "hebrew": "עוזבות",
+       "nikkud": "עוֹזְבוֹת",
+       "completed": true,
+       "nikkudAuto": true
       }
      ],
      "source": "duolingo-vocab"
@@ -66864,6 +64103,38 @@ window.VOCAB = {
        "hebrew": "לשבור",
        "nikkud": "לִשְׁבֹּר",
        "nikkudAuto": true
+      },
+      {
+       "slot": "ms",
+       "translit": "shover",
+       "hebrew": "שובר",
+       "nikkud": "שׁוֹבֵר",
+       "completed": true,
+       "nikkudAuto": true
+      },
+      {
+       "slot": "fs",
+       "translit": "shoveret",
+       "hebrew": "שוברת",
+       "nikkud": "שׁוֹבֶרֶת",
+       "completed": true,
+       "nikkudAuto": true
+      },
+      {
+       "slot": "mp",
+       "translit": "shov'rim",
+       "hebrew": "שוברים",
+       "nikkud": "שׁוֹבְרִים",
+       "completed": true,
+       "nikkudAuto": true
+      },
+      {
+       "slot": "fp",
+       "translit": "shov'rot",
+       "hebrew": "שוברות",
+       "nikkud": "שׁוֹבְרוֹת",
+       "completed": true,
+       "nikkudAuto": true
       }
      ],
      "source": "duolingo-vocab"
@@ -66908,6 +64179,38 @@ window.VOCAB = {
        "hebrew": "לאהוב",
        "nikkud": "לֶאֱהֹב",
        "nikkudAuto": true
+      },
+      {
+       "slot": "ms",
+       "translit": "ohev",
+       "hebrew": "אוהב",
+       "nikkud": "אוֹהֵב",
+       "completed": true,
+       "nikkudAuto": true
+      },
+      {
+       "slot": "fs",
+       "translit": "ohevet",
+       "hebrew": "אוהבת",
+       "nikkud": "אוֹהֶבֶת",
+       "completed": true,
+       "nikkudAuto": true
+      },
+      {
+       "slot": "mp",
+       "translit": "ohavim",
+       "hebrew": "אוהבים",
+       "nikkud": "אוֹהֲבִים",
+       "completed": true,
+       "nikkudAuto": true
+      },
+      {
+       "slot": "fp",
+       "translit": "ohavot",
+       "hebrew": "אוהבות",
+       "nikkud": "אוֹהֲבוֹת",
+       "completed": true,
+       "nikkudAuto": true
       }
      ],
      "source": "duolingo-vocab"
@@ -66930,6 +64233,38 @@ window.VOCAB = {
        "hebrew": "לשקול",
        "nikkud": "לִשְׁקֹל",
        "nikkudAuto": true
+      },
+      {
+       "slot": "ms",
+       "translit": "shokel",
+       "hebrew": "שוקל",
+       "nikkud": "שׁוֹקֵל",
+       "completed": true,
+       "nikkudAuto": true
+      },
+      {
+       "slot": "fs",
+       "translit": "shokelet",
+       "hebrew": "שוקלת",
+       "nikkud": "שׁוֹקֶלֶת",
+       "completed": true,
+       "nikkudAuto": true
+      },
+      {
+       "slot": "mp",
+       "translit": "shok'lim",
+       "hebrew": "שוקלים",
+       "nikkud": "שׁוֹקְלִים",
+       "completed": true,
+       "nikkudAuto": true
+      },
+      {
+       "slot": "fp",
+       "translit": "shok'lot",
+       "hebrew": "שוקלות",
+       "nikkud": "שׁוֹקְלוֹת",
+       "completed": true,
+       "nikkudAuto": true
       }
      ],
      "source": "duolingo-vocab"
@@ -66951,6 +64286,38 @@ window.VOCAB = {
        "translit": "lakh'shov",
        "hebrew": "לחשוב",
        "nikkud": "לַחֲשֹׁב",
+       "nikkudAuto": true
+      },
+      {
+       "slot": "ms",
+       "translit": "khoshev",
+       "hebrew": "חושב",
+       "nikkud": "חוֹשֵׁב",
+       "completed": true,
+       "nikkudAuto": true
+      },
+      {
+       "slot": "fs",
+       "translit": "khoshevet",
+       "hebrew": "חושבת",
+       "nikkud": "חוֹשֶׁבֶת",
+       "completed": true,
+       "nikkudAuto": true
+      },
+      {
+       "slot": "mp",
+       "translit": "khosh'vim",
+       "hebrew": "חושבים",
+       "nikkud": "חוֹשְׁבִים",
+       "completed": true,
+       "nikkudAuto": true
+      },
+      {
+       "slot": "fp",
+       "translit": "khosh'vot",
+       "hebrew": "חושבות",
+       "nikkud": "חוֹשְׁבוֹת",
+       "completed": true,
        "nikkudAuto": true
       }
      ],
@@ -67955,7 +65322,7 @@ window.VOCAB = {
      "pos": "noun",
      "english": "Head",
      "gender": "m",
-     "genderSource": "plural-ending",
+     "genderSource": "override",
      "binyan": null,
      "root": null,
      "forms": [
@@ -68266,8 +65633,8 @@ window.VOCAB = {
      "category": "body",
      "pos": "noun",
      "english": "Mouth",
-     "gender": "f",
-     "genderSource": "plural-ending",
+     "gender": "m",
+     "genderSource": "override",
      "binyan": null,
      "root": null,
      "forms": [
@@ -68440,8 +65807,8 @@ window.VOCAB = {
      "category": "body",
      "pos": "noun",
      "english": "Dream",
-     "gender": "f",
-     "genderSource": "plural-ending",
+     "gender": "m",
+     "genderSource": "override",
      "binyan": null,
      "root": null,
      "forms": [
@@ -68701,8 +66068,8 @@ window.VOCAB = {
      "category": "body",
      "pos": "noun",
      "english": "Hand",
-     "gender": "m",
-     "genderSource": "plural-ending",
+     "gender": "f",
+     "genderSource": "override",
      "binyan": null,
      "root": null,
      "forms": [
@@ -68730,8 +66097,8 @@ window.VOCAB = {
      "category": "body",
      "pos": "noun",
      "english": "Eye",
-     "gender": "m",
-     "genderSource": "plural-ending",
+     "gender": "f",
+     "genderSource": "override",
      "binyan": null,
      "root": null,
      "forms": [
@@ -68817,8 +66184,8 @@ window.VOCAB = {
      "category": "body",
      "pos": "noun",
      "english": "Ear",
-     "gender": "m",
-     "genderSource": "plural-ending",
+     "gender": "f",
+     "genderSource": "override",
      "binyan": null,
      "root": null,
      "forms": [
@@ -68868,8 +66235,8 @@ window.VOCAB = {
      "category": "body",
      "pos": "noun",
      "english": "Abdomen, Belly",
-     "gender": "m",
-     "genderSource": "plural-ending",
+     "gender": "f",
+     "genderSource": "override",
      "binyan": null,
      "root": null,
      "forms": [
@@ -68898,7 +66265,7 @@ window.VOCAB = {
      "pos": "noun",
      "english": "Tongue, Language",
      "gender": "f",
-     "genderSource": "plural-ending",
+     "genderSource": "override",
      "binyan": null,
      "root": null,
      "forms": [
@@ -68926,8 +66293,8 @@ window.VOCAB = {
      "category": "body",
      "pos": "noun",
      "english": "Tooth",
-     "gender": "m",
-     "genderSource": "plural-ending",
+     "gender": "f",
+     "genderSource": "override",
      "binyan": null,
      "root": null,
      "forms": [
@@ -68955,8 +66322,8 @@ window.VOCAB = {
      "category": "body",
      "pos": "noun",
      "english": "Leg; Foot",
-     "gender": "m",
-     "genderSource": "plural-ending",
+     "gender": "f",
+     "genderSource": "override",
      "binyan": null,
      "root": null,
      "forms": [
@@ -69035,8 +66402,8 @@ window.VOCAB = {
      "category": "body",
      "pos": "noun",
      "english": "Knee",
-     "gender": "m",
-     "genderSource": "plural-ending",
+     "gender": "f",
+     "genderSource": "override",
      "binyan": null,
      "root": null,
      "forms": [
@@ -73455,90 +70822,30 @@ window.VOCAB = {
        "hebrew": "להוריד",
        "nikkud": "לְהוֹרִיד",
        "nikkudAuto": true
-      }
-     ],
-     "source": "duolingo-vocab"
-    },
-    {
-     "id": "u71-031",
-     "unit": 71,
-     "unitName": "Technology",
-     "category": "other",
-     "pos": "noun",
-     "english": "I, You, He, It (m.s - pres.)",
-     "gender": "m",
-     "genderSource": "marker",
-     "binyan": null,
-     "root": null,
-     "forms": [
+      },
       {
-       "slot": "singular",
+       "slot": "ms",
        "translit": "morid",
        "hebrew": "מוריד",
        "nikkud": "מוֹרִיד",
        "nikkudAuto": true
-      }
-     ],
-     "source": "duolingo-vocab"
-    },
-    {
-     "id": "u71-032",
-     "unit": 71,
-     "unitName": "Technology",
-     "category": "other",
-     "pos": "noun",
-     "english": "I, You, She, It (f.s - pres.)",
-     "gender": "f",
-     "genderSource": "marker",
-     "binyan": null,
-     "root": null,
-     "forms": [
+      },
       {
-       "slot": "singular",
+       "slot": "fs",
        "translit": "moridah",
        "hebrew": "מורידה",
        "nikkud": "מוֹרִידָה",
        "nikkudAuto": true
-      }
-     ],
-     "source": "duolingo-vocab"
-    },
-    {
-     "id": "u71-033",
-     "unit": 71,
-     "unitName": "Technology",
-     "category": "other",
-     "pos": "noun",
-     "english": "We, You, They (m.p - pres.)",
-     "gender": "m",
-     "genderSource": "marker",
-     "binyan": null,
-     "root": null,
-     "forms": [
+      },
       {
-       "slot": "singular",
+       "slot": "mp",
        "translit": "moridim",
        "hebrew": "מורידים",
        "nikkud": "מוֹרִידִים",
        "nikkudAuto": true
-      }
-     ],
-     "source": "duolingo-vocab"
-    },
-    {
-     "id": "u71-034",
-     "unit": 71,
-     "unitName": "Technology",
-     "category": "other",
-     "pos": "noun",
-     "english": "We, You, They (f.p- pres.)",
-     "gender": "f",
-     "genderSource": "marker",
-     "binyan": null,
-     "root": null,
-     "forms": [
+      },
       {
-       "slot": "singular",
+       "slot": "fp",
        "translit": "moridot",
        "hebrew": "מורידות",
        "nikkud": "מוֹרִידוֹת",
@@ -73548,7 +70855,7 @@ window.VOCAB = {
      "source": "duolingo-vocab"
     },
     {
-     "id": "u71-035",
+     "id": "u71-031",
      "unit": 71,
      "unitName": "Technology",
      "category": "other",
@@ -73565,90 +70872,30 @@ window.VOCAB = {
        "hebrew": "להעלות",
        "nikkud": "לְהַעֲלוֹת",
        "nikkudAuto": true
-      }
-     ],
-     "source": "duolingo-vocab"
-    },
-    {
-     "id": "u71-036",
-     "unit": 71,
-     "unitName": "Technology",
-     "category": "other",
-     "pos": "noun",
-     "english": "I, You, He, It (m.s - pres.)",
-     "gender": "m",
-     "genderSource": "marker",
-     "binyan": null,
-     "root": null,
-     "forms": [
+      },
       {
-       "slot": "singular",
+       "slot": "ms",
        "translit": "ma'aleh",
        "hebrew": "מעלה",
        "nikkud": "מַעֲלָה",
        "nikkudAuto": true
-      }
-     ],
-     "source": "duolingo-vocab"
-    },
-    {
-     "id": "u71-037",
-     "unit": 71,
-     "unitName": "Technology",
-     "category": "other",
-     "pos": "noun",
-     "english": "I, You, She, It (f.s - pres.)",
-     "gender": "f",
-     "genderSource": "marker",
-     "binyan": null,
-     "root": null,
-     "forms": [
+      },
       {
-       "slot": "singular",
+       "slot": "fs",
        "translit": "ma'alah",
        "hebrew": "מעלה",
        "nikkud": "מַעֲלָה",
        "nikkudAuto": true
-      }
-     ],
-     "source": "duolingo-vocab"
-    },
-    {
-     "id": "u71-038",
-     "unit": 71,
-     "unitName": "Technology",
-     "category": "other",
-     "pos": "noun",
-     "english": "We, You, They (m.p - pres.)",
-     "gender": "m",
-     "genderSource": "marker",
-     "binyan": null,
-     "root": null,
-     "forms": [
+      },
       {
-       "slot": "singular",
+       "slot": "mp",
        "translit": "ma'alim",
        "hebrew": "מעלים",
        "nikkud": "מַעֲלִים",
        "nikkudAuto": true
-      }
-     ],
-     "source": "duolingo-vocab"
-    },
-    {
-     "id": "u71-039",
-     "unit": 71,
-     "unitName": "Technology",
-     "category": "other",
-     "pos": "noun",
-     "english": "We, You, They (f.p- pres.)",
-     "gender": "f",
-     "genderSource": "marker",
-     "binyan": null,
-     "root": null,
-     "forms": [
+      },
       {
-       "slot": "singular",
+       "slot": "fp",
        "translit": "ma'a lot",
        "hebrew": "מעלות",
        "nikkud": "מַעֲלוֹת",
@@ -73658,7 +70905,7 @@ window.VOCAB = {
      "source": "duolingo-vocab"
     },
     {
-     "id": "u71-040",
+     "id": "u71-032",
      "unit": 71,
      "unitName": "Technology",
      "category": "other",
@@ -73675,90 +70922,30 @@ window.VOCAB = {
        "hebrew": "לכבות",
        "nikkud": "לְכַבּוֹת",
        "nikkudAuto": true
-      }
-     ],
-     "source": "duolingo-vocab"
-    },
-    {
-     "id": "u71-041",
-     "unit": 71,
-     "unitName": "Technology",
-     "category": "other",
-     "pos": "noun",
-     "english": "I, You, He, It (m.s - pres.)",
-     "gender": "m",
-     "genderSource": "marker",
-     "binyan": null,
-     "root": null,
-     "forms": [
+      },
       {
-       "slot": "singular",
+       "slot": "ms",
        "translit": "m'khabeh",
        "hebrew": "מכבה",
        "nikkud": "מְכַבֶּה",
        "nikkudAuto": true
-      }
-     ],
-     "source": "duolingo-vocab"
-    },
-    {
-     "id": "u71-042",
-     "unit": 71,
-     "unitName": "Technology",
-     "category": "other",
-     "pos": "noun",
-     "english": "I, You, She, It (f.s - pres.)",
-     "gender": "f",
-     "genderSource": "marker",
-     "binyan": null,
-     "root": null,
-     "forms": [
+      },
       {
-       "slot": "singular",
+       "slot": "fs",
        "translit": "m'khabah",
        "hebrew": "מכבה",
        "nikkud": "מְכַבֶּה",
        "nikkudAuto": true
-      }
-     ],
-     "source": "duolingo-vocab"
-    },
-    {
-     "id": "u71-043",
-     "unit": 71,
-     "unitName": "Technology",
-     "category": "other",
-     "pos": "noun",
-     "english": "We, You, They (m.p - pres.)",
-     "gender": "m",
-     "genderSource": "marker",
-     "binyan": null,
-     "root": null,
-     "forms": [
+      },
       {
-       "slot": "singular",
+       "slot": "mp",
        "translit": "m'khabim",
        "hebrew": "מכבים",
        "nikkud": "מַכַּבִּים",
        "nikkudAuto": true
-      }
-     ],
-     "source": "duolingo-vocab"
-    },
-    {
-     "id": "u71-044",
-     "unit": 71,
-     "unitName": "Technology",
-     "category": "other",
-     "pos": "noun",
-     "english": "We, You, They (f.p- pres.)",
-     "gender": "f",
-     "genderSource": "marker",
-     "binyan": null,
-     "root": null,
-     "forms": [
+      },
       {
-       "slot": "singular",
+       "slot": "fp",
        "translit": "m'khabot",
        "hebrew": "מכבות",
        "nikkud": "מִ|כָּבוֹת",
@@ -73768,7 +70955,7 @@ window.VOCAB = {
      "source": "duolingo-vocab"
     },
     {
-     "id": "u71-045",
+     "id": "u71-033",
      "unit": 71,
      "unitName": "Technology",
      "category": "other",
@@ -73785,90 +70972,30 @@ window.VOCAB = {
        "hebrew": "ללחוץ",
        "nikkud": "לִלְחֹץ",
        "nikkudAuto": true
-      }
-     ],
-     "source": "duolingo-vocab"
-    },
-    {
-     "id": "u71-046",
-     "unit": 71,
-     "unitName": "Technology",
-     "category": "other",
-     "pos": "noun",
-     "english": "I, You, He, It (m.s - pres.)",
-     "gender": "m",
-     "genderSource": "marker",
-     "binyan": null,
-     "root": null,
-     "forms": [
+      },
       {
-       "slot": "singular",
+       "slot": "ms",
        "translit": "lokhetz",
        "hebrew": "לוחץ",
        "nikkud": "לוֹחֵץ",
        "nikkudAuto": true
-      }
-     ],
-     "source": "duolingo-vocab"
-    },
-    {
-     "id": "u71-047",
-     "unit": 71,
-     "unitName": "Technology",
-     "category": "other",
-     "pos": "noun",
-     "english": "I, You, She, It (f.s - pres.)",
-     "gender": "f",
-     "genderSource": "marker",
-     "binyan": null,
-     "root": null,
-     "forms": [
+      },
       {
-       "slot": "singular",
+       "slot": "fs",
        "translit": "lokhetzet",
        "hebrew": "לוחצת",
        "nikkud": "לוֹחֶצֶת",
        "nikkudAuto": true
-      }
-     ],
-     "source": "duolingo-vocab"
-    },
-    {
-     "id": "u71-048",
-     "unit": 71,
-     "unitName": "Technology",
-     "category": "other",
-     "pos": "noun",
-     "english": "We, You, They (m.p - pres.)",
-     "gender": "m",
-     "genderSource": "marker",
-     "binyan": null,
-     "root": null,
-     "forms": [
+      },
       {
-       "slot": "singular",
+       "slot": "mp",
        "translit": "lokhatzim",
        "hebrew": "לוחצים",
        "nikkud": "לוֹחֲצִים",
        "nikkudAuto": true
-      }
-     ],
-     "source": "duolingo-vocab"
-    },
-    {
-     "id": "u71-049",
-     "unit": 71,
-     "unitName": "Technology",
-     "category": "other",
-     "pos": "noun",
-     "english": "We, You, They (f.p- pres.)",
-     "gender": "f",
-     "genderSource": "marker",
-     "binyan": null,
-     "root": null,
-     "forms": [
+      },
       {
-       "slot": "singular",
+       "slot": "fp",
        "translit": "lokhatzot",
        "hebrew": "לוחצות",
        "nikkud": "לוֹחֲצוֹת",
@@ -73878,7 +71005,7 @@ window.VOCAB = {
      "source": "duolingo-vocab"
     },
     {
-     "id": "u71-050",
+     "id": "u71-034",
      "unit": 71,
      "unitName": "Technology",
      "category": "other",
@@ -73895,90 +71022,30 @@ window.VOCAB = {
        "hebrew": "להדליק",
        "nikkud": "לְהַדְלִיק",
        "nikkudAuto": true
-      }
-     ],
-     "source": "duolingo-vocab"
-    },
-    {
-     "id": "u71-051",
-     "unit": 71,
-     "unitName": "Technology",
-     "category": "other",
-     "pos": "noun",
-     "english": "I, You, He, It (m.s - pres.)",
-     "gender": "m",
-     "genderSource": "marker",
-     "binyan": null,
-     "root": null,
-     "forms": [
+      },
       {
-       "slot": "singular",
+       "slot": "ms",
        "translit": "mad'lik",
        "hebrew": "מדליק",
        "nikkud": "מַדְלִיק",
        "nikkudAuto": true
-      }
-     ],
-     "source": "duolingo-vocab"
-    },
-    {
-     "id": "u71-052",
-     "unit": 71,
-     "unitName": "Technology",
-     "category": "other",
-     "pos": "noun",
-     "english": "I, You, She, It (f.s - pres.)",
-     "gender": "f",
-     "genderSource": "marker",
-     "binyan": null,
-     "root": null,
-     "forms": [
+      },
       {
-       "slot": "singular",
+       "slot": "fs",
        "translit": "mad'likah",
        "hebrew": "מדליקה",
        "nikkud": "מַדְלִיקָה",
        "nikkudAuto": true
-      }
-     ],
-     "source": "duolingo-vocab"
-    },
-    {
-     "id": "u71-053",
-     "unit": 71,
-     "unitName": "Technology",
-     "category": "other",
-     "pos": "noun",
-     "english": "We, You, They (m.p - pres.)",
-     "gender": "m",
-     "genderSource": "marker",
-     "binyan": null,
-     "root": null,
-     "forms": [
+      },
       {
-       "slot": "singular",
+       "slot": "mp",
        "translit": "mad'likim",
        "hebrew": "מדליקים",
        "nikkud": "מַדְלִיקִים",
        "nikkudAuto": true
-      }
-     ],
-     "source": "duolingo-vocab"
-    },
-    {
-     "id": "u71-054",
-     "unit": 71,
-     "unitName": "Technology",
-     "category": "other",
-     "pos": "noun",
-     "english": "We, You, They (f.p- pres.)",
-     "gender": "f",
-     "genderSource": "marker",
-     "binyan": null,
-     "root": null,
-     "forms": [
+      },
       {
-       "slot": "singular",
+       "slot": "fp",
        "translit": "mad'likot",
        "hebrew": "מדליקות",
        "nikkud": "מַדְלִיקוֹת",
@@ -76110,7 +73177,7 @@ window.VOCAB = {
      "pos": "noun",
      "english": "Stanza",
      "gender": "m",
-     "genderSource": "plural-ending",
+     "genderSource": "override",
      "binyan": null,
      "root": null,
      "forms": [
@@ -79682,8 +76749,8 @@ window.VOCAB = {
      "category": "other",
      "pos": "noun",
      "english": "Palace",
-     "gender": "f",
-     "genderSource": "plural-ending",
+     "gender": "m",
+     "genderSource": "override",
      "binyan": null,
      "root": null,
      "forms": [
@@ -80401,7 +77468,7 @@ window.VOCAB = {
      "pos": "noun",
      "english": "Sword",
      "gender": "f",
-     "genderSource": "plural-ending",
+     "genderSource": "override",
      "binyan": null,
      "root": null,
      "forms": [
@@ -83005,7 +80072,7 @@ window.VOCAB = {
      "pos": "noun",
      "english": "Sun",
      "gender": "f",
-     "genderSource": "plural-ending",
+     "genderSource": "override",
      "binyan": null,
      "root": null,
      "forms": [
@@ -83316,8 +80383,8 @@ window.VOCAB = {
      "category": "other",
      "pos": "noun",
      "english": "Rosh Ha'shana",
-     "gender": null,
-     "genderSource": null,
+     "gender": "m",
+     "genderSource": "override",
      "binyan": null,
      "root": null,
      "forms": [
@@ -83642,8 +80709,8 @@ window.VOCAB = {
      "category": "other",
      "pos": "noun",
      "english": "Ozen Haman",
-     "gender": null,
-     "genderSource": null,
+     "gender": "f",
+     "genderSource": "override",
      "binyan": null,
      "root": null,
      "forms": [
@@ -84518,6 +81585,33 @@ window.VOCAB = {
      "unitName": "Adjective Bank",
      "category": "adjectives",
      "pos": "adjective",
+     "english": "Depressed",
+     "gender": "m",
+     "genderSource": "declension",
+     "binyan": null,
+     "root": null,
+     "forms": [
+      {
+       "slot": "ms",
+       "translit": "",
+       "hebrew": "מדוכא",
+       "nikkud": "מְדּוּכָא"
+      }
+     ],
+     "declension": {
+      "ms": "מְדּוּכָא",
+      "mp": "מְדּוּכָאִים",
+      "fs": "מְדּוּכֶאת",
+      "fp": "מְדּוּכָאֹות"
+     },
+     "source": "duolingo-adjectives"
+    },
+    {
+     "id": "adj-004",
+     "unit": 0,
+     "unitName": "Adjective Bank",
+     "category": "adjectives",
+     "pos": "adjective",
      "english": ")Equal(s",
      "gender": "m",
      "genderSource": "declension",
@@ -84540,7 +81634,7 @@ window.VOCAB = {
      "source": "duolingo-adjectives"
     },
     {
-     "id": "adj-004",
+     "id": "adj-005",
      "unit": 0,
      "unitName": "Adjective Bank",
      "category": "adjectives",
@@ -84567,7 +81661,7 @@ window.VOCAB = {
      "source": "duolingo-adjectives"
     },
     {
-     "id": "adj-005",
+     "id": "adj-006",
      "unit": 0,
      "unitName": "Adjective Bank",
      "category": "adjectives",
@@ -84594,7 +81688,7 @@ window.VOCAB = {
      "source": "duolingo-adjectives"
     },
     {
-     "id": "adj-006",
+     "id": "adj-007",
      "unit": 0,
      "unitName": "Adjective Bank",
      "category": "adjectives",
@@ -84621,7 +81715,7 @@ window.VOCAB = {
      "source": "duolingo-adjectives"
     },
     {
-     "id": "adj-007",
+     "id": "adj-008",
      "unit": 0,
      "unitName": "Adjective Bank",
      "category": "adjectives",
@@ -84648,7 +81742,7 @@ window.VOCAB = {
      "source": "duolingo-adjectives"
     },
     {
-     "id": "adj-008",
+     "id": "adj-009",
      "unit": 0,
      "unitName": "Adjective Bank",
      "category": "adjectives",

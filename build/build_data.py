@@ -45,6 +45,26 @@ def en_overlap(a, b):
     return bool(en_words(a) & en_words(b))
 
 
+# Gender overrides for common irregular nouns the ending-heuristic gets wrong.
+# Keyed by consonantal (no-nikkud) SINGULAR Hebrew. m = masculine, f = feminine.
+GENDER_OVERRIDE = {
+    # masculine nouns with -ot plurals, or singulars ending ה/ת that look feminine
+    "אב": "m", "אבא": "m", "סבא": "m", "לילה": "m", "קפה": "m", "תה": "m", "שדה": "m",
+    "מקרה": "m", "שולחן": "m", "שלחן": "m", "חלון": "m", "קיר": "m", "מקום": "m",
+    "כיסא": "m", "כסא": "m", "קול": "m", "רחוב": "m", "לוח": "m", "חלום": "m", "כוח": "m",
+    "כח": "m", "דור": "m", "ארון": "m", "שם": "m", "ראש": "m", "עולם": "m", "כלב": "m",
+    "בית": "m", "מים": "m", "פה": "m", "עץ": "m", "רגע": "m", "יין": "m", "מלון": "m",
+    "רעיון": "m", "חוף": "m", "נמל": "m", "עוף": "m", "ארמון": "m", "עיתון": "m", "עתון": "m",
+    # feminine nouns with -im plurals, dual (-ayim) body parts, or bare-consonant singulars
+    "שנה": "f", "מילה": "f", "מלה": "f", "ביצה": "f", "אישה": "f", "אשה": "f", "דרך": "f",
+    "עיר": "f", "אבן": "f", "פעם": "f", "יד": "f", "רגל": "f", "עין": "f", "אוזן": "f",
+    "אזן": "f", "ברך": "f", "שן": "f", "כנף": "f", "רוח": "f", "אש": "f", "שמש": "f",
+    "ארץ": "f", "כוס": "f", "כף": "f", "סכין": "f", "בטן": "f", "לשון": "f", "ציפור": "f",
+    "צפור": "f", "נפש": "f", "חרב": "f", "מפתח": "m", "דלת": "f",
+}
+OVERRIDE_HITS = set()
+
+
 def category_for(name):
     n = name.lower()
     tbl = [
@@ -121,7 +141,14 @@ def build():
                 # "fat" שמן) don't get wrongly declined by gender.
                 skel = strip_nikkud(forms[0]["hebrew"])
                 match = adj_by_skel.get(skel)
-                if match and en_overlap(item["english"], match["english"]):
+                # gender override for irregular nouns
+                ov = GENDER_OVERRIDE.get(strip_nikkud(forms[0]["hebrew"]))
+                if ov:
+                    item["gender"], item["genderSource"] = ov, "override"
+                    OVERRIDE_HITS.add(strip_nikkud(forms[0]["hebrew"]))
+                # Attach if the English glosses overlap (homograph guard for nouns), OR the
+                # entry is already classified as an adjective (then skeleton match is safe).
+                if match and (item["pos"] == "adjective" or en_overlap(item["english"], match["english"])):
                     item["pos"] = "adjective"
                     item["gender"] = item["gender"] or "m"
                     item["declension"] = match["forms"]
@@ -129,6 +156,42 @@ def build():
                     forms[0]["nikkud"] = match["forms"]["ms"]
             entries.append(item)
         out["units"].append({"index": u["index"], "name": u["name"], "category": cat, "entries": entries})
+
+    # Complete verb present-tense paradigms from a global map (fills missing m.s/f.s/m.p/f.p
+    # for a verb from another occurrence of the SAME verb — completes forms, adds no new words).
+    inf_map, ms_map = {}, {}
+    for u in out["units"]:
+        for e in u["entries"]:
+            if e["pos"] != "verb":
+                continue
+            present = {f["slot"]: f for f in e["forms"] if f["slot"] in ("ms", "fs", "mp", "fp")}
+            if len(present) != 4:
+                continue
+            inf = next((f for f in e["forms"] if f["slot"] == "infinitive"), None)
+            if inf and inf["hebrew"]:
+                inf_map.setdefault(strip_nikkud(inf["hebrew"]), present)
+            ms_map.setdefault(strip_nikkud(present["ms"]["hebrew"]), present)
+    for u in out["units"]:
+        for e in u["entries"]:
+            if e["pos"] != "verb":
+                continue
+            have = {f["slot"] for f in e["forms"] if f["slot"] in ("ms", "fs", "mp", "fp")}
+            if len(have) == 4:
+                continue
+            inf = next((f for f in e["forms"] if f["slot"] == "infinitive"), None)
+            src = inf_map.get(strip_nikkud(inf["hebrew"])) if inf and inf["hebrew"] else None
+            if not src:
+                for f in e["forms"]:
+                    if f["slot"] in ("ms", "fs", "mp", "fp"):
+                        src = ms_map.get(strip_nikkud(f["hebrew"]))
+                        if src:
+                            break
+            if not src:
+                continue
+            for slot in ("ms", "fs", "mp", "fp"):
+                if slot not in have:
+                    sf = src[slot]
+                    e["forms"].append({"slot": slot, "translit": sf["translit"], "hebrew": sf["hebrew"], "nikkud": None, "completed": True})
 
     # Also add a dedicated Adjectives reference bank (full declension, nikkud) for adjectives
     # not already present in vocab units.
@@ -162,3 +225,6 @@ if __name__ == "__main__":
     total = sum(len(u["entries"]) for u in data["units"])
     withdecl = sum(1 for u in data["units"] for e in u["entries"] if e.get("declension"))
     print(f"units={len(data['units'])} entries={total} adjectives_with_declension={withdecl}")
+    overridden = sum(1 for u in data["units"] for e in u["entries"] if e.get("genderSource") == "override")
+    unmatched = sorted(set(GENDER_OVERRIDE) - OVERRIDE_HITS)
+    print(f"gender overrides applied to {overridden} entries; keys with NO match in data: {unmatched}")

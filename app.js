@@ -259,22 +259,87 @@ function startSession(pool) {
   view = "session"; renderSession();
 }
 
+const stripN = s => (s || "").replace(/[֑-ׇ]/g, "");
+const dispHeb = nik => (toggles.nikkud ? nik : stripN(nik));  // respect the nikkud toggle
+
+// Approximate transliteration from a vocalized (nikkud) Hebrew string — used to fill in
+// transliteration where the source data has none (e.g. adjective declensions). Not perfect,
+// but consistent and readable; the audio button gives the authoritative pronunciation.
+function translitFromNikkud(s) {
+  if (!s) return "";
+  const A = [...s]; let out = "";
+  const V = { 0x05B0: "'", 0x05B1: "e", 0x05B2: "a", 0x05B3: "o", 0x05B4: "i", 0x05B5: "e", 0x05B6: "e", 0x05B7: "a", 0x05B8: "a", 0x05B9: "o", 0x05BA: "o", 0x05BB: "u", 0x05C7: "o" };
+  const C = { 0x05D0: "", 0x05D1: "v", 0x05D2: "g", 0x05D3: "d", 0x05D4: "h", 0x05D5: "v", 0x05D6: "z", 0x05D7: "kh", 0x05D8: "t", 0x05D9: "y", 0x05DA: "kh", 0x05DB: "kh", 0x05DC: "l", 0x05DD: "m", 0x05DE: "m", 0x05DF: "n", 0x05E0: "n", 0x05E1: "s", 0x05E2: "", 0x05E3: "f", 0x05E4: "f", 0x05E5: "tz", 0x05E6: "tz", 0x05E7: "k", 0x05E8: "r", 0x05E9: "sh", 0x05EA: "t" };
+  for (let i = 0; i < A.length; i++) {
+    const code = A[i].codePointAt(0);
+    if (code < 0x05D0 || code > 0x05EA) { if (A[i] === " ") out += " "; else if (A[i] === "-" || A[i] === "־") out += "-"; continue; }
+    let j = i + 1, dagesh = false, shin = false, sin = false, holam = false, hasVowel = false, vowel = "";
+    while (j < A.length) {
+      const m = A[j].codePointAt(0);
+      if (m === 0x05BC) { dagesh = true; j++; continue; }
+      if (m === 0x05C1) { shin = true; j++; continue; }
+      if (m === 0x05C2) { sin = true; j++; continue; }
+      if (m === 0x05B9) { holam = true; vowel = "o"; hasVowel = true; j++; continue; }
+      if (m in V) { vowel = V[m]; hasVowel = true; j++; continue; }
+      if (m >= 0x0591 && m <= 0x05C7) { j++; continue; }
+      break;
+    }
+    // holam male: a bare vav after a holam-marked consonant is a mater — skip it
+    if (holam && j < A.length && A[j].codePointAt(0) === 0x05D5) {
+      const nm = j + 1 < A.length ? A[j + 1].codePointAt(0) : 0;
+      const carries = nm === 0x05BC || (nm >= 0x05B0 && nm <= 0x05BB) || nm === 0x05B9 || nm === 0x05C7;
+      if (!carries) j++;
+    }
+    if (code === 0x05D5) { // vav: holam→o, shuruk→u, else consonant v
+      if (holam) { out += "o"; i = j - 1; continue; }
+      if (dagesh && !hasVowel) { out += "u"; i = j - 1; continue; }
+    }
+    if (code === 0x05D9 && !hasVowel && /[ie]$/.test(out)) { i = j - 1; continue; } // yod mater
+    if (code === 0x05D4 && !hasVowel && j >= A.length) { i = j - 1; continue; }      // silent final he
+    let cons;
+    if (code === 0x05D1) cons = dagesh ? "b" : "v";
+    else if (code === 0x05DB || code === 0x05DA) cons = dagesh ? "k" : "kh";
+    else if (code === 0x05E4 || code === 0x05E3) cons = dagesh ? "p" : "f";
+    else if (code === 0x05E9) cons = sin ? "s" : "sh";
+    else cons = C[code] || "";
+    out += cons + (hasVowel ? vowel : "");
+    i = j - 1;
+  }
+  return out.replace(/'{2,}/g, "'").replace(/^'|'$/g, "").trim();
+}
+
+// One cell of the 2×2 gender/number grid.
+function gridCell(nik, tr) {
+  if (!nik) return "<td></td>";
+  const t = toggles.translit ? (tr || translitFromNikkud(nik)) : "";
+  return `<td class="heb hebrew say" data-say="${escAttr(nik)}" title="Click to hear">${esc(dispHeb(nik))} <span class="mini-speak">🔊</span>${t ? `<div class="translit">${esc(t)}</div>` : ""}</td>`;
+}
+function grid2x2(map) {
+  return `<table class="formtable">
+    <tr><th></th><th>Masculine</th><th>Feminine</th></tr>
+    <tr><th>singular</th>${gridCell(map.ms && map.ms.nik, map.ms && map.ms.tr)}${gridCell(map.fs && map.fs.nik, map.fs && map.fs.tr)}</tr>
+    <tr><th>plural</th>${gridCell(map.mp && map.mp.nik, map.mp && map.mp.tr)}${gridCell(map.fp && map.fp.nik, map.fp && map.fp.tr)}</tr>
+  </table>`;
+}
+
 function conjTable(e) {
   if (e.pos === "verb") {
-    const rows = e.forms.filter(f => f.slot !== "infinitive").map(f =>
-      `<tr><th>${SLOT_LABEL[f.slot] || f.slot}</th>${sayCell(hebOf(f), f.nikkud || f.hebrew)}${toggles.translit ? `<td class="translit">${esc(f.translit)}</td>` : ""}</tr>`).join("");
-    return `<table class="formtable">${rows}</table>`;
+    const byslot = s => e.forms.find(x => x.slot === s);
+    const map = {};
+    for (const s of ["ms", "fs", "mp", "fp"]) { const f = byslot(s); if (f) map[s] = { nik: f.nikkud || f.hebrew, tr: f.translit }; }
+    const inf = byslot("infinitive");
+    const infLine = inf && (inf.hebrew || inf.nikkud) ? `<div class="inf-line"><span class="muted">to (infinitive)</span> <span class="heb hebrew say" data-say="${escAttr(inf.nikkud || inf.hebrew)}">${esc(dispHeb(inf.nikkud || inf.hebrew))} <span class="mini-speak">🔊</span></span>${toggles.translit && inf.translit ? ` <span class="translit">${esc(inf.translit)}</span>` : ""}</div>` : "";
+    return infLine + grid2x2(map);
   }
   if (e.declension) {
-    const hdr = `<tr><th></th><th>Masculine</th><th>Feminine</th></tr>`;
-    const sg = `<tr><th>singular</th>${sayCell(e.declension.ms)}${sayCell(e.declension.fs)}</tr>`;
-    const pl = `<tr><th>plural</th>${sayCell(e.declension.mp)}${sayCell(e.declension.fp)}</tr>`;
-    return `<table class="formtable">${hdr}${sg}${pl}</table>`;
+    const map = {};
+    for (const s of ["ms", "fs", "mp", "fp"]) map[s] = { nik: e.declension[s], tr: translitFromNikkud(e.declension[s]) };
+    return grid2x2(map);
   }
   // noun singular/plural
   if (e.forms.length > 1) {
     const rows = e.forms.map(f =>
-      `<tr><th>${SLOT_LABEL[f.slot] || f.slot}</th>${sayCell(hebOf(f), f.nikkud || f.hebrew)}${toggles.translit ? `<td class="translit">${esc(f.translit)}</td>` : ""}</tr>`).join("");
+      `<tr><th>${SLOT_LABEL[f.slot] || f.slot}</th>${sayCell(hebOf(f), f.nikkud || f.hebrew)}${toggles.translit ? `<td class="translit">${esc(f.translit || translitFromNikkud(f.nikkud || ""))}</td>` : ""}</tr>`).join("");
     return `<table class="formtable">${rows}</table>`;
   }
   return "";

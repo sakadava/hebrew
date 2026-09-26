@@ -254,58 +254,23 @@
       "translit": "lavo",
       "hebrew": "לבוא"
      },
-     "conjugations": {}
-    },
-    {
-     "type": "noun",
-     "english": "Come(s) (m.s - pres.)",
-     "gender": "m",
-     "genderSource": "marker",
-     "forms": {
-      "singular": {
+     "conjugations": {
+      "ms": {
        "translit": "ba",
        "hebrew": "בא"
       },
-      "plural": null
-     }
-    },
-    {
-     "type": "noun",
-     "english": "Come(s) (f.s - pres.)",
-     "gender": "f",
-     "genderSource": "marker",
-     "forms": {
-      "singular": {
+      "fs": {
        "translit": "ba'ah",
        "hebrew": "באה"
       },
-      "plural": null
-     }
-    },
-    {
-     "type": "noun",
-     "english": "Come(s) (m.p - pres.)",
-     "gender": "m",
-     "genderSource": "marker",
-     "forms": {
-      "singular": {
+      "mp": {
        "translit": "ba'im",
        "hebrew": "באים"
       },
-      "plural": null
-     }
-    },
-    {
-     "type": "noun",
-     "english": "Come(s) (f.p - pres.)",
-     "gender": "f",
-     "genderSource": "marker",
-     "forms": {
-      "singular": {
+      "fp": {
        "translit": "ba'ot",
        "hebrew": "באות"
-      },
-      "plural": null
+      }
      }
     },
     {
@@ -316,58 +281,23 @@
       "translit": "le'ehov",
       "hebrew": "לאהוב"
      },
-     "conjugations": {}
-    },
-    {
-     "type": "noun",
-     "english": "Love(s) (m.s - pres.)",
-     "gender": "m",
-     "genderSource": "marker",
-     "forms": {
-      "singular": {
+     "conjugations": {
+      "ms": {
        "translit": "ohev",
        "hebrew": "אוהב"
       },
-      "plural": null
-     }
-    },
-    {
-     "type": "noun",
-     "english": "Love(s) (f.s - pres.)",
-     "gender": "f",
-     "genderSource": "marker",
-     "forms": {
-      "singular": {
+      "fs": {
        "translit": "ohevet",
        "hebrew": "אוהבת"
       },
-      "plural": null
-     }
-    },
-    {
-     "type": "noun",
-     "english": "Love(s) (m.p - pres.)",
-     "gender": "m",
-     "genderSource": "marker",
-     "forms": {
-      "singular": {
+      "mp": {
        "translit": "ohavim",
        "hebrew": "אוהבים"
       },
-      "plural": null
-     }
-    },
-    {
-     "type": "noun",
-     "english": "Love(s) (f.p - pres.)",
-     "gender": "f",
-     "genderSource": "marker",
-     "forms": {
-      "singular": {
+      "fp": {
        "translit": "ohavot",
        "hebrew": "אוהבות"
-      },
-      "plural": null
+      }
      }
     }
    ]
@@ -593,58 +523,23 @@
       "translit": "lalekhet",
       "hebrew": "ללכת"
      },
-     "conjugations": {}
-    },
-    {
-     "type": "noun",
-     "english": "Walk, Go (m.s - pres.)",
-     "gender": "m",
-     "genderSource": "marker",
-     "forms": {
-      "singular": {
+     "conjugations": {
+      "ms": {
        "translit": "holekh",
        "hebrew": "הולך"
       },
-      "plural": null
-     }
-    },
-    {
-     "type": "noun",
-     "english": "Walk, Go (f.s - pres.)",
-     "gender": "f",
-     "genderSource": "marker",
-     "forms": {
-      "singular": {
+      "fs": {
        "translit": "holekhet",
        "hebrew": "הולכת"
       },
-      "plural": null
-     }
-    },
-    {
-     "type": "noun",
-     "english": "Walk, Go (m.p - pres.)",
-     "gender": "m",
-     "genderSource": "marker",
-     "forms": {
-      "singular": {
+      "mp": {
        "translit": "hol'khim",
        "hebrew": "הולכים"
       },
-      "plural": null
-     }
-    },
-    {
-     "type": "noun",
-     "english": "Walk, Go (f.p - pres.)",
-     "gender": "f",
-     "genderSource": "marker",
-     "forms": {
-      "singular": {
+      "fp": {
        "translit": "hol'khot",
        "hebrew": "הולכוֹת"
-      },
-      "plural": null
+      }
      }
     },
     {
@@ -655,58 +550,23 @@
       "translit": "le'ekhol",
       "hebrew": "לאכול"
      },
-     "conjugations": {}
-    },
-    {
-     "type": "noun",
-     "english": "Eat (m.s - pres.)",
-     "gender": "m",
-     "genderSource": "marker",
-     "forms": {
-      "singular": {
+     "conjugations": {
+      "ms": {
        "translit": "okhel",
        "hebrew": "אוכל"
       },
-      "plural": null
-     }
-    },
-    {
-     "type": "noun",
-     "english": "Eat (f.s - pres.)",
-     "gender": "f",
-     "genderSource": "marker",
-     "forms": {
-      "singular": {
+      "fs": {
        "translit": "okhelet",
        "hebrew": "אוכלת"
       },
-      "plural": null
-     }
-    },
-    {
-     "type": "noun",
-     "english": "Eat (m.p - pres.)",
-     "gender": "m",
-     "genderSource": "marker",
-     "forms": {
-      "singular": {
+      "mp": {
        "translit": "okhel",
        "hebrew": "אוכלים"
       },
-      "plural": null
-     }
-    },
-    {
-     "type": "noun",
-     "english": "Eat (f.p - pres.)",
-     "gender": "f",
-     "genderSource": "marker",
-     "forms": {
-      "singular": {
+      "fp": {
        "translit": "okhelet",
        "hebrew": "אוכלות"
-      },
-      "plural": null
+      }
      }
     },
     {
@@ -717,58 +577,23 @@
       "translit": "lir'ot",
       "hebrew": "לראות"
      },
-     "conjugations": {}
-    },
-    {
-     "type": "noun",
-     "english": "See (m.s - pres.)",
-     "gender": "m",
-     "genderSource": "marker",
-     "forms": {
-      "singular": {
+     "conjugations": {
+      "ms": {
        "translit": "ro'eh",
        "hebrew": "רואה"
       },
-      "plural": null
-     }
-    },
-    {
-     "type": "noun",
-     "english": "See (f.s - pres.)",
-     "gender": "f",
-     "genderSource": "marker",
-     "forms": {
-      "singular": {
+      "fs": {
        "translit": "ro'ah",
        "hebrew": "רואה"
       },
-      "plural": null
-     }
-    },
-    {
-     "type": "noun",
-     "english": "See (m.p - pres.)",
-     "gender": "m",
-     "genderSource": "marker",
-     "forms": {
-      "singular": {
+      "mp": {
        "translit": "ro'im",
        "hebrew": "רואים"
       },
-      "plural": null
-     }
-    },
-    {
-     "type": "noun",
-     "english": "See (f.p - pres.)",
-     "gender": "f",
-     "genderSource": "marker",
-     "forms": {
-      "singular": {
+      "fp": {
        "translit": "ro'ot",
        "hebrew": "רואות"
-      },
-      "plural": null
+      }
      }
     },
     {
@@ -779,58 +604,23 @@
       "translit": "lish'tot",
       "hebrew": "לשתות"
      },
-     "conjugations": {}
-    },
-    {
-     "type": "noun",
-     "english": "Drink (m.s - pres.)",
-     "gender": "m",
-     "genderSource": "marker",
-     "forms": {
-      "singular": {
+     "conjugations": {
+      "ms": {
        "translit": "shoteh",
        "hebrew": "שותה"
       },
-      "plural": null
-     }
-    },
-    {
-     "type": "noun",
-     "english": "Drink (f.s - pres.)",
-     "gender": "f",
-     "genderSource": "marker",
-     "forms": {
-      "singular": {
+      "fs": {
        "translit": "shotah",
        "hebrew": "שותה"
       },
-      "plural": null
-     }
-    },
-    {
-     "type": "noun",
-     "english": "Drink (m.p - pres.)",
-     "gender": "m",
-     "genderSource": "marker",
-     "forms": {
-      "singular": {
+      "mp": {
        "translit": "shotim",
        "hebrew": "שותים"
       },
-      "plural": null
-     }
-    },
-    {
-     "type": "noun",
-     "english": "Drink (f.p - pres.)",
-     "gender": "f",
-     "genderSource": "marker",
-     "forms": {
-      "singular": {
+      "fp": {
        "translit": "shotot",
        "hebrew": "שׁוֹתוֹת"
-      },
-      "plural": null
+      }
      }
     }
    ]
@@ -1079,58 +869,23 @@
       "translit": "lik'ro (b-, et; l-)",
       "hebrew": "(- את; ל,-לקרוא )ב"
      },
-     "conjugations": {}
-    },
-    {
-     "type": "noun",
-     "english": "Read (m.s - pres.)",
-     "gender": "m",
-     "genderSource": "marker",
-     "forms": {
-      "singular": {
+     "conjugations": {
+      "ms": {
        "translit": "kore",
        "hebrew": "קורא"
       },
-      "plural": null
-     }
-    },
-    {
-     "type": "noun",
-     "english": "Read (f.s - pres.)",
-     "gender": "f",
-     "genderSource": "marker",
-     "forms": {
-      "singular": {
+      "fs": {
        "translit": "koret",
        "hebrew": "קוראת"
       },
-      "plural": null
-     }
-    },
-    {
-     "type": "noun",
-     "english": "Read (m.p - pres.)",
-     "gender": "m",
-     "genderSource": "marker",
-     "forms": {
-      "singular": {
+      "mp": {
        "translit": "kor'im",
        "hebrew": "קוראים"
       },
-      "plural": null
-     }
-    },
-    {
-     "type": "noun",
-     "english": "Read (f.p - pres.)",
-     "gender": "f",
-     "genderSource": "marker",
-     "forms": {
-      "singular": {
+      "fp": {
        "translit": "kor'ot",
        "hebrew": "קוראות"
-      },
-      "plural": null
+      }
      }
     },
     {
@@ -1141,58 +896,23 @@
       "translit": "lir'ot",
       "hebrew": "לרצות"
      },
-     "conjugations": {}
-    },
-    {
-     "type": "noun",
-     "english": "Want (m.s - pres.)",
-     "gender": "m",
-     "genderSource": "marker",
-     "forms": {
-      "singular": {
+     "conjugations": {
+      "ms": {
        "translit": "rotzeh",
        "hebrew": "רוצה"
       },
-      "plural": null
-     }
-    },
-    {
-     "type": "noun",
-     "english": "Want (f.s - pres.)",
-     "gender": "f",
-     "genderSource": "marker",
-     "forms": {
-      "singular": {
+      "fs": {
        "translit": "rotzah",
        "hebrew": "רוצה"
       },
-      "plural": null
-     }
-    },
-    {
-     "type": "noun",
-     "english": "Want (m.p - pres.)",
-     "gender": "m",
-     "genderSource": "marker",
-     "forms": {
-      "singular": {
+      "mp": {
        "translit": "rotzim",
        "hebrew": "רוצים"
       },
-      "plural": null
-     }
-    },
-    {
-     "type": "noun",
-     "english": "Want (f.p - pres.)",
-     "gender": "f",
-     "genderSource": "marker",
-     "forms": {
-      "singular": {
+      "fp": {
        "translit": "rotzot",
        "hebrew": "רוצות"
-      },
-      "plural": null
+      }
      }
     }
    ]
@@ -3291,60 +3011,18 @@
       "translit": "lin'boakh",
       "hebrew": "לנבוח"
      },
-     "conjugations": {}
-    },
-    {
-     "type": "noun",
-     "english": "Bark (m.s - pres.)",
-     "gender": "m",
-     "genderSource": "marker",
-     "forms": {
-      "singular": {
+     "conjugations": {
+      "ms": {
        "translit": "noveakh",
        "hebrew": "נובח"
       },
-      "plural": null
-     }
-    },
-    {
-     "type": "noun",
-     "english": "Bark (f.s - pres.)",
-     "gender": "f",
-     "genderSource": "marker",
-     "forms": {
-      "singular": {
+      "fs": {
        "translit": "novakhat",
        "hebrew": "נובחת"
       },
-      "plural": null
-     }
-    },
-    {
-     "type": "noun",
-     "english": "Bark (f.p - pres.)",
-     "gender": "f",
-     "genderSource": "marker",
-     "forms": {
-      "singular": {
-       "translit": "nov'khim",
-       "hebrew": "נוֹבְ חִ ים"
-      },
-      "plural": null
-     }
-    },
-    {
-     "type": "noun",
-     "english": "Bark (f.p - pres.)",
-     "gender": "f",
-     "genderSource": "marker",
-     "forms": {
-      "singular": {
+      "fp": {
        "translit": "nov'khot",
-       "hebrew": "נוֹבְ"
-      },
-      "plural": {
-       "translit": "",
-       "hebrew": "חוֹת"
+       "hebrew": "נוֹבְ חוֹת"
       }
      }
     }
@@ -4988,58 +4666,23 @@
       "translit": "l'vashel",
       "hebrew": "לבשל"
      },
-     "conjugations": {}
-    },
-    {
-     "type": "noun",
-     "english": "Cook (m.s - pres.)",
-     "gender": "m",
-     "genderSource": "marker",
-     "forms": {
-      "singular": {
+     "conjugations": {
+      "ms": {
        "translit": "m'vashel",
        "hebrew": "מבשל"
       },
-      "plural": null
-     }
-    },
-    {
-     "type": "noun",
-     "english": "Cook (f.s - pres.)",
-     "gender": "f",
-     "genderSource": "marker",
-     "forms": {
-      "singular": {
+      "fs": {
        "translit": "m'vashelet",
        "hebrew": "מבשלת"
       },
-      "plural": null
-     }
-    },
-    {
-     "type": "noun",
-     "english": "Cook (m.p - pres.)",
-     "gender": "m",
-     "genderSource": "marker",
-     "forms": {
-      "singular": {
+      "mp": {
        "translit": "m'vash'lim",
        "hebrew": "מבשלים"
       },
-      "plural": null
-     }
-    },
-    {
-     "type": "noun",
-     "english": "Cook (f.p - pres.)",
-     "gender": "f",
-     "genderSource": "marker",
-     "forms": {
-      "singular": {
+      "fp": {
        "translit": "m'vashlot",
        "hebrew": "מבשלות"
-      },
-      "plural": null
+      }
      }
     },
     {
@@ -5050,58 +4693,23 @@
       "translit": "le'efot",
       "hebrew": "לאפות"
      },
-     "conjugations": {}
-    },
-    {
-     "type": "noun",
-     "english": "Bakes (m.s - pres.)",
-     "gender": "m",
-     "genderSource": "marker",
-     "forms": {
-      "singular": {
+     "conjugations": {
+      "ms": {
        "translit": "ofeh",
        "hebrew": "אופה"
       },
-      "plural": null
-     }
-    },
-    {
-     "type": "noun",
-     "english": "Bakes (f.s - pres.)",
-     "gender": "f",
-     "genderSource": "marker",
-     "forms": {
-      "singular": {
+      "fs": {
        "translit": "ofah",
        "hebrew": "אופה"
       },
-      "plural": null
-     }
-    },
-    {
-     "type": "noun",
-     "english": "Bakes (m.p - pres.)",
-     "gender": "m",
-     "genderSource": "marker",
-     "forms": {
-      "singular": {
+      "mp": {
        "translit": "ofim",
        "hebrew": "אופים"
       },
-      "plural": null
-     }
-    },
-    {
-     "type": "noun",
-     "english": "Bakes (f.p - pres.)",
-     "gender": "f",
-     "genderSource": "marker",
-     "forms": {
-      "singular": {
+      "fp": {
        "translit": "ofot",
        "hebrew": "אופות"
-      },
-      "plural": null
+      }
      }
     }
    ]
@@ -5506,58 +5114,23 @@
       "translit": "lil'bosh",
       "hebrew": "ללבוש"
      },
-     "conjugations": {}
-    },
-    {
-     "type": "noun",
-     "english": "Wear (m.s - pres.)",
-     "gender": "m",
-     "genderSource": "marker",
-     "forms": {
-      "singular": {
+     "conjugations": {
+      "ms": {
        "translit": "lovesh",
        "hebrew": "לובש"
       },
-      "plural": null
-     }
-    },
-    {
-     "type": "noun",
-     "english": "Wear (f.s - pres.)",
-     "gender": "f",
-     "genderSource": "marker",
-     "forms": {
-      "singular": {
+      "fs": {
        "translit": "loveshet",
        "hebrew": "לובשת"
       },
-      "plural": null
-     }
-    },
-    {
-     "type": "noun",
-     "english": "Wear (m.p - pres.)",
-     "gender": "m",
-     "genderSource": "marker",
-     "forms": {
-      "singular": {
+      "mp": {
        "translit": "lov'shim",
        "hebrew": "לובשים"
       },
-      "plural": null
-     }
-    },
-    {
-     "type": "noun",
-     "english": "Wear (f.p - pres.)",
-     "gender": "f",
-     "genderSource": "marker",
-     "forms": {
-      "singular": {
+      "fp": {
        "translit": "lov'shot",
        "hebrew": "לובשות"
-      },
-      "plural": null
+      }
      }
     },
     {
@@ -5568,58 +5141,23 @@
       "translit": "lin'ol",
       "hebrew": "לנעול"
      },
-     "conjugations": {}
-    },
-    {
-     "type": "noun",
-     "english": "Wear (m.s - pres.)",
-     "gender": "m",
-     "genderSource": "marker",
-     "forms": {
-      "singular": {
+     "conjugations": {
+      "ms": {
        "translit": "no'el",
        "hebrew": "נועל"
       },
-      "plural": null
-     }
-    },
-    {
-     "type": "noun",
-     "english": "Wear (f.s - pres.)",
-     "gender": "f",
-     "genderSource": "marker",
-     "forms": {
-      "singular": {
+      "fs": {
        "translit": "no'elet",
        "hebrew": "נועלת"
       },
-      "plural": null
-     }
-    },
-    {
-     "type": "noun",
-     "english": "Wear (m.p - pres.)",
-     "gender": "m",
-     "genderSource": "marker",
-     "forms": {
-      "singular": {
+      "mp": {
        "translit": "no'alim",
        "hebrew": "נועלים"
       },
-      "plural": null
-     }
-    },
-    {
-     "type": "noun",
-     "english": "Wear (f.p - pres.)",
-     "gender": "f",
-     "genderSource": "marker",
-     "forms": {
-      "singular": {
+      "fp": {
        "translit": "no'alot",
        "hebrew": "נועלות"
-      },
-      "plural": null
+      }
      }
     },
     {
@@ -5630,58 +5168,23 @@
       "translit": "lakh'bosh",
       "hebrew": "לחבוש"
      },
-     "conjugations": {}
-    },
-    {
-     "type": "noun",
-     "english": "Wear (m.s - pres.)",
-     "gender": "m",
-     "genderSource": "marker",
-     "forms": {
-      "singular": {
+     "conjugations": {
+      "ms": {
        "translit": "khovesh",
        "hebrew": "חובש"
       },
-      "plural": null
-     }
-    },
-    {
-     "type": "noun",
-     "english": "Wear (f.s - pres.)",
-     "gender": "f",
-     "genderSource": "marker",
-     "forms": {
-      "singular": {
+      "fs": {
        "translit": "khoveshet",
        "hebrew": "חובשת"
       },
-      "plural": null
-     }
-    },
-    {
-     "type": "noun",
-     "english": "Wear (m.p - pres.)",
-     "gender": "m",
-     "genderSource": "marker",
-     "forms": {
-      "singular": {
+      "mp": {
        "translit": "khov'shim",
        "hebrew": "חובשים"
       },
-      "plural": null
-     }
-    },
-    {
-     "type": "noun",
-     "english": "Wear (f.p - pres.)",
-     "gender": "f",
-     "genderSource": "marker",
-     "forms": {
-      "singular": {
+      "fp": {
        "translit": "khov'shot",
        "hebrew": "חובשות"
-      },
-      "plural": null
+      }
      }
     },
     {
@@ -5692,58 +5195,23 @@
       "translit": "la'anod",
       "hebrew": "לענוד"
      },
-     "conjugations": {}
-    },
-    {
-     "type": "noun",
-     "english": "Wear (m.s - pres.)",
-     "gender": "m",
-     "genderSource": "marker",
-     "forms": {
-      "singular": {
+     "conjugations": {
+      "ms": {
        "translit": "oned",
        "hebrew": "עונד"
       },
-      "plural": null
-     }
-    },
-    {
-     "type": "noun",
-     "english": "Wear (f.s - pres.)",
-     "gender": "f",
-     "genderSource": "marker",
-     "forms": {
-      "singular": {
+      "fs": {
        "translit": "onedet",
        "hebrew": "עונדת"
       },
-      "plural": null
-     }
-    },
-    {
-     "type": "noun",
-     "english": "Wear (m.p - pres.)",
-     "gender": "m",
-     "genderSource": "marker",
-     "forms": {
-      "singular": {
+      "mp": {
        "translit": "on'dim",
        "hebrew": "עונדים"
       },
-      "plural": null
-     }
-    },
-    {
-     "type": "noun",
-     "english": "Wear (f.p - pres.)",
-     "gender": "f",
-     "genderSource": "marker",
-     "forms": {
-      "singular": {
+      "fp": {
        "translit": "on'dot",
        "hebrew": "עונדות"
-      },
-      "plural": null
+      }
      }
     },
     {
@@ -5754,58 +5222,23 @@
       "translit": "lasim",
       "hebrew": "לשים"
      },
-     "conjugations": {}
-    },
-    {
-     "type": "noun",
-     "english": "Put (m.s - pres.)",
-     "gender": "m",
-     "genderSource": "marker",
-     "forms": {
-      "singular": {
+     "conjugations": {
+      "ms": {
        "translit": "sam",
        "hebrew": "שם"
       },
-      "plural": null
-     }
-    },
-    {
-     "type": "noun",
-     "english": "Put (f.s - pres.)",
-     "gender": "f",
-     "genderSource": "marker",
-     "forms": {
-      "singular": {
+      "fs": {
        "translit": "samah",
        "hebrew": "שמה"
       },
-      "plural": null
-     }
-    },
-    {
-     "type": "noun",
-     "english": "Put (m.p - pres.)",
-     "gender": "m",
-     "genderSource": "marker",
-     "forms": {
-      "singular": {
+      "mp": {
        "translit": "samim",
        "hebrew": "שמים"
       },
-      "plural": null
-     }
-    },
-    {
-     "type": "noun",
-     "english": "Put (f.p - pres.)",
-     "gender": "f",
-     "genderSource": "marker",
-     "forms": {
-      "singular": {
+      "fp": {
        "translit": "samot",
        "hebrew": "שמות"
-      },
-      "plural": null
+      }
      }
     },
     {
@@ -5816,58 +5249,23 @@
       "translit": "l'har'kiv",
       "hebrew": "להרכיב"
      },
-     "conjugations": {}
-    },
-    {
-     "type": "noun",
-     "english": "Wear (m.s - pres.)",
-     "gender": "m",
-     "genderSource": "marker",
-     "forms": {
-      "singular": {
+     "conjugations": {
+      "ms": {
        "translit": "mar'kiv",
        "hebrew": "מרכיב"
       },
-      "plural": null
-     }
-    },
-    {
-     "type": "noun",
-     "english": "Wear (f.s - pres.)",
-     "gender": "f",
-     "genderSource": "marker",
-     "forms": {
-      "singular": {
+      "fs": {
        "translit": "mar'kivah",
        "hebrew": "מרכיבה"
       },
-      "plural": null
-     }
-    },
-    {
-     "type": "noun",
-     "english": "Wear (m.p - pres.)",
-     "gender": "m",
-     "genderSource": "marker",
-     "forms": {
-      "singular": {
+      "mp": {
        "translit": "mar'kivim",
        "hebrew": "מרכיבים"
       },
-      "plural": null
-     }
-    },
-    {
-     "type": "noun",
-     "english": "Wear (f.p - pres.)",
-     "gender": "f",
-     "genderSource": "marker",
-     "forms": {
-      "singular": {
+      "fp": {
        "translit": "mar'kivot",
        "hebrew": "מרכיבות"
-      },
-      "plural": null
+      }
      }
     },
     {
@@ -5878,58 +5276,23 @@
       "translit": "lig'rov",
       "hebrew": "לגרוב"
      },
-     "conjugations": {}
-    },
-    {
-     "type": "noun",
-     "english": "Wear (m.s - pres.)",
-     "gender": "m",
-     "genderSource": "marker",
-     "forms": {
-      "singular": {
+     "conjugations": {
+      "ms": {
        "translit": "gorev",
        "hebrew": "גורב"
       },
-      "plural": null
-     }
-    },
-    {
-     "type": "noun",
-     "english": "Wear (f.s - pres.)",
-     "gender": "f",
-     "genderSource": "marker",
-     "forms": {
-      "singular": {
+      "fs": {
        "translit": "gorevet",
        "hebrew": "גורבת"
       },
-      "plural": null
-     }
-    },
-    {
-     "type": "noun",
-     "english": "Wear (m.p - pres.)",
-     "gender": "m",
-     "genderSource": "marker",
-     "forms": {
-      "singular": {
+      "mp": {
        "translit": "gor'vim",
        "hebrew": "גורבים"
       },
-      "plural": null
-     }
-    },
-    {
-     "type": "noun",
-     "english": "Wear (f.p - pres.)",
-     "gender": "f",
-     "genderSource": "marker",
-     "forms": {
-      "singular": {
+      "fp": {
        "translit": "gor'vot",
        "hebrew": "גורבות"
-      },
-      "plural": null
+      }
      }
     }
    ]
@@ -7761,58 +7124,23 @@
       "translit": "litz'boa",
       "hebrew": "לצבוע"
      },
-     "conjugations": {}
-    },
-    {
-     "type": "noun",
-     "english": "Paint (m.s - pres.)",
-     "gender": "m",
-     "genderSource": "marker",
-     "forms": {
-      "singular": {
+     "conjugations": {
+      "ms": {
        "translit": "tzovea",
        "hebrew": "צובע"
       },
-      "plural": null
-     }
-    },
-    {
-     "type": "noun",
-     "english": "Paint (f.s - pres.)",
-     "gender": "f",
-     "genderSource": "marker",
-     "forms": {
-      "singular": {
+      "fs": {
        "translit": "tzova'at",
        "hebrew": "צובעת"
       },
-      "plural": null
-     }
-    },
-    {
-     "type": "noun",
-     "english": "Paint (m.p - pres.)",
-     "gender": "m",
-     "genderSource": "marker",
-     "forms": {
-      "singular": {
+      "mp": {
        "translit": "tzov'im",
        "hebrew": "צובעים"
       },
-      "plural": null
-     }
-    },
-    {
-     "type": "noun",
-     "english": "Paint (f.p- pres.)",
-     "gender": "f",
-     "genderSource": "marker",
-     "forms": {
-      "singular": {
+      "fp": {
        "translit": "tzov'ot",
        "hebrew": "צובעות"
-      },
-      "plural": null
+      }
      }
     }
    ]
@@ -8447,58 +7775,23 @@
       "translit": "lis'por",
       "hebrew": "לספור"
      },
-     "conjugations": {}
-    },
-    {
-     "type": "noun",
-     "english": "Count (m.s - pres.)",
-     "gender": "m",
-     "genderSource": "marker",
-     "forms": {
-      "singular": {
+     "conjugations": {
+      "ms": {
        "translit": "sofer",
        "hebrew": "סופר"
       },
-      "plural": null
-     }
-    },
-    {
-     "type": "noun",
-     "english": "Count (f.s - pres.)",
-     "gender": "f",
-     "genderSource": "marker",
-     "forms": {
-      "singular": {
+      "fs": {
        "translit": "soferet",
        "hebrew": "סופרת"
       },
-      "plural": null
-     }
-    },
-    {
-     "type": "noun",
-     "english": "Count (m.p - pres.)",
-     "gender": "m",
-     "genderSource": "marker",
-     "forms": {
-      "singular": {
+      "mp": {
        "translit": "sof'rim",
        "hebrew": "סופרים"
       },
-      "plural": null
-     }
-    },
-    {
-     "type": "noun",
-     "english": "Count (f.p- pres.)",
-     "gender": "f",
-     "genderSource": "marker",
-     "forms": {
-      "singular": {
+      "fp": {
        "translit": "sof'rot",
        "hebrew": "סופרות"
-      },
-      "plural": null
+      }
      }
     }
    ]
@@ -10391,58 +9684,23 @@
       "translit": "l'vakesh",
       "hebrew": "לבקש"
      },
-     "conjugations": {}
-    },
-    {
-     "type": "noun",
-     "english": "I, You, He, It (m.s - pres.)",
-     "gender": "m",
-     "genderSource": "marker",
-     "forms": {
-      "singular": {
+     "conjugations": {
+      "ms": {
        "translit": "m'vakesh",
        "hebrew": "מבקש"
       },
-      "plural": null
-     }
-    },
-    {
-     "type": "noun",
-     "english": "I, You, She, It (f.s - pres.)",
-     "gender": "f",
-     "genderSource": "marker",
-     "forms": {
-      "singular": {
+      "fs": {
        "translit": "m'vakeshet",
        "hebrew": "מבקשת"
       },
-      "plural": null
-     }
-    },
-    {
-     "type": "noun",
-     "english": "We, You, They (m.p - pres.)",
-     "gender": "m",
-     "genderSource": "marker",
-     "forms": {
-      "singular": {
+      "mp": {
        "translit": "m'vak'shim",
        "hebrew": "מבקשים"
       },
-      "plural": null
-     }
-    },
-    {
-     "type": "noun",
-     "english": "We, You, They (f.p- pres.)",
-     "gender": "f",
-     "genderSource": "marker",
-     "forms": {
-      "singular": {
+      "fp": {
        "translit": "m'vak'shot",
        "hebrew": "מבקשות"
-      },
-      "plural": null
+      }
      }
     },
     {
@@ -10453,58 +9711,23 @@
       "translit": "l'shalem",
       "hebrew": "לשלם"
      },
-     "conjugations": {}
-    },
-    {
-     "type": "noun",
-     "english": "I, You, He, It (m.s - pres.)",
-     "gender": "m",
-     "genderSource": "marker",
-     "forms": {
-      "singular": {
+     "conjugations": {
+      "ms": {
        "translit": "m'shalem",
        "hebrew": "משלם"
       },
-      "plural": null
-     }
-    },
-    {
-     "type": "noun",
-     "english": "I, You, She, It (f.s - pres.)",
-     "gender": "f",
-     "genderSource": "marker",
-     "forms": {
-      "singular": {
+      "fs": {
        "translit": "m'shalemet",
        "hebrew": "משלמת"
       },
-      "plural": null
-     }
-    },
-    {
-     "type": "noun",
-     "english": "We, You, They (m.p - pres.)",
-     "gender": "m",
-     "genderSource": "marker",
-     "forms": {
-      "singular": {
+      "mp": {
        "translit": "m'shal'mim",
        "hebrew": "משלמים"
       },
-      "plural": null
-     }
-    },
-    {
-     "type": "noun",
-     "english": "We, You, They (f.p- pres.)",
-     "gender": "f",
-     "genderSource": "marker",
-     "forms": {
-      "singular": {
+      "fp": {
        "translit": "m'shal'mot",
        "hebrew": "משלמות"
-      },
-      "plural": null
+      }
      }
     },
     {
@@ -10515,58 +9738,23 @@
       "translit": "l'fas'fes",
       "hebrew": "לפספס"
      },
-     "conjugations": {}
-    },
-    {
-     "type": "noun",
-     "english": "I, You, He, It (m.s - pres.)",
-     "gender": "m",
-     "genderSource": "marker",
-     "forms": {
-      "singular": {
+     "conjugations": {
+      "ms": {
        "translit": "m'pas'fes",
        "hebrew": "מפספס"
       },
-      "plural": null
-     }
-    },
-    {
-     "type": "noun",
-     "english": "I, You, She, It (f.s - pres.)",
-     "gender": "f",
-     "genderSource": "marker",
-     "forms": {
-      "singular": {
+      "fs": {
        "translit": "m'fas'feset",
        "hebrew": "מפספסת"
       },
-      "plural": null
-     }
-    },
-    {
-     "type": "noun",
-     "english": "We, You, They (m.p - pres.)",
-     "gender": "m",
-     "genderSource": "marker",
-     "forms": {
-      "singular": {
+      "mp": {
        "translit": "m'fas'f'sim",
        "hebrew": "מפספסים"
       },
-      "plural": null
-     }
-    },
-    {
-     "type": "noun",
-     "english": "We, You, They (f.p- pres.)",
-     "gender": "f",
-     "genderSource": "marker",
-     "forms": {
-      "singular": {
+      "fp": {
        "translit": "m'fas'f'sot",
        "hebrew": "מפספסות"
-      },
-      "plural": null
+      }
      }
     },
     {
@@ -10577,58 +9765,23 @@
       "translit": "l'sakhek",
       "hebrew": "לשחק"
      },
-     "conjugations": {}
-    },
-    {
-     "type": "noun",
-     "english": "I, You, He, It (m.s - pres.)",
-     "gender": "m",
-     "genderSource": "marker",
-     "forms": {
-      "singular": {
+     "conjugations": {
+      "ms": {
        "translit": "m'sakhek",
        "hebrew": "משחק"
       },
-      "plural": null
-     }
-    },
-    {
-     "type": "noun",
-     "english": "I, You, She, It (f.s - pres.)",
-     "gender": "f",
-     "genderSource": "marker",
-     "forms": {
-      "singular": {
+      "fs": {
        "translit": "m'sakheket",
        "hebrew": "משחקת"
       },
-      "plural": null
-     }
-    },
-    {
-     "type": "noun",
-     "english": "We, You, They (m.p - pres.)",
-     "gender": "m",
-     "genderSource": "marker",
-     "forms": {
-      "singular": {
+      "mp": {
        "translit": "m'sakhakim",
        "hebrew": "משחקים"
       },
-      "plural": null
-     }
-    },
-    {
-     "type": "noun",
-     "english": "We, You, They (f.p- pres.)",
-     "gender": "f",
-     "genderSource": "marker",
-     "forms": {
-      "singular": {
+      "fp": {
        "translit": "m'sakhakot",
        "hebrew": "משחקות"
-      },
-      "plural": null
+      }
      }
     },
     {
@@ -10639,58 +9792,23 @@
       "translit": "l'saper",
       "hebrew": "לספר"
      },
-     "conjugations": {}
-    },
-    {
-     "type": "noun",
-     "english": "I, You, He, It (m.s - pres.)",
-     "gender": "m",
-     "genderSource": "marker",
-     "forms": {
-      "singular": {
+     "conjugations": {
+      "ms": {
        "translit": "m'saper",
        "hebrew": "מספר"
       },
-      "plural": null
-     }
-    },
-    {
-     "type": "noun",
-     "english": "I, You, She, It (f.s - pres.)",
-     "gender": "f",
-     "genderSource": "marker",
-     "forms": {
-      "singular": {
+      "fs": {
        "translit": "m'saperet",
        "hebrew": "מספרת"
       },
-      "plural": null
-     }
-    },
-    {
-     "type": "noun",
-     "english": "We, You, They (m.p - pres.)",
-     "gender": "m",
-     "genderSource": "marker",
-     "forms": {
-      "singular": {
+      "mp": {
        "translit": "m'sap'rim",
        "hebrew": "מספרים"
       },
-      "plural": null
-     }
-    },
-    {
-     "type": "noun",
-     "english": "We, You, They (f.p- pres.)",
-     "gender": "f",
-     "genderSource": "marker",
-     "forms": {
-      "singular": {
+      "fp": {
        "translit": "m'sap'rot",
        "hebrew": "מספרות"
-      },
-      "plural": null
+      }
      }
     },
     {
@@ -10701,58 +9819,23 @@
       "translit": "l'atzev",
       "hebrew": "לעצב"
      },
-     "conjugations": {}
-    },
-    {
-     "type": "noun",
-     "english": "I, You, He, It (m.s - pres.)",
-     "gender": "m",
-     "genderSource": "marker",
-     "forms": {
-      "singular": {
+     "conjugations": {
+      "ms": {
        "translit": "m'atzev",
        "hebrew": "מעצב"
       },
-      "plural": null
-     }
-    },
-    {
-     "type": "noun",
-     "english": "I, You, She, It (f.s - pres.)",
-     "gender": "f",
-     "genderSource": "marker",
-     "forms": {
-      "singular": {
+      "fs": {
        "translit": "m'atzevet",
        "hebrew": "מעצבת"
       },
-      "plural": null
-     }
-    },
-    {
-     "type": "noun",
-     "english": "We, You, They (m.p - pres.)",
-     "gender": "m",
-     "genderSource": "marker",
-     "forms": {
-      "singular": {
+      "mp": {
        "translit": "m'atz'vim",
        "hebrew": "מעצבים"
       },
-      "plural": null
-     }
-    },
-    {
-     "type": "noun",
-     "english": "We, You, They (f.p- pres.)",
-     "gender": "f",
-     "genderSource": "marker",
-     "forms": {
-      "singular": {
+      "fp": {
        "translit": "m'atz'vot",
        "hebrew": "מעצבות"
-      },
-      "plural": null
+      }
      }
     },
     {
@@ -10763,58 +9846,23 @@
       "translit": "l'shanot",
       "hebrew": "לשנות"
      },
-     "conjugations": {}
-    },
-    {
-     "type": "noun",
-     "english": "I, You, He, It (m.s - pres.)",
-     "gender": "m",
-     "genderSource": "marker",
-     "forms": {
-      "singular": {
+     "conjugations": {
+      "ms": {
        "translit": "m'shaneh",
        "hebrew": "משנה"
       },
-      "plural": null
-     }
-    },
-    {
-     "type": "noun",
-     "english": "I, You, She, It (f.s - pres.)",
-     "gender": "f",
-     "genderSource": "marker",
-     "forms": {
-      "singular": {
+      "fs": {
        "translit": "m'shanah",
        "hebrew": "משנה"
       },
-      "plural": null
-     }
-    },
-    {
-     "type": "noun",
-     "english": "We, You, They (m.p - pres.)",
-     "gender": "m",
-     "genderSource": "marker",
-     "forms": {
-      "singular": {
+      "mp": {
        "translit": "m'shanim",
        "hebrew": "משנים"
       },
-      "plural": null
-     }
-    },
-    {
-     "type": "noun",
-     "english": "We, You, They (f.p- pres.)",
-     "gender": "f",
-     "genderSource": "marker",
-     "forms": {
-      "singular": {
+      "fp": {
        "translit": "m'shanot",
        "hebrew": "משנות"
-      },
-      "plural": null
+      }
      }
     },
     {
@@ -10825,58 +9873,23 @@
       "translit": "l'nasot",
       "hebrew": "לנסות"
      },
-     "conjugations": {}
-    },
-    {
-     "type": "noun",
-     "english": "I, You, He, It (m.s - pres.)",
-     "gender": "m",
-     "genderSource": "marker",
-     "forms": {
-      "singular": {
+     "conjugations": {
+      "ms": {
        "translit": "m'naseh",
        "hebrew": "מנסה"
       },
-      "plural": null
-     }
-    },
-    {
-     "type": "noun",
-     "english": "I, You, She, It (f.s - pres.)",
-     "gender": "f",
-     "genderSource": "marker",
-     "forms": {
-      "singular": {
+      "fs": {
        "translit": "m'nasah",
        "hebrew": "מנסה"
       },
-      "plural": null
-     }
-    },
-    {
-     "type": "noun",
-     "english": "We, You, They (m.p - pres.)",
-     "gender": "m",
-     "genderSource": "marker",
-     "forms": {
-      "singular": {
+      "mp": {
        "translit": "m'nasim",
        "hebrew": "מנסים"
       },
-      "plural": null
-     }
-    },
-    {
-     "type": "noun",
-     "english": "We, You, They (f.p- pres.)",
-     "gender": "f",
-     "genderSource": "marker",
-     "forms": {
-      "singular": {
+      "fp": {
        "translit": "m'nasot",
        "hebrew": "מנסות"
-      },
-      "plural": null
+      }
      }
     },
     {
@@ -10887,58 +9900,23 @@
       "translit": "l'kavot",
       "hebrew": "לקוות"
      },
-     "conjugations": {}
-    },
-    {
-     "type": "noun",
-     "english": "I, You, He, It (m.s - pres.)",
-     "gender": "m",
-     "genderSource": "marker",
-     "forms": {
-      "singular": {
+     "conjugations": {
+      "ms": {
        "translit": "m'kaveh",
        "hebrew": "מקווה"
       },
-      "plural": null
-     }
-    },
-    {
-     "type": "noun",
-     "english": "I, You, She, It (f.s - pres.)",
-     "gender": "f",
-     "genderSource": "marker",
-     "forms": {
-      "singular": {
+      "fs": {
        "translit": "m'kavah",
        "hebrew": "מקווה"
       },
-      "plural": null
-     }
-    },
-    {
-     "type": "noun",
-     "english": "We, You, They (m.p - pres.)",
-     "gender": "m",
-     "genderSource": "marker",
-     "forms": {
-      "singular": {
+      "mp": {
        "translit": "m'kavim",
        "hebrew": "מקווים"
       },
-      "plural": null
-     }
-    },
-    {
-     "type": "noun",
-     "english": "We, You, They (f.p- pres.)",
-     "gender": "f",
-     "genderSource": "marker",
-     "forms": {
-      "singular": {
+      "fp": {
        "translit": "m'kavot",
        "hebrew": "מקוות"
-      },
-      "plural": null
+      }
      }
     },
     {
@@ -10949,58 +9927,23 @@
       "translit": "l'khapes",
       "hebrew": "לחפש"
      },
-     "conjugations": {}
-    },
-    {
-     "type": "noun",
-     "english": "I, You, He, It (m.s - pres.)",
-     "gender": "m",
-     "genderSource": "marker",
-     "forms": {
-      "singular": {
+     "conjugations": {
+      "ms": {
        "translit": "m'khapes",
        "hebrew": "מחפש"
       },
-      "plural": null
-     }
-    },
-    {
-     "type": "noun",
-     "english": "I, You, She, It (f.s - pres.)",
-     "gender": "f",
-     "genderSource": "marker",
-     "forms": {
-      "singular": {
+      "fs": {
        "translit": "m'khapeset",
        "hebrew": "מחפשת"
       },
-      "plural": null
-     }
-    },
-    {
-     "type": "noun",
-     "english": "We, You, They (m.p - pres.)",
-     "gender": "m",
-     "genderSource": "marker",
-     "forms": {
-      "singular": {
+      "mp": {
        "translit": "m'khap'sim",
        "hebrew": "מחפשים"
       },
-      "plural": null
-     }
-    },
-    {
-     "type": "noun",
-     "english": "We, You, They (f.p- pres.)",
-     "gender": "f",
-     "genderSource": "marker",
-     "forms": {
-      "singular": {
+      "fp": {
        "translit": "m'khap'sot",
        "hebrew": "מחפשות"
-      },
-      "plural": null
+      }
      }
     },
     {
@@ -11011,58 +9954,23 @@
       "translit": "l'gadel",
       "hebrew": "לגדל"
      },
-     "conjugations": {}
-    },
-    {
-     "type": "noun",
-     "english": "I, You, He, It (m.s - pres.)",
-     "gender": "m",
-     "genderSource": "marker",
-     "forms": {
-      "singular": {
+     "conjugations": {
+      "ms": {
        "translit": "m'gadel",
        "hebrew": "מגדל"
       },
-      "plural": null
-     }
-    },
-    {
-     "type": "noun",
-     "english": "I, You, She, It (f.s - pres.)",
-     "gender": "f",
-     "genderSource": "marker",
-     "forms": {
-      "singular": {
+      "fs": {
        "translit": "m'gadelet",
        "hebrew": "מגדלת"
       },
-      "plural": null
-     }
-    },
-    {
-     "type": "noun",
-     "english": "We, You, They (m.p - pres.)",
-     "gender": "m",
-     "genderSource": "marker",
-     "forms": {
-      "singular": {
+      "mp": {
        "translit": "m'gad'lim",
        "hebrew": "מגדלים"
       },
-      "plural": null
-     }
-    },
-    {
-     "type": "noun",
-     "english": "We, You, They (f.p- pres.)",
-     "gender": "f",
-     "genderSource": "marker",
-     "forms": {
-      "singular": {
+      "fp": {
        "translit": "m'gad'lot",
        "hebrew": "מגדלות"
-      },
-      "plural": null
+      }
      }
     },
     {
@@ -11073,58 +9981,23 @@
       "translit": "l'samen",
       "hebrew": "לסמן"
      },
-     "conjugations": {}
-    },
-    {
-     "type": "noun",
-     "english": "I, You, He, It (m.s - pres.)",
-     "gender": "m",
-     "genderSource": "marker",
-     "forms": {
-      "singular": {
+     "conjugations": {
+      "ms": {
        "translit": "m'samen",
        "hebrew": "מסמן"
       },
-      "plural": null
-     }
-    },
-    {
-     "type": "noun",
-     "english": "I, You, She, It (f.s - pres.)",
-     "gender": "f",
-     "genderSource": "marker",
-     "forms": {
-      "singular": {
+      "fs": {
        "translit": "m'samenet",
        "hebrew": "מסמנת"
       },
-      "plural": null
-     }
-    },
-    {
-     "type": "noun",
-     "english": "We, You, They (m.p - pres.)",
-     "gender": "m",
-     "genderSource": "marker",
-     "forms": {
-      "singular": {
+      "mp": {
        "translit": "m'sam'nim",
        "hebrew": "מסמנים"
       },
-      "plural": null
-     }
-    },
-    {
-     "type": "noun",
-     "english": "We, You, They (f.p- pres.)",
-     "gender": "f",
-     "genderSource": "marker",
-     "forms": {
-      "singular": {
+      "fp": {
        "translit": "m'sam'not",
        "hebrew": "מסמנות"
-      },
-      "plural": null
+      }
      }
     },
     {
@@ -11135,58 +10008,23 @@
       "translit": "l'akhel",
       "hebrew": "לאחל"
      },
-     "conjugations": {}
-    },
-    {
-     "type": "noun",
-     "english": "I, You, He, It (m.s - pres.)",
-     "gender": "m",
-     "genderSource": "marker",
-     "forms": {
-      "singular": {
+     "conjugations": {
+      "ms": {
        "translit": "m'akhel",
        "hebrew": "מאחל"
       },
-      "plural": null
-     }
-    },
-    {
-     "type": "noun",
-     "english": "I, You, She, It (f.s - pres.)",
-     "gender": "f",
-     "genderSource": "marker",
-     "forms": {
-      "singular": {
+      "fs": {
        "translit": "m'akhelet",
        "hebrew": "מאחלת"
       },
-      "plural": null
-     }
-    },
-    {
-     "type": "noun",
-     "english": "We, You, They (m.p - pres.)",
-     "gender": "m",
-     "genderSource": "marker",
-     "forms": {
-      "singular": {
+      "mp": {
        "translit": "m'akhalim",
        "hebrew": "מאחלים"
       },
-      "plural": null
-     }
-    },
-    {
-     "type": "noun",
-     "english": "We, You, They (f.p- pres.)",
-     "gender": "f",
-     "genderSource": "marker",
-     "forms": {
-      "singular": {
+      "fp": {
        "translit": "m'akhalot",
        "hebrew": "מאחלות"
-      },
-      "plural": null
+      }
      }
     },
     {
@@ -11197,58 +10035,23 @@
       "translit": "l'ar'bev",
       "hebrew": "לערבב"
      },
-     "conjugations": {}
-    },
-    {
-     "type": "noun",
-     "english": "I, You, He, It (m.s - pres.)",
-     "gender": "m",
-     "genderSource": "marker",
-     "forms": {
-      "singular": {
+     "conjugations": {
+      "ms": {
        "translit": "m'ar'bev",
        "hebrew": "מערבב"
       },
-      "plural": null
-     }
-    },
-    {
-     "type": "noun",
-     "english": "I, You, She, It (f.s - pres.)",
-     "gender": "f",
-     "genderSource": "marker",
-     "forms": {
-      "singular": {
+      "fs": {
        "translit": "m'ar'bevet",
        "hebrew": "מערבבת"
       },
-      "plural": null
-     }
-    },
-    {
-     "type": "noun",
-     "english": "We, You, They (m.p - pres.)",
-     "gender": "m",
-     "genderSource": "marker",
-     "forms": {
-      "singular": {
+      "mp": {
        "translit": "m'ar'b'vim",
        "hebrew": "מערבבים"
       },
-      "plural": null
-     }
-    },
-    {
-     "type": "noun",
-     "english": "We, You, They (f.p- pres.)",
-     "gender": "f",
-     "genderSource": "marker",
-     "forms": {
-      "singular": {
+      "fp": {
        "translit": "m'ar'b'vot",
        "hebrew": "מערבבות"
-      },
-      "plural": null
+      }
      }
     },
     {
@@ -11259,58 +10062,23 @@
       "translit": "l'khabed",
       "hebrew": "לכבד"
      },
-     "conjugations": {}
-    },
-    {
-     "type": "noun",
-     "english": "I, You, He, It (m.s - pres.)",
-     "gender": "m",
-     "genderSource": "marker",
-     "forms": {
-      "singular": {
+     "conjugations": {
+      "ms": {
        "translit": "m'khabed",
        "hebrew": "מכבד"
       },
-      "plural": null
-     }
-    },
-    {
-     "type": "noun",
-     "english": "I, You, She, It (f.s - pres.)",
-     "gender": "f",
-     "genderSource": "marker",
-     "forms": {
-      "singular": {
+      "fs": {
        "translit": "m'khabedet",
        "hebrew": "מכבדת"
       },
-      "plural": null
-     }
-    },
-    {
-     "type": "noun",
-     "english": "We, You, They (m.p - pres.)",
-     "gender": "m",
-     "genderSource": "marker",
-     "forms": {
-      "singular": {
+      "mp": {
        "translit": "m'khab'dim",
        "hebrew": "מכבדים"
       },
-      "plural": null
-     }
-    },
-    {
-     "type": "noun",
-     "english": "We, You, They (f.p- pres.)",
-     "gender": "f",
-     "genderSource": "marker",
-     "forms": {
-      "singular": {
+      "fp": {
        "translit": "m'khab'dot",
        "hebrew": "מכבדות"
-      },
-      "plural": null
+      }
      }
     },
     {
@@ -11321,58 +10089,23 @@
       "translit": "l'sader",
       "hebrew": "לסדר"
      },
-     "conjugations": {}
-    },
-    {
-     "type": "noun",
-     "english": "I, You, He, It (m.s - pres.)",
-     "gender": "m",
-     "genderSource": "marker",
-     "forms": {
-      "singular": {
+     "conjugations": {
+      "ms": {
        "translit": "m'sader",
        "hebrew": "מסדר"
       },
-      "plural": null
-     }
-    },
-    {
-     "type": "noun",
-     "english": "I, You, She, It (f.s - pres.)",
-     "gender": "f",
-     "genderSource": "marker",
-     "forms": {
-      "singular": {
+      "fs": {
        "translit": "m'saderet",
        "hebrew": "מסדרת"
       },
-      "plural": null
-     }
-    },
-    {
-     "type": "noun",
-     "english": "We, You, They (m.p - pres.)",
-     "gender": "m",
-     "genderSource": "marker",
-     "forms": {
-      "singular": {
+      "mp": {
        "translit": "m'sad'rim",
        "hebrew": "מסדרים"
       },
-      "plural": null
-     }
-    },
-    {
-     "type": "noun",
-     "english": "We, You, They (f.p- pres.)",
-     "gender": "f",
-     "genderSource": "marker",
-     "forms": {
-      "singular": {
+      "fp": {
        "translit": "m'sad'rot",
        "hebrew": "מסדרות"
-      },
-      "plural": null
+      }
      }
     },
     {
@@ -11383,58 +10116,23 @@
       "translit": "l'yabesh",
       "hebrew": "לייבש"
      },
-     "conjugations": {}
-    },
-    {
-     "type": "noun",
-     "english": "I, You, He, It (m.s - pres.)",
-     "gender": "m",
-     "genderSource": "marker",
-     "forms": {
-      "singular": {
+     "conjugations": {
+      "ms": {
        "translit": "m'yabesh",
        "hebrew": "מייבש"
       },
-      "plural": null
-     }
-    },
-    {
-     "type": "noun",
-     "english": "I, You, She, It (f.s - pres.)",
-     "gender": "f",
-     "genderSource": "marker",
-     "forms": {
-      "singular": {
+      "fs": {
        "translit": "m'yabeshet",
        "hebrew": "מייבשת"
       },
-      "plural": null
-     }
-    },
-    {
-     "type": "noun",
-     "english": "We, You, They (m.p - pres.)",
-     "gender": "m",
-     "genderSource": "marker",
-     "forms": {
-      "singular": {
+      "mp": {
        "translit": "m'yab'shim",
        "hebrew": "מייבשים"
       },
-      "plural": null
-     }
-    },
-    {
-     "type": "noun",
-     "english": "We, You, They (f.p- pres.)",
-     "gender": "f",
-     "genderSource": "marker",
-     "forms": {
-      "singular": {
+      "fp": {
        "translit": "m'yab'shot",
        "hebrew": "מייבשות"
-      },
-      "plural": null
+      }
      }
     },
     {
@@ -11445,58 +10143,23 @@
       "translit": "l'khamem",
       "hebrew": "לחמם"
      },
-     "conjugations": {}
-    },
-    {
-     "type": "noun",
-     "english": "I, You, He, It (m.s - pres.)",
-     "gender": "m",
-     "genderSource": "marker",
-     "forms": {
-      "singular": {
+     "conjugations": {
+      "ms": {
        "translit": "m'khamem",
        "hebrew": "מחמם"
       },
-      "plural": null
-     }
-    },
-    {
-     "type": "noun",
-     "english": "I, You, She, It (f.s - pres.)",
-     "gender": "f",
-     "genderSource": "marker",
-     "forms": {
-      "singular": {
+      "fs": {
        "translit": "m'khamemet",
        "hebrew": "מחממת"
       },
-      "plural": null
-     }
-    },
-    {
-     "type": "noun",
-     "english": "We, You, They (m.p - pres.)",
-     "gender": "m",
-     "genderSource": "marker",
-     "forms": {
-      "singular": {
+      "mp": {
        "translit": "m'khamemim",
        "hebrew": "מחממים"
       },
-      "plural": null
-     }
-    },
-    {
-     "type": "noun",
-     "english": "We, You, They (f.p- pres.)",
-     "gender": "f",
-     "genderSource": "marker",
-     "forms": {
-      "singular": {
+      "fp": {
        "translit": "m'khamemot",
        "hebrew": "מחממות"
-      },
-      "plural": null
+      }
      }
     },
     {
@@ -11507,58 +10170,23 @@
       "translit": "m'yabe",
       "hebrew": "מייבא"
      },
-     "conjugations": {}
-    },
-    {
-     "type": "noun",
-     "english": "I, You, He, It (m.s - pres.)",
-     "gender": "m",
-     "genderSource": "marker",
-     "forms": {
-      "singular": {
+     "conjugations": {
+      "ms": {
        "translit": "m'yabe",
        "hebrew": "מייבא"
       },
-      "plural": null
-     }
-    },
-    {
-     "type": "noun",
-     "english": "I, You, She, It (f.s - pres.)",
-     "gender": "f",
-     "genderSource": "marker",
-     "forms": {
-      "singular": {
+      "fs": {
        "translit": "m'yabet",
        "hebrew": "מייבאת"
       },
-      "plural": null
-     }
-    },
-    {
-     "type": "noun",
-     "english": "We, You, They (m.p - pres.)",
-     "gender": "m",
-     "genderSource": "marker",
-     "forms": {
-      "singular": {
+      "mp": {
        "translit": "m'yabim",
        "hebrew": "מייבאים"
       },
-      "plural": null
-     }
-    },
-    {
-     "type": "noun",
-     "english": "We, You, They (f.p- pres.)",
-     "gender": "f",
-     "genderSource": "marker",
-     "forms": {
-      "singular": {
+      "fp": {
        "translit": "m'yabot",
        "hebrew": "מייבאות"
-      },
-      "plural": null
+      }
      }
     },
     {
@@ -11569,58 +10197,23 @@
       "translit": "l'male",
       "hebrew": "למלא"
      },
-     "conjugations": {}
-    },
-    {
-     "type": "noun",
-     "english": "I, You, He, It (m.s - pres.)",
-     "gender": "m",
-     "genderSource": "marker",
-     "forms": {
-      "singular": {
+     "conjugations": {
+      "ms": {
        "translit": "m'male",
        "hebrew": "ממלא"
       },
-      "plural": null
-     }
-    },
-    {
-     "type": "noun",
-     "english": "I, You, She, It (f.s - pres.)",
-     "gender": "f",
-     "genderSource": "marker",
-     "forms": {
-      "singular": {
+      "fs": {
        "translit": "m'mal'ah",
        "hebrew": "ממלאה"
       },
-      "plural": null
-     }
-    },
-    {
-     "type": "noun",
-     "english": "We, You, They (m.p - pres.)",
-     "gender": "m",
-     "genderSource": "marker",
-     "forms": {
-      "singular": {
+      "mp": {
        "translit": "m'mal'im",
        "hebrew": "ממלאים"
       },
-      "plural": null
-     }
-    },
-    {
-     "type": "noun",
-     "english": "We, You, They (f.p- pres.)",
-     "gender": "f",
-     "genderSource": "marker",
-     "forms": {
-      "singular": {
+      "fp": {
        "translit": "m'mal'ot",
        "hebrew": "ממלאות"
-      },
-      "plural": null
+      }
      }
     },
     {
@@ -11631,58 +10224,23 @@
       "translit": "l'vaz'bez",
       "hebrew": "לבזבז"
      },
-     "conjugations": {}
-    },
-    {
-     "type": "noun",
-     "english": "I, You, He, It (m.s - pres.)",
-     "gender": "m",
-     "genderSource": "marker",
-     "forms": {
-      "singular": {
+     "conjugations": {
+      "ms": {
        "translit": "m'vaz'bez",
        "hebrew": "מבזבז"
       },
-      "plural": null
-     }
-    },
-    {
-     "type": "noun",
-     "english": "I, You, She, It (f.s - pres.)",
-     "gender": "f",
-     "genderSource": "marker",
-     "forms": {
-      "singular": {
+      "fs": {
        "translit": "m'vaz'bezet",
        "hebrew": "מבזבזת"
       },
-      "plural": null
-     }
-    },
-    {
-     "type": "noun",
-     "english": "We, You, They (m.p - pres.)",
-     "gender": "m",
-     "genderSource": "marker",
-     "forms": {
-      "singular": {
+      "mp": {
        "translit": "m'vak'b'zim",
        "hebrew": "מבזבזים"
       },
-      "plural": null
-     }
-    },
-    {
-     "type": "noun",
-     "english": "We, You, They (f.p- pres.)",
-     "gender": "f",
-     "genderSource": "marker",
-     "forms": {
-      "singular": {
+      "fp": {
        "translit": "m'vaz'b'zot",
        "hebrew": "מבזבזות"
-      },
-      "plural": null
+      }
      }
     },
     {
@@ -11693,58 +10251,23 @@
       "translit": "l'vaker (-‫)את( )ב‬",
       "hebrew": "(ב( )את-) לבקר"
      },
-     "conjugations": {}
-    },
-    {
-     "type": "noun",
-     "english": "I, You, He, It (m.s - pres.)",
-     "gender": "m",
-     "genderSource": "marker",
-     "forms": {
-      "singular": {
+     "conjugations": {
+      "ms": {
        "translit": "m'vaker",
        "hebrew": "מבקר"
       },
-      "plural": null
-     }
-    },
-    {
-     "type": "noun",
-     "english": "I, You, She, It (f.s - pres.)",
-     "gender": "f",
-     "genderSource": "marker",
-     "forms": {
-      "singular": {
+      "fs": {
        "translit": "m'vakeret",
        "hebrew": "מבקרת"
       },
-      "plural": null
-     }
-    },
-    {
-     "type": "noun",
-     "english": "We, You, They (m.p - pres.)",
-     "gender": "m",
-     "genderSource": "marker",
-     "forms": {
-      "singular": {
+      "mp": {
        "translit": "m'vak'rim",
        "hebrew": "מבקרים"
       },
-      "plural": null
-     }
-    },
-    {
-     "type": "noun",
-     "english": "We, You, They (f.p- pres.)",
-     "gender": "f",
-     "genderSource": "marker",
-     "forms": {
-      "singular": {
+      "fp": {
        "translit": "m'vak'rot",
        "hebrew": "מבקרות"
-      },
-      "plural": null
+      }
      }
     },
     {
@@ -11755,58 +10278,23 @@
       "translit": "l'kabel",
       "hebrew": "לקבל"
      },
-     "conjugations": {}
-    },
-    {
-     "type": "noun",
-     "english": "I, You, He, It (m.s - pres.)",
-     "gender": "m",
-     "genderSource": "marker",
-     "forms": {
-      "singular": {
+     "conjugations": {
+      "ms": {
        "translit": "m'kabel",
        "hebrew": "מקבל"
       },
-      "plural": null
-     }
-    },
-    {
-     "type": "noun",
-     "english": "I, You, She, It (f.s - pres.)",
-     "gender": "f",
-     "genderSource": "marker",
-     "forms": {
-      "singular": {
+      "fs": {
        "translit": "m'kabelet",
        "hebrew": "מקבלת"
       },
-      "plural": null
-     }
-    },
-    {
-     "type": "noun",
-     "english": "We, You, They (m.p - pres.)",
-     "gender": "m",
-     "genderSource": "marker",
-     "forms": {
-      "singular": {
+      "mp": {
        "translit": "m'kab'lim",
        "hebrew": "מקבלים"
       },
-      "plural": null
-     }
-    },
-    {
-     "type": "noun",
-     "english": "We, You, They (f.p- pres.)",
-     "gender": "f",
-     "genderSource": "marker",
-     "forms": {
-      "singular": {
+      "fp": {
        "translit": "m'kab'lot",
        "hebrew": "מקבלות"
-      },
-      "plural": null
+      }
      }
     },
     {
@@ -11817,58 +10305,23 @@
       "translit": "l'rakhem (al)",
       "hebrew": "(לרחם )על"
      },
-     "conjugations": {}
-    },
-    {
-     "type": "noun",
-     "english": "I, You, He, It (m.s - pres.)",
-     "gender": "m",
-     "genderSource": "marker",
-     "forms": {
-      "singular": {
+     "conjugations": {
+      "ms": {
        "translit": "m'rakhem",
        "hebrew": "מרחם"
       },
-      "plural": null
-     }
-    },
-    {
-     "type": "noun",
-     "english": "I, You, She, It (f.s - pres.)",
-     "gender": "f",
-     "genderSource": "marker",
-     "forms": {
-      "singular": {
+      "fs": {
        "translit": "m'rakhemet",
        "hebrew": "מרחמת"
       },
-      "plural": null
-     }
-    },
-    {
-     "type": "noun",
-     "english": "We, You, They (m.p - pres.)",
-     "gender": "m",
-     "genderSource": "marker",
-     "forms": {
-      "singular": {
+      "mp": {
        "translit": "m'rakhamim",
        "hebrew": "מרחמים"
       },
-      "plural": null
-     }
-    },
-    {
-     "type": "noun",
-     "english": "We, You, They (f.p- pres.)",
-     "gender": "f",
-     "genderSource": "marker",
-     "forms": {
-      "singular": {
+      "fp": {
        "translit": "m'rakhamot",
        "hebrew": "מרחמות"
-      },
-      "plural": null
+      }
      }
     },
     {
@@ -11879,58 +10332,23 @@
       "translit": "l'kane (b-)",
       "hebrew": "(-לקנא )ב"
      },
-     "conjugations": {}
-    },
-    {
-     "type": "noun",
-     "english": "I, You, He, It (m.s - pres.)",
-     "gender": "m",
-     "genderSource": "marker",
-     "forms": {
-      "singular": {
+     "conjugations": {
+      "ms": {
        "translit": "m'kane",
        "hebrew": "מקנא"
       },
-      "plural": null
-     }
-    },
-    {
-     "type": "noun",
-     "english": "I, You, She, It (f.s - pres.)",
-     "gender": "f",
-     "genderSource": "marker",
-     "forms": {
-      "singular": {
+      "fs": {
        "translit": "m'kan'ah",
        "hebrew": "מקנאה"
       },
-      "plural": null
-     }
-    },
-    {
-     "type": "noun",
-     "english": "We, You, They (m.p - pres.)",
-     "gender": "m",
-     "genderSource": "marker",
-     "forms": {
-      "singular": {
+      "mp": {
        "translit": "m'kan'im",
        "hebrew": "מקנאים"
       },
-      "plural": null
-     }
-    },
-    {
-     "type": "noun",
-     "english": "We, You, They (f.p- pres.)",
-     "gender": "f",
-     "genderSource": "marker",
-     "forms": {
-      "singular": {
+      "fp": {
        "translit": "m'kan'ot",
        "hebrew": "מקנאות"
-      },
-      "plural": null
+      }
      }
     },
     {
@@ -11941,58 +10359,23 @@
       "translit": "l'tapes (al)",
       "hebrew": "(לטפס )על"
      },
-     "conjugations": {}
-    },
-    {
-     "type": "noun",
-     "english": "I, You, He, It (m.s - pres.)",
-     "gender": "m",
-     "genderSource": "marker",
-     "forms": {
-      "singular": {
+     "conjugations": {
+      "ms": {
        "translit": "m'tapes",
        "hebrew": "מטפס"
       },
-      "plural": null
-     }
-    },
-    {
-     "type": "noun",
-     "english": "I, You, She, It (f.s - pres.)",
-     "gender": "f",
-     "genderSource": "marker",
-     "forms": {
-      "singular": {
+      "fs": {
        "translit": "m'tapeset",
        "hebrew": "מטפסת"
       },
-      "plural": null
-     }
-    },
-    {
-     "type": "noun",
-     "english": "We, You, They (m.p - pres.)",
-     "gender": "m",
-     "genderSource": "marker",
-     "forms": {
-      "singular": {
+      "mp": {
        "translit": "m'tap'sim",
        "hebrew": "מטפסים"
       },
-      "plural": null
-     }
-    },
-    {
-     "type": "noun",
-     "english": "We, You, They (f.p- pres.)",
-     "gender": "f",
-     "genderSource": "marker",
-     "forms": {
-      "singular": {
+      "fp": {
        "translit": "m'tap'sot",
        "hebrew": "מטפסות"
-      },
-      "plural": null
+      }
      }
     },
     {
@@ -12003,58 +10386,23 @@
       "translit": "l'natzeakh",
       "hebrew": "לנצח"
      },
-     "conjugations": {}
-    },
-    {
-     "type": "noun",
-     "english": "I, You, He, It (m.s - pres.)",
-     "gender": "m",
-     "genderSource": "marker",
-     "forms": {
-      "singular": {
+     "conjugations": {
+      "ms": {
        "translit": "m'natzeakh",
        "hebrew": "מנצח"
       },
-      "plural": null
-     }
-    },
-    {
-     "type": "noun",
-     "english": "I, You, She, It (f.s - pres.)",
-     "gender": "f",
-     "genderSource": "marker",
-     "forms": {
-      "singular": {
+      "fs": {
        "translit": "m'natzakhat",
        "hebrew": "מנצחת"
       },
-      "plural": null
-     }
-    },
-    {
-     "type": "noun",
-     "english": "We, You, They (m.p - pres.)",
-     "gender": "m",
-     "genderSource": "marker",
-     "forms": {
-      "singular": {
+      "mp": {
        "translit": "m'natz'khim",
        "hebrew": "מנצחים"
       },
-      "plural": null
-     }
-    },
-    {
-     "type": "noun",
-     "english": "We, You, They (f.p- pres.)",
-     "gender": "f",
-     "genderSource": "marker",
-     "forms": {
-      "singular": {
+      "fp": {
        "translit": "m'natz'khot",
        "hebrew": "מנצחות"
-      },
-      "plural": null
+      }
      }
     },
     {
@@ -12065,58 +10413,23 @@
       "translit": "l'amen",
       "hebrew": "לאמן"
      },
-     "conjugations": {}
-    },
-    {
-     "type": "noun",
-     "english": "I, You, He, It (m.s - pres.)",
-     "gender": "m",
-     "genderSource": "marker",
-     "forms": {
-      "singular": {
+     "conjugations": {
+      "ms": {
        "translit": "m'amen",
        "hebrew": "מאמן"
       },
-      "plural": null
-     }
-    },
-    {
-     "type": "noun",
-     "english": "I, You, She, It (f.s - pres.)",
-     "gender": "f",
-     "genderSource": "marker",
-     "forms": {
-      "singular": {
+      "fs": {
        "translit": "m'amenet",
        "hebrew": "מאמנת"
       },
-      "plural": null
-     }
-    },
-    {
-     "type": "noun",
-     "english": "We, You, They (m.p - pres.)",
-     "gender": "m",
-     "genderSource": "marker",
-     "forms": {
-      "singular": {
+      "mp": {
        "translit": "m'am'nim",
        "hebrew": "מאמנים"
       },
-      "plural": null
-     }
-    },
-    {
-     "type": "noun",
-     "english": "We, You, They (f.p- pres.)",
-     "gender": "f",
-     "genderSource": "marker",
-     "forms": {
-      "singular": {
+      "fp": {
        "translit": "m'am'not",
        "hebrew": "מאמנות"
-      },
-      "plural": null
+      }
      }
     },
     {
@@ -12127,58 +10440,23 @@
       "translit": "l'shaker",
       "hebrew": "לשקר"
      },
-     "conjugations": {}
-    },
-    {
-     "type": "noun",
-     "english": "I, You, He, It (m.s - pres.)",
-     "gender": "m",
-     "genderSource": "marker",
-     "forms": {
-      "singular": {
+     "conjugations": {
+      "ms": {
        "translit": "m'shaker",
        "hebrew": "משקר"
       },
-      "plural": null
-     }
-    },
-    {
-     "type": "noun",
-     "english": "I, You, She, It (f.s - pres.)",
-     "gender": "f",
-     "genderSource": "marker",
-     "forms": {
-      "singular": {
+      "fs": {
        "translit": "m'shakeret",
        "hebrew": "משקרת"
       },
-      "plural": null
-     }
-    },
-    {
-     "type": "noun",
-     "english": "We, You, They (m.p - pres.)",
-     "gender": "m",
-     "genderSource": "marker",
-     "forms": {
-      "singular": {
+      "mp": {
        "translit": "m'shak'rim",
        "hebrew": "משקרים"
       },
-      "plural": null
-     }
-    },
-    {
-     "type": "noun",
-     "english": "We, You, They (f.p- pres.)",
-     "gender": "f",
-     "genderSource": "marker",
-     "forms": {
-      "singular": {
+      "fp": {
        "translit": "m'shak'rot",
        "hebrew": "משקרות"
-      },
-      "plural": null
+      }
      }
     },
     {
@@ -12189,58 +10467,23 @@
       "translit": "l'akher",
       "hebrew": "לאחר"
      },
-     "conjugations": {}
-    },
-    {
-     "type": "noun",
-     "english": "I, You, He, It (m.s - pres.)",
-     "gender": "m",
-     "genderSource": "marker",
-     "forms": {
-      "singular": {
+     "conjugations": {
+      "ms": {
        "translit": "m'akher",
        "hebrew": "מאחר"
       },
-      "plural": null
-     }
-    },
-    {
-     "type": "noun",
-     "english": "I, You, She, It (f.s - pres.)",
-     "gender": "f",
-     "genderSource": "marker",
-     "forms": {
-      "singular": {
+      "fs": {
        "translit": "m'akheret",
        "hebrew": "מאחרת"
       },
-      "plural": null
-     }
-    },
-    {
-     "type": "noun",
-     "english": "We, You, They (m.p - pres.)",
-     "gender": "m",
-     "genderSource": "marker",
-     "forms": {
-      "singular": {
+      "mp": {
        "translit": "m'akharim",
        "hebrew": "מאחרים"
       },
-      "plural": null
-     }
-    },
-    {
-     "type": "noun",
-     "english": "We, You, They (f.p- pres.)",
-     "gender": "f",
-     "genderSource": "marker",
-     "forms": {
-      "singular": {
+      "fp": {
        "translit": "m'akharot",
        "hebrew": "מאחרות"
-      },
-      "plural": null
+      }
      }
     },
     {
@@ -12251,58 +10494,23 @@
       "translit": "l'khakot (l-)",
       "hebrew": "(-לחכות )ל"
      },
-     "conjugations": {}
-    },
-    {
-     "type": "noun",
-     "english": "I, You, He, It (m.s - pres.)",
-     "gender": "m",
-     "genderSource": "marker",
-     "forms": {
-      "singular": {
+     "conjugations": {
+      "ms": {
        "translit": "m'khakeh",
        "hebrew": "מחכה"
       },
-      "plural": null
-     }
-    },
-    {
-     "type": "noun",
-     "english": "I, You, She, It (f.s - pres.)",
-     "gender": "f",
-     "genderSource": "marker",
-     "forms": {
-      "singular": {
+      "fs": {
        "translit": "m'khakah",
        "hebrew": "מחכה"
       },
-      "plural": null
-     }
-    },
-    {
-     "type": "noun",
-     "english": "We, You, They (m.p - pres.)",
-     "gender": "m",
-     "genderSource": "marker",
-     "forms": {
-      "singular": {
+      "mp": {
        "translit": "m'khakim",
        "hebrew": "מחכים"
       },
-      "plural": null
-     }
-    },
-    {
-     "type": "noun",
-     "english": "We, You, They (f.p- pres.)",
-     "gender": "f",
-     "genderSource": "marker",
-     "forms": {
-      "singular": {
+      "fp": {
        "translit": "m'khakot",
        "hebrew": "מחכות"
-      },
-      "plural": null
+      }
      }
     },
     {
@@ -12313,58 +10521,23 @@
       "translit": "l'sapek",
       "hebrew": "לספק"
      },
-     "conjugations": {}
-    },
-    {
-     "type": "noun",
-     "english": "I, You, He, It (m.s - pres.)",
-     "gender": "m",
-     "genderSource": "marker",
-     "forms": {
-      "singular": {
+     "conjugations": {
+      "ms": {
        "translit": "m'sapek",
        "hebrew": "מספק"
       },
-      "plural": null
-     }
-    },
-    {
-     "type": "noun",
-     "english": "I, You, She, It (f.s - pres.)",
-     "gender": "f",
-     "genderSource": "marker",
-     "forms": {
-      "singular": {
+      "fs": {
        "translit": "m'sapeket",
        "hebrew": "מספקת"
       },
-      "plural": null
-     }
-    },
-    {
-     "type": "noun",
-     "english": "We, You, They (m.p - pres.)",
-     "gender": "m",
-     "genderSource": "marker",
-     "forms": {
-      "singular": {
+      "mp": {
        "translit": "m'sap'kim",
        "hebrew": "מספקים"
       },
-      "plural": null
-     }
-    },
-    {
-     "type": "noun",
-     "english": "We, You, They (f.p- pres.)",
-     "gender": "f",
-     "genderSource": "marker",
-     "forms": {
-      "singular": {
+      "fp": {
        "translit": "m'sap'kot",
        "hebrew": "מספקות"
-      },
-      "plural": null
+      }
      }
     },
     {
@@ -12375,58 +10548,23 @@
       "translit": "l'sayem",
       "hebrew": "לסיים"
      },
-     "conjugations": {}
-    },
-    {
-     "type": "noun",
-     "english": "I, You, He, It (m.s - pres.)",
-     "gender": "m",
-     "genderSource": "marker",
-     "forms": {
-      "singular": {
+     "conjugations": {
+      "ms": {
        "translit": "m'sayem",
        "hebrew": "מסיים"
       },
-      "plural": null
-     }
-    },
-    {
-     "type": "noun",
-     "english": "I, You, She, It (f.s - pres.)",
-     "gender": "f",
-     "genderSource": "marker",
-     "forms": {
-      "singular": {
+      "fs": {
        "translit": "m'sayemet",
        "hebrew": "מסיימת"
       },
-      "plural": null
-     }
-    },
-    {
-     "type": "noun",
-     "english": "We, You, They (m.p - pres.)",
-     "gender": "m",
-     "genderSource": "marker",
-     "forms": {
-      "singular": {
+      "mp": {
        "translit": "m'say'mim",
        "hebrew": "מסיימים"
       },
-      "plural": null
-     }
-    },
-    {
-     "type": "noun",
-     "english": "We, You, They (f.p- pres.)",
-     "gender": "f",
-     "genderSource": "marker",
-     "forms": {
-      "singular": {
+      "fp": {
        "translit": "m'say'mot",
        "hebrew": "מסיימות"
-      },
-      "plural": null
+      }
      }
     },
     {
@@ -12437,58 +10575,23 @@
       "translit": "l'shakh'nea",
       "hebrew": "לשכנע"
      },
-     "conjugations": {}
-    },
-    {
-     "type": "noun",
-     "english": "I, You, He, It (m.s - pres.)",
-     "gender": "m",
-     "genderSource": "marker",
-     "forms": {
-      "singular": {
+     "conjugations": {
+      "ms": {
        "translit": "m'shakh'nea",
        "hebrew": "משכנע"
       },
-      "plural": null
-     }
-    },
-    {
-     "type": "noun",
-     "english": "I, You, She, It (f.s - pres.)",
-     "gender": "f",
-     "genderSource": "marker",
-     "forms": {
-      "singular": {
+      "fs": {
        "translit": "m'shakh'na'at",
        "hebrew": "משכנעת"
       },
-      "plural": null
-     }
-    },
-    {
-     "type": "noun",
-     "english": "We, You, They (m.p - pres.)",
-     "gender": "m",
-     "genderSource": "marker",
-     "forms": {
-      "singular": {
+      "mp": {
        "translit": "m'shakh'n'im",
        "hebrew": "משכנעים"
       },
-      "plural": null
-     }
-    },
-    {
-     "type": "noun",
-     "english": "We, You, They (f.p- pres.)",
-     "gender": "f",
-     "genderSource": "marker",
-     "forms": {
-      "singular": {
+      "fp": {
        "translit": "m'shakh'n'ot",
        "hebrew": "משכנעות"
-      },
-      "plural": null
+      }
      }
     },
     {
@@ -12499,58 +10602,23 @@
       "translit": "l'abed",
       "hebrew": "לאבד"
      },
-     "conjugations": {}
-    },
-    {
-     "type": "noun",
-     "english": "I, You, He, It (m.s - pres.)",
-     "gender": "m",
-     "genderSource": "marker",
-     "forms": {
-      "singular": {
+     "conjugations": {
+      "ms": {
        "translit": "m'abed",
        "hebrew": "מאבד"
       },
-      "plural": null
-     }
-    },
-    {
-     "type": "noun",
-     "english": "I, You, She, It (f.s - pres.)",
-     "gender": "f",
-     "genderSource": "marker",
-     "forms": {
-      "singular": {
+      "fs": {
        "translit": "m'abedet",
        "hebrew": "מאבדת"
       },
-      "plural": null
-     }
-    },
-    {
-     "type": "noun",
-     "english": "We, You, They (m.p - pres.)",
-     "gender": "m",
-     "genderSource": "marker",
-     "forms": {
-      "singular": {
+      "mp": {
        "translit": "m'ab'dim",
        "hebrew": "מאבדים"
       },
-      "plural": null
-     }
-    },
-    {
-     "type": "noun",
-     "english": "We, You, They (f.p- pres.)",
-     "gender": "f",
-     "genderSource": "marker",
-     "forms": {
-      "singular": {
+      "fp": {
        "translit": "m'ab'dot",
        "hebrew": "מאבדות"
-      },
-      "plural": null
+      }
      }
     },
     {
@@ -12561,58 +10629,23 @@
       "translit": "l'tzalem",
       "hebrew": "לצלם"
      },
-     "conjugations": {}
-    },
-    {
-     "type": "noun",
-     "english": "I, You, He, It (m.s - pres.)",
-     "gender": "m",
-     "genderSource": "marker",
-     "forms": {
-      "singular": {
+     "conjugations": {
+      "ms": {
        "translit": "m'tzalem",
        "hebrew": "מצלם"
       },
-      "plural": null
-     }
-    },
-    {
-     "type": "noun",
-     "english": "I, You, She, It (f.s - pres.)",
-     "gender": "f",
-     "genderSource": "marker",
-     "forms": {
-      "singular": {
+      "fs": {
        "translit": "m'tzalemet",
        "hebrew": "מצלמת"
       },
-      "plural": null
-     }
-    },
-    {
-     "type": "noun",
-     "english": "We, You, They (m.p - pres.)",
-     "gender": "m",
-     "genderSource": "marker",
-     "forms": {
-      "singular": {
+      "mp": {
        "translit": "m'tzal'mim",
        "hebrew": "מצלמים"
       },
-      "plural": null
-     }
-    },
-    {
-     "type": "noun",
-     "english": "We, You, They (f.p- pres.)",
-     "gender": "f",
-     "genderSource": "marker",
-     "forms": {
-      "singular": {
+      "fp": {
        "translit": "m'tzal'mot",
        "hebrew": "מצלמות"
-      },
-      "plural": null
+      }
      }
     },
     {
@@ -12623,58 +10656,23 @@
       "translit": "l'ametz",
       "hebrew": "לאמץ"
      },
-     "conjugations": {}
-    },
-    {
-     "type": "noun",
-     "english": "I, You, He, It (m.s - pres.)",
-     "gender": "m",
-     "genderSource": "marker",
-     "forms": {
-      "singular": {
+     "conjugations": {
+      "ms": {
        "translit": "m'ametz",
        "hebrew": "מאמץ"
       },
-      "plural": null
-     }
-    },
-    {
-     "type": "noun",
-     "english": "I, You, She, It (f.s - pres.)",
-     "gender": "f",
-     "genderSource": "marker",
-     "forms": {
-      "singular": {
+      "fs": {
        "translit": "m'ametzet",
        "hebrew": "מאמצת"
       },
-      "plural": null
-     }
-    },
-    {
-     "type": "noun",
-     "english": "We, You, They (m.p - pres.)",
-     "gender": "m",
-     "genderSource": "marker",
-     "forms": {
-      "singular": {
+      "mp": {
        "translit": "m'am'tzim",
        "hebrew": "מאמצים"
       },
-      "plural": null
-     }
-    },
-    {
-     "type": "noun",
-     "english": "We, You, They (f.p- pres.)",
-     "gender": "f",
-     "genderSource": "marker",
-     "forms": {
-      "singular": {
+      "fp": {
        "translit": "m'am'tzot",
        "hebrew": "מאמצות"
-      },
-      "plural": null
+      }
      }
     },
     {
@@ -12685,58 +10683,23 @@
       "translit": "l'fakhed",
       "hebrew": "לפחד"
      },
-     "conjugations": {}
-    },
-    {
-     "type": "noun",
-     "english": "I, You, He, It (m.s - pres.)",
-     "gender": "m",
-     "genderSource": "marker",
-     "forms": {
-      "singular": {
+     "conjugations": {
+      "ms": {
        "translit": "m'fakhed",
        "hebrew": "מפחד"
       },
-      "plural": null
-     }
-    },
-    {
-     "type": "noun",
-     "english": "I, You, She, It (f.s - pres.)",
-     "gender": "f",
-     "genderSource": "marker",
-     "forms": {
-      "singular": {
+      "fs": {
        "translit": "m'fakhedet",
        "hebrew": "מפחדת"
       },
-      "plural": null
-     }
-    },
-    {
-     "type": "noun",
-     "english": "We, You, They (m.p - pres.)",
-     "gender": "m",
-     "genderSource": "marker",
-     "forms": {
-      "singular": {
+      "mp": {
        "translit": "m'fakhadim",
        "hebrew": "מפחדים"
       },
-      "plural": null
-     }
-    },
-    {
-     "type": "noun",
-     "english": "We, You, They (f.p- pres.)",
-     "gender": "f",
-     "genderSource": "marker",
-     "forms": {
-      "singular": {
+      "fp": {
        "translit": "m'fakhadot",
        "hebrew": "מפחדות"
-      },
-      "plural": null
+      }
      }
     },
     {
@@ -12747,58 +10710,23 @@
       "translit": "l'asher",
       "hebrew": "לאשר"
      },
-     "conjugations": {}
-    },
-    {
-     "type": "noun",
-     "english": "I, You, He, It (m.s - pres.)",
-     "gender": "m",
-     "genderSource": "marker",
-     "forms": {
-      "singular": {
+     "conjugations": {
+      "ms": {
        "translit": "m'asher",
        "hebrew": "מאשר"
       },
-      "plural": null
-     }
-    },
-    {
-     "type": "noun",
-     "english": "I, You, She, It (f.s - pres.)",
-     "gender": "f",
-     "genderSource": "marker",
-     "forms": {
-      "singular": {
+      "fs": {
        "translit": "m'asheret",
        "hebrew": "מאשרת"
       },
-      "plural": null
-     }
-    },
-    {
-     "type": "noun",
-     "english": "We, You, They (m.p - pres.)",
-     "gender": "m",
-     "genderSource": "marker",
-     "forms": {
-      "singular": {
+      "mp": {
        "translit": "m'ash'rim",
        "hebrew": "מאשרים"
       },
-      "plural": null
-     }
-    },
-    {
-     "type": "noun",
-     "english": "We, You, They (f.p- pres.)",
-     "gender": "f",
-     "genderSource": "marker",
-     "forms": {
-      "singular": {
+      "fp": {
        "translit": "m'ash'rot",
        "hebrew": "מאשרות"
-      },
-      "plural": null
+      }
      }
     },
     {
@@ -12809,58 +10737,23 @@
       "translit": "l'galot",
       "hebrew": "לגלות"
      },
-     "conjugations": {}
-    },
-    {
-     "type": "noun",
-     "english": "I, You, He, It (m.s - pres.)",
-     "gender": "m",
-     "genderSource": "marker",
-     "forms": {
-      "singular": {
+     "conjugations": {
+      "ms": {
        "translit": "m'galeh",
        "hebrew": "מגלה"
       },
-      "plural": null
-     }
-    },
-    {
-     "type": "noun",
-     "english": "I, You, She, It (f.s - pres.)",
-     "gender": "f",
-     "genderSource": "marker",
-     "forms": {
-      "singular": {
+      "fs": {
        "translit": "m'galah",
        "hebrew": "מגלה"
       },
-      "plural": null
-     }
-    },
-    {
-     "type": "noun",
-     "english": "We, You, They (m.p - pres.)",
-     "gender": "m",
-     "genderSource": "marker",
-     "forms": {
-      "singular": {
+      "mp": {
        "translit": "m'galim",
        "hebrew": "מגלים"
       },
-      "plural": null
-     }
-    },
-    {
-     "type": "noun",
-     "english": "We, You, They (f.p- pres.)",
-     "gender": "f",
-     "genderSource": "marker",
-     "forms": {
-      "singular": {
+      "fp": {
        "translit": "m'galot",
        "hebrew": "מגלות"
-      },
-      "plural": null
+      }
      }
     },
     {
@@ -12871,58 +10764,23 @@
       "translit": "l'galeakh",
       "hebrew": "לגלח"
      },
-     "conjugations": {}
-    },
-    {
-     "type": "noun",
-     "english": "I, You, He, It (m.s - pres.)",
-     "gender": "m",
-     "genderSource": "marker",
-     "forms": {
-      "singular": {
+     "conjugations": {
+      "ms": {
        "translit": "m'galeakh",
        "hebrew": "מגלח"
       },
-      "plural": null
-     }
-    },
-    {
-     "type": "noun",
-     "english": "I, You, She, It (f.s - pres.)",
-     "gender": "f",
-     "genderSource": "marker",
-     "forms": {
-      "singular": {
+      "fs": {
        "translit": "m'galakhat",
        "hebrew": "מגלחת"
       },
-      "plural": null
-     }
-    },
-    {
-     "type": "noun",
-     "english": "We, You, They (m.p - pres.)",
-     "gender": "m",
-     "genderSource": "marker",
-     "forms": {
-      "singular": {
+      "mp": {
        "translit": "m'gal'khim",
        "hebrew": "מגלחים"
       },
-      "plural": null
-     }
-    },
-    {
-     "type": "noun",
-     "english": "We, You, They (f.p- pres.)",
-     "gender": "f",
-     "genderSource": "marker",
-     "forms": {
-      "singular": {
+      "fp": {
        "translit": "m'gal'khot",
        "hebrew": "מגלחות"
-      },
-      "plural": null
+      }
      }
     },
     {
@@ -12933,58 +10791,23 @@
       "translit": "l'khadesh",
       "hebrew": "לחדש"
      },
-     "conjugations": {}
-    },
-    {
-     "type": "noun",
-     "english": "I, You, He, It (m.s - pres.)",
-     "gender": "m",
-     "genderSource": "marker",
-     "forms": {
-      "singular": {
+     "conjugations": {
+      "ms": {
        "translit": "m'khadesh",
        "hebrew": "מחדש"
       },
-      "plural": null
-     }
-    },
-    {
-     "type": "noun",
-     "english": "I, You, She, It (f.s - pres.)",
-     "gender": "f",
-     "genderSource": "marker",
-     "forms": {
-      "singular": {
+      "fs": {
        "translit": "m'khadeshet",
        "hebrew": "מחדשת"
       },
-      "plural": null
-     }
-    },
-    {
-     "type": "noun",
-     "english": "We, You, They (m.p - pres.)",
-     "gender": "m",
-     "genderSource": "marker",
-     "forms": {
-      "singular": {
+      "mp": {
        "translit": "m'khad'shim",
        "hebrew": "מחדשים"
       },
-      "plural": null
-     }
-    },
-    {
-     "type": "noun",
-     "english": "We, You, They (f.p- pres.)",
-     "gender": "f",
-     "genderSource": "marker",
-     "forms": {
-      "singular": {
+      "fp": {
        "translit": "m'khad'shot",
        "hebrew": "מחדשות"
-      },
-      "plural": null
+      }
      }
     },
     {
@@ -12995,58 +10818,23 @@
       "translit": "l'varekh",
       "hebrew": "לברך"
      },
-     "conjugations": {}
-    },
-    {
-     "type": "noun",
-     "english": "I, You, He, It (m.s - pres.)",
-     "gender": "m",
-     "genderSource": "marker",
-     "forms": {
-      "singular": {
+     "conjugations": {
+      "ms": {
        "translit": "m'varekh",
        "hebrew": "מברך"
       },
-      "plural": null
-     }
-    },
-    {
-     "type": "noun",
-     "english": "I, You, She, It (f.s - pres.)",
-     "gender": "f",
-     "genderSource": "marker",
-     "forms": {
-      "singular": {
+      "fs": {
        "translit": "m'varekhet",
        "hebrew": "מברכת"
       },
-      "plural": null
-     }
-    },
-    {
-     "type": "noun",
-     "english": "We, You, They (m.p - pres.)",
-     "gender": "m",
-     "genderSource": "marker",
-     "forms": {
-      "singular": {
+      "mp": {
        "translit": "m'var'khim",
        "hebrew": "מברכים"
       },
-      "plural": null
-     }
-    },
-    {
-     "type": "noun",
-     "english": "We, You, They (f.p- pres.)",
-     "gender": "f",
-     "genderSource": "marker",
-     "forms": {
-      "singular": {
+      "fp": {
        "translit": "m'var'khot",
        "hebrew": "מברכות"
-      },
-      "plural": null
+      }
      }
     },
     {
@@ -13057,58 +10845,23 @@
       "translit": "l'taer",
       "hebrew": "לתאר"
      },
-     "conjugations": {}
-    },
-    {
-     "type": "noun",
-     "english": "I, You, He, It (m.s - pres.)",
-     "gender": "m",
-     "genderSource": "marker",
-     "forms": {
-      "singular": {
+     "conjugations": {
+      "ms": {
        "translit": "m'ta'er",
        "hebrew": "מתאר"
       },
-      "plural": null
-     }
-    },
-    {
-     "type": "noun",
-     "english": "I, You, She, It (f.s - pres.)",
-     "gender": "f",
-     "genderSource": "marker",
-     "forms": {
-      "singular": {
+      "fs": {
        "translit": "m'ta'eret",
        "hebrew": "מתארת"
       },
-      "plural": null
-     }
-    },
-    {
-     "type": "noun",
-     "english": "We, You, They (m.p - pres.)",
-     "gender": "m",
-     "genderSource": "marker",
-     "forms": {
-      "singular": {
+      "mp": {
        "translit": "m'ta'arim",
        "hebrew": "מתארים"
       },
-      "plural": null
-     }
-    },
-    {
-     "type": "noun",
-     "english": "We, You, They (f.p- pres.)",
-     "gender": "f",
-     "genderSource": "marker",
-     "forms": {
-      "singular": {
+      "fp": {
        "translit": "m'ta'arot",
        "hebrew": "מתארות"
-      },
-      "plural": null
+      }
      }
     },
     {
@@ -13119,58 +10872,23 @@
       "translit": "l'taken",
       "hebrew": "לתקן"
      },
-     "conjugations": {}
-    },
-    {
-     "type": "noun",
-     "english": "I, You, He, It (m.s - pres.)",
-     "gender": "m",
-     "genderSource": "marker",
-     "forms": {
-      "singular": {
+     "conjugations": {
+      "ms": {
        "translit": "m'taken",
        "hebrew": "מתקן"
       },
-      "plural": null
-     }
-    },
-    {
-     "type": "noun",
-     "english": "I, You, She, It (f.s - pres.)",
-     "gender": "f",
-     "genderSource": "marker",
-     "forms": {
-      "singular": {
+      "fs": {
        "translit": "m'takenet",
        "hebrew": "מתקנת"
       },
-      "plural": null
-     }
-    },
-    {
-     "type": "noun",
-     "english": "We, You, They (m.p - pres.)",
-     "gender": "m",
-     "genderSource": "marker",
-     "forms": {
-      "singular": {
+      "mp": {
        "translit": "m'tak'nim",
        "hebrew": "מתקנים"
       },
-      "plural": null
-     }
-    },
-    {
-     "type": "noun",
-     "english": "We, You, They (f.p- pres.)",
-     "gender": "f",
-     "genderSource": "marker",
-     "forms": {
-      "singular": {
+      "fp": {
        "translit": "m'tak'not",
        "hebrew": "מתקנות"
-      },
-      "plural": null
+      }
      }
     }
    ]
@@ -34916,16 +32634,18 @@
      }
     },
     {
-     "type": "noun",
-     "english": "Depressed (m.s)",
-     "gender": "m",
-     "genderSource": "marker",
-     "forms": {
-      "singular": {
+     "type": "verb",
+     "english": "Depressed",
+     "binyan": null,
+     "infinitive": {
+      "translit": "",
+      "hebrew": ""
+     },
+     "conjugations": {
+      "ms": {
        "translit": "m'duka",
        "hebrew": "מדוכא"
-      },
-      "plural": null
+      }
      }
     },
     {
@@ -40319,58 +38039,23 @@
       "translit": "l'horid",
       "hebrew": "להוריד"
      },
-     "conjugations": {}
-    },
-    {
-     "type": "noun",
-     "english": "I, You, He, It (m.s - pres.)",
-     "gender": "m",
-     "genderSource": "marker",
-     "forms": {
-      "singular": {
+     "conjugations": {
+      "ms": {
        "translit": "morid",
        "hebrew": "מוריד"
       },
-      "plural": null
-     }
-    },
-    {
-     "type": "noun",
-     "english": "I, You, She, It (f.s - pres.)",
-     "gender": "f",
-     "genderSource": "marker",
-     "forms": {
-      "singular": {
+      "fs": {
        "translit": "moridah",
        "hebrew": "מורידה"
       },
-      "plural": null
-     }
-    },
-    {
-     "type": "noun",
-     "english": "We, You, They (m.p - pres.)",
-     "gender": "m",
-     "genderSource": "marker",
-     "forms": {
-      "singular": {
+      "mp": {
        "translit": "moridim",
        "hebrew": "מורידים"
       },
-      "plural": null
-     }
-    },
-    {
-     "type": "noun",
-     "english": "We, You, They (f.p- pres.)",
-     "gender": "f",
-     "genderSource": "marker",
-     "forms": {
-      "singular": {
+      "fp": {
        "translit": "moridot",
        "hebrew": "מורידות"
-      },
-      "plural": null
+      }
      }
     },
     {
@@ -40381,58 +38066,23 @@
       "translit": "l'ha'alot",
       "hebrew": "להעלות"
      },
-     "conjugations": {}
-    },
-    {
-     "type": "noun",
-     "english": "I, You, He, It (m.s - pres.)",
-     "gender": "m",
-     "genderSource": "marker",
-     "forms": {
-      "singular": {
+     "conjugations": {
+      "ms": {
        "translit": "ma'aleh",
        "hebrew": "מעלה"
       },
-      "plural": null
-     }
-    },
-    {
-     "type": "noun",
-     "english": "I, You, She, It (f.s - pres.)",
-     "gender": "f",
-     "genderSource": "marker",
-     "forms": {
-      "singular": {
+      "fs": {
        "translit": "ma'alah",
        "hebrew": "מעלה"
       },
-      "plural": null
-     }
-    },
-    {
-     "type": "noun",
-     "english": "We, You, They (m.p - pres.)",
-     "gender": "m",
-     "genderSource": "marker",
-     "forms": {
-      "singular": {
+      "mp": {
        "translit": "ma'alim",
        "hebrew": "מעלים"
       },
-      "plural": null
-     }
-    },
-    {
-     "type": "noun",
-     "english": "We, You, They (f.p- pres.)",
-     "gender": "f",
-     "genderSource": "marker",
-     "forms": {
-      "singular": {
+      "fp": {
        "translit": "ma'a lot",
        "hebrew": "מעלות"
-      },
-      "plural": null
+      }
      }
     },
     {
@@ -40443,58 +38093,23 @@
       "translit": "l'khabot",
       "hebrew": "לכבות"
      },
-     "conjugations": {}
-    },
-    {
-     "type": "noun",
-     "english": "I, You, He, It (m.s - pres.)",
-     "gender": "m",
-     "genderSource": "marker",
-     "forms": {
-      "singular": {
+     "conjugations": {
+      "ms": {
        "translit": "m'khabeh",
        "hebrew": "מכבה"
       },
-      "plural": null
-     }
-    },
-    {
-     "type": "noun",
-     "english": "I, You, She, It (f.s - pres.)",
-     "gender": "f",
-     "genderSource": "marker",
-     "forms": {
-      "singular": {
+      "fs": {
        "translit": "m'khabah",
        "hebrew": "מכבה"
       },
-      "plural": null
-     }
-    },
-    {
-     "type": "noun",
-     "english": "We, You, They (m.p - pres.)",
-     "gender": "m",
-     "genderSource": "marker",
-     "forms": {
-      "singular": {
+      "mp": {
        "translit": "m'khabim",
        "hebrew": "מכבים"
       },
-      "plural": null
-     }
-    },
-    {
-     "type": "noun",
-     "english": "We, You, They (f.p- pres.)",
-     "gender": "f",
-     "genderSource": "marker",
-     "forms": {
-      "singular": {
+      "fp": {
        "translit": "m'khabot",
        "hebrew": "מכבות"
-      },
-      "plural": null
+      }
      }
     },
     {
@@ -40505,58 +38120,23 @@
       "translit": "lil'khotz",
       "hebrew": "ללחוץ"
      },
-     "conjugations": {}
-    },
-    {
-     "type": "noun",
-     "english": "I, You, He, It (m.s - pres.)",
-     "gender": "m",
-     "genderSource": "marker",
-     "forms": {
-      "singular": {
+     "conjugations": {
+      "ms": {
        "translit": "lokhetz",
        "hebrew": "לוחץ"
       },
-      "plural": null
-     }
-    },
-    {
-     "type": "noun",
-     "english": "I, You, She, It (f.s - pres.)",
-     "gender": "f",
-     "genderSource": "marker",
-     "forms": {
-      "singular": {
+      "fs": {
        "translit": "lokhetzet",
        "hebrew": "לוחצת"
       },
-      "plural": null
-     }
-    },
-    {
-     "type": "noun",
-     "english": "We, You, They (m.p - pres.)",
-     "gender": "m",
-     "genderSource": "marker",
-     "forms": {
-      "singular": {
+      "mp": {
        "translit": "lokhatzim",
        "hebrew": "לוחצים"
       },
-      "plural": null
-     }
-    },
-    {
-     "type": "noun",
-     "english": "We, You, They (f.p- pres.)",
-     "gender": "f",
-     "genderSource": "marker",
-     "forms": {
-      "singular": {
+      "fp": {
        "translit": "lokhatzot",
        "hebrew": "לוחצות"
-      },
-      "plural": null
+      }
      }
     },
     {
@@ -40567,58 +38147,23 @@
       "translit": "l'had'lik",
       "hebrew": "להדליק"
      },
-     "conjugations": {}
-    },
-    {
-     "type": "noun",
-     "english": "I, You, He, It (m.s - pres.)",
-     "gender": "m",
-     "genderSource": "marker",
-     "forms": {
-      "singular": {
+     "conjugations": {
+      "ms": {
        "translit": "mad'lik",
        "hebrew": "מדליק"
       },
-      "plural": null
-     }
-    },
-    {
-     "type": "noun",
-     "english": "I, You, She, It (f.s - pres.)",
-     "gender": "f",
-     "genderSource": "marker",
-     "forms": {
-      "singular": {
+      "fs": {
        "translit": "mad'likah",
        "hebrew": "מדליקה"
       },
-      "plural": null
-     }
-    },
-    {
-     "type": "noun",
-     "english": "We, You, They (m.p - pres.)",
-     "gender": "m",
-     "genderSource": "marker",
-     "forms": {
-      "singular": {
+      "mp": {
        "translit": "mad'likim",
        "hebrew": "מדליקים"
       },
-      "plural": null
-     }
-    },
-    {
-     "type": "noun",
-     "english": "We, You, They (f.p- pres.)",
-     "gender": "f",
-     "genderSource": "marker",
-     "forms": {
-      "singular": {
+      "fp": {
        "translit": "mad'likot",
        "hebrew": "מדליקות"
-      },
-      "plural": null
+      }
      }
     }
    ]

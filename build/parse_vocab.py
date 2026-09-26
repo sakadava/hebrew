@@ -165,6 +165,18 @@ def parse():
             if label and pending_verb is not None:
                 pending_verb["conjugations"][label] = {"translit": translit, "hebrew": hebrew}
                 continue
+            # present-tense conjugation rows written as "Come(s) (m.s - pres.)" etc.
+            pm = re.search(r"\((m|f)\.?\s*([sp])\b", english, re.I)
+            if pm and re.search(r"pres", english, re.I):
+                pslot = pm.group(1).lower() + pm.group(2).lower()
+                if pending_verb is None:
+                    lemma = re.sub(r"\(.*?\)", "", english).strip()
+                    lemma = re.sub(r"\(s\)$", "", lemma).strip() or english
+                    pending_verb = {"type": "verb", "english": lemma, "binyan": None,
+                                    "infinitive": {"translit": "", "hebrew": ""}, "conjugations": {}}
+                    entries.append(pending_verb)
+                pending_verb["conjugations"][pslot] = {"translit": translit, "hebrew": hebrew}
+                continue
             binyan = detect_binyan(english)
             if binyan is not None or re.search(r"\((Qal|Nifal|Piel|Pual|Hifil|Hufal|Hitpael|Nif'al|Pi'el|Pu'al|Hif'il|Huf'al|Hitpa'el)\)", english):
                 # start a verb

@@ -96,6 +96,10 @@ h3 { margin: 20px 0 8px; color: var(--muted); font-weight: 600; font-size: 13px;
 .formtable .say:hover { background: var(--panel2); }
 .formtable .say:hover .mini-speak { opacity: 1; }
 .formtable .say .mini-speak { opacity: .35; }
+.inf-line { margin: 4px 0 10px; font-size: 20px; }
+.inf-line .muted { font-size: 12px; text-transform: uppercase; letter-spacing: .04em; }
+.inf-line .heb { font-size: 24px; cursor: pointer; }
+.formtable td .translit { margin-top: 2px; }
 
 .deck-done { text-align: center; padding: 40px; }
 
