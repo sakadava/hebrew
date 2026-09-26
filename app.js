@@ -977,6 +977,7 @@ document.addEventListener("keydown", e => {
 function render() {
   if (view === "lesson") renderLesson();
   else if (view === "sentences") renderSentences();
+  else if (view === "grammar") renderGrammar();
   else if (view === "learn") renderLearnSetup();
   else if (view === "session") renderSession();
   else if (view === "browse") renderBrowse();

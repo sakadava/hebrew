@@ -118,6 +118,30 @@ table.list tr:hover td { background: var(--panel); }
 .unitcard .bar { height: 5px; background: var(--panel2); border-radius: 3px; margin-top: 8px; overflow: hidden; }
 .unitcard .bar > i { display: block; height: 100%; background: var(--accent2); }
 
+/* Grammar */
+.gram-wrap { max-width: 1400px; }
+.gram-sec { margin: 26px 0; }
+.gram-sec > h2 { border-bottom: 1px solid var(--line); padding-bottom: 8px; }
+.gram-text { color: var(--ink); max-width: 900px; line-height: 1.6; }
+.gram-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(320px, 1fr)); gap: 14px; align-items: start; }
+.gram-card { background: var(--panel); border: 1px solid var(--line); border-radius: 12px; padding: 14px 16px; }
+.gram-root { font-size: 30px; text-align: center; letter-spacing: .05em; }
+.gram-root .hebrew { color: var(--accent2); }
+.gram-mean { text-align: center; color: var(--muted); font-size: 13px; margin: 2px 0 10px; }
+.gram-binyan { display: flex; align-items: center; gap: 8px; flex-wrap: wrap; margin-bottom: 6px; }
+.gram-binyan .hebrew { font-size: 22px; color: var(--accent2); }
+.ex-wrap { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 8px; }
+.ex-chip { display: inline-flex; align-items: center; gap: 8px; background: var(--panel2); border: 1px solid var(--line); border-radius: 999px; padding: 5px 12px; }
+.ex-chip.dim { opacity: .62; }
+.ex-chip .heb { font-size: 20px; cursor: pointer; }
+.ex-chip .mini-speak { opacity: .35; font-size: 12px; }
+.ex-chip .heb:hover .mini-speak { opacity: 1; }
+.ex-chip .ex-en { color: var(--muted); font-size: 13px; }
+.scope-tag { font-size: 10px; padding: 1px 7px; border-radius: 999px; border: 1px solid var(--line); }
+.scope-tag.learned { color: var(--good); border-color: color-mix(in srgb, var(--good) 45%, transparent); }
+.scope-tag.later { color: var(--muted); }
+.scope-tag.extra { color: var(--accent2); }
+
 /* Sentences */
 .breakdown { display: flex; flex-wrap: wrap; gap: 8px; justify-content: center; margin-top: 12px; }
 .breakdown .bd { display: flex; flex-direction: column; align-items: center; gap: 2px; background: var(--panel2); border: 1px solid var(--line); border-radius: 8px; padding: 6px 10px; min-width: 64px; }
