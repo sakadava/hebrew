@@ -196,12 +196,21 @@
       model: localStorage.getItem("ollamaModel") || "llama3:latest",
     };
   }
-  async function ollamaTest() {
+  async function ollamaTest(timeoutMs) {
     const c = cfg();
-    const r = await fetch(c.endpoint + "/api/tags", { method: "GET" });
-    if (!r.ok) throw new Error("HTTP " + r.status);
-    const d = await r.json();
-    return (d.models || []).map(m => m.name);
+    const ctl = new AbortController();
+    const t = timeoutMs ? setTimeout(() => ctl.abort(), timeoutMs) : null;
+    try {
+      const r = await fetch(c.endpoint + "/api/tags", { method: "GET", signal: ctl.signal });
+      if (!r.ok) throw new Error("HTTP " + r.status);
+      const d = await r.json();
+      return (d.models || []).map(m => m.name);
+    } finally { if (t) clearTimeout(t); }
+  }
+  // Quick availability probe used to decide whether to offer the AI feature at all.
+  async function probeOllama() {
+    if (location.protocol === "file:") return false;   // a file:// page can't reach Ollama
+    try { const m = await ollamaTest(2500); return m.length > 0; } catch { return false; }
   }
   function wordMenu(b, n) {
     const pick = (arr, k, fmt) => shuf(arr).slice(0, k).map(fmt);
@@ -254,5 +263,5 @@ Respond ONLY as JSON: {"sentences":[{"hebrew":"...","english":"..."}, ...]}`;
     return out;
   }
 
-  window.Sentences = { scopeEntries, buckets, ruleBatch, buildDict, verify, vocalize, ollamaTest, ollamaBatch, cfg, PRON };
+  window.Sentences = { scopeEntries, buckets, ruleBatch, buildDict, verify, vocalize, ollamaTest, probeOllama, ollamaBatch, cfg, PRON };
 })();

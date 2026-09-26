@@ -897,7 +897,16 @@ const senti = {
   dir: S.get("sentDir", "mixed"),
   useAI: S.get("sentAI", false),
   deck: [], i: 0, revealed: false, loadingAI: false, aiError: "", showSettings: false, built: false,
+  aiProbe: "idle",   // idle | pending | yes | no — is a local LLM reachable?
 };
+function probeAI() {
+  senti.aiProbe = "pending";
+  window.Sentences.probeOllama().then(ok => {
+    senti.aiProbe = ok ? "yes" : "no";
+    if (!ok) senti.useAI = false;
+    if (view === "sentences") renderSentences();
+  });
+}
 
 function sentScopeName() {
   const u = UNITS.find(x => x.index === currentUnit);
@@ -959,11 +968,21 @@ function sentWordBreakdown(s) {
 function renderSentences() {
   if (!window.Sentences) { app.innerHTML = `<p class="muted">Loading…</p>`; return; }
   if (!senti.built) buildSentDeck();
+  if (senti.aiProbe === "idle") probeAI();   // one-time check for a reachable local LLM
 
   const dirChips = [["he2en", "Hebrew → English"], ["en2he", "English → Hebrew"], ["mixed", "Mixed"]]
     .map(([v, l]) => `<div class="chip ${senti.dir === v ? "on" : ""}" data-dir="${v}">${l}</div>`).join("");
   const aiStatus = senti.loadingAI ? `<span class="muted">· generating…</span>`
     : senti.aiError ? `<span class="bad-text">· ${esc(senti.aiError)}</span>` : "";
+  // AI controls only appear when a local LLM is actually reachable; otherwise a quiet note.
+  const aiControls = senti.aiProbe === "yes"
+    ? `<label class="chk"><input type="checkbox" id="aiToggle" ${senti.useAI ? "checked" : ""}> Include AI variety ${aiStatus}</label>
+       <button class="btn ghost" id="ollSettings">⚙ AI settings</button>`
+    : senti.aiProbe === "pending"
+      ? `<span class="muted" style="font-size:13px">checking for local AI…</span>`
+      : `<span class="muted" style="font-size:13px">AI sentences need a local LLM (Ollama) over http — not detected.</span>
+         <button class="btn ghost" id="aiRecheck">Recheck</button>
+         <button class="btn ghost" id="ollSettings">⚙ AI settings</button>`;
 
   const settingsPanel = senti.showSettings ? `
     <div class="card-panel" style="margin-bottom:14px">
@@ -1024,8 +1043,7 @@ function renderSentences() {
     <div class="row" style="margin-bottom:12px">
       <div class="chipbox" id="dirBox">${dirChips}</div>
       <span class="spacer"></span>
-      <label class="chk"><input type="checkbox" id="aiToggle" ${senti.useAI ? "checked" : ""}> Include AI variety ${aiStatus}</label>
-      <button class="btn ghost" id="ollSettings">⚙ AI settings</button>
+      ${aiControls}
       <button class="btn" id="newBatch">↻ New batch</button>
     </div>
     ${settingsPanel}
@@ -1036,11 +1054,15 @@ function renderSentences() {
     senti.dir = c.dataset.dir; S.set("sentDir", senti.dir);
     senti.deck.forEach(x => x._dir = pickDir()); renderSentences();
   };
-  document.getElementById("aiToggle").onchange = e => {
+  const aiToggleEl = document.getElementById("aiToggle");
+  if (aiToggleEl) aiToggleEl.onchange = e => {
     senti.useAI = e.target.checked; S.set("sentAI", senti.useAI);
     if (senti.useAI) fetchAISentences(); else renderSentences();
   };
-  document.getElementById("ollSettings").onclick = () => { senti.showSettings = !senti.showSettings; renderSentences(); };
+  const ollSettingsEl = document.getElementById("ollSettings");
+  if (ollSettingsEl) ollSettingsEl.onclick = () => { senti.showSettings = !senti.showSettings; renderSentences(); };
+  const aiRecheckEl = document.getElementById("aiRecheck");
+  if (aiRecheckEl) aiRecheckEl.onclick = () => { probeAI(); renderSentences(); };
   document.getElementById("newBatch").onclick = () => { buildSentDeck(); renderSentences(); };
 
   if (senti.showSettings) {
@@ -1050,8 +1072,10 @@ function renderSentences() {
       localStorage.setItem("ollamaEndpoint", document.getElementById("ollEndpoint").value.trim());
       localStorage.setItem("ollamaModel", document.getElementById("ollModel").value.trim());
       const out = document.getElementById("ollTestOut"); out.textContent = "testing…";
-      window.Sentences.ollamaTest().then(models => out.innerHTML = `<span class="good-text">OK — models: ${esc(models.join(", "))}</span>`)
-        .catch(err => out.innerHTML = `<span class="bad-text">${esc(/Failed to fetch|load failed/i.test(err.message) ? "unreachable (set OLLAMA_ORIGINS='*')" : err.message)}</span>`);
+      window.Sentences.ollamaTest(4000).then(models => {
+        out.innerHTML = `<span class="good-text">OK — models: ${esc(models.join(", "))}</span>`;
+        senti.aiProbe = "yes";   // now reachable → surface the AI toggle
+      }).catch(err => out.innerHTML = `<span class="bad-text">${esc(/Failed to fetch|load failed/i.test(err.message) ? "unreachable (set OLLAMA_ORIGINS='*')" : err.message)}</span>`);
     };
   }
   const reveal = () => { senti.revealed = true; renderSentences(); if (senti.deck[senti.i]) speak(senti.deck[senti.i].heNikkud || senti.deck[senti.i].he); };

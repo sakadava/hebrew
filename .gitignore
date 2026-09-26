@@ -1,0 +1,21 @@
+# OS / editor cruft
+.DS_Store
+*.swp
+*~
+
+# Scratch / temp (headless-browser profiles, logs, etc.)
+.tmp/
+*.log
+
+# Debug screenshots — never commit these
+screencapture-*.png
+
+# Source PDFs — raw input for the build pipeline; kept local, not published
+*.pdf
+
+# Build intermediates — regenerated from the PDFs by build/*.py
+# (run: pdftotext -layout <pdf> <txt>, then the build/*.py pipeline)
+adj.txt
+vocab.txt
+build/vocab_parsed.json
+build/adjectives_parsed.json
