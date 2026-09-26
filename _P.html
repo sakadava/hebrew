@@ -1,0 +1,15 @@
+<!DOCTYPE html><html><head><meta charset="utf-8"><link rel="stylesheet" href="styles.css"></head><body>
+<header class="topbar"><div class="brand" id="homeBtn">x</div><button class="hamburger" id="hamburger">☰</button><div class="menu" id="menu"><nav class="tabs"><button data-view="lesson" class="active"></button><button data-view="learn"></button><button data-view="sentences"></button><button data-view="grammar"></button><button data-view="browse"></button><button data-view="patterns"></button><button data-view="import"></button></nav><div class="settings"><label class="chk"><input type="checkbox" id="tNikkud" checked></label><label class="chk"><input type="checkbox" id="tTranslit" checked></label><label class="chk"><input type="checkbox" id="tEnglish" checked></label><select id="voiceSelect"></select></div></div></header>
+<main id="app"></main><div id="toast" class="toast"></div><pre id="R"></pre>
+<script src="data/vocab.js"></script><script src="app.js"></script><script src="sentences.js"></script><script src="grammar.js"></script>
+<script>
+function chk(unit){
+ lessonUnit=unit; renderLesson();
+ const titles=[...document.querySelectorAll('.pron-card .le-en')].map(x=>x.textContent);
+ // any noun/adjective card whose title is a pronoun gloss? (leak check)
+ const leaks=[...document.querySelectorAll('.le-card.pos-noun .le-en, .le-card.pos-adjective .le-en')]
+   .map(x=>x.textContent).filter(t=>/^(my|me|him|his|her|our|us|your|you|them|their|to me|to you|myself|yourself|himself)\b/i.test(t.trim()));
+ return 'unit '+unit+': pronCards=['+titles.join(' | ')+'] filledCells='+document.querySelectorAll('.pron-card .pron-cell').length+' leaks='+(leaks.length?leaks.join(','):'none');
+}
+document.getElementById('R').textContent=[chk(5),chk(13),chk(60)].join('\n');
+</script></body></html>

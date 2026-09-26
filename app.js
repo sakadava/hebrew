@@ -535,58 +535,101 @@ function lessonEntry(e) {
   return `<div class="le-card masonry-item pos-${e.pos}">${head}${primary}${table}</div>`;
 }
 
-// Canonical pronoun grid — fills a fixed person × gender × number layout so the paradigm
-// visibly "builds up" as lessons introduce more pronouns.
-function pronInner(map, key, en) {
-  const e = map[key];
-  if (e) {
-    const f = e.forms[0]; const nik = f.nikkud || f.hebrew;
-    const tr = toggles.translit ? `<div class="translit">${esc(f.translit || translitFromNikkud(nik))}</div>` : "";
-    return { cls: "heb hebrew say pron-cell", say: nik, html: `${esc(dispHeb(nik))} <span class="mini-speak">🔊</span>${typeGlyph(stripN(nik), "he")}${tr}<div class="pron-en">${esc(en)}</div>` };
-  }
-  return { cls: "pron-empty", say: null, html: `<div class="pron-en">${esc(en)}</div>` };
+// ---- Pronoun tables: subject, object, possessive, prepositional (to/for), reflexive ----
+// Each is the same person × gender × number grid; forms are placed by parsing the English gloss,
+// and the whole set grows cumulatively as lessons introduce more forms.
+const SUBJECT_SET = new Set(["אני", "אתה", "את", "הוא", "היא", "אנחנו", "אתם", "אתן", "הם", "הן"]);
+const OBJECT_SET = new Set(["אותי", "אותך", "אותו", "אותה", "אותנו", "אתכם", "אתכן", "אותם", "אותן"]);
+const PREP_SET = new Set(["לי", "לך", "לו", "לה", "לנו", "לכם", "לכן", "להם", "להן"]);
+const PRON_CATS = [
+  ["subject", "Subject — I, you, he…"],
+  ["object", "Object — me, you, him…"],
+  ["possessive", "Possessive — my, your, his…"],
+  ["prepositional", "To / for — to me, to you…"],
+  ["reflexive", "Reflexive — myself, yourself…"],
+];
+function pronCategoryOf(cons) {
+  if (cons.startsWith("של")) return "possessive";
+  if (cons.startsWith("עצמ")) return "reflexive";
+  if (OBJECT_SET.has(cons)) return "object";
+  if (PREP_SET.has(cons)) return "prepositional";
+  if (SUBJECT_SET.has(cons)) return "subject";
+  return null;
 }
-function pronTd(map, key, en, colspan) {
-  const o = pronInner(map, key, en);
-  return `<td class="${o.cls}"${colspan ? ` colspan="${colspan}"` : ""}${o.say ? ` data-say="${escAttr(o.say)}"` : ""}>${o.html}</td>`;
+// Parse an English pronoun gloss into a grid cell key (person/number/gender). null if not a pronoun.
+function pronCellKey(en) {
+  const e = " " + en.toLowerCase() + " ";
+  let person = null, num = null, g = null;
+  if (/\b(i|my|me|mine|myself)\b/.test(e)) { person = 1; num = "s"; g = "c"; }
+  else if (/\b(we|our|ours|us|ourselves)\b/.test(e)) { person = 1; num = "p"; g = "c"; }
+  else if (/\b(he|his|him|himself)\b/.test(e)) { person = 3; num = "s"; g = "m"; }
+  else if (/\b(she|her|hers|herself)\b/.test(e)) { person = 3; num = "s"; g = "f"; }
+  else if (/\b(they|their|theirs|them|themselves)\b/.test(e)) { person = 3; num = "p"; }
+  else if (/\b(you|your|yours|thee|ye|yourself|yourselves)\b/.test(e)) { person = 2; }
+  if (person === null) return null;
+  const par = (en.match(/\(([^)]*)\)/) || [])[1] || "";
+  if (/m/.test(par)) g = "m";
+  if (/f/.test(par)) g = "f";
+  if (/p/.test(par)) num = "p";
+  if (/s/.test(par)) num = "s";
+  if (/selves/.test(e)) num = "p";
+  if (num === null) num = "s";
+  if (person !== 1 && g === null) g = "m";
+  return person === 1 ? (num === "s" ? "1s" : "1p") : `${person}${num}${g}`;
 }
-function pronounGrid(entries) {
-  const map = {};
-  for (const e of entries) map[stripN(e.forms[0].hebrew).trim()] = e;
+function pronTdG(map, key, colspan) {
+  const o = map[key];
+  const cs = colspan ? ` colspan="${colspan}"` : "";
+  if (!o) return `<td class="pron-empty"${cs}></td>`;
+  const nik = o.nik;
+  const tr = toggles.translit ? `<div class="translit">${esc(o.tr || translitFromNikkud(nik))}</div>` : "";
+  return `<td class="heb hebrew say pron-cell"${cs} data-say="${escAttr(nik)}" title="Click to hear">${esc(dispHeb(nik))} <span class="mini-speak">🔊</span>${typeGlyph(stripN(nik), "he")}${tr}<div class="pron-en">${esc(o.en)}</div></td>`;
+}
+function pronGridFrom(map) {
   return `<table class="formtable prongrid">
     <tr><th></th><th>Masculine</th><th>Feminine</th></tr>
     <tr class="grp"><th colspan="3">Singular</th></tr>
-    <tr><th>1st</th>${pronTd(map, "אני", "I", 2)}</tr>
-    <tr><th>2nd</th>${pronTd(map, "אתה", "you (m.s)")}${pronTd(map, "את", "you (f.s)")}</tr>
-    <tr><th>3rd</th>${pronTd(map, "הוא", "he")}${pronTd(map, "היא", "she")}</tr>
+    <tr><th>1st</th>${pronTdG(map, "1s", 2)}</tr>
+    <tr><th>2nd</th>${pronTdG(map, "2sm")}${pronTdG(map, "2sf")}</tr>
+    <tr><th>3rd</th>${pronTdG(map, "3sm")}${pronTdG(map, "3sf")}</tr>
     <tr class="grp"><th colspan="3">Plural</th></tr>
-    <tr><th>1st</th>${pronTd(map, "אנחנו", "we", 2)}</tr>
-    <tr><th>2nd</th>${pronTd(map, "אתם", "you (m.p)")}${pronTd(map, "אתן", "you (f.p)")}</tr>
-    <tr><th>3rd</th>${pronTd(map, "הם", "they (m)")}${pronTd(map, "הן", "they (f)")}</tr>
+    <tr><th>1st</th>${pronTdG(map, "1p", 2)}</tr>
+    <tr><th>2nd</th>${pronTdG(map, "2pm")}${pronTdG(map, "2pf")}</tr>
+    <tr><th>3rd</th>${pronTdG(map, "3pm")}${pronTdG(map, "3pf")}</tr>
   </table>`;
 }
+function pronClassify(e) {
+  const f = primaryForm(e);
+  const cons = stripN(f.hebrew).replace(/[^א-ת]/g, "");   // pure consonants (drops "(-" etc.)
+  const cat = pronCategoryOf(cons);
+  if (!cat) return null;
+  const key = pronCellKey(e.english);
+  if (!key) return null;
+  return { cat, key, cell: { nik: f.nikkud || f.hebrew, tr: f.translit, en: e.english } };
+}
 
-// Build ONE dense masonry of all cards (pronoun grid + verbs + adjectives + nouns), ordered
-// so like types cluster and colour-coded by a left border, but packed side-by-side to fill width.
+// Build ONE dense masonry of all cards, with pronoun tables (subject/object/possessive/…) first.
 function lessonSections(u) {
   const byPos = { verb: [], adjective: [], noun: [], other: [] };
   for (const e of u.entries) {
-    if (e.pos === "pronoun") continue;            // pronouns go in the cumulative grid card
+    if (e.pos === "pronoun") continue;
+    if (pronClassify(e)) continue;                 // pronoun-forms go into the pronoun tables, not here
     (byPos[e.pos] || byPos.other).push(e);
   }
-  // Pronouns: cumulative up to (and including) the viewed lesson — never ahead.
-  const seen = new Set(); const pron = [];
+  // Pronoun categories, cumulative up to (and including) the viewed lesson — never ahead.
+  const cats = { subject: {}, object: {}, possessive: {}, prepositional: {}, reflexive: {} };
   for (const e of ENTRIES) {
-    if (e.pos === "pronoun" && typeof e.unit === "number" && e.unit >= 1 && e.unit <= u.index) {
-      const k = stripN(e.forms[0].hebrew).trim();
-      if (!seen.has(k)) { seen.add(k); pron.push(e); }
-    }
+    if (!(typeof e.unit === "number" && e.unit >= 1 && e.unit <= u.index)) continue;
+    const c = pronClassify(e);
+    if (c && !cats[c.cat][c.key]) cats[c.cat][c.key] = c.cell;
   }
   const cards = [];
-  if (pron.length) {
-    cards.push(`<div class="le-card masonry-item pos-pronoun pron-card">
-      <div class="le-head"><span class="le-en">Pronouns</span><span class="pill">up to here</span></div>
-      ${pronounGrid(pron)}</div>`);
+  for (const [cat, title] of PRON_CATS) {
+    if (Object.keys(cats[cat]).length) {
+      cards.push(`<div class="le-card masonry-item pos-pronoun pron-card">
+        <div class="le-head"><span class="le-en">${esc(title)}</span><span class="pill">up to here</span></div>
+        ${pronGridFrom(cats[cat])}</div>`);
+    }
   }
   for (const pos of ["verb", "adjective", "noun", "other"]) for (const e of byPos[pos]) cards.push(lessonEntry(e));
   if (!cards.length) return `<p class="muted">No words in this lesson.</p>`;
