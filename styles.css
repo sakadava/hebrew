@@ -117,6 +117,31 @@ table.list tr:hover td { background: var(--panel); }
 .unitcard .bar { height: 5px; background: var(--panel2); border-radius: 3px; margin-top: 8px; overflow: hidden; }
 .unitcard .bar > i { display: block; height: 100%; background: var(--accent2); }
 
+/* Sentences */
+.breakdown { display: flex; flex-wrap: wrap; gap: 8px; justify-content: center; margin-top: 12px; }
+.breakdown .bd { display: flex; flex-direction: column; align-items: center; gap: 2px; background: var(--panel2); border: 1px solid var(--line); border-radius: 8px; padding: 6px 10px; min-width: 64px; }
+.breakdown .bd .hebrew { font-size: 22px; }
+.breakdown .bd .translit { font-size: 12px; }
+.breakdown .bd .muted { font-size: 12px; }
+.bad-text { color: var(--bad); }
+.good-text { color: var(--good); }
+
+/* Lesson (basic) mode */
+.lesson-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 14px; align-items: start; }
+.le-card { background: var(--panel); border: 1px solid var(--line); border-radius: 12px; padding: 14px 16px; }
+.le-head { display: flex; align-items: center; gap: 10px; margin-bottom: 8px; flex-wrap: wrap; }
+.le-en { font-size: 18px; font-weight: 600; }
+.le-line { display: flex; align-items: baseline; gap: 10px; padding: 3px 0; flex-wrap: wrap; }
+.le-line .le-slot { color: var(--muted); font-size: 11px; min-width: 74px; text-transform: uppercase; letter-spacing: .04em; }
+.le-line .heb { font-size: 26px; }
+.le-line .translit { font-size: 15px; }
+.le-card .formtable { margin-top: 6px; }
+.le-card .formtable td, .le-card .formtable th { padding: 6px 10px; }
+.le-card .say { cursor: pointer; border-radius: 6px; }
+.le-card .say .mini-speak { opacity: .35; font-size: 14px; }
+.le-card .say:hover .mini-speak { opacity: 1; }
+select:disabled, .btn:disabled { opacity: .4; cursor: default; }
+
 .toast { position: fixed; bottom: 20px; left: 50%; transform: translateX(-50%) translateY(20px); background: var(--panel2); border: 1px solid var(--line); padding: 10px 16px; border-radius: 10px; opacity: 0; transition: .25s; pointer-events: none; }
 .toast.show { opacity: 1; transform: translateX(-50%) translateY(0); }
 

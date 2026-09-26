@@ -120,6 +120,21 @@ function escAttr(s) { return (s || "").replace(/[&<>"']/g, c => ({ "&": "&amp;",
 function sayCell(text, sayText) {
   return `<td class="heb hebrew say" data-say="${escAttr(sayText || text)}" title="Click to hear">${esc(text)} <span class="mini-speak">🔊</span></td>`;
 }
+// Wire every .say element under root to speak its data-say text on click.
+function bindSay(root) {
+  root.querySelectorAll(".say").forEach(el => el.onclick = ev => { ev.stopPropagation(); speak(el.dataset.say); });
+}
+// Speak a list of Hebrew strings one after another (uses the built-in queue).
+function speakSequence(texts) {
+  if (!("speechSynthesis" in window)) return;
+  speechSynthesis.cancel();
+  for (const t of texts) {
+    if (!t) continue;
+    const u = new SpeechSynthesisUtterance(t);
+    u.lang = "he-IL"; if (chosenVoice) u.voice = chosenVoice; u.rate = 0.85;
+    speechSynthesis.speak(u);
+  }
+}
 
 // ---------- Toast ----------
 let toastT;
@@ -130,14 +145,16 @@ function toast(msg) {
 
 // ---------- Router ----------
 const app = document.getElementById("app");
-let view = "learn";
+let view = "lesson";
 function setView(v) {
   view = v;
-  document.querySelectorAll(".tabs button").forEach(b => b.classList.toggle("active", b.dataset.view === v));
+  if ("speechSynthesis" in window) speechSynthesis.cancel();
+  const active = v === "session" ? "learn" : v;
+  document.querySelectorAll(".tabs button").forEach(b => b.classList.toggle("active", b.dataset.view === active));
   render();
 }
 document.querySelectorAll(".tabs button").forEach(b => b.onclick = () => setView(b.dataset.view));
-document.getElementById("homeBtn").onclick = () => setView("learn");
+document.getElementById("homeBtn").onclick = () => setView("lesson");
 
 // toggle wiring
 for (const key of ["nikkud", "translit", "english"]) {
@@ -337,6 +354,77 @@ document.addEventListener("keydown", e => {
   else if (session.flipped && e.key === "2") document.getElementById("good")?.click();
 });
 
+// ================= LESSON (basic lesson mode) =================
+let lessonUnit = null;
+
+function unitLabel(u) {
+  const n = (u.index === 0 || u.index === 999) ? "★" : String(u.index).padStart(2, "0");
+  return `${n} · ${u.name}`;
+}
+
+function lineForm(slot, f) {
+  const t = toggles.translit && f.translit ? `<span class="translit">${esc(f.translit)}</span>` : "";
+  return `<div class="le-line">
+    <span class="le-slot">${SLOT_LABEL[slot] || slot}</span>
+    <span class="heb hebrew say" data-say="${escAttr(f.nikkud || f.hebrew)}" title="Click to hear">${esc(hebOf(f))} <span class="mini-speak">🔊</span></span>
+    ${t}
+  </div>`;
+}
+
+function lessonEntry(e) {
+  const head = `<div class="le-head"><span class="le-en">${esc(e.english)}</span>${genderPill(e)}</div>`;
+  const table = conjTable(e); // conjugations (verbs), declension (adj), or sing/plural (nouns)
+  let primary = "";
+  if (e.pos === "verb") {
+    const inf = e.forms.find(f => f.slot === "infinitive");
+    if (inf) primary = lineForm("infinitive", inf);
+  } else if (!table) {
+    const f = primaryForm(e);
+    primary = lineForm(f.slot, f);
+  }
+  return `<div class="le-card">${head}${primary}${table}</div>`;
+}
+
+function renderLesson() {
+  if (lessonUnit === null) lessonUnit = currentUnit;
+  const list = UNITS;
+  let pos = list.findIndex(u => u.index === lessonUnit);
+  if (pos < 0) { pos = 0; lessonUnit = list[0].index; }
+  const u = list[pos];
+  const isCurrent = u.index === currentUnit;
+  const options = list.map(x => `<option value="${x.index}" ${x.index === u.index ? "selected" : ""}>${esc(unitLabel(x))}</option>`).join("");
+
+  app.innerHTML = `
+    <div class="row" style="margin-bottom:14px;gap:8px">
+      <button class="btn ghost" id="prevLesson" ${pos === 0 ? "disabled" : ""}>← Prev</button>
+      <select id="lessonSelect" style="font-size:15px;min-width:220px">${options}</select>
+      <button class="btn ghost" id="nextLesson" ${pos === list.length - 1 ? "disabled" : ""}>Next →</button>
+      ${isCurrent ? `<span class="pill" style="color:var(--accent2);border-color:var(--accent2)">📍 current lesson</span>`
+        : `<button class="btn ghost" id="setCurrent">Set as current</button>`}
+      <span class="spacer"></span>
+      <button class="btn ghost" id="playAll" title="Read every word in order">▶ Play all</button>
+      <button class="btn ghost" id="stopAll">■ Stop</button>
+      <button class="btn" id="studyLesson">Study as flashcards</button>
+    </div>
+    <div class="row" style="margin-bottom:12px">
+      <h2 style="margin:0">${esc(u.name)}</h2>
+      <span class="pill">${u.entries.length} items</span>
+      <span class="muted">Everything in this lesson — nothing more. Click any word to hear it.</span>
+    </div>
+    <div class="lesson-grid">${u.entries.map(lessonEntry).join("") || `<p class="muted">No words in this lesson.</p>`}</div>`;
+
+  const go = idx => { lessonUnit = list[Math.max(0, Math.min(list.length - 1, idx))].index; speechSynthesis.cancel(); renderLesson(); };
+  document.getElementById("prevLesson").onclick = () => go(pos - 1);
+  document.getElementById("nextLesson").onclick = () => go(pos + 1);
+  document.getElementById("lessonSelect").onchange = e => { lessonUnit = +e.target.value; speechSynthesis.cancel(); renderLesson(); };
+  const sc = document.getElementById("setCurrent");
+  if (sc) sc.onclick = () => { currentUnit = u.index; S.set("currentUnit", u.index); senti.built = false; toast("Marked as your current lesson"); renderLesson(); };
+  document.getElementById("studyLesson").onclick = () => { learnState.units = new Set([u.index]); S.set("learnUnits", [u.index]); setView("learn"); };
+  document.getElementById("playAll").onclick = () => speakSequence(u.entries.map(e => { const f = primaryForm(e); return f.nikkud || f.hebrew; }));
+  document.getElementById("stopAll").onclick = () => speechSynthesis.cancel();
+  bindSay(app);
+}
+
 // ================= BROWSE =================
 let browseUnit = null;
 let browseSort = { key: "english", dir: 1 };
@@ -402,12 +490,12 @@ function renderUnitGrid() {
   app.querySelector(".grid").onclick = e => {
     const c = e.target.closest("[data-unit]"); if (!c) return;
     const idx = +c.dataset.unit;
-    if (e.shiftKey) { currentUnit = idx; S.set("currentUnit", idx); toast("Marked as your current lesson"); renderUnitGrid(); return; }
+    if (e.shiftKey) { currentUnit = idx; S.set("currentUnit", idx); senti.built = false; toast("Marked as your current lesson"); renderUnitGrid(); return; }
     browseUnit = idx; render();
   };
   // long-press / right-click to set current
   app.querySelectorAll("[data-unit]").forEach(c => c.oncontextmenu = ev => {
-    ev.preventDefault(); currentUnit = +c.dataset.unit; S.set("currentUnit", currentUnit);
+    ev.preventDefault(); currentUnit = +c.dataset.unit; S.set("currentUnit", currentUnit); senti.built = false;
     toast("Marked as current lesson"); renderUnitGrid();
   });
 }
@@ -571,9 +659,180 @@ function doPreview(text) {
   };
 }
 
+// ================= SENTENCES (rule-based + verified AI) =================
+const senti = {
+  dir: S.get("sentDir", "mixed"),
+  useAI: S.get("sentAI", false),
+  deck: [], i: 0, revealed: false, loadingAI: false, aiError: "", showSettings: false, built: false,
+};
+
+function sentScopeName() {
+  const u = UNITS.find(x => x.index === currentUnit);
+  return u ? `${String(currentUnit).padStart(2, "0")} · ${u.name}` : `unit ${currentUnit}`;
+}
+function pickDir() { return senti.dir === "mixed" ? (Math.random() < 0.5 ? "he2en" : "en2he") : senti.dir; }
+
+function buildSentDeck() {
+  const Sx = window.Sentences;
+  const scope = Sx.scopeEntries(currentUnit);
+  const rule = Sx.ruleBatch(scope, 14).map(s => ({ ...s, _dir: pickDir() }));
+  senti.deck = rule; senti.i = 0; senti.revealed = false; senti.built = true; senti.aiError = "";
+  if (senti.useAI) fetchAISentences();
+}
+
+function fetchAISentences() {
+  const Sx = window.Sentences;
+  senti.loadingAI = true; senti.aiError = "";
+  const scope = Sx.scopeEntries(currentUnit);
+  Sx.ollamaBatch(scope, 8).then(list => {
+    senti.loadingAI = false;
+    const add = list.map(s => ({ ...s, _dir: pickDir() }));
+    // interleave AI after current position so they show up soon
+    senti.deck = senti.deck.concat(add);
+    if (view === "sentences") renderSentences();
+    if (add.length) toast(`Added ${add.length} AI sentences (drafts)`);
+    else toast("AI returned nothing in-scope this time");
+  }).catch(err => {
+    senti.loadingAI = false;
+    senti.aiError = /Failed to fetch|NetworkError|load failed/i.test(err.message)
+      ? (location.protocol === "file:"
+          ? "Ollama blocks file:// pages. Easiest fix: run  python3 -m http.server  in this folder and open http://localhost:8000 — then AI works with no Ollama changes."
+          : "Couldn't reach Ollama. Is it running? Check the endpoint in AI settings.")
+      : err.message;
+    if (view === "sentences") renderSentences();
+  });
+}
+
+function sentWordBreakdown(s) {
+  const Sx = window.Sentences;
+  if (s.words && s.words.length) {
+    return s.words.map(w => `<div class="bd"><span class="hebrew">${esc(toggles.nikkud ? w.nikkud : w.plain)}</span>${w.translit ? `<span class="translit">${esc(w.translit)}</span>` : ""}<span class="muted">${esc(w.en)}</span></div>`).join("");
+  }
+  // AI sentence: gloss each token from the scope dictionary
+  const { dict } = Sx.buildDict(Sx.scopeEntries(currentUnit));
+  const skel = t => t.replace(/[֑-ׇ]/g, "").replace(/["'.,!?]/g, "");
+  return (s.he || "").split(/\s+/).map(tok => {
+    const k = skel(tok); const info = dict.get(k) || (k[0] && dict.get(k.slice(1)));
+    return `<div class="bd"><span class="hebrew">${esc(tok)}</span><span class="muted">${info ? esc(info.en) : ""}</span></div>`;
+  }).join("");
+}
+
+function renderSentences() {
+  if (!window.Sentences) { app.innerHTML = `<p class="muted">Loading…</p>`; return; }
+  if (!senti.built) buildSentDeck();
+
+  const dirChips = [["he2en", "Hebrew → English"], ["en2he", "English → Hebrew"], ["mixed", "Mixed"]]
+    .map(([v, l]) => `<div class="chip ${senti.dir === v ? "on" : ""}" data-dir="${v}">${l}</div>`).join("");
+  const aiStatus = senti.loadingAI ? `<span class="muted">· generating…</span>`
+    : senti.aiError ? `<span class="bad-text">· ${esc(senti.aiError)}</span>` : "";
+
+  const settingsPanel = senti.showSettings ? `
+    <div class="card-panel" style="margin-bottom:14px">
+      <h3>Local AI (Ollama)</h3>
+      <div class="row">
+        <label class="muted" style="min-width:70px">Endpoint</label>
+        <input type="text" id="ollEndpoint" value="${esc((localStorage.getItem("ollamaEndpoint") || "http://localhost:11434"))}" style="min-width:260px">
+        <label class="muted" style="min-width:50px">Model</label>
+        <input type="text" id="ollModel" value="${esc(localStorage.getItem("ollamaModel") || "llama3:latest")}" style="min-width:150px">
+        <button class="btn" id="ollTest">Test</button>
+        <span id="ollTestOut" class="muted"></span>
+      </div>
+      <p class="muted" style="font-size:12px;margin-bottom:0">For AI, serve this folder over http (run <code>python3 -m http.server</code> here and open <code>http://localhost:8000</code>) — Ollama allows localhost with no changes. A <code>file://</code> page is blocked unless you run <code>OLLAMA_ORIGINS='*' ollama serve</code>. AI sentences only use in-scope words, but <b>grammar is not guaranteed</b> — treat them as drafts.</p>
+    </div>` : "";
+
+  const s = senti.deck[senti.i];
+  let stage;
+  if (!senti.deck.length) {
+    stage = `<div class="card-panel deck-done"><h2>Not enough words yet</h2>
+      <p class="muted">This lesson scope doesn't yet have the mix needed (pronouns + verbs or adjectives). Mark a later lesson as current in the Lesson tab, then come back.</p></div>`;
+  } else {
+    const dir = s._dir;
+    const heBlock = `<div class="big-heb hebrew">${esc(toggles.nikkud && s.heNikkud ? s.heNikkud : s.he)}</div>${toggles.translit && s.translit ? `<div class="translit">${esc(s.translit)}</div>` : ""}`;
+    const enBlock = `<div class="big-en" style="font-size:30px">${esc(s.en)}</div>`;
+    const prompt = dir === "he2en" ? heBlock : enBlock;
+    const answer = dir === "he2en" ? enBlock : heBlock;
+    const badge = s.source === "ai"
+      ? `<span class="pill" style="color:var(--warn);border-color:var(--warn)">AI draft · check grammar</span>`
+      : `<span class="pill" style="color:var(--good);border-color:var(--good)">rule-based · correct</span>`;
+    stage = `
+      <div class="stage">
+        <div class="progressbar" style="max-width:640px"><i style="width:${Math.round(senti.i / senti.deck.length * 100)}%"></i></div>
+        <div class="row" style="max-width:640px;width:100%">
+          <span class="muted">${senti.i + 1} / ${senti.deck.length}</span><span class="spacer"></span>
+          ${badge}<span class="pill">${esc(s.template)}</span>
+        </div>
+        <div class="flash" id="sflash">
+          ${prompt}
+          ${senti.revealed ? `<hr style="width:60%;border-color:var(--line)">${answer}
+            <button class="speakbtn" id="sspeak">🔊</button>
+            <div class="breakdown">${sentWordBreakdown(s)}</div>` : `<div class="hint">click or press space to reveal</div>`}
+        </div>
+        <div class="row" style="justify-content:center">
+          ${senti.revealed
+            ? `<button class="btn" id="sspeak2">🔊 Hear</button><button class="btn primary" id="snext">Next →</button>`
+            : `<button class="btn" id="sreveal">Reveal</button>`}
+        </div>
+      </div>`;
+  }
+
+  app.innerHTML = `
+    <div class="row" style="margin-bottom:10px">
+      <h2 style="margin:0">Sentences</h2>
+      <span class="muted">Scope: words up to your current lesson — <b>${esc(sentScopeName())}</b> (change it in the Lesson tab).</span>
+    </div>
+    <div class="row" style="margin-bottom:12px">
+      <div class="chipbox" id="dirBox">${dirChips}</div>
+      <span class="spacer"></span>
+      <label class="chk"><input type="checkbox" id="aiToggle" ${senti.useAI ? "checked" : ""}> Include AI variety ${aiStatus}</label>
+      <button class="btn ghost" id="ollSettings">⚙ AI settings</button>
+      <button class="btn" id="newBatch">↻ New batch</button>
+    </div>
+    ${settingsPanel}
+    ${stage}`;
+
+  document.getElementById("dirBox").onclick = e => {
+    const c = e.target.closest("[data-dir]"); if (!c) return;
+    senti.dir = c.dataset.dir; S.set("sentDir", senti.dir);
+    senti.deck.forEach(x => x._dir = pickDir()); renderSentences();
+  };
+  document.getElementById("aiToggle").onchange = e => {
+    senti.useAI = e.target.checked; S.set("sentAI", senti.useAI);
+    if (senti.useAI) fetchAISentences(); else renderSentences();
+  };
+  document.getElementById("ollSettings").onclick = () => { senti.showSettings = !senti.showSettings; renderSentences(); };
+  document.getElementById("newBatch").onclick = () => { buildSentDeck(); renderSentences(); };
+
+  if (senti.showSettings) {
+    document.getElementById("ollEndpoint").onchange = e => localStorage.setItem("ollamaEndpoint", e.target.value.trim());
+    document.getElementById("ollModel").onchange = e => localStorage.setItem("ollamaModel", e.target.value.trim());
+    document.getElementById("ollTest").onclick = () => {
+      localStorage.setItem("ollamaEndpoint", document.getElementById("ollEndpoint").value.trim());
+      localStorage.setItem("ollamaModel", document.getElementById("ollModel").value.trim());
+      const out = document.getElementById("ollTestOut"); out.textContent = "testing…";
+      window.Sentences.ollamaTest().then(models => out.innerHTML = `<span class="good-text">OK — models: ${esc(models.join(", "))}</span>`)
+        .catch(err => out.innerHTML = `<span class="bad-text">${esc(/Failed to fetch|load failed/i.test(err.message) ? "unreachable (set OLLAMA_ORIGINS='*')" : err.message)}</span>`);
+    };
+  }
+  const reveal = () => { senti.revealed = true; renderSentences(); if (senti.deck[senti.i]) speak(senti.deck[senti.i].heNikkud || senti.deck[senti.i].he); };
+  const next = () => { senti.i = (senti.i + 1) % senti.deck.length; senti.revealed = false; renderSentences(); };
+  const sf = document.getElementById("sflash"); if (sf) sf.onclick = () => { if (!senti.revealed) reveal(); };
+  const rv = document.getElementById("sreveal"); if (rv) rv.onclick = reveal;
+  const nx = document.getElementById("snext"); if (nx) nx.onclick = next;
+  for (const id of ["sspeak", "sspeak2"]) { const el = document.getElementById(id); if (el) el.onclick = ev => { ev.stopPropagation(); const c = senti.deck[senti.i]; speak(c.heNikkud || c.he); }; }
+}
+
+document.addEventListener("keydown", e => {
+  if (view !== "sentences" || !senti.deck.length) return;
+  if (e.target.tagName === "INPUT") return;
+  if (e.key === " ") { e.preventDefault(); if (!senti.revealed) { senti.revealed = true; renderSentences(); const c = senti.deck[senti.i]; if (c) speak(c.heNikkud || c.he); } }
+  else if (senti.revealed && (e.key === "n" || e.key === "N")) { senti.i = (senti.i + 1) % senti.deck.length; senti.revealed = false; renderSentences(); }
+});
+
 // ---------- render dispatch ----------
 function render() {
-  if (view === "learn") renderLearnSetup();
+  if (view === "lesson") renderLesson();
+  else if (view === "sentences") renderSentences();
+  else if (view === "learn") renderLearnSetup();
   else if (view === "session") renderSession();
   else if (view === "browse") renderBrowse();
   else if (view === "patterns") renderPatterns();

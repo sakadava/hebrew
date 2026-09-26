@@ -4064,7 +4064,7 @@
      "unit": 8,
      "unitName": "Food 1",
      "category": "food",
-     "pos": "adjective",
+     "pos": "noun",
      "english": "Oil",
      "gender": "m",
      "genderSource": "plural-ending",
@@ -4075,7 +4075,8 @@
        "slot": "singular",
        "translit": "shemen",
        "hebrew": "שמן",
-       "nikkud": "ׁשָמֵן"
+       "nikkud": "שָׁמֵן",
+       "nikkudAuto": true
       },
       {
        "slot": "plural",
@@ -4085,13 +4086,7 @@
        "nikkudAuto": true
       }
      ],
-     "source": "duolingo-vocab",
-     "declension": {
-      "ms": "ׁשָמֵן",
-      "mp": "ׁשְמֵנִים",
-      "fs": "ׁשְמֵנָה",
-      "fp": "ׁשְמֵנֹות"
-     }
+     "source": "duolingo-vocab"
     },
     {
      "id": "u08-009",
@@ -24268,7 +24263,7 @@
      "unit": 27,
      "unitName": "Time",
      "category": "time",
-     "pos": "adjective",
+     "pos": "noun",
      "english": "Afternoon",
      "gender": "m",
      "genderSource": "plural-ending",
@@ -24279,7 +24274,8 @@
        "slot": "singular",
        "translit": "akhar",
        "hebrew": "אחר",
-       "nikkud": "ַאחֵר"
+       "nikkud": "אַחַר",
+       "nikkudAuto": true
       },
       {
        "slot": "plural",
@@ -24289,13 +24285,7 @@
        "nikkudAuto": true
       }
      ],
-     "source": "duolingo-vocab",
-     "declension": {
-      "ms": "ַאחֵר",
-      "mp": "אֲחֵרִים",
-      "fs": "ַאחֵרֶת",
-      "fp": "אֲחֵרֹות"
-     }
+     "source": "duolingo-vocab"
     },
     {
      "id": "u27-032",
@@ -26997,9 +26987,9 @@
      "unit": 29,
      "unitName": "Adverbs",
      "category": "other",
-     "pos": "adjective",
+     "pos": "noun",
      "english": "Later, Afterwards",
-     "gender": "m",
+     "gender": null,
      "genderSource": null,
      "binyan": null,
      "root": null,
@@ -27008,7 +26998,8 @@
        "slot": "singular",
        "translit": "akhar",
        "hebrew": "אחר",
-       "nikkud": "ַאחֵר"
+       "nikkud": "אַחַר",
+       "nikkudAuto": true
       },
       {
        "slot": "plural",
@@ -27018,13 +27009,7 @@
        "nikkudAuto": true
       }
      ],
-     "source": "duolingo-vocab",
-     "declension": {
-      "ms": "ַאחֵר",
-      "mp": "אֲחֵרִים",
-      "fs": "ַאחֵרֶת",
-      "fp": "אֲחֵרֹות"
-     }
+     "source": "duolingo-vocab"
     },
     {
      "id": "u29-024",
@@ -36703,9 +36688,9 @@
      "unit": 39,
      "unitName": "Modals",
      "category": "grammar",
-     "pos": "adjective",
+     "pos": "noun",
      "english": "Might, May",
-     "gender": "m",
+     "gender": null,
      "genderSource": null,
      "binyan": null,
      "root": null,
@@ -36714,16 +36699,11 @@
        "slot": "singular",
        "translit": "asuy",
        "hebrew": "עשוי",
-       "nikkud": "עָׂשּוי"
+       "nikkud": "עָשׂוּי",
+       "nikkudAuto": true
       }
      ],
-     "source": "duolingo-vocab",
-     "declension": {
-      "ms": "עָׂשּוי",
-      "mp": "עָׂשּויִים",
-      "fs": "עָׂשּויָה",
-      "fp": "עָׂשּויֹות"
-     }
+     "source": "duolingo-vocab"
     },
     {
      "id": "u39-006",
@@ -61569,9 +61549,9 @@
      "unit": 55,
      "unitName": "Nature",
      "category": "weather",
-     "pos": "adjective",
+     "pos": "noun",
      "english": "Heat, Warmth",
-     "gender": "m",
+     "gender": null,
      "genderSource": null,
      "binyan": null,
      "root": null,
@@ -61580,16 +61560,11 @@
        "slot": "singular",
        "translit": "khom",
        "hebrew": "חום",
-       "nikkud": "חּום"
+       "nikkud": "חֹם",
+       "nikkudAuto": true
       }
      ],
-     "source": "duolingo-vocab",
-     "declension": {
-      "ms": "חּום",
-      "mp": "חּומִים",
-      "fs": "חּומָה",
-      "fp": "חּומֹות"
-     }
+     "source": "duolingo-vocab"
     },
     {
      "id": "u55-023",
@@ -70401,7 +70376,7 @@
      "unit": 68,
      "unitName": "Religion",
      "category": "other",
-     "pos": "adjective",
+     "pos": "noun",
      "english": "Jew",
      "gender": "m",
      "genderSource": "plural-ending",
@@ -70412,7 +70387,8 @@
        "slot": "singular",
        "translit": "y'hudi",
        "hebrew": "יהודי",
-       "nikkud": "יְהּודִי"
+       "nikkud": "יְהוּדִי",
+       "nikkudAuto": true
       },
       {
        "slot": "plural",
@@ -70422,13 +70398,7 @@
        "nikkudAuto": true
       }
      ],
-     "source": "duolingo-vocab",
-     "declension": {
-      "ms": "יְהּודִי",
-      "mp": "יְהּודִיִים",
-      "fs": "יְהּודִית",
-      "fp": "יְהּודִיֹות"
-     }
+     "source": "duolingo-vocab"
     },
     {
      "id": "u68-003",

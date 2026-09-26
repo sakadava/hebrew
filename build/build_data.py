@@ -33,6 +33,18 @@ def strip_nikkud(s):
     return NIKKUD_RE.sub("", s or "").replace("‎", "").replace("‏", "").strip()
 
 
+_EN_STOP = {"a", "an", "the", "to", "of", "or", "and", "is", "it", "m", "f", "s", "p", "pres"}
+
+
+def en_words(s):
+    s = re.sub(r"\(.*?\)", "", (s or "").lower())
+    return {w for w in re.split(r"[^a-z]+", s) if len(w) > 2 and w not in _EN_STOP}
+
+
+def en_overlap(a, b):
+    return bool(en_words(a) & en_words(b))
+
+
 def category_for(name):
     n = name.lower()
     tbl = [
@@ -104,10 +116,12 @@ def build():
                     "genderSource": e.get("genderSource"), "binyan": None, "root": None,
                     "forms": forms, "source": "duolingo-vocab",
                 }
-                # try to attach adjective declension + nikkud
+                # try to attach adjective declension + nikkud — but only when the English
+                # glosses overlap too, so homographs (e.g. noun "Oil" שמן vs adjective
+                # "fat" שמן) don't get wrongly declined by gender.
                 skel = strip_nikkud(forms[0]["hebrew"])
                 match = adj_by_skel.get(skel)
-                if match:
+                if match and en_overlap(item["english"], match["english"]):
                     item["pos"] = "adjective"
                     item["gender"] = item["gender"] or "m"
                     item["declension"] = match["forms"]
