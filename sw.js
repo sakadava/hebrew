@@ -2,7 +2,7 @@
  * Bump CACHE when you want clients to drop old cached files on next launch.
  * Only registered over http/https (see index.html) — never on file://.
  */
-const CACHE = "ivrit-v1";
+const CACHE = "ivrit-v2";
 const ASSETS = [
   "./", "./index.html", "./styles.css", "./app.js", "./sentences.js", "./grammar.js",
   "./data/vocab.js", "./manifest.webmanifest",

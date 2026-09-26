@@ -208,8 +208,18 @@
     } finally { if (t) clearTimeout(t); }
   }
   // Quick availability probe used to decide whether to offer the AI feature at all.
+  // IMPORTANT: only reach for a local LLM when it could plausibly exist, otherwise a phone /
+  // public HTTPS site would fire the browser's "local network access" prompt (and mixed-content
+  // block) for nothing. So: only probe when the page itself is served from localhost, OR the
+  // user has explicitly configured a custom endpoint in AI settings (an opt-in advanced case).
+  function aiProbeAllowed() {
+    if (location.protocol === "file:") return false;
+    const h = location.hostname;
+    if (h === "localhost" || h === "127.0.0.1" || h === "[::1]") return true;
+    return !!localStorage.getItem("ollamaEndpoint");   // user deliberately set one
+  }
   async function probeOllama() {
-    if (location.protocol === "file:") return false;   // a file:// page can't reach Ollama
+    if (!aiProbeAllowed()) return false;
     try { const m = await ollamaTest(2500); return m.length > 0; } catch { return false; }
   }
   function wordMenu(b, n) {
