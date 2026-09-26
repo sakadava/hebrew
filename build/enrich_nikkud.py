@@ -116,8 +116,54 @@ def main():
                         f["nikkud"] = nk
                         f["nikkudAuto"] = True
                         applied += 1
+
+    # Fix lamed-he present verbs: ms and fs share the unpointed spelling (e.g. שותה), so the
+    # cache (keyed by unpointed text) gives them the SAME vocalisation. But the vowel before
+    # the final ה differs by gender: masculine = segol (…ֶה, "-eh"), feminine = kamatz (…ָה, "-ah").
+    fixed = fix_he_final_verbs(data)
+
     DATA.write_text(json.dumps(data, ensure_ascii=False, indent=1), encoding="utf-8")
-    print(f"applied nikkud to {applied} forms", file=sys.stderr)
+    print(f"applied nikkud to {applied} forms; gender-fixed {fixed} lamed-he forms", file=sys.stderr)
+
+
+HE = 0x05D4
+SEGOL, KAMATZ = "ֶ", "ָ"
+VOWELS = set(range(0x05B0, 0x05BC)) | {0x05C7}          # nikkud vowel marks
+STRUCT = {0x05BC, 0x05C1, 0x05C2}                        # dagesh, shin-dot, sin-dot (keep)
+
+
+def set_final_he_vowel(nik, target):
+    """Set the vowel on the consonant immediately before a final ה to `target`."""
+    if not nik:
+        return nik
+    chars = list(nik)
+    bases = [i for i, c in enumerate(chars) if 0x05D0 <= ord(c) <= 0x05EA]
+    if len(bases) < 2 or ord(chars[bases[-1]]) != HE:
+        return nik
+    pen, he = bases[-2], bases[-1]
+    keep = [chars[i] for i in range(pen + 1, he) if ord(chars[i]) in STRUCT]
+    return "".join(chars[:pen + 1] + keep + [target] + chars[he:])
+
+
+def fix_he_final_verbs(data):
+    n = 0
+    for u in data["units"]:
+        for e in u["entries"]:
+            if e.get("pos") != "verb":
+                continue
+            for f in e["forms"]:
+                if f["slot"] not in ("ms", "fs"):
+                    continue
+                # only lamed-he present forms (consonantal spelling ends in ה)
+                cons = NIKKUD_RE.sub("", f["hebrew"])
+                if not cons.endswith("ה"):
+                    continue
+                target = SEGOL if f["slot"] == "ms" else KAMATZ
+                new = set_final_he_vowel(f.get("nikkud") or f["hebrew"], target)
+                if new != f.get("nikkud"):
+                    f["nikkud"] = new
+                    n += 1
+    return n
 
 
 if __name__ == "__main__":

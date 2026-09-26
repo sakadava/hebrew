@@ -1048,7 +1048,7 @@ window.VOCAB = {
        "slot": "fs",
        "translit": "ro'ah",
        "hebrew": "רואה",
-       "nikkud": "רוֹאֶה",
+       "nikkud": "רוֹאָה",
        "nikkudAuto": true
       },
       {
@@ -1098,7 +1098,7 @@ window.VOCAB = {
        "slot": "fs",
        "translit": "shotah",
        "hebrew": "שותה",
-       "nikkud": "שׁוֹתֶה",
+       "nikkud": "שׁוֹתָה",
        "nikkudAuto": true
       },
       {
@@ -1648,7 +1648,7 @@ window.VOCAB = {
        "slot": "fs",
        "translit": "rotzah",
        "hebrew": "רוצה",
-       "nikkud": "רוֹצֶה",
+       "nikkud": "רוֹצָה",
        "nikkudAuto": true
       },
       {
@@ -8424,7 +8424,7 @@ window.VOCAB = {
        "slot": "ms",
        "translit": "ofeh",
        "hebrew": "אופה",
-       "nikkud": "אוֹפָה",
+       "nikkud": "אוֹפֶה",
        "nikkudAuto": true
       },
       {
@@ -9585,7 +9585,7 @@ window.VOCAB = {
        "slot": "ms",
        "translit": "sokheh",
        "hebrew": "שוחה",
-       "nikkud": "שׂוֹחָה",
+       "nikkud": "שׂוֹחֶה",
        "nikkudAuto": true
       },
       {
@@ -9842,7 +9842,7 @@ window.VOCAB = {
        "slot": "fs",
        "translit": "osah",
        "hebrew": "עושה",
-       "nikkud": "עוֹשֶׂה",
+       "nikkud": "עוֹשָׂה",
        "nikkudAuto": true
       },
       {
@@ -10192,7 +10192,7 @@ window.VOCAB = {
        "slot": "fs",
        "translit": "konah",
        "hebrew": "קונה",
-       "nikkud": "קוֹנֶה",
+       "nikkud": "קוֹנָה",
        "nikkudAuto": true
       },
       {
@@ -11872,7 +11872,7 @@ window.VOCAB = {
        "slot": "fs",
        "translit": "tzofah",
        "hebrew": "צוֹפה",
-       "nikkud": "צוֹפֶה",
+       "nikkud": "צוֹפָה",
        "nikkudAuto": true
       },
       {
@@ -11972,7 +11972,7 @@ window.VOCAB = {
        "slot": "fs",
        "translit": "bohah",
        "hebrew": "בוהה",
-       "nikkud": "בּוֹהֶה",
+       "nikkud": "בּוֹהָה",
        "nikkudAuto": true
       },
       {
@@ -12475,7 +12475,7 @@ window.VOCAB = {
        "slot": "ms",
        "translit": "oneh",
        "hebrew": "עונה",
-       "nikkud": "עוֹנָה",
+       "nikkud": "עוֹנֶה",
        "nikkudAuto": true
       },
       {
@@ -14671,7 +14671,7 @@ window.VOCAB = {
        "slot": "ms",
        "translit": "oneh",
        "hebrew": "עונה",
-       "nikkud": "עוֹנָה",
+       "nikkud": "עוֹנֶה",
        "completed": true,
        "nikkudAuto": true
       },
@@ -17649,7 +17649,7 @@ window.VOCAB = {
        "slot": "ms",
        "translit": "m'shaneh",
        "hebrew": "משנה",
-       "nikkud": "מִשְׁנָה",
+       "nikkud": "מִשְׁנֶה",
        "nikkudAuto": true
       },
       {
@@ -17706,7 +17706,7 @@ window.VOCAB = {
        "slot": "fs",
        "translit": "m'nasah",
        "hebrew": "מנסה",
-       "nikkud": "מְנַסֶּה",
+       "nikkud": "מְנַסָּה",
        "nikkudAuto": true
       },
       {
@@ -17756,7 +17756,7 @@ window.VOCAB = {
        "slot": "fs",
        "translit": "m'kavah",
        "hebrew": "מקווה",
-       "nikkud": "מְקַוֶּה",
+       "nikkud": "מְקַוָּה",
        "nikkudAuto": true
       },
       {
@@ -18856,7 +18856,7 @@ window.VOCAB = {
        "slot": "fs",
        "translit": "m'khakah",
        "hebrew": "מחכה",
-       "nikkud": "מְחַכֶּה",
+       "nikkud": "מְחַכָּה",
        "nikkudAuto": true
       },
       {
@@ -19306,7 +19306,7 @@ window.VOCAB = {
        "slot": "fs",
        "translit": "m'galah",
        "hebrew": "מגלה",
-       "nikkud": "מְגַלֶּה",
+       "nikkud": "מְגַלָּה",
        "nikkudAuto": true
       },
       {
@@ -26876,7 +26876,7 @@ window.VOCAB = {
        "slot": "ms",
        "translit": "sokheh",
        "hebrew": "שוחה",
-       "nikkud": "שׂוֹחָה",
+       "nikkud": "שׂוֹחֶה",
        "completed": true,
        "nikkudAuto": true
       },
@@ -26960,7 +26960,7 @@ window.VOCAB = {
        "slot": "fs",
        "translit": "ro'ah",
        "hebrew": "רואה",
-       "nikkud": "רוֹאֶה",
+       "nikkud": "רוֹאָה",
        "completed": true,
        "nikkudAuto": true
       },
@@ -27284,7 +27284,7 @@ window.VOCAB = {
        "slot": "fs",
        "translit": "osah",
        "hebrew": "עושה",
-       "nikkud": "עוֹשֶׂה",
+       "nikkud": "עוֹשָׂה",
        "completed": true,
        "nikkudAuto": true
       },
@@ -27436,7 +27436,7 @@ window.VOCAB = {
        "slot": "fs",
        "translit": "shotah",
        "hebrew": "שותה",
-       "nikkud": "שׁוֹתֶה",
+       "nikkud": "שׁוֹתָה",
        "completed": true,
        "nikkudAuto": true
       },
@@ -27966,7 +27966,7 @@ window.VOCAB = {
        "slot": "fs",
        "translit": "konah",
        "hebrew": "קונה",
-       "nikkud": "קוֹנֶה",
+       "nikkud": "קוֹנָה",
        "completed": true,
        "nikkudAuto": true
       },
@@ -33566,7 +33566,7 @@ window.VOCAB = {
        "slot": "ms",
        "translit": "m'shaneh",
        "hebrew": "משנה",
-       "nikkud": "מִשְׁנָה",
+       "nikkud": "מִשְׁנֶה",
        "completed": true,
        "nikkudAuto": true
       },
@@ -60886,7 +60886,7 @@ window.VOCAB = {
        "slot": "fs",
        "translit": "tzofah",
        "hebrew": "צוֹפה",
-       "nikkud": "צוֹפֶה",
+       "nikkud": "צוֹפָה",
        "completed": true,
        "nikkudAuto": true
       },
@@ -63366,7 +63366,7 @@ window.VOCAB = {
        "slot": "ms",
        "translit": "oneh",
        "hebrew": "עונה",
-       "nikkud": "עוֹנָה",
+       "nikkud": "עוֹנֶה",
        "completed": true,
        "nikkudAuto": true
       },
@@ -63690,7 +63690,7 @@ window.VOCAB = {
        "slot": "fs",
        "translit": "m'khakah",
        "hebrew": "מחכה",
-       "nikkud": "מְחַכֶּה",
+       "nikkud": "מְחַכָּה",
        "completed": true,
        "nikkudAuto": true
       },
@@ -70877,7 +70877,7 @@ window.VOCAB = {
        "slot": "ms",
        "translit": "ma'aleh",
        "hebrew": "מעלה",
-       "nikkud": "מַעֲלָה",
+       "nikkud": "מַעֲלֶה",
        "nikkudAuto": true
       },
       {
@@ -70934,7 +70934,7 @@ window.VOCAB = {
        "slot": "fs",
        "translit": "m'khabah",
        "hebrew": "מכבה",
-       "nikkud": "מְכַבֶּה",
+       "nikkud": "מְכַבָּה",
        "nikkudAuto": true
       },
       {

@@ -175,8 +175,8 @@ function renderGrammar() {
         <p class="gram-text">Every Hebrew verb lives in one of seven <b>binyanim</b> (patterns). They mostly encode <i>voice</i>: active vs passive, simple vs intensive vs causative vs reflexive. This is the label you see beside each verb.</p>
         <div class="gram-grid">${binyanCards}</div>`)}
 
-      ${grammarSection("Gender &amp; number — the regular patterns", genderBody)}
-      ${grammarSection("Irregular gender &amp; weak roots", irregBody)}
+      ${grammarSection("Gender & number — the regular patterns", genderBody)}
+      ${grammarSection("Irregular gender & weak roots", irregBody)}
     </div>`;
   bindSay(app);
 }

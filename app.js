@@ -827,6 +827,14 @@ function buildSentDeck() {
 
 function fetchAISentences() {
   const Sx = window.Sentences;
+  // Ollama rejects file:// pages (null origin) before we even try — skip the doomed request
+  // and show a friendly, actionable note instead of a network error.
+  if (location.protocol === "file:") {
+    senti.loadingAI = false;
+    senti.aiError = "AI needs to run over http (Ollama won't accept a file:// page). Double-click serve.command in this folder — it opens the app at a localhost URL where AI works. Everything else works fine here.";
+    if (view === "sentences") renderSentences();
+    return;
+  }
   senti.loadingAI = true; senti.aiError = "";
   const scope = Sx.scopeEntries(currentUnit);
   Sx.ollamaBatch(scope, 8).then(list => {
@@ -840,9 +848,7 @@ function fetchAISentences() {
   }).catch(err => {
     senti.loadingAI = false;
     senti.aiError = /Failed to fetch|NetworkError|load failed/i.test(err.message)
-      ? (location.protocol === "file:"
-          ? "Ollama blocks file:// pages. Easiest fix: run  python3 -m http.server  in this folder and open http://localhost:8000 — then AI works with no Ollama changes."
-          : "Couldn't reach Ollama. Is it running? Check the endpoint in AI settings.")
+      ? "Couldn't reach Ollama at " + Sx.cfg().endpoint + ". Is it running? (`ollama serve`) — check the endpoint in AI settings."
       : err.message;
     if (view === "sentences") renderSentences();
   });
@@ -882,7 +888,7 @@ function renderSentences() {
         <button class="btn" id="ollTest">Test</button>
         <span id="ollTestOut" class="muted"></span>
       </div>
-      <p class="muted" style="font-size:12px;margin-bottom:0">For AI, serve this folder over http (run <code>python3 -m http.server</code> here and open <code>http://localhost:8000</code>) — Ollama allows localhost with no changes. A <code>file://</code> page is blocked unless you run <code>OLLAMA_ORIGINS='*' ollama serve</code>. AI sentences only use in-scope words, but <b>grammar is not guaranteed</b> — treat them as drafts.</p>
+      <p class="muted" style="font-size:12px;margin-bottom:0">AI needs the app served over http. Easiest: double-click <code>serve.command</code> in this folder — it opens a <code>localhost</code> URL (Ollama allows localhost automatically). A plain <code>file://</code> page is blocked. AI sentences only use in-scope words, but <b>grammar is not guaranteed</b> — treat them as drafts.</p>
     </div>` : "";
 
   const s = senti.deck[senti.i];
