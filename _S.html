@@ -1,0 +1,18 @@
+<!DOCTYPE html><html><head><meta charset="utf-8"><link rel="stylesheet" href="styles.css"></head><body>
+<header class="topbar"><div class="brand" id="homeBtn">x</div><button class="hamburger" id="hamburger">☰</button><div class="menu" id="menu"><nav class="tabs"><button data-view="lesson" class="active"></button><button data-view="learn"></button><button data-view="sentences"></button><button data-view="grammar"></button><button data-view="browse"></button><button data-view="patterns"></button><button data-view="import"></button></nav><div class="settings"><label class="chk"><input type="checkbox" id="tNikkud" checked></label><label class="chk"><input type="checkbox" id="tTranslit" checked></label><label class="chk"><input type="checkbox" id="tEnglish" checked></label><select id="voiceSelect"></select></div></div></header>
+<main id="app"></main><div id="toast" class="toast"></div><pre id="R"></pre>
+<script src="data/vocab.js"></script><script src="app.js"></script><script src="sentences.js"></script><script src="grammar.js"></script>
+<script>
+const out=[];
+lessonUnit=8; setView('lesson');
+out.push('page height='+document.body.scrollHeight+' viewport='+window.innerHeight);
+window.scrollTo(0, 1200);
+out.push('scrolled to 1200 -> actual scrollY='+Math.round(window.scrollY));
+// find a trigger currently visible in viewport (below the fold, near current scroll)
+const trigs=[...document.querySelectorAll('#lessonMasonry .type-trigger')];
+const vis=trigs.find(t=>{const r=t.getBoundingClientRect(); return r.top>50 && r.top<window.innerHeight;}) || trigs[trigs.length-1];
+const before=window.scrollY;
+vis.dispatchEvent(new MouseEvent('click',{bubbles:true}));
+out.push('clicked a visible trigger; scrollY before='+Math.round(before)+' after='+Math.round(window.scrollY)+' (jumpedToTop='+(window.scrollY<50 && before>=1000)+')');
+document.getElementById('R').textContent=out.join('\n');
+</script></body></html>

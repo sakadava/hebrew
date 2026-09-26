@@ -172,9 +172,16 @@ function makeTypeBox(ans, lang, onDone) {
   input.addEventListener("keydown", ev => {
     ev.stopPropagation();
     if (ev.key === "Enter") { ev.preventDefault(); check(); }
-    else if (ev.key === "Escape") { box.remove(); if (view === "lesson") relayoutLesson(); }
+    else if (ev.key === "Escape") { keepScroll(() => { box.remove(); if (view === "lesson") relayoutLesson(); }); }
   });
-  return { box, focus: () => input.focus() };
+  return { box, focus: () => input.focus({ preventScroll: true }) };
+}
+// Run fn without the page jumping — the masonry relayout can momentarily shrink the grid and
+// make the browser clamp the scroll position (e.g. back to the top).
+function keepScroll(fn) {
+  const y = window.scrollY;
+  fn();
+  window.scrollTo(0, y);
 }
 // One delegated listener toggles a type box for any ⌨ trigger. Inside a lesson card the box
 // is appended at the card's bottom (full width, never clipped by the dense grid cells);
@@ -183,17 +190,19 @@ document.addEventListener("click", ev => {
   const t = ev.target.closest(".type-trigger");
   if (!t) return;
   ev.stopPropagation(); ev.preventDefault();
-  const open = document.querySelector(".type-box");
-  const wasThis = open && open._owner === t;
-  document.querySelectorAll(".type-box").forEach(b => b.remove());
-  if (wasThis) { if (view === "lesson") relayoutLesson(); return; }
-  const { box, focus } = makeTypeBox(t.dataset.ans, t.dataset.lang);
-  box._owner = t;
-  const card = t.closest(".le-card");
-  if (card) { box.classList.add("type-box-block"); card.appendChild(box); }
-  else { t.after(box); }
-  focus();
-  if (view === "lesson") relayoutLesson();
+  keepScroll(() => {
+    const open = document.querySelector(".type-box");
+    const wasThis = open && open._owner === t;
+    document.querySelectorAll(".type-box").forEach(b => b.remove());
+    if (wasThis) { if (view === "lesson") relayoutLesson(); return; }
+    const { box, focus } = makeTypeBox(t.dataset.ans, t.dataset.lang);
+    box._owner = t;
+    const card = t.closest(".le-card");
+    if (card) { box.classList.add("type-box-block"); card.appendChild(box); }
+    else { t.after(box); }
+    focus();
+    if (view === "lesson") relayoutLesson();
+  });
 });
 // Speak a list of Hebrew strings one after another (uses the built-in queue).
 function speakSequence(texts) {
