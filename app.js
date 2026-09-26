@@ -118,12 +118,83 @@ function esc(s) { return (s || "").replace(/[&<>]/g, c => ({ "&": "&amp;", "<": 
 function escAttr(s) { return (s || "").replace(/[&<>"']/g, c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c])); }
 // A Hebrew table cell that speaks its form when clicked.
 function sayCell(text, sayText) {
-  return `<td class="heb hebrew say" data-say="${escAttr(sayText || text)}" title="Click to hear">${esc(text)} <span class="mini-speak">🔊</span></td>`;
+  return `<td class="heb hebrew say" data-say="${escAttr(sayText || text)}" title="Click to hear">${esc(text)} <span class="mini-speak">🔊</span>${typeGlyph(stripN(sayText || text), "he")}</td>`;
 }
 // Wire every .say element under root to speak its data-say text on click.
 function bindSay(root) {
-  root.querySelectorAll(".say").forEach(el => el.onclick = ev => { ev.stopPropagation(); speak(el.dataset.say); });
+  root.querySelectorAll(".say").forEach(el => el.onclick = ev => {
+    if (ev.target.closest(".type-trigger, .type-box")) return;  // let the type widget handle its own clicks
+    ev.stopPropagation(); speak(el.dataset.say);
+  });
 }
+
+// ---------- Type-to-check widget (a ⌨ that mirrors the 🔊) ----------
+const FINALS = { "ך": "כ", "ם": "מ", "ן": "נ", "ף": "פ", "ץ": "צ" };
+function normHe(s) {
+  s = (s || "").replace(/[֑-ׇ]/g, "").replace(/[‎‏‪-‮]/g, "");
+  s = [...s].map(c => FINALS[c] || c).filter(c => /[א-ת ]/.test(c)).join("");
+  return s.replace(/\s+/g, " ").trim();
+}
+function normEn(s) {
+  return (s || "").toLowerCase().replace(/\(.*?\)/g, " ").replace(/[^a-z ]/g, " ")
+    .replace(/\b(to|a|an|the)\b/g, " ").replace(/\s+/g, " ").trim();
+}
+function matchAnswer(input, ans, lang) {
+  if (lang === "he") { const i = normHe(input); return i !== "" && i === normHe(ans); }
+  const opts = (ans || "").split(/[;,/]/).map(normEn).filter(Boolean);
+  const i = normEn(input);
+  return i !== "" && opts.includes(i);
+}
+// ⌨ trigger markup — answer is what you must type, lang is "he" or "en"
+function typeGlyph(answer, lang) {
+  return `<span class="type-trigger" role="button" tabindex="0" title="Type it to check" data-ans="${escAttr(answer)}" data-lang="${lang}">⌨</span>`;
+}
+function makeTypeBox(ans, lang, onDone) {
+  const box = document.createElement("span");
+  box.className = "type-box";
+  box.innerHTML = `<input class="type-in" dir="${lang === "he" ? "rtl" : "ltr"}" placeholder="${lang === "he" ? "הקלד/י…" : "type…"}" autocomplete="off" autocorrect="off" spellcheck="false"><button class="type-check" title="Check (Enter)">✓</button><button class="type-reveal" title="Reveal answer">👁</button><span class="type-fb"></span>`;
+  const input = box.querySelector(".type-in");
+  const fb = box.querySelector(".type-fb");
+  const answerHtml = `<span class="ans ${lang === "he" ? "hebrew" : ""}">${esc(ans)}</span>`;
+  const check = () => {
+    const ok = matchAnswer(input.value, ans, lang);
+    input.classList.toggle("ok", ok); input.classList.toggle("bad", !ok);
+    fb.className = "type-fb " + (ok ? "ok" : "bad");
+    fb.innerHTML = ok ? "✓ correct" : `✗ ${answerHtml}`;   // wrong shows the answer; your text stays
+    if (ok && onDone) onDone();
+  };
+  const reveal = () => {
+    fb.className = "type-fb reveal";
+    fb.innerHTML = `answer: ${answerHtml}`;                 // shows answer, leaves your typing untouched
+  };
+  box.querySelector(".type-check").onclick = check;
+  box.querySelector(".type-reveal").onclick = reveal;
+  input.addEventListener("keydown", ev => {
+    ev.stopPropagation();
+    if (ev.key === "Enter") { ev.preventDefault(); check(); }
+    else if (ev.key === "Escape") { box.remove(); if (view === "lesson") relayoutLesson(); }
+  });
+  return { box, focus: () => input.focus() };
+}
+// One delegated listener toggles a type box for any ⌨ trigger. Inside a lesson card the box
+// is appended at the card's bottom (full width, never clipped by the dense grid cells);
+// elsewhere (flashcard/sentence prompts) it opens inline next to the icon.
+document.addEventListener("click", ev => {
+  const t = ev.target.closest(".type-trigger");
+  if (!t) return;
+  ev.stopPropagation(); ev.preventDefault();
+  const open = document.querySelector(".type-box");
+  const wasThis = open && open._owner === t;
+  document.querySelectorAll(".type-box").forEach(b => b.remove());
+  if (wasThis) { if (view === "lesson") relayoutLesson(); return; }
+  const { box, focus } = makeTypeBox(t.dataset.ans, t.dataset.lang);
+  box._owner = t;
+  const card = t.closest(".le-card");
+  if (card) { box.classList.add("type-box-block"); card.appendChild(box); }
+  else { t.after(box); }
+  focus();
+  if (view === "lesson") relayoutLesson();
+});
 // Speak a list of Hebrew strings one after another (uses the built-in queue).
 function speakSequence(texts) {
   if (!("speechSynthesis" in window)) return;
@@ -312,7 +383,7 @@ function translitFromNikkud(s) {
 function gridCell(nik, tr) {
   if (!nik) return "<td></td>";
   const t = toggles.translit ? (tr || translitFromNikkud(nik)) : "";
-  return `<td class="heb hebrew say" data-say="${escAttr(nik)}" title="Click to hear">${esc(dispHeb(nik))} <span class="mini-speak">🔊</span>${t ? `<div class="translit">${esc(t)}</div>` : ""}</td>`;
+  return `<td class="heb hebrew say" data-say="${escAttr(nik)}" title="Click to hear">${esc(dispHeb(nik))} <span class="mini-speak">🔊</span>${typeGlyph(stripN(nik), "he")}${t ? `<div class="translit">${esc(t)}</div>` : ""}</td>`;
 }
 function grid2x2(map) {
   return `<table class="formtable">
@@ -371,6 +442,9 @@ function renderSession() {
     front = `<div class="big-en">${esc(e.english)}</div>`;
     back = `<div class="big-heb hebrew">${esc(hebOf(f))}</div>${toggles.translit ? `<div class="translit">${esc(f.translit)}</div>` : ""}`;
   }
+  // Front gets a "type the answer" option: HE→EN → type English; otherwise → type Hebrew.
+  const tAns = s.mode === "he2en" ? [e.english, "en"] : [stripN(f.hebrew), "he"];
+  front += `<div class="type-prompt"><span class="hint">or type the answer</span> ${typeGlyph(tAns[0], tAns[1])}</div>`;
   const auto = f.nikkudAuto && toggles.nikkud ? `<div class="auto-note">nikkud auto-generated — may need a human check</div>` : "";
   const extra = s.flipped ? conjTable(e) : "";
   app.innerHTML = `
@@ -395,6 +469,7 @@ function renderSession() {
 
   const flip = () => { s.flipped = true; renderSession(); if (s.mode !== "he2en") speakForm(e); };
   document.getElementById("flash").onclick = ev => {
+    if (ev.target.closest(".type-trigger, .type-box")) return;   // typing widget handles itself
     const cell = ev.target.closest(".say");
     if (cell) { ev.stopPropagation(); speak(cell.dataset.say); return; }
     if (ev.target.closest("#speak,#playFront")) return;
@@ -430,12 +505,12 @@ function lineForm(slot, f) {
   return `<div class="le-line">
     <span class="le-slot">${SLOT_LABEL[slot] || slot}</span>
     <span class="heb hebrew say" data-say="${escAttr(f.nikkud || f.hebrew)}" title="Click to hear">${esc(hebOf(f))} <span class="mini-speak">🔊</span></span>
-    ${t}
+    ${typeGlyph(stripN(f.hebrew), "he")}${t}
   </div>`;
 }
 
 function lessonEntry(e) {
-  const head = `<div class="le-head"><span class="le-en">${esc(e.english)}</span>${genderPill(e)}</div>`;
+  const head = `<div class="le-head"><span class="le-en">${esc(e.english)}</span>${typeGlyph(stripN(primaryForm(e).hebrew), "he")}${genderPill(e)}</div>`;
   const table = conjTable(e); // conjugations (verbs), declension (adj), or sing/plural (nouns)
   let primary = "";
   if (e.pos === "verb") {
@@ -455,7 +530,7 @@ function pronInner(map, key, en) {
   if (e) {
     const f = e.forms[0]; const nik = f.nikkud || f.hebrew;
     const tr = toggles.translit ? `<div class="translit">${esc(f.translit || translitFromNikkud(nik))}</div>` : "";
-    return { cls: "heb hebrew say pron-cell", say: nik, html: `${esc(dispHeb(nik))} <span class="mini-speak">🔊</span>${tr}<div class="pron-en">${esc(en)}</div>` };
+    return { cls: "heb hebrew say pron-cell", say: nik, html: `${esc(dispHeb(nik))} <span class="mini-speak">🔊</span>${typeGlyph(stripN(nik), "he")}${tr}<div class="pron-en">${esc(en)}</div>` };
   }
   return { cls: "pron-empty", say: null, html: `<div class="pron-en">${esc(en)}</div>` };
 }
@@ -916,7 +991,9 @@ function renderSentences() {
           ${prompt}
           ${senti.revealed ? `<hr style="width:60%;border-color:var(--line)">${answer}
             <button class="speakbtn" id="sspeak">🔊</button>
-            <div class="breakdown">${sentWordBreakdown(s)}</div>` : `<div class="hint">click or press space to reveal</div>`}
+            <div class="breakdown">${sentWordBreakdown(s)}</div>`
+        : `<div class="type-prompt"><span class="hint">type your translation</span> ${dir === "he2en" ? typeGlyph(s.en, "en") : typeGlyph(stripN(s.he), "he")}</div>
+           <div class="hint">or click / press space to reveal</div>`}
         </div>
         <div class="row" style="justify-content:center">
           ${senti.revealed
@@ -966,7 +1043,7 @@ function renderSentences() {
   }
   const reveal = () => { senti.revealed = true; renderSentences(); if (senti.deck[senti.i]) speak(senti.deck[senti.i].heNikkud || senti.deck[senti.i].he); };
   const next = () => { senti.i = (senti.i + 1) % senti.deck.length; senti.revealed = false; renderSentences(); };
-  const sf = document.getElementById("sflash"); if (sf) sf.onclick = () => { if (!senti.revealed) reveal(); };
+  const sf = document.getElementById("sflash"); if (sf) sf.onclick = ev => { if (ev.target.closest(".type-trigger, .type-box")) return; if (!senti.revealed) reveal(); };
   const rv = document.getElementById("sreveal"); if (rv) rv.onclick = reveal;
   const nx = document.getElementById("snext"); if (nx) nx.onclick = next;
   for (const id of ["sspeak", "sspeak2"]) { const el = document.getElementById(id); if (el) el.onclick = ev => { ev.stopPropagation(); const c = senti.deck[senti.i]; speak(c.heNikkud || c.he); }; }
