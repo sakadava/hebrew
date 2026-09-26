@@ -703,29 +703,71 @@ window.addEventListener("orientationchange", () => { if (view === "lesson") setT
 
 // ================= BROWSE =================
 let browseUnit = null;
+let browseFilters = { pos: "all", gender: "all", binyan: "all" };
 let browseSort = { key: "english", dir: 1 };
+const POS_PLURAL = { noun: "Nouns", verb: "Verbs", adjective: "Adjectives", pronoun: "Pronouns", phrase: "Phrases", other: "Other" };
+
 function renderBrowse() {
   if (browseUnit === null) { renderUnitGrid(); return; }
   const u = UNITS.find(x => x.index === browseUnit);
-  const rows = [...u.entries].sort((a, b) => {
-    const av = a.english.toLowerCase(), bv = b.english.toLowerCase();
-    return (av < bv ? -1 : av > bv ? 1 : 0) * browseSort.dir;
-  });
+  const F = browseFilters;
+
+  // Build the available facets from what's actually in this unit.
+  const posCount = {}; for (const e of u.entries) posCount[e.pos] = (posCount[e.pos] || 0) + 1;
+  const posOpts = ["noun", "verb", "adjective", "pronoun", "phrase", "other"]
+    .filter(p => posCount[p]).map(p => [p, POS_PLURAL[p] || p, posCount[p]]);
+  const genCount = { m: 0, f: 0 }; for (const e of u.entries) if (e.gender) genCount[e.gender]++;
+  const genOpts = [["m", "Masculine", genCount.m], ["f", "Feminine", genCount.f]].filter(o => o[2]);
+  const binCount = {}; for (const e of u.entries) if (e.pos === "verb" && e.binyan) binCount[e.binyan] = (binCount[e.binyan] || 0) + 1;
+  const binOpts = Object.keys(binCount).sort().map(b => [b, b, binCount[b]]);
+
+  const facets = [["pos", "Type", posOpts]];
+  if (genOpts.length) facets.push(["gender", "Gender", genOpts]);
+  if (binOpts.length > 1) facets.push(["binyan", "Binyan", binOpts]);
+  // drop any active filter value that isn't present in this unit
+  for (const [key, , opts] of facets) if (F[key] !== "all" && !opts.some(o => o[0] === F[key])) F[key] = "all";
+  // hidden facets reset to all
+  if (!genOpts.length) F.gender = "all";
+  if (binOpts.length <= 1) F.binyan = "all";
+
+  const chip = (facet, val, label, cnt) =>
+    `<div class="chip ${F[facet] === val ? "on" : ""}" data-facet="${facet}" data-val="${val}">${esc(label)}${cnt != null ? `<span class="cnt">${cnt}</span>` : ""}</div>`;
+  const facetRows = facets.map(([key, label, opts]) => `
+    <div class="filter-row">
+      <span class="filter-label">${label}</span>
+      <div class="chipbox">${chip(key, "all", "All")}${opts.map(o => chip(key, o[0], o[1], o[2])).join("")}</div>
+    </div>`).join("");
+
+  const rows = [...u.entries]
+    .filter(e => (F.pos === "all" || e.pos === F.pos)
+      && (F.gender === "all" || e.gender === F.gender)
+      && (F.binyan === "all" || e.binyan === F.binyan))
+    .sort((a, b) => {
+      const av = a.english.toLowerCase(), bv = b.english.toLowerCase();
+      return (av < bv ? -1 : av > bv ? 1 : 0) * browseSort.dir;
+    });
+
   app.innerHTML = `
-    <div class="row" style="margin-bottom:14px">
+    <div class="row" style="margin-bottom:12px">
       <button class="btn ghost" id="backGrid">← All units</button>
       <h2 style="margin:0">${esc(u.name)}</h2>
       <span class="pill">${u.entries.length} words</span>
       <span class="spacer"></span>
       <button class="btn" id="studyUnit">Study this unit</button>
     </div>
+    <div id="browseFilters" style="margin-bottom:12px">${facetRows}</div>
     <table class="list">
       <thead><tr><th>English</th><th>Hebrew</th><th>Translit</th><th>Type</th><th>Forms</th><th></th></tr></thead>
-      <tbody>${rows.map(rowHtml).join("")}</tbody>
-    </table>`;
+      <tbody>${rows.map(rowHtml).join("") || `<tr><td colspan="6" class="muted" style="padding:16px">No words match these filters.</td></tr>`}</tbody>
+    </table>
+    <div class="muted" style="margin-top:8px;font-size:13px">Showing ${rows.length} of ${u.entries.length}</div>`;
   document.getElementById("backGrid").onclick = () => { browseUnit = null; render(); };
   document.getElementById("studyUnit").onclick = () => {
     learnState.units = new Set([u.index]); S.set("learnUnits", [u.index]); setView("learn");
+  };
+  document.getElementById("browseFilters").onclick = e => {
+    const c = e.target.closest("[data-facet]"); if (!c) return;
+    browseFilters[c.dataset.facet] = c.dataset.val; renderBrowse();
   };
   app.querySelectorAll("[data-speak]").forEach(el => el.onclick = () => {
     const e = u.entries.find(x => x.id === el.dataset.speak); speakForm(e);
@@ -767,7 +809,7 @@ function renderUnitGrid() {
     const c = e.target.closest("[data-unit]"); if (!c) return;
     const idx = +c.dataset.unit;
     if (e.shiftKey) { currentUnit = idx; S.set("currentUnit", idx); senti.built = false; toast("Marked as your current lesson"); renderUnitGrid(); return; }
-    browseUnit = idx; render();
+    browseUnit = idx; browseFilters = { pos: "all", gender: "all", binyan: "all" }; render();
   };
   // long-press / right-click to set current
   app.querySelectorAll("[data-unit]").forEach(c => c.oncontextmenu = ev => {

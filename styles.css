@@ -101,6 +101,10 @@ h3 { margin: 20px 0 8px; color: var(--muted); font-weight: 600; font-size: 13px;
 
 .deck-done { text-align: center; padding: 40px; }
 
+/* Browse filters */
+.filter-row { display: flex; align-items: center; gap: 10px; margin-bottom: 6px; flex-wrap: wrap; }
+.filter-label { color: var(--muted); font-size: 12px; text-transform: uppercase; letter-spacing: .05em; min-width: 62px; }
+
 /* Browse table */
 table.list { width: 100%; border-collapse: collapse; }
 table.list th, table.list td { padding: 8px 10px; border-bottom: 1px solid var(--line); text-align: start; vertical-align: middle; }
