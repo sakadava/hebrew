@@ -59,7 +59,12 @@
   function thirdS(base) { const w = base.split(" "); w[0] = third1(w[0]); return w.join(" "); }
   const artFor = w => (UNCOUNT.has(w) ? "" : (/^[aeiou]/.test(w) ? "an " : "a "));
 
-  function W(plain, nikkud, translit, en) { return { plain: sanit(plain), nikkud: sanit(nikkud || plain), translit: (translit || "").trim(), en: en || "" }; }
+  function W(plain, nikkud, translit, en) {
+    const nik = sanit(nikkud || plain);
+    let tr = (translit || "").trim();
+    if (!tr && typeof translitFromNikkud === "function") tr = translitFromNikkud(nik);
+    return { plain: sanit(plain), nikkud: nik, translit: tr, en: en || "" };
+  }
 
   // ---- scope ----
   function scopeEntries(maxUnit) {
@@ -237,7 +242,14 @@ Respond ONLY as JSON: {"sentences":[{"hebrew":"...","english":"..."}, ...]}`;
       if (!he || !en) continue;
       const v = verify(he, allowed);
       if (!v.ok) continue;                       // reject out-of-scope / wrong-length
-      out.push({ he, heNikkud: vocalize(he, dict), translit: "", en, source: "ai", template: "llm", verified: true });
+      const heNik = vocalize(he, dict);
+      const heTok = he.split(/\s+/), nikTok = heNik.split(/\s+/);
+      const tr = heTok.map((w, idx) => {
+        const info = dict.get(w.replace(NIKKUD, ""));
+        if (info && info.translit) return info.translit;
+        return typeof translitFromNikkud === "function" ? translitFromNikkud(nikTok[idx] || w) : "";
+      }).join(" ");
+      out.push({ he, heNikkud: heNik, translit: tr, en, source: "ai", template: "llm", verified: true });
     }
     return out;
   }

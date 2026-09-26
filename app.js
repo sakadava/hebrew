@@ -327,9 +327,7 @@ function conjTable(e) {
     const byslot = s => e.forms.find(x => x.slot === s);
     const map = {};
     for (const s of ["ms", "fs", "mp", "fp"]) { const f = byslot(s); if (f) map[s] = { nik: f.nikkud || f.hebrew, tr: f.translit }; }
-    const inf = byslot("infinitive");
-    const infLine = inf && (inf.hebrew || inf.nikkud) ? `<div class="inf-line"><span class="muted">to (infinitive)</span> <span class="heb hebrew say" data-say="${escAttr(inf.nikkud || inf.hebrew)}">${esc(dispHeb(inf.nikkud || inf.hebrew))} <span class="mini-speak">🔊</span></span>${toggles.translit && inf.translit ? ` <span class="translit">${esc(inf.translit)}</span>` : ""}</div>` : "";
-    return infLine + grid2x2(map);
+    return grid2x2(map);   // infinitive is shown by the caller (lesson card / flashcard front)
   }
   if (e.declension) {
     const map = {};
@@ -447,7 +445,81 @@ function lessonEntry(e) {
     const f = primaryForm(e);
     primary = lineForm(f.slot, f);
   }
-  return `<div class="le-card">${head}${primary}${table}</div>`;
+  return `<div class="le-card masonry-item pos-${e.pos}">${head}${primary}${table}</div>`;
+}
+
+// Canonical pronoun grid — fills a fixed person × gender × number layout so the paradigm
+// visibly "builds up" as lessons introduce more pronouns.
+function pronInner(map, key, en) {
+  const e = map[key];
+  if (e) {
+    const f = e.forms[0]; const nik = f.nikkud || f.hebrew;
+    const tr = toggles.translit ? `<div class="translit">${esc(f.translit || translitFromNikkud(nik))}</div>` : "";
+    return { cls: "heb hebrew say pron-cell", say: nik, html: `${esc(dispHeb(nik))} <span class="mini-speak">🔊</span>${tr}<div class="pron-en">${esc(en)}</div>` };
+  }
+  return { cls: "pron-empty", say: null, html: `<div class="pron-en">${esc(en)}</div>` };
+}
+function pronTd(map, key, en, colspan) {
+  const o = pronInner(map, key, en);
+  return `<td class="${o.cls}"${colspan ? ` colspan="${colspan}"` : ""}${o.say ? ` data-say="${escAttr(o.say)}"` : ""}>${o.html}</td>`;
+}
+function pronounGrid(entries) {
+  const map = {};
+  for (const e of entries) map[stripN(e.forms[0].hebrew).trim()] = e;
+  return `<table class="formtable prongrid">
+    <tr><th></th><th>Masculine</th><th>Feminine</th></tr>
+    <tr class="grp"><th colspan="3">Singular</th></tr>
+    <tr><th>1st</th>${pronTd(map, "אני", "I", 2)}</tr>
+    <tr><th>2nd</th>${pronTd(map, "אתה", "you (m.s)")}${pronTd(map, "את", "you (f.s)")}</tr>
+    <tr><th>3rd</th>${pronTd(map, "הוא", "he")}${pronTd(map, "היא", "she")}</tr>
+    <tr class="grp"><th colspan="3">Plural</th></tr>
+    <tr><th>1st</th>${pronTd(map, "אנחנו", "we", 2)}</tr>
+    <tr><th>2nd</th>${pronTd(map, "אתם", "you (m.p)")}${pronTd(map, "אתן", "you (f.p)")}</tr>
+    <tr><th>3rd</th>${pronTd(map, "הם", "they (m)")}${pronTd(map, "הן", "they (f)")}</tr>
+  </table>`;
+}
+
+// Build ONE dense masonry of all cards (pronoun grid + verbs + adjectives + nouns), ordered
+// so like types cluster and colour-coded by a left border, but packed side-by-side to fill width.
+function lessonSections(u) {
+  const byPos = { verb: [], adjective: [], noun: [], other: [] };
+  for (const e of u.entries) {
+    if (e.pos === "pronoun") continue;            // pronouns go in the cumulative grid card
+    (byPos[e.pos] || byPos.other).push(e);
+  }
+  // Pronouns: cumulative up to (and including) the viewed lesson — never ahead.
+  const seen = new Set(); const pron = [];
+  for (const e of ENTRIES) {
+    if (e.pos === "pronoun" && typeof e.unit === "number" && e.unit >= 1 && e.unit <= u.index) {
+      const k = stripN(e.forms[0].hebrew).trim();
+      if (!seen.has(k)) { seen.add(k); pron.push(e); }
+    }
+  }
+  const cards = [];
+  if (pron.length) {
+    cards.push(`<div class="le-card masonry-item pos-pronoun pron-card">
+      <div class="le-head"><span class="le-en">Pronouns</span><span class="pill">up to here</span></div>
+      ${pronounGrid(pron)}</div>`);
+  }
+  for (const pos of ["verb", "adjective", "noun", "other"]) for (const e of byPos[pos]) cards.push(lessonEntry(e));
+  if (!cards.length) return `<p class="muted">No words in this lesson.</p>`;
+  return `<div class="masonry" id="lessonMasonry">${cards.join("")}</div>`;
+}
+
+// JS masonry: quantise each card's measured height into row spans so cards pack tightly in 2D.
+function layoutMasonry(c) {
+  if (!c) return;
+  const unit = 6, gap = 12;
+  const items = c.querySelectorAll(".masonry-item");
+  items.forEach(it => { it.style.gridRowEnd = "auto"; });
+  items.forEach(it => {
+    const h = it.getBoundingClientRect().height;
+    it.style.gridRowEnd = "span " + Math.max(1, Math.ceil((h + gap) / unit));
+  });
+}
+function relayoutLesson() {
+  const c = document.getElementById("lessonMasonry");
+  if (c) layoutMasonry(c);
 }
 
 function renderLesson() {
@@ -476,7 +548,7 @@ function renderLesson() {
       <span class="pill">${u.entries.length} items</span>
       <span class="muted">Everything in this lesson — nothing more. Click any word to hear it.</span>
     </div>
-    <div class="lesson-grid">${u.entries.map(lessonEntry).join("") || `<p class="muted">No words in this lesson.</p>`}</div>`;
+    ${lessonSections(u)}`;
 
   const go = idx => { lessonUnit = list[Math.max(0, Math.min(list.length - 1, idx))].index; speechSynthesis.cancel(); renderLesson(); };
   document.getElementById("prevLesson").onclick = () => go(pos - 1);
@@ -488,7 +560,15 @@ function renderLesson() {
   document.getElementById("playAll").onclick = () => speakSequence(u.entries.map(e => { const f = primaryForm(e); return f.nikkud || f.hebrew; }));
   document.getElementById("stopAll").onclick = () => speechSynthesis.cancel();
   bindSay(app);
+  requestAnimationFrame(relayoutLesson);
+  if (document.fonts && document.fonts.ready) document.fonts.ready.then(relayoutLesson);
 }
+
+let _resizeT;
+window.addEventListener("resize", () => {
+  if (view !== "lesson") return;
+  clearTimeout(_resizeT); _resizeT = setTimeout(relayoutLesson, 120);
+});
 
 // ================= BROWSE =================
 let browseUnit = null;

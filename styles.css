@@ -42,7 +42,7 @@ body {
 .chk { color: var(--muted); font-size: 13px; user-select: none; cursor: pointer; }
 select, input[type=text], input[type=file] { background: var(--panel); color: var(--ink); border: 1px solid var(--line); border-radius: 8px; padding: 6px 8px; }
 
-main { max-width: 1080px; margin: 0 auto; padding: 22px 18px 80px; }
+main { max-width: none; margin: 0; padding: 20px 24px 80px; }
 
 .btn { background: var(--panel2); color: var(--ink); border: 1px solid var(--line); padding: 9px 16px; border-radius: 10px; cursor: pointer; font-size: 14px; }
 .btn:hover { border-color: var(--accent); }
@@ -96,9 +96,6 @@ h3 { margin: 20px 0 8px; color: var(--muted); font-weight: 600; font-size: 13px;
 .formtable .say:hover { background: var(--panel2); }
 .formtable .say:hover .mini-speak { opacity: 1; }
 .formtable .say .mini-speak { opacity: .35; }
-.inf-line { margin: 4px 0 10px; font-size: 20px; }
-.inf-line .muted { font-size: 12px; text-transform: uppercase; letter-spacing: .04em; }
-.inf-line .heb { font-size: 24px; cursor: pointer; }
 .formtable td .translit { margin-top: 2px; }
 
 .deck-done { text-align: center; padding: 40px; }
@@ -130,9 +127,30 @@ table.list tr:hover td { background: var(--panel); }
 .bad-text { color: var(--bad); }
 .good-text { color: var(--good); }
 
-/* Lesson (basic) mode */
-.lesson-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 14px; align-items: start; }
-.le-card { background: var(--panel); border: 1px solid var(--line); border-radius: 12px; padding: 14px 16px; }
+/* Lesson (basic) mode — JS-measured 2D masonry: cards pack side-by-side and fill width */
+.masonry { display: grid; grid-template-columns: repeat(auto-fill, minmax(230px, 1fr)); grid-auto-rows: 6px; column-gap: 12px; row-gap: 0; grid-auto-flow: row dense; }
+.masonry-item { align-self: start; min-width: 0; }
+.le-card { background: var(--panel); border: 1px solid var(--line); border-radius: 12px; padding: 12px 14px; border-left-width: 3px; overflow: hidden; }
+.le-card.pos-verb { border-left-color: var(--accent2); }
+.le-card.pos-noun { border-left-color: var(--m); }
+.le-card.pos-adjective { border-left-color: var(--warn); }
+.le-card.pos-pronoun, .le-card.pos-other { border-left-color: var(--line); }
+/* grid-bearing cards get two columns so their m/f × s/p tables never overflow */
+.pos-verb, .pos-adjective, .pron-card { grid-column: span 2; }
+@media (max-width: 520px) { .pos-verb, .pos-adjective, .pron-card { grid-column: span 1; } }
+/* compact in-card tables */
+.le-card .formtable { width: 100%; }
+.le-card .formtable td, .le-card .formtable th { padding: 5px 8px; min-width: 0; }
+.le-card .formtable .heb { font-size: 22px; white-space: nowrap; }
+.le-card .formtable .translit { font-size: 12px; word-break: break-word; }
+.le-card .formtable th:first-child { width: 4.5em; }
+/* Pronoun grid */
+.prongrid td, .prongrid th { min-width: 0; }
+.prongrid tr.grp th { text-align: center; color: var(--accent2); font-size: 11px; letter-spacing: .08em; background: var(--panel2); }
+.prongrid .pron-cell { vertical-align: top; }
+.prongrid .pron-en { font-size: 11px; color: var(--muted); margin-top: 3px; }
+.prongrid .pron-empty { background: repeating-linear-gradient(45deg, transparent, transparent 6px, rgba(255,255,255,.02) 6px, rgba(255,255,255,.02) 12px); }
+.prongrid .pron-empty .pron-en { opacity: .5; }
 .le-head { display: flex; align-items: center; gap: 10px; margin-bottom: 8px; flex-wrap: wrap; }
 .le-en { font-size: 18px; font-weight: 600; }
 .le-line { display: flex; align-items: baseline; gap: 10px; padding: 3px 0; flex-wrap: wrap; }
