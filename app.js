@@ -217,15 +217,27 @@ function toast(msg) {
 // ---------- Router ----------
 const app = document.getElementById("app");
 let view = "lesson";
+function closeMenu() {
+  const m = document.getElementById("menu"); if (m) m.classList.remove("open");
+  const h = document.getElementById("hamburger"); if (h) h.setAttribute("aria-expanded", "false");
+}
 function setView(v) {
   view = v;
   if ("speechSynthesis" in window) speechSynthesis.cancel();
   const active = v === "session" ? "learn" : v;
   document.querySelectorAll(".tabs button").forEach(b => b.classList.toggle("active", b.dataset.view === active));
+  closeMenu();
   render();
 }
 document.querySelectorAll(".tabs button").forEach(b => b.onclick = () => setView(b.dataset.view));
 document.getElementById("homeBtn").onclick = () => setView("lesson");
+// Hamburger menu (mobile)
+const _hb = document.getElementById("hamburger");
+if (_hb) _hb.onclick = () => {
+  const m = document.getElementById("menu");
+  const open = m.classList.toggle("open");
+  _hb.setAttribute("aria-expanded", open ? "true" : "false");
+};
 
 // toggle wiring
 for (const key of ["nikkud", "translit", "english"]) {
@@ -644,6 +656,7 @@ window.addEventListener("resize", () => {
   if (view !== "lesson") return;
   clearTimeout(_resizeT); _resizeT = setTimeout(relayoutLesson, 120);
 });
+window.addEventListener("orientationchange", () => { if (view === "lesson") setTimeout(relayoutLesson, 200); });
 
 // ================= BROWSE =================
 let browseUnit = null;
