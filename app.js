@@ -81,14 +81,25 @@ if ("speechSynthesis" in window) {
   loadVoices();
   speechSynthesis.onvoiceschanged = loadVoices;
 }
-function speak(text) {
-  if (!text || !("speechSynthesis" in window)) return;
-  speechSynthesis.cancel();
+// A silent, near-zero-length utterance that spins up the audio pipeline so the real word's
+// onset isn't clipped (a well-known Web Speech API cold-start issue, worse right after cancel()).
+function ttsUtterance(text, rate) {
   const u = new SpeechSynthesisUtterance(text);
   u.lang = "he-IL";
   if (chosenVoice) u.voice = chosenVoice;
-  u.rate = 0.85;
-  speechSynthesis.speak(u);
+  u.rate = rate;
+  return u;
+}
+function ttsWarmup() {
+  const w = ttsUtterance("א", 2);   // spoken silently just to warm the engine
+  w.volume = 0;
+  return w;
+}
+function speak(text) {
+  if (!text || !("speechSynthesis" in window)) return;
+  speechSynthesis.cancel();
+  speechSynthesis.speak(ttsWarmup());          // warm-up absorbs the onset clip…
+  speechSynthesis.speak(ttsUtterance(text, 0.85));  // …so the actual word starts cleanly
 }
 
 // ---------- Display helpers ----------
@@ -208,11 +219,10 @@ document.addEventListener("click", ev => {
 function speakSequence(texts) {
   if (!("speechSynthesis" in window)) return;
   speechSynthesis.cancel();
+  speechSynthesis.speak(ttsWarmup());   // warm the engine so the first word isn't clipped
   for (const t of texts) {
     if (!t) continue;
-    const u = new SpeechSynthesisUtterance(t);
-    u.lang = "he-IL"; if (chosenVoice) u.voice = chosenVoice; u.rate = 0.85;
-    speechSynthesis.speak(u);
+    speechSynthesis.speak(ttsUtterance(t, 0.85));
   }
 }
 
