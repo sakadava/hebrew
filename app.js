@@ -414,7 +414,25 @@ function grid2x2(map) {
   </table>`;
 }
 
+// Past/future verbs conjugate by person — render the person × gender × number grid.
+function tenseGrid(e) {
+  const m = {};
+  for (const f of e.forms) m[f.slot] = { nik: f.nikkud || f.hebrew, tr: f.translit, en: "" };
+  return `<table class="formtable prongrid">
+    <tr><th></th><th>Masculine</th><th>Feminine</th></tr>
+    <tr class="grp"><th colspan="3">Singular</th></tr>
+    <tr><th>1st</th>${pronTdG(m, "1cs", 2)}</tr>
+    <tr><th>2nd</th>${pronTdG(m, "2ms")}${pronTdG(m, "2fs")}</tr>
+    <tr><th>3rd</th>${pronTdG(m, "3ms")}${pronTdG(m, "3fs")}</tr>
+    <tr class="grp"><th colspan="3">Plural</th></tr>
+    <tr><th>1st</th>${pronTdG(m, "1cp", 2)}</tr>
+    <tr><th>2nd</th>${pronTdG(m, "2mp")}${pronTdG(m, "2fp")}</tr>
+    <tr><th>3rd</th>${pronTdG(m, "3mp")}${pronTdG(m, "3fp")}</tr>
+  </table>`;
+}
+
 function conjTable(e) {
+  if (e.tense) return tenseGrid(e);   // past/future person paradigm
   if (e.pos === "verb") {
     const byslot = s => e.forms.find(x => x.slot === s);
     const map = {};
@@ -617,20 +635,51 @@ function pronClassify(e) {
   return { cat, key, cell: { nik: f.nikkud || f.hebrew, tr: f.translit, en: e.english } };
 }
 
+// Demonstratives (this / these) — a tiny gender/number grid (strip an optional formal ה prefix).
+const DEMO_SET = { "זה": "ms", "זאת": "fs", "זו": "fs", "אלה": "p", "אלו": "p" };
+function demoClassify(e) {
+  if (!/\b(this|these|those)\b/i.test(e.english)) return null;
+  const f = primaryForm(e);
+  const cons = stripN(f.hebrew).replace(/[^א-ת]/g, "");
+  const key = DEMO_SET[cons] || DEMO_SET[cons.replace(/^ה/, "")];   // allow formal הזה/האלה…
+  if (!key) return null;
+  return { key, cell: { nik: f.nikkud || f.hebrew, tr: f.translit, en: e.english } };
+}
+function demoGrid(map) {
+  return `<table class="formtable prongrid">
+    <tr><th></th><th>Masculine</th><th>Feminine</th></tr>
+    <tr><th>this</th>${pronTdG(map, "ms")}${pronTdG(map, "fs")}</tr>
+    <tr><th>these</th>${pronTdG(map, "p", 2)}</tr>
+  </table>`;
+}
+// Question words (who / what / which / where / when / why / how) — a flat list.
+function isQuestionWord(e) {
+  return e.pos !== "verb" && /^(who|what|which|where|when|why|how)\b/i.test(e.english.trim());
+}
+function qwordLine(e) {
+  const f = primaryForm(e); const nik = f.nikkud || f.hebrew;
+  const tr = toggles.translit && (f.translit || nik) ? `<span class="translit">${esc(f.translit || translitFromNikkud(nik))}</span>` : "";
+  return `<div class="le-line"><span class="heb hebrew say" data-say="${escAttr(nik)}" title="Click to hear">${esc(dispHeb(nik))} <span class="mini-speak">🔊</span></span>${typeGlyph(stripN(nik), "he")}${tr}<span class="pron-en">${esc(e.english)}</span></div>`;
+}
+
 // Build ONE dense masonry of all cards, with pronoun tables (subject/object/possessive/…) first.
 function lessonSections(u) {
   const byPos = { verb: [], adjective: [], noun: [], other: [] };
   for (const e of u.entries) {
     if (e.pos === "pronoun") continue;
-    if (pronClassify(e)) continue;                 // pronoun-forms go into the pronoun tables, not here
+    if (pronClassify(e) || demoClassify(e) || isQuestionWord(e)) continue;   // these go into grouped cards
     (byPos[e.pos] || byPos.other).push(e);
   }
-  // Pronoun categories, cumulative up to (and including) the viewed lesson — never ahead.
+  // Pronoun / demonstrative / question-word groups, cumulative up to the viewed lesson — never ahead.
   const cats = { subject: {}, object: {}, possessive: {}, prepositional: {}, reflexive: {} };
+  const demo = {}; const qwords = []; const qSeen = new Set();
   for (const e of ENTRIES) {
     if (!(typeof e.unit === "number" && e.unit >= 1 && e.unit <= u.index)) continue;
     const c = pronClassify(e);
-    if (c && !cats[c.cat][c.key]) cats[c.cat][c.key] = c.cell;
+    if (c) { if (!cats[c.cat][c.key]) cats[c.cat][c.key] = c.cell; continue; }
+    const d = demoClassify(e);
+    if (d) { if (!demo[d.key]) demo[d.key] = d.cell; continue; }
+    if (isQuestionWord(e)) { const k = stripN(e.forms[0].hebrew); if (!qSeen.has(k)) { qSeen.add(k); qwords.push(e); } }
   }
   const cards = [];
   for (const [cat, title] of PRON_CATS) {
@@ -639,6 +688,16 @@ function lessonSections(u) {
         <div class="le-head"><span class="le-en">${esc(title)}</span><span class="pill">up to here</span></div>
         ${pronGridFrom(cats[cat])}</div>`);
     }
+  }
+  if (Object.keys(demo).length) {
+    cards.push(`<div class="le-card masonry-item pos-pronoun">
+      <div class="le-head"><span class="le-en">Demonstratives — this / these</span><span class="pill">up to here</span></div>
+      ${demoGrid(demo)}</div>`);
+  }
+  if (qwords.length) {
+    cards.push(`<div class="le-card masonry-item pos-pronoun">
+      <div class="le-head"><span class="le-en">Question words</span><span class="pill">up to here</span></div>
+      ${qwords.map(qwordLine).join("")}</div>`);
   }
   for (const pos of ["verb", "adjective", "noun", "other"]) for (const e of byPos[pos]) cards.push(lessonEntry(e));
   if (!cards.length) return `<p class="muted">No words in this lesson.</p>`;

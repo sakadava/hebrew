@@ -142,12 +142,57 @@ def classify(english, translit, binyan):
     return "noun"
 
 
+# ---- Past/future tense conjugation grouping ----
+# Bare person labels (no verb meaning) that continue a preceding verb's past/future paradigm.
+BARE_PERSON = {
+    "i": "1cs",
+    "you (m.s)": "2ms", "you (f.s)": "2fs",
+    "he/it": "3ms", "he": "3ms", "she/it": "3fs", "she": "3fs",
+    "we": "1cp", "they": "3mp", "they (m)": "3mp", "they (f)": "3fp",
+    "you (m.p)": "2mp", "you (f.p)": "2fp",
+}
+def bare_person_slot(english):
+    return BARE_PERSON.get(english.strip().lower())
+
+def unit_tense(name):
+    n = name.lower()
+    if "future" in n:
+        return "future"
+    if "past" in n:
+        return "past"
+    return None
+
+def clean_tense_english(s, tense):
+    t = re.sub(r"\(.*?\)", "", s).strip()
+    t = re.sub(r"^i\s+(will|shall|was|were|am|have|had)?\s*", "", t, flags=re.I).strip()
+    t = t.rstrip(";, ").strip()
+    if not t:
+        t = re.sub(r"\(.*?\)", "", s).strip()
+    return f"{t} ({tense})"
+
+def tense_verb_from_lemma(lemma, tense):
+    """Turn the entry preceding a run of person rows into a tense verb (its form = the 1cs form)."""
+    if lemma.get("type") == "verb":
+        f = lemma.get("infinitive", {}) or {}
+        binyan = lemma.get("binyan")
+    else:
+        f = (lemma.get("forms", {}) or {}).get("singular", {}) or {}
+        binyan = None
+    tv = {"type": "verb", "tense": tense, "english": clean_tense_english(lemma.get("english", ""), tense),
+          "binyan": binyan, "forms_person": {}}
+    if f.get("hebrew"):
+        tv["forms_person"]["1cs"] = {"translit": f.get("translit", ""), "hebrew": f.get("hebrew", "")}
+    return tv
+
+
 def parse():
     units = load_units()
     out_units = []
     for u in units:
         entries = []
         pending_verb = None
+        tense = unit_tense(u["name"])
+        tense_verb = None
         for line in u["raw_lines"]:
             if not line.strip():
                 continue
@@ -158,6 +203,21 @@ def parse():
             # skip stray header repeats / footers
             if english.lower() in ("english",) or "heilswahrheit" in english.lower():
                 continue
+            # Past/future paradigm: bare person rows continue the preceding verb lemma.
+            if tense:
+                bslot = bare_person_slot(english)
+                if bslot:
+                    if tense_verb is None:
+                        lemma = entries.pop() if entries else None
+                        tense_verb = tense_verb_from_lemma(lemma, tense) if lemma else \
+                            {"type": "verb", "tense": tense, "english": clean_tense_english(english, tense), "binyan": None, "forms_person": {}}
+                        entries.append(tense_verb)
+                    fp = tense_verb["forms_person"]
+                    if bslot == "2ms" and "2ms" in fp:   # duplicate "You (m.s)" label → treat 2nd as 2fs
+                        bslot = "2fs"
+                    fp[bslot] = {"translit": translit, "hebrew": hebrew}
+                    continue
+                tense_verb = None   # a non-person row ends the paradigm
             # conjugation label row -> attach to pending verb
             label = CONJ_LABELS.get(english.rstrip("."))
             if label is None:

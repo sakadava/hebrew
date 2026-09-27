@@ -111,6 +111,17 @@ def make_forms_verb(entry):
     return forms
 
 
+PERSON_ORDER = ["1cs", "2ms", "2fs", "3ms", "3fs", "1cp", "2mp", "2fp", "3mp", "3fp"]
+def make_forms_tense(entry):
+    forms = []
+    fp = entry.get("forms_person", {})
+    for slot in PERSON_ORDER:
+        c = fp.get(slot)
+        if c and c.get("hebrew"):
+            forms.append({"slot": slot, "translit": c.get("translit", ""), "hebrew": c.get("hebrew", ""), "nikkud": None})
+    return forms
+
+
 def build():
     out = {"schemaVersion": 1, "source": "Duolingo Hebrew course vocabulary", "units": []}
     seq = 0
@@ -125,8 +136,11 @@ def build():
                     "id": eid, "unit": u["index"], "unitName": u["name"], "category": cat,
                     "pos": "verb", "english": e["english"], "gender": None, "genderSource": None,
                     "binyan": e.get("binyan"), "root": None,
-                    "forms": make_forms_verb(e), "source": "duolingo-vocab",
+                    "forms": make_forms_tense(e) if e.get("tense") else make_forms_verb(e),
+                    "source": "duolingo-vocab",
                 }
+                if e.get("tense"):
+                    item["tense"] = e["tense"]
             else:
                 pos = "pronoun" if e["type"] == "pronoun" else ("adjective" if e["type"] == "adjective" else "noun")
                 forms = make_forms_noun(e)
@@ -173,7 +187,7 @@ def build():
             ms_map.setdefault(strip_nikkud(present["ms"]["hebrew"]), present)
     for u in out["units"]:
         for e in u["entries"]:
-            if e["pos"] != "verb":
+            if e["pos"] != "verb" or e.get("tense"):
                 continue
             have = {f["slot"] for f in e["forms"] if f["slot"] in ("ms", "fs", "mp", "fp")}
             if len(have) == 4:
